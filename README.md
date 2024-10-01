@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# EdgeTX User Manual v2.11
+# EdgeTX інструкція користувача v2.11
 
 <figure><img src=".gitbook/assets/logos (1).png" alt=""><figcaption></figcaption></figure>
 
