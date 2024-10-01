@@ -12,11 +12,11 @@ layout:
     visible: true
 ---
 
-# EdgeTX інструкція користувача v2.10
+# EdgeTX посібник користувача v2.10
 
 <figure><img src=".gitbook/assets/logos (1).png" alt=""><figcaption></figcaption></figure>
 
-If you would like to contribute to this guide, please take a look at the [Contribute to the User Manual](edgetx-how-to/contribute-to-the-user-manual.md) page.
+Якщо ви хочете зробити свій внесок у цей Посібник, перегляньте сторінку [Зробити внесок в Посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md).
 
 The purpose of this user manual is to consolidate information from the community about the setup, configuration, and use of EdgeTX. The goal is to be your "one-stop shop" for information about anything related to EdgeTX. It is broken down into the following areas:
 
