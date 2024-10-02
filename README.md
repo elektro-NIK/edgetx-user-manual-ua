@@ -12,28 +12,28 @@ layout:
     visible: true
 ---
 
-# EdgeTX Посібник користувача v2.10
+# Посібник користувача EdgeTX v2.10
 
 <figure><img src=".gitbook/assets/logos (1).png" alt=""><figcaption></figcaption></figure>
 
-Якщо ви хочете зробити свій внесок у цей Посібник, перегляньте сторінку [Зробити внесок в Посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md).
+Якщо ви хочете зробити свій внесок у цей посібник, перегляньте сторінку [Зробити внесок в посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md).
 
-The purpose of this user manual is to consolidate information from the community about the setup, configuration, and use of EdgeTX. The goal is to be your "one-stop shop" for information about anything related to EdgeTX. It is broken down into the following areas:
+Метою цього посібника є консолідація інформації від спільноти про налаштування, конфігурацію та використання EdgeTX. Мета — бути вашим «єдиним вікном» для інформації про все, що стосується EdgeTX. Він розбитий на такі розділи:
 
-#### EdgeTX User Manual <a href="#edgetx-user-manual" id="edgetx-user-manual"></a>
+#### Посібник користувача EdgeTX <a href="#edgetx-user-manual" id="edgetx-user-manual"></a>
 
-The user guide explains all the configuration options available in EdgeTX as well as some high-level theoretical information about EdgeTX usage and model controls. It is broken into sections - one section covering the interface for [Color Screen Radios](color-radios/)[ ](color-radios/)and one section covering the interface for [Monochrome Screen radios.](bw-radios/)
+У посібнику користувача пояснюються всі параметри конфігурації, доступні в EdgeTX, а також деяка теоретична інформація високого рівня про використання EdgeTX і елементи керування моделлю. Він розбитий на розділи: один розділ стосується інтерфейсу для [Апаратури з кольоровим екраном](color-radios/)[ ](color-radios/), а інший — інтерфейсу для [Апаратури з монохромним екраном](bw-radios/).
 
-#### EdgeTX How-to <a href="#edgetx-how-to" id="edgetx-how-to"></a>
+#### Інстукції EdgeTX <a href="#edgetx-how-to" id="edgetx-how-to"></a>
 
-The How-to section will provide detailed instructions about how to configure model or user-specific use cases in EdgeTX. It will cover common use cases as well as rare and specific use cases. This section of the manual will steadily grow as new How-to articles are submitted by contributors.
+У розділі «Інструкції» надано докладні інструкції щодо налаштування моделі або конкретних випадків використання EdgeTX. Він охоплюватиме типові випадки використання, а також рідкісні та специфічні випадки використання. Цей розділ посібника постійно розширюватиметься, оскільки учасники надсилатимуть нові статті з інструкціями.
 
-#### Additional EdgeTX Resources <a href="#additional-edgetx-resources" id="additional-edgetx-resources"></a>
+#### Додаткові ресурси EdgeTX <a href="#additional-edgetx-resources" id="additional-edgetx-resources"></a>
 
-This section of the knowledge base will contain links to additional resources that EdgeTX users may find useful. The external pages that are linked here are not maintained by EdgeTX. However, they are listed as they may be useful sources of additional information relating to EdgeTX.
+Цей розділ бази знань міститиме посилання на додаткові ресурси, які можуть бути корисними користувачам EdgeTX. Зовнішні сторінки, на які тут наведено посилання, не належать EdgeTX. Однак вони перераховані, оскільки можуть бути корисними джерелами додаткової інформації про EdgeTX.
 
-#### Special thanks to those that contributed to this knowledge base either directly or indirectly. <a href="#special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly." id="special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly."></a>
+#### Особлива подяка тим, хто зробив внесок у цю базу знань прямо чи опосередковано. <a href="#special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly." id="special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly."></a>
 
-See the [Contributors ](more/contributors.md)section for a list of direct and indirect contributors.
+Перегляньте список прямих і непрямих учасників у розділі [Учасники](more/contributors.md).
 
-#### EdgeTX User Manual © 2024 by EdgeTX is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+#### Посібник користувача EdgeTX © 2024 by EdgeTX ліцензовано під CC BY-SA 4.0. Для перегляду копії цієї ліцензії перейдіть за посиланням: http://creativecommons.org/licenses/by-sa/4.0/
