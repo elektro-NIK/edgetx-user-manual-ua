@@ -1,29 +1,29 @@
 ---
-description: Current for all merged PRs as of 31/05/2024 (v2.10.1)
+опис: поточна версія для всіх об’єднаних Pull Requests станом на 31/05/2024 (v2.10.1)
 ---
 
-# Summary of changes since v2.9
+# Опис змін із v2.9
 
-Below is a summary of changes that affect the user interface and/or how EdgeTX functions. It does not cover all bug fixes. For a complete list of changes (including bug fixes), please read the release notes.
+Нижче наведено короткий перелік змін, які впливають на інтерфейс користувача та/або функціонування EdgeTX. Він не охоплює всі виправлення помилок. Щоб отримати повний список змін (включаючи виправлення помилок), прочитайте примітки до випуску.
 
-### **Color Screen Radios**
+### **Апаратури із кольоровим екраном**
 
-* New Hardware Support
+* Підтримка нових апаратур
   * Flysky PL18
   * Flysky PL18 EV
   * Jumper T15
-* General Changes
-  * The mixer now runs at 1000Hz when in USB Joystick mode (needed for F.Sim competitors), also displays mixer run time in statistic/debug screen.
-  * Minor UI improvements on many pages for better look and consistency&#x20;
-  * Bootloader background removed to make the text more legible
-  * Default splash screen updated with new EdgeTX Logo and EdgeTX version information.
-  * **Source** selection menu has been optimized for easier touch usability and sorting.
-  * **Source** selection menu will now display both global variable number and name.
-  * Added charging LED animation for PL18 and PL18EV.
-* [User interface page](color-radios/user-interface/)
-  * The **System \[SYS]** and **Models \[MDL] buttons** have different [functionalities](color-radios/user-interface/#additional-system-and-model-button-functionalities) depending on the screen they are used on.
-  * [Trim hat switches](color-radios/user-interface/trim-navigation.md) on NV14 and EL18 can now be used to navigate the menus.
-  * Added [hardware shortcut keys to the virtual text and number keyboards](color-radios/user-interface/virtual-keyboards.md).
+* Загальні зміни
+  * Мікшер тепер працює на частоті 1000 Гц у режимі USB-джойстика (потрібен для учасників F.Sim), також відображає час роботи мікшера на екрані статистики/налагодження.
+  * Незначні покращення інтерфейсу користувача на багатьох сторінках для кращого вигляду та узгодженості.
+  * Видалено фон завантажувача, щоб зробити текст більш читабельним.
+  * Стандартний екран завантаження оновлено новим логотипом EdgeTX і інформацією про версію EdgeTX.
+  * Меню **Джерело** було оптимізовано для полегшення сенсорного використання та сортування.
+  * Меню **Джерело** тепер відображатиме номер і назву глобальної змінної.
+  * Додано світлодіодну анімацію зарядки для PL18 і PL18EV.
+* [Сторінка інтерфейсу користувача](color-radios/user-interface/)
+  * Кнопки **Система \[SYS]** і **Моделі \[MDL]** мають різні [функціональні можливості](color-radios/user-interface/#additional-system-and-model-button-functionalities) залежно від екрану, на якому вони використовуються.
+  * [Перемикачі триммерів] (color-radios/user-interface/trim-navigation.md) на NV14 та EL18 тепер можна використовувати для навігації по меню.
+  * Додано [апаратні клавіші швидкого доступу до віртуальної текстової та цифрової клавіатур](color-radios/user-interface/virtual-keyboards.md).
 * [Manage Models page](color-radios/select-model.md)
   * Added 3 additional layouts for the model list.
   * Updated the model image frames size & shape. Also now displays model name on top of the image, instead of clipping the image.
