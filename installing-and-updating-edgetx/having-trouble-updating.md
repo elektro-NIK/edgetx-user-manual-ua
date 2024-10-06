@@ -1,33 +1,32 @@
-# Having trouble updating?
+# Маєте проблеми з оновленням?
 
-If you're here reading this, you probably got stuck with something either while trying to update or after updating. So checkout the list of issues and possible resolution steps below, to see if something matches the problem you are having. If there isn't, either join us on [Discord](https://discord.gg/wF9wUKnZ6H) (there is usually someone around who can help out), drop by our  [GitHub Discussions](https://github.com/EdgeTX/edgetx/discussions) forum, or the [RCGroups forum thread](https://www.rcgroups.com/forums/showthread.php?3916381-Official-EdgeTX-Discussion-Thread) if that is more your thing.&#x20;
+Якщо ви читаєте це, то, ймовірно, зіткнулися з проблемами під час спроби оновлення або після нього. Ознайомтеся зі списком проблем і можливих рішень нижче, щоб перевірити, чи відповідає щось вашій ситуації. Якщо нічого не підходить, ви можете приєднатися до нас на [Discord](https://discord.gg/wF9wUKnZ6H) (зазвичай є хтось, хто може допомогти), завітати на наш форум [GitHub Discussions](https://github.com/EdgeTX/edgetx/discussions) або на гілку форуму [RCGroups](https://www.rcgroups.com/forums/showthread.php?3916381-Official-EdgeTX-Discussion-Thread), якщо вам це більше до вподоби.&#x20;
 
-#### **I'm trying to flash using EdgeTX Buddy, but my handset isn't detected**
+#### **Я намагаюся прошити через EdgeTX Buddy, але моя апаратура не розпізнається**
 
-1. Make sure when you plug the radio into the computer, that your handset is **turned off**. If you are getting a prompt about what mode to put the USB into, you will not be able to update. DFU mode, which used to flash the firmware, only operates when the handset is plugged in when in the **OFF** state.&#x20;
-2. Does your radio have a boot / DFU button? Check the [access-dfu-and-bootloader-mode.md](../edgetx-how-to/access-dfu-and-bootloader-mode.md "mention") page to see if your handset is one of those listed where you need to hold a button down when plugging the USB in.&#x20;
-3. You could be facing driver issues. If you are on Windows, you could firstly try the [ImpulseRC Driver Fixer](https://impulserc.com/pages/downloads) tool. Alternately, you could go to the STMicroelectronics website, and download their free [STM32CubeProgrammer tool](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software), which includes the necessary drivers, and works with all the major operating systems. It does however require creating a (free) account at the the STMicroelectronics website, but it is the official tool for programming the micro-controller being used in all supported radio handsets.&#x20;
-4. Check with another USB cable... not all cables are created equally, and some cables are "charge only" cables.&#x20;
+1.	Переконайтеся, що ваша апаратура **вимкнена**, коли ви підключаєте її до комп’ютера. Якщо з’являється запит про те в якому режимі використовувати USB, ви не зможете оновити прошивку. Режим DFU, який використовується для прошивки, працює лише тоді, коли пристрій підключено у **вимкненому** стані.&#x20;
+2. Чи є у вашої апаратури кнопка завантаження / DFU? Перевірте сторінку [access-dfu-and-bootloader-mode.md](../edgetx-how-to/access-dfu-and-bootloader-mode.md "mention"), щоб дізнатися, чи належить ваш пристрій до тих, для яких потрібно натискати кнопку під час підключення USB.&#x20;
+3.	Можливо, виникли проблеми з драйверами. Якщо ви використовуєте Windows, спробуйте спочатку інструмент [ImpulseRC Driver Fixer](https://impulserc.com/pages/downloads). Або ви можете зайти на сайт STMicroelectronics і завантажити безкоштовний інструмент [STM32CubeProgrammer tool](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software), який містить необхідні драйвери і працює з усіма основними операційними системами. Проте для цього потрібно створити безкоштовний обліковий запис на сайті STMicroelectronics, але це офіційний інструмент для програмування мікроконтролера, який використовується у всіх підтримуваних радіоапаратурах.&#x20;
+4.	Спробуйте інший USB-кабель, так як не всі кабелі однакові, деякі кабелі призначені лише для зарядки.&#x20;
 
-#### I updated EdgeTX, and now my radio doesn't turn on, or acts strangely
+#### Я оновив EdgeTX, і тепер моя апаратура не вмикається або працює некоректно
 
-1. Firstly, double check that you selected the correct name / target for your handset. Some incorrect selections will still boot, but buttons and controls will work incorrectly, or the screen will be upside down. Other combinations simply won't work at all, or make the radio seemingly go crazy, and you need to unplug the battery to get it to turn off. If you flashed the wrong target, simply go to EdgeTX Buddy, select the correct radio model, and flash the firmware.&#x20;
-2. Some handsets can have the wrong option bits set on the microcontroller, and as a result, will refuse to boot with EdgeTX 2.10 or later. The exact cause of this is unknown, but the fix is _relatively_ simple. See the (collapsed) instructions below for more information.
+1.	Спочатку двічі переконайтеся, що ви вибрали правильну модель/версію для свого пристрою. Деякі неправильні варіанти можуть завантажуватися, але кнопки та елементи керування працюватимуть неправильно або екран буде перевернутий. Інші комбінації просто не працюватимуть або зроблять так, що пристрій поводиться дивно, і вам доведеться відключити батарею щоб вимкнути його. Якщо ви прошили неправильну прошивку моделі, просто перейдіть до EdgeTX Buddy, виберіть правильну модель та оновіть прошивку.&#x20;
+2. У деяких пристроїв можуть бути неправильно встановлені опціональні біти мікроконтролера, через що вони не завантажуються з EdgeTX 2.10 або пізнішої версії. Точна причина цього невідома, але рішення _відносно_ просте. Дивіться інструкції (нижче) для отримання додаткової інформації.
 
 <details>
 
-<summary>Resetting Option Bits</summary>
+<summary>Скидання опціональних бітів</summary>
 
-1. Once you have installed the STM32CubeProgrammer tool (which requires creation of a free account on the STMicroelectronics website), plug your radio in while switched off, in order to enter DFU mode. Double check the [access-dfu-and-bootloader-mode.md](../edgetx-how-to/access-dfu-and-bootloader-mode.md "mention") page if you are unsure if your handset has a boot / DFU mode button that needs to be held down whilst plugging it in.
-2. Start the STM32CubeProgrammer tool if you don't already have it running. You should have a screen that looks somewhat like this (click the image for a larger view):\
-   ![STM32CubeProgrammer main screen](../.gitbook/assets/2024-08-28\_11-46.png)\
+1. Після того, як ви встановите STM32CubeProgrammer (який вимагає створення безкоштовного облікового запису на сайті STMicroelectronics), підключіть апаратуру у вимкненому стані щоб увійти в режим DFU. Якщо ви не впевнені, чи є у вашого пристрою кнопка завантаження/DFU яку потрібно тримати при підключенні, перевірте сторінку [access-dfu-and-bootloader-mode.md](../edgetx-how-to/access-dfu-and-bootloader-mode.md "mention").
+2. Запустіть інструмент STM32CubeProgrammer, якщо він ще не запущений. Ви повинні побачити екран, який виглядає приблизно так (натисніть на зображення для збільшення):\
+![STM32CubeProgrammer main screen](../.gitbook/assets/2024-08-28\_11-46.png)\
    \
-   Ensure the device type (1) says USB, and then press the Connect button (2). If the port field is empty, try pressing the refresh button (3).
-3. Go to the "Option bytes" page (1). Then select User Configuration (2). Check the status of  "BFB2" (3). If it is ticked, remove the tick so that it is as shown, and click the Apply button (4). You can then click the "Disconnect" button and disconnect your handset.\
+   Переконайтеся, що тип пристрою (1) вибраний як USB, потім натисніть кнопку Підключитися (2). Якщо поле порту порожнє, спробуйте натиснути кнопку оновлення (3).
+3. Перейдіть на сторінку Option bytes (1). Потім виберіть User Configuration (2). Перевірте статус “BFB2” (3). Якщо вона позначена, зніміть позначку, як показано на зображенні і натисніть кнопку Apply (4). Після цього ви можете натиснути кнопку Disconnect та від’єднати вашу апаратуру.\
    ![STM32CubeProgrammer: Option bytes](../.gitbook/assets/2024-08-28\_11-44.png)
-4. That should be it... your handset should boot up now if this was the issue.&#x20;
+4. Це повинно допомогти. Якщо проблема була в цьому, ваш пристрій повинен запуститися.&#x20;
 
 </details>
 
-3. If you are really stuck, you can follow this guide on [how to unbrick your radio](https://github.com/EdgeTX/edgetx/wiki/Unbrick-your-radio).&#x20;
-
+3. Якщо ви справді застрягли, ви можете скористатися [цим посібником](https://github.com/EdgeTX/edgetx/wiki/Unbrick-your-radio), щоб відновити свою апаратуру.&#x20;
