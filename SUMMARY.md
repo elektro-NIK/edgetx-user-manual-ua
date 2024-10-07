@@ -54,7 +54,7 @@
 * [Посібник користувача для апаратури з монохромним екраном](bw-radios/README.md)
   * [Інтерфейс користувача](bw-radios/user-inteface.md)
   * [Основний вигляд](bw-radios/main-view/README.md)
-    * [Перезавантаження](bw-radios/main-view/reset.md)
+    * [Скидання](bw-radios/main-view/reset.md)
     * [Статистика](bw-radios/main-view/statistics.md)
   * [Налаштування моделі](bw-radios/model-select/README.md)
     * [Установка](bw-radios/model-select/setup.md)
