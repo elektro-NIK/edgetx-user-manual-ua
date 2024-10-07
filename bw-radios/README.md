@@ -14,7 +14,7 @@ layout:
 
 # Посібник користувача для апаратур з монохромним екраном
 
-<figure><img src="../.gitbook/assets/monoradios (1).png" alt=""><figcaption><p>Радіо з монохромним екраном, що підтримуються EdgeTX</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/monoradios (1).png" alt=""><figcaption><p>Контролери з монохромним екраном, що підтримуються EdgeTX</p></figcaption></figure>
 
 EdgeTX підтримує наступні радіоконтролери з монохромним екраном:
 
