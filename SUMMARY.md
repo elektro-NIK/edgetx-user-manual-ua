@@ -23,7 +23,7 @@
       * [Газ (Throttle)](color-radios/model-settings/model-setup/throttle.md)
       * [Увімкнені функції](color-radios/model-settings/model-setup/enabled-features.md)
       * [USB Джойстик](color-radios/model-settings/model-setup/usb-joystick.md)
-    * [Установка гелікоптера](color-radios/model-settings/heli-setup.md)
+    * [Налаштування гелікоптера](color-radios/model-settings/heli-setup.md)
     * [Режими польоту](color-radios/model-settings/flight-modes.md)
     * [Входи, мікшування та виходи](color-radios/model-settings/inputs-mixes-and-outputs/README.md)
       * [Входи](color-radios/model-settings/inputs-mixes-and-outputs/inputs.md)
