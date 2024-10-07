@@ -1,94 +1,93 @@
-# Migrate from OpenTX to EdgeTX using the Bootloader
+# Міграція з OpenTX на EdgeTX за допомогою завантажувача
 
-In order to update from OpenTX to EdgeTX you will need to have both OpenTX & EdgeTX Companion installed on your computer.  You can download OpenTX Companion from: [https://downloads.open-tx.org/2.3/release/companion/](https://downloads.open-tx.org/2.3/release/companion/). You can download EdgeTX Companion from: [https://github.com/EdgeTX/edgetx/releases](https://github.com/EdgeTX/edgetx/releases) (File name: edgetx-cpn-\[operation system]-\[version].zip)
+Щоб оновитися з OpenTX до EdgeTX, вам необхідно мати встановлені OpenTX та EdgeTX Companion на вашому комп’ютері. Ви можете завантажити OpenTX Companion за посиланням: [https://downloads.open-tx.org/2.3/release/companion/](https://downloads.open-tx.org/2.3/release/companion/). Завантажити EdgeTX Companion можна за посиланням: [https://github.com/EdgeTX/edgetx/releases](https://github.com/EdgeTX/edgetx/releases) (Ім’я файлу: edgetx-cpn-[операційна система]-[версія].zip)
 
-### Backing up your Models
+### Створення резервної копії моделей
 
-Turn on your radio, navigate to **Radio Settings**, **Hardware** and scroll down to the bottom of the screen and select **EEPROM backup**. If you do not have this option, then your radio does not store your data in EEPROM and this step can be skipped.&#x20;
+Увімкніть вашу апаратура, перейдіть до **Radio Settings**, **Hardware** і прокрутіть донизу екрану, виберіть **EEPROM backup**. Якщо цей варіант недоступний, це означає, що ваша апаратура не зберігає дані в EEPROM, і цей крок можна пропустити.&#x20;
 
 <figure><img src="../.gitbook/assets/update14.png" alt=""><figcaption></figcaption></figure>
 
-With your radio powered on, plug your radio into your computer via USB. When prompted by your radio for the USB mode, select **USB Storage**.&#x20;
+Підключіть увімкнену апаратуру до комп’ютера через USB. Коли зʼявиться запит про режим USB, виберіть **USB Storage**.&#x20;
 
-With your computer, copy the entire contents of your SD card to a safe place on your Computer. If you ever decide to go back to OpenTX you can use these files again. If you backed up your EEPROM in the step above, check the EEPROM folder to make sure that there is a recent backup file in there.
+За допомогою комп’ютера скопіюйте всі файли з вашої SD-картки до безпечного місця на комп’ютері. Якщо ви вирішите повернутися до OpenTX, ці файли знову знадобляться. Якщо ви зробили резервну копію EEPROM на попередньому кроці, перевірте папку EEPROM щоб упевнитися що в ній є остання версія файлу резервної копії.
 
-Start OpenTX Companion.&#x20;
+Запустіть OpenTX Companion.&#x20;
 
-Select the **Backup radio to file** icon from the left side of the screen as shown below. Select a saving location (desktop is fine) and give it a descriptive name.
+Виберіть **Backup radio to file** на лівій панелі екрана, як показано нижче. Виберіть місце для збереження (робочий стіл підійде) і надайте файлу імʼя.
 
 <figure><img src="../.gitbook/assets/update1.png" alt=""><figcaption></figcaption></figure>
 
-After the file has been saved, close OpenTX Companion. Unplug the radio from the computer and power it off.
+Після того як файл буде збережено закрийте OpenTX Companion. Від’єднайте апаратуру від комп’ютера і вимкніть її.
 
-### SD Card Preparation
+### Підготовка SD-картки
 
-Download and extract the EdgeTX SD card content for your radio type to your computer. The SD card contents can be found here: [https://github.com/EdgeTX/edgetx-sdcard/releases](https://github.com/EdgeTX/edgetx-sdcard/releases)
+Завантажте та розпакуйте вміст SD-картки для вашої апаратури з EdgeTX на ваш комп’ютер. Вміст SD-картки можна знайти за посиланням: [https://github.com/EdgeTX/edgetx-sdcard/releases](https://github.com/EdgeTX/edgetx-sdcard/releases)
 
-The list below shows which .zip file to use for different radio types:
+Список нижче показує, який .zip файл слід використовувати для різних типів апаратур:
 
-* c480x272zip (480x272 Horizontal Color Screen) - TX16s, T16, Horus x10s,Horus x12s, most color screen radios...
-* c480x320 (480x320 Horizontal Color Screen)
-* c320x480zip (320x480 Verticle Color Screen)- FlySky Nirvana NV14, EL18
-* bw128x64.zip (128x64 BW Screens) -All monochrome screen radios _except_ X9D series.
-* bw212x64zip (212x64 BW Screens) - X9D, X9D Plus, X9D Plus 2019
+* c480x272.zip (Горизонтальний кольоровий екран 480x272) - TX16s, T16, Horus x10s, Horus x12s, більшість радіо з кольоровим екраном…
+* c480x320.zip (Горизонтальний кольоровий екран 480x320)
+* c320x480.zip (Вертикальний кольоровий екран 320x480) - FlySky Nirvana NV14, EL18
+* bw128x64.zip (Чорно-білі екрани 128x64) - Усі радіо з монохромним екраном, _окрім_ серії X9D.
+* bw212x64.zip (Чорно-білі екрани 212x64) - X9D, X9D Plus, X9D Plus 2019
 
-Delete everything from your SD card and copy the contents of the unzipped folder to your blank SD card. (If you did a format, ensure it is set to fat32)
+Видаліть усе з вашої SD-картки та скопіюйте вміст розпакованої папки на порожню SD-картку. (Якщо ви робили форматування, переконайтеся що вибрано формат fat32)
 
-Copy over any custom sounds, model images, widgets or Lua scripts to their respective folders.
+Скопіюйте будь-які власні звуки, зображення моделей, віджети або скрипти Lua до відповідних папок.
 
-Download the desired sound pack (if you didn’t transfer your existing sounds) ([https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases)), unzip and copy to the "Sounds" folder on your SD card.
+Завантажте потрібний звуковий пакет (якщо ви не перенесли свої існуючі звуки) ([https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases)), розпакуйте його та скопіюйте до папки "Sounds" на вашій SD-картці.
 
-### Flashing the EdgeTX Bootloader and Firmware
+### Прошивка EdgeTX завантажувача та прошивки 
 
-Download the current EdgeTX firmware. You can download the latest release .zip file (edgetx-firmware-vX.X.X.zip) directly from Github - [https://github.com/EdgeTX/edgetx/releases/latest](https://github.com/EdgeTX/edgetx/releases/latest)
+Завантажте поточну прошивку EdgeTX. Останній файл релізу (.zip файл edgetx-firmware-vX.X.X.zip) можна завантажити безпосередньо з Github - [https://github.com/EdgeTX/edgetx/releases/latest](https://github.com/EdgeTX/edgetx/releases/latest)
 
-Unzip the file and save the correct .bin file (same name as your radio type) to the "**Firmware**" folder on the SD card for your radio.
+Розпакуйте файл і збережіть правильний .bin файл (з таким же ім’ям, як тип вашої апаратури) до папки "**Firmware**" на SD-картці до апаратури.
 
-Turn on your radio and navigate to the SD card screen. Open the "Firmware" folder and select the EdgeTX firmware file that you just copied to your SD card. Once the file is selected, select the option to "**Flash bootloader"**. The bootloader will be flashed to the EdgeTX bootloader.
+Увімкніть апаратуру і перейдіть до екрану SD-картки. Відкрийте папку "Firmware" і виберіть файл прошивки EdgeTX який ви щойно скопіювали на SD-картку. Після вибору файлу виберіть опцію "**Flash bootloader**". Завантажувач буде перепрошито на завантажувач EdgeTX.
 
-Exit back to the main screen and then shut off your radio.
+Вийдіть на головний екран і потім вимкніть апаратуру.
 
-Boot your radio in bootloader mode by holding trim switches T4 and T1 to center while pushing the power button on.
+Увімкніть апаратуру у режимі завантажувача, утримуючи перемикачі тримера T4 і T1 у положенні до центру, натискаючи кнопку живлення.
 
 {% hint style="info" %}
-On the Jumper T-Pro, you have to plug in the radio while pressing the Boot0 button to enter DFU mode.
+На Jumper T-Pro потрібно підключити передавач, утримуючи кнопку Boot0, щоб увійти в режим DFU.
 {% endhint %}
 
-You should now see the EdgeTX bootloader. Select the option "**Write Firmware**". Select the EdgeTX firmware file that you saved to your SD card. Long-press to flash it.
+Тепер ви повинні побачити завантажувач EdgeTX. Виберіть опцію "**Write Firmware**". Виберіть файл прошивки EdgeTX, який ви зберегли на SD-картку. Натисніть і утримуйте для прошивки.
 
-After the flashing is complete, select "**Exit**". The radio will restart and you should be greeted with "**Welcome EdgeTX**".
+Після завершення прошивки виберіть "**Exit**". Апаратура перезавантажиться і ви повинні побачити привітання "**Welcome EdgeTX**".
 
-When the radio starts with EdgeTX for the first time, you will get a warning: **STORAGE WARNING - Missing or Bad Radio Data**-. Press the white circle or roller to bypass the warning. Then you will get another STORAGE WARNING - Storage Preparation. Press the white circle or roller again. Once the SD card is prepared, the calibration screen will appear. Calibrate your radio.
+Коли апаратура уперше завантажується з EdgeTX, ви отримаєте попередження: **STORAGE WARNING - Missing or Bad Radio Data**. Натисніть біле коло або ролик щоб пропустити це попередження. Далі ви отримаєте ще одне попередження про збереження - STORAGE WARNING - Storage Preparation. Знову натисніть біле коло або ролик. Після підготовки SD-картки з’явиться екран калібрування. Відкалібруйте вашу апаратуру.
 
-At this point, you now have the EdgeTX Bootloader, Firmware and the SD card contents installed. The last step is to convert your models over from OpenTX and put them on the radio.&#x20;
+На цьому етапі у вас встановлені завантажувач EdgeTX, прошивка та вміст SD-картки. Останній крок — це перенести ваші моделі з OpenTX на апаратуру.&#x20;
 
-### Restoring your Models from OpenTX
+### Відновлення ваших моделей з OpenTX
 
-With your radio powered on, plug your radio into your computer via USB. When prompted by your radio for the USB mode, select **USB Storage**.&#x20;
+Увімкнену апаратуру підключіть до комп’ютера через USB. Коли апаратура запитає про режим USB, виберіть **USB Storage**.&#x20;
 
-Open EdgeTX Companion. If you have not already done so, create a radio profile for your radio and make sure that it is selected as active.
+Відкрийте EdgeTX Companion. Якщо ви ще не зробили цього, створіть профіль радіо для вашої апаратури та переконайтеся, що він вибраний як активний.
 
-In the upper left corner of Companion, select **File**, then **Open**, then select the OpenTX Backup file that you made at the very beginning. A warning message will be displayed. Click **OK**.
+У верхньому лівому кутку EdgeTX Companion виберіть **File**, потім **Open**, а потім виберіть файл резервної копії OpenTX який ви зробили на самому початку. З’явиться попереджувальне повідомлення. Натисніть OK.
 
 <figure><img src="../.gitbook/assets/update11.png" alt=""><figcaption></figcaption></figure>
 
-You will then see all your models from OpenTX in EdgeTX Companion. Click on the **Write models and Settings to Radio** button. It will warn you that it will overwrite all the models on your radio.  Click **Yes.**&#x20;
+Після цього ви побачите всі ваші моделі з OpenTX в EdgeTX Companion. Натисніть кнопку Записати моделі та налаштування на радіо. Система попередить вас, що всі моделі на апаратурі будуть перезаписані. Натисніть **OK**.&#x20;
 
 <figure><img src="../.gitbook/assets/update12.png" alt=""><figcaption></figcaption></figure>
 
-The models and settings will be written to the radio.  A message will be displayed when complete.  Click on **OK**. Unplug your radio from the USB port and close EdgeTX Companion.
+Моделі та налаштування будуть записані на апаратуру. Після завершення відобразиться повідомлення. Натисніть **OK**. Від’єднайте апаратуру від USB-порту та закрийте EdgeTX Companion.
 
 <figure><img src="../.gitbook/assets/update13.png" alt=""><figcaption></figcaption></figure>
 
-### Congratulations, you have now successfully migrated to EdgeTX!
+### Вітаємо, ви успішно перейшли на EdgeTX!
 
-All of your models have been updated to the EdgeTX .yml format and you have the EdgeTX sound pack installed. You are now ready to use EdgeTX.
+Всі ваші моделі були оновлені до формату .yml для EdgeTX і був встановлений звуковий пакет EdgeTX. Тепер ви готові використовувати EdgeTX.
 
 {% hint style="info" %}
-_Unfortunately, it is not possible to copy over the setup for your widgets from OpenTX. They will have to be set up again manually in EdgeTX._
+_На жаль, неможливо перенести налаштування віджетів з OpenTX. Їх доведеться налаштовувати вручну в EdgeTX._
 {% endhint %}
 
 {% hint style="info" %}
-Your Lua Scripts from OpenTX will still be on your SD Card. However, they may not all work with EdgeTX and may need to be re-installed to get them to work.  You can find a list of EdgeTX-compatible LUA scripts here: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
+Ваші Lua-скрипти з OpenTX залишаться на вашій SD-карті. Однак, вони можуть не всі працювати з EdgeTX і можливо їх доведеться перевстановити для коректної роботи. Список Lua-скриптів сумісних з EdgeTX можна знайти тут: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
 {% endhint %}
-
