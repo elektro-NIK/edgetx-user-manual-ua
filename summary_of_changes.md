@@ -24,50 +24,48 @@
   * Кнопки **Система \[SYS]** і **Моделі \[MDL]** мають різні [функціональні можливості](color-radios/user-interface/#additional-system-and-model-button-functionalities) залежно від екрану, на якому вони використовуються.
   * [Перемикачі триммерів] (color-radios/user-interface/trim-navigation.md) на NV14 та EL18 тепер можна використовувати для навігації по меню.
   * Додано [апаратні клавіші швидкого доступу до віртуальної текстової та цифрової клавіатур](color-radios/user-interface/virtual-keyboards.md).
-* [Manage Models page](color-radios/select-model.md)
-  * Added 3 additional layouts for the model list.
-  * Updated the model image frames size & shape. Also now displays model name on top of the image, instead of clipping the image.
-  * Replaced the **New Label** button and **New Model** button with just a **New** button with options for **Model** or **Label**.
-  * Replaced confusing model sorting icons with a simple text drop-down menu.
-  *   Added a single select option for model labels plus label AND/OR filtering logic (configurable in the [Radio Setup](color-radios/radio-settings/radio-setup/additional-radio-settings.md) screen).
-
-
-* [Model Setup](color-radios/model-settings/model-setup/)
-  * Timers that are enabled will show as highlighted on the **Model Setup** screen.
-  * &#x20;MIN can be used as source. When selected it will always returns -100.
-  * Added **Interactive** **Checklist** option to **Pre-start checks** section. Allows users to add interactive checkboxes to displayed checklists.
-* [Flight Modes](color-radios/model-settings/flight-modes.md)
-  * Unused trim switches can now be configured to function as a 3 position momentary switch.
-* [Mixes](color-radios/model-settings/inputs-mixes-and-outputs/mixes.md)
-  * Added configurable precision for **slow up/dn** to be set to either 10ms or 100ms.
-* [Global Variables](color-radios/model-settings/global-variables.md)
-  * Added the **Popup** option, which when enabled displays a popup message when the value of a GV changes with the new GV value.
-* [Special Functions](color-radios/model-settings/special-functions.md)
-  * All special functions now have the **Enable** checkbox.
-  * Special functions can be Enabled / Disabled without opening the Edit menu.
-  * Added virtual trainer switch (**Tnr**) that can be selected as switch to activate a special function. Switch is ON when the trainer link is active.
-  * **Backlight** special function brightness is limited to the On / Off values configured in the **Radio Setup -> Backlight Screen.**
-* [Telemetry](color-radios/model-settings/telemetry/)
-  * EdgeTX will play "Telemetry connected" when telemetry connects for the first time of the flight.
-* [SD Card](color-radios/radio-settings/sd-card.md)
-  * Users can configure a custom shutdown image by adding a custom `shutdown.png` to the **IMAGES** folder.
-  * **View text** option now available for .lua files
-* [Radio Setup](color-radios/radio-settings/radio-setup/)
-  * In **GPS settings**, updated the **Time Zone** option to allow configuration in 15 minute intervals.
-  * Added the **Splash Screen** option which sets the duration that the splash screen will be displayed.
-  * Added the **Startup Sound** option which toggles whether to enable/disable startup sound.
-  * Added **PPM Units** option- Previously this was a build option.
-  * In the **Enabled Features** section, added the current configuration setting for the active model to the right of the toggle switch.
-* [Hardware ](color-radios/radio-settings/hardware.md)
-  * Analog inputs, such as pots and sliders can now be configured as a **Switch**, **Axis X** or **Axis Y**. Additionally, they can also be configured to be _**inverted**_.
-  * EdgeTX will now detect at runtime if a serial port is available to allow for SBUS trainer on the external module bay. If so, the configuration option will be available.
-* [Screen Settings](color-radios/screen-settings/)
-  * In the top bar, the radio info, date/time and internal GPS are now configurable widgets, allowing 6 widget slots to be configured.
-  * Selecting an empty widget will no longer display the 'Select widget' option and instead go right to the widget selection menu.
-* [Widgets](color-radios/screen-settings/widgets.md)
-  * Added the alignment option to the **Text** widget to align widget text **Left**, **Center**, or **Right**.
-* Alerts
-  * Warning will be displayed if you try to shut down the radio while the trainer connection is still active.
+* [Керування моделями](color-radios/select-model.md)
+  * Додано 3 додаткові макети для списку моделей.
+  * Оновлено розмір і форму рамок зображень моделі. Також, тепер назва моделі відображається поверх зображення замість обрізання зображення.
+  * Кнопки **Нова мітка** і **Нова модель** замінено просто кнопкою **Нова** з опціями **Модель** або **Мітка**.
+  * Замінено заплутані піктограми сортування моделей простим текстовим спадним меню.
+  * Додано єдиний параметр вибору для міток моделей, а також логіку фільтрації міток І/АБО (можна налаштувати на екрані [Налаштування радіо](color-radios/radio-settings/radio-setup/additional-radio-settings.md)).
+* [Налаштування моделі](color-radios/model-settings/model-setup/)
+  * Увімкнені таймери відображатимуться як виділені на екрані **Налаштування моделі**..
+  * &#x20;MIN можна використовувати як джерело. Якщо вибрано, завжди повертатиметься -100.
+  * До розділу **Передпольотні перевірки** додано **Інтерактивний** **Чекліст**. Дозволяє користувачам додавати інтерактивні чекбокси до відображених чеклістів.
+* [Режими польоту](color-radios/model-settings/flight-modes.md)
+  * Невикористані триммери тепер можна налаштувати як 3-позиційні миттєві перемикачі.
+* [Мікшери](color-radios/model-settings/inputs-mixes-and-outputs/mixes.md)
+  * Додано настроювану точність для **уповільнення** для встановлення 10 мс або 100 мс.
+* [Глобальні змінні](color-radios/model-settings/global-variables.md)
+  * Додано параметр **Спливаюче вікно**, який, коли ввімкнено, відображає спливаюче повідомлення, коли значення глобальної змінної змінюється новим.
+* [Спеціальні функції](color-radios/model-settings/special-functions.md)
+  * Усі спеціальні функції тепер мають прапорець **Увімкнути**.
+  * Спеціальні функції можна ввімкнути/вимкнути, не відкриваючи меню редагування.
+  * Додано перемикач віртуального тренера (**Tnr**), який можна вибрати як перемикач для активації спеціальної функції. Перемикач увімкнено, коли активне з'єднання тренера.
+  * Значення спеціальної функції **Підсвітка** обмежені значеннями On/Off, налаштованими в **Налаштування апаратури -> Яскравість екрану.**
+* [Телеметрія](color-radios/model-settings/telemetry/)
+  * EdgeTX відтворить "Телеметрію підключено", коли телеметрія підключиться вперше під час польоту.
+* [SD-карта](color-radios/radio-settings/sd-card.md)
+  * Користувачі можуть налаштувати спеціальне зображення вимкнення, додавши спеціальний `shutdown.png` до папки **IMAGES**.
+  * Параметр **Перегляд тексту** тепер доступний для файлів .lua
+* [Налаштування апаратури](color-radios/radio-settings/radio-setup/)
+  * У **Налаштуваннях GPS** оновлено параметр **Часовий пояс**, щоб дозволити налаштування з 15-хвилинними інтервалами.
+  * Додано опцію **Заставка**, яка встановлює тривалість відображення заставки.
+  * Додано опцію **Звук запуску**, яка вмикає чи вимикає звук запуску.
+  * Додано параметр **Одиниці PPM** - раніше це був варіант збірки.
+  * У розділі **Увімкнені функції** додано поточні параметри конфігурації для активної моделі праворуч від перемикача.
+* [Апаратне забезпечення](color-radios/radio-settings/hardware.md)
+  * Аналогові входи, такі як потенціометри та повзунки, тепер можна налаштувати як **Перемикач**, **Вісь X** або **Вісь Y**. Крім того, їх також можна налаштувати так, щоб вони були _**інвертовані**_.
+  * EdgeTX тепер визначатиме під час виконання, чи доступний послідовний порт, щоб дозволити тренер SBUS у відсіку зовнішнього модуля. Якщо так, параметр конфігурації буде доступним.
+* [Параметри екрана](color-radios/screen-settings/)
+  * На верхній панелі інформація про апаратуру, дата/час і внутрішній GPS тепер є настроюваними віджетами, що дозволяє налаштувати 6 слотів для віджетів.
+  * Якщо вибрати порожній віджет, опція «Вибрати віджет» більше не відображатиметься, а натомість перейде прямо до меню вибору віджета.
+  [Віджети](color-radios/screen-settings/widgets.md)
+  * Додано опцію вирівнювання для віджета **Текст**, щоб вирівняти текст віджета **Ліворуч**, **Центр** або **Праворуч**.
+* Сповіщення
+  * Попередження буде відображено, якщо ви спробуєте вимкнути апаратуру, коли підключення тренера все ще активне.
 
 ### Monochrome Screen Radios
 
