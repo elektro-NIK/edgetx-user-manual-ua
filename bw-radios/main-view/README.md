@@ -1,53 +1,53 @@
-# Main View
+# Головний вигляд
 
-The main view is the default view normally used during radio operation. This view displays information such as the model name, trim positions, transmitter battery voltage, flight mode, receiver signal strength, and Timers. A clock is also displayed in the center of the lower portion of all screens. There are five main view screens.
+Головний вигляд — це стандартний вигляд, який зазвичай використовується під час роботи з радіо. Цей вигляд відображає інформацію, таку як назва моделі, позиції тримерів, напруга акумулятора передавача, режим польоту, сила сигналу приймача та таймери. Годинник також відображається в центрі нижньої частини всіх екранів. Є п’ять основних екранів головного вигляду.
 
 
 
 <div>
 
-<figure><img src="../../.gitbook/assets/bwview1.png" alt=""><figcaption><p>Screen 1</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwview1.png" alt=""><figcaption><p>Екран 1</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/bwview2.png" alt=""><figcaption><p>Screen 2</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwview2.png" alt=""><figcaption><p>Екран 2</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/BWScreen6 (1).png" alt=""><figcaption><p>Screen 2 (Surafce Radios)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BWScreen6 (1).png" alt=""><figcaption><p>Екран 2 (Surafce Radios)</p></figcaption></figure>
 
 </div>
 
 <div>
 
-<figure><img src="../../.gitbook/assets/bwview3.png" alt=""><figcaption><p>Screen 3</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwview3.png" alt=""><figcaption><p>Екран 3</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/bwview4.png" alt=""><figcaption><p>Screen 4</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwview4.png" alt=""><figcaption><p>Екран 4</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/bwview5.png" alt=""><figcaption><p>Screen 5</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwview5.png" alt=""><figcaption><p>Екран 5</p></figcaption></figure>
 
 </div>
 
-### Screens
+### Екрани
 
-**Screen 1** - This view displays the model name, trim positions (if trims are enabled), clock, transmitter battery voltage, flight mode, receiver signal strength, and Timers 1 and 2 (if enabled).
+**Екран 1** - Цей вигляд відображає назву моделі, позиції тримерів (якщо тримери ввімкнені), годинник, напругу акумулятора передавача, режим польоту, силу сигналу приймача та таймери 1 і 2 (якщо вони ввімкнені).
 
-**Screen 2** - This view displays the model name, trim positions (if trims are enabled), clock,  transmitter battery voltage, flight mode, receiver signal strength, and Timer 1 (if enabled). It also has a graphical representation of the stick, pot, and switch positions. Use the **\[Roller]** or **\[Dial]** to scroll thru the additional pages. The second page shows the state of the [logical switches](../model-select/logical-switches.md).
+**Screen 2** - Цей вигляд відображає назву моделі, позиції тримерів (якщо тримери ввімкнені), годинник, напругу акумулятора передавача, режим польоту, силу сигналу приймача та таймер 1 (якщо він увімкнений). Також є графічне представлення положень важелів, потенціометрів і перемикачів. Використовуйте **\[Roller]** або **\[Dial]**, щоб прокручувати додаткові сторінки. Друга сторінка показує стан [логічних перемикачів](../model-select/logical-switches.md).
 
-**Screen 3** - This view displays the model name, trim positions (if trims are enabled), clock,  transmitter battery voltage, flight mode, receiver signal strength, and Timer 1 (if enabled). It also shows the values of output channels as a bar graph, 8 channels per page. Use the **\[Roller]**or **\[Dial]** to scroll thru the additional pages.&#x20;
+**Екран 3** - Цей вигляд відображає назву моделі, позиції тримерів (якщо тримери ввімкнені), годинник, напругу акумулятора передавача, режим польоту, силу сигналу приймача та таймер 1 (якщо він увімкнений). Також показує значення вихідних каналів у вигляді стовпчикової діаграми, 8 каналів на сторінку. Використовуйте **\[Roller]** або **\[Dial]**, щоб прокручувати додаткові сторінки..&#x20;
 
-**Screen 4** - This view displays the model name, trim positions (if trims are enabled), clock, transmitter battery voltage, flight mode, receiver signal strength, and Timer 1 (if enabled). It also shows the numerical values of the output channels, 8 channels per page. Use the **\[Roller]** or **\[Dial]** to scroll thru the additional pages.
+**Екран 4** - Цей вигляд відображає назву моделі, позиції тримерів (якщо тримери ввімкнені), годинник, напругу акумулятора передавача, режим польоту, силу сигналу приймача та таймер 1 (якщо він увімкнений). Також показує числові значення вихідних каналів, 8 каналів на сторінку. Використовуйте **\[Roller]** або **\[Dial]**, щоб прокручувати додаткові сторінки..
 
-**Screen 5** - This view shows either the channel monitor or mixer monitor, 8 channels per page. Use the roller or dial to scroll thru the additional pages. Push the **\[Roller]** or **\[Dial]** button to switch between the channel monitor and mixer monitor.
+**Екран 5** - Цей вигляд показує або монітор каналу, або монітор мікшера, 8 каналів на сторінку. Використовуйте **\[Roller]** або **\[Dial]**, щоб прокручувати додаткові сторінки. Натисніть кнопку **\[Roller]** або **\[Dial]**, щоб переключатися між монітором каналу та монітором мікшера..
 
-Long pressing the **\[Roller]** or **\[Dial]** button from the main view screen will show a pop-up menu with the options below:
+Довге натискання кнопки **\[Roller]** або **\[Dial]** на екрані головного вигляду відкриє спливаюче меню з наведеними нижче опціями:
 
-* **View Notes -** Displays the configured model checklist. This option is only visible if a valid model checklist file is in the **Models** folder.
-* **Reset** - See [Reset](reset.md) page.
-* **Statistics** - See [Statistics](statistics.md) page.
-* **About** - Displays the EdgeTX firmware version being used by the radio.
+* **View Notes -** Відображає налаштований чекліст моделі. Ця опція видима лише якщо у папці **Models** є дійсний файл чекліста моделі.
+* **Reset** - Дивіться [Скидання](reset.md) page.
+* **Statistics** - Дивіться [Статистики](statistics.md) page.
+* **About** - Відображає версію прошивки EdgeTX, що використовується апаратурою.
 
