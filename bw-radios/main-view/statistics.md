@@ -14,11 +14,11 @@
 
 <div>
 
-<figure><img src="../../.gitbook/assets/bwdebug.png" alt=""><figcaption><p>Debug screen 1</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwdebug.png" alt=""><figcaption><p>Екран налагодження 1</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/bwdebug2.png" alt=""><figcaption><p>Debug screen 1</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwdebug2.png" alt=""><figcaption><p>Екран налагодження 1</p></figcaption></figure>
 
 </div>
 
