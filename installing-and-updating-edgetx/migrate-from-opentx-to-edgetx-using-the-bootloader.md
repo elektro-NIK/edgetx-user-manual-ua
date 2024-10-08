@@ -1,6 +1,6 @@
 # Міграція з OpenTX на EdgeTX за допомогою завантажувача
 
-Щоб оновитися з OpenTX до EdgeTX, вам необхідно мати встановлені OpenTX та EdgeTX Companion на вашому комп’ютері. Ви можете завантажити OpenTX Companion за посиланням: [https://downloads.open-tx.org/2.3/release/companion/](https://downloads.open-tx.org/2.3/release/companion/). Завантажити EdgeTX Companion можна за посиланням: [https://github.com/EdgeTX/edgetx/releases](https://github.com/EdgeTX/edgetx/releases) (Ім’я файлу: edgetx-cpn-[операційна система]-[версія].zip)
+Щоб оновитися з OpenTX до EdgeTX, вам необхідно мати встановлені OpenTX та EdgeTX Companion на вашому комп’ютері. Ви можете завантажити OpenTX Companion за посиланням: [https://downloads.open-tx.org/2.3/release/companion/](https://downloads.open-tx.org/2.3/release/companion/). Завантажити EdgeTX Companion можна за посиланням: [https://github.com/EdgeTX/edgetx/releases](https://github.com/EdgeTX/edgetx/releases) (Ім’я файлу: edgetx-cpn-\[операційна система]-\[версія].zip)
 
 ### Створення резервної копії моделей
 
@@ -38,7 +38,7 @@
 
 Завантажте потрібний звуковий пакет (якщо ви не перенесли свої існуючі звуки) ([https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases)), розпакуйте його та скопіюйте до папки "Sounds" на вашій SD-картці.
 
-### Прошивка EdgeTX завантажувача та прошивки 
+### Встановлення завантажувача та прошивки EdgeTX
 
 Завантажте поточну прошивку EdgeTX. Останній файл релізу (.zip файл edgetx-firmware-vX.X.X.zip) можна завантажити безпосередньо з Github - [https://github.com/EdgeTX/edgetx/releases/latest](https://github.com/EdgeTX/edgetx/releases/latest)
 
