@@ -1,4 +1,4 @@
-# Summary of changes since v2.10
+# Опис змін із v2.10
 
 Below is a summary of changes that affect the user interface and/or how EdgeTX functions. It does not cover all bug fixes. For a _**complete**_ list of changes (including bug fixes), please read the release notes.
 
@@ -18,7 +18,7 @@ Below is a summary of changes that affect the user interface and/or how EdgeTX f
 * Even shorter power on/off delay option - 0.5 seconds ([#5134](https://github.com/EdgeTX/edgetx/pull/5134))
 * Precision setting for mix delay up & down (in addition to the precision for "slow up/down" that was added in 2.10) ([#5314](https://github.com/EdgeTX/edgetx/pull/5314))
 
-### **Color Screen Radios**
+### **Апаратури із кольоровим екраном**
 
 * Radio user interface performance is significantly improved from that of 2.10 ([#5031](https://github.com/EdgeTX/edgetx/pull/5031))
 * Top bar widget sizes can be changed ([#4846](https://github.com/EdgeTX/edgetx/pull/4846))
