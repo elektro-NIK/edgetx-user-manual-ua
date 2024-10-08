@@ -1,14 +1,14 @@
-# Translated User Manuals
+# Перекладені посібники користувача
 
-Below are links to community translated versions of the EdgeTX User Manual.
+Нижче наведено посилання на перекладені спільнотою версії посібника користувача EdgeTX.
 
 {% hint style="info" %}
-The manuals below are community submitted and have not been verified for accuracy by the EdgeTX team. While we are confident that the contributors have done their best to ensure their accuracy, you use them at your own risk.
+Наведені нижче посібники надано спільнотою та не перевірено на точність командою EdgeTX. Хоча ми впевнені, що автори зробили все можливе, щоб забезпечити їх точність, ви використовуєте їх на власний ризик.
 {% endhint %}
 
 ### German / Deutsch
 
-Credit: Heiner#1063
+Авторство: Heiner#1063
 
 {% file src=".gitbook/assets/EdgeTx v2.9 Benutzerhandbuch Farbe (1).pdf" %}
 User Manual for Color Radios in German
@@ -20,7 +20,7 @@ User Manual for Monochrome Radios in German
 
 ### Russian / Русский
 
-Credit: Kerget Ruslan
+Авторство: Kerget Ruslan
 
 {% file src=".gitbook/assets/User.Manual.EdgeTX.v.2.9.for.Color.Screen.Radios.Rus.pdf" %}
 User Manual for Monochrome Radios in Russian
@@ -28,7 +28,7 @@ User Manual for Monochrome Radios in Russian
 
 ### Spanish / Español
 
-Credit: Roberto Domingues
+Авторство: Roberto Domingues
 
 _Work in progress!_
 
