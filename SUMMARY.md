@@ -73,7 +73,7 @@
     * [Екран](bw-radios/model-select/display.md)
   * [Налаштування апаратури](bw-radios/radio-settings/README.md)
     * [SD Карта](bw-radios/radio-settings/sd-card.md)
-    * [Установка апаратури](bw-radios/radio-settings/radio-setup.md)
+    * [Налаштування апаратури](bw-radios/radio-settings/radio-setup.md)
     * [Глобальні функції](bw-radios/radio-settings/global-functions.md)
     * [Інструктор](bw-radios/radio-settings/trainer.md)
     * [Апаратне забезпечення](bw-radios/radio-settings/hardware.md)
