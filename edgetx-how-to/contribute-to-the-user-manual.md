@@ -1,12 +1,12 @@
-# Contribute to the User Manual
+# Долучитися до написання посібника користувача
 
-### How to contribute
+### Як долучитися?
 
-1. Go to our github repositiory, located here: [https://github.com/EdgeTX/edgetx-user-manual](https://github.com/EdgeTX/edgetx-user-manual)
-2. For small changes to the user manual or correction or addition to a how-to page, please create a new issue in Github and explain in detail what you think needs to be changed and how.&#x20;
-3. To submit new How-to articles, please prepare your article in either MS word or Google Doc format. For consistency, please use screenshots from the EdgeTX simulator for pictures. Picture resolution should be 480 x 272 pixels if possible. Submit your article as an issue with the proposed article attached. From there it will be reviewed and once accepted, added to the knowledge base by one of the Editors. If you would like to work on one of the requested How-to articles from the issues list, please make a comment in the issue that you are working on it so that nobody else does as well. Once complete, attach your work to the issue for review.
-4. To make a recommendation for a future How-to article, please make an issue via Github.
+1. Перейдіть до нашого репозиторію на GitHub за цим посиланням: [https://github.com/EdgeTX/edgetx-user-manual](https://github.com/EdgeTX/edgetx-user-manual)
+2. Для невеликих змін у посібнику користувача або виправлень і доповнень на сторінці інструкцій, будь ласка, створіть нове Issue в GitHub і детально поясніть, що саме, на вашу думку, слід змінити та яким чином.;
+3. Для подання нових статей з інструкціями, будь ласка, підготуйте свою статтю у форматі MS Word або Google Docs. Для узгодженості використовуйте знімки екрана з симулятора EdgeTX для ілюстрацій. Роздільна здатність зображень має бути 480 x 272 пікселів, якщо це можливо. Надішліть свою статтю як Issue з прикріпленою пропозицією. Після цього її буде розглянуто, і, якщо схвалено, один із редакторів додасть її до бази знань. Якщо ви бажаєте працювати над однією з запитаних інструкцій зі списку Issues, будь ласка, залиште коментар у Issue, що ви працюєте над ним, щоб ніхто інший не взявся за ту саму роботу. Після завершення прикріпіть свою роботу до Issue для перегляду.
+4. Щоб зробити пропозицію щодо майбутньої статті з інструкціями, будь ласка, створіть Issue через GitHub.
 
-### Translations
+### Переклади
 
-If you would like to contribute a translated version of the user manual, please create an [issue ](https://github.com/EdgeTX/edgetx-user-manual/issues/new/choose)in the EdgeTX/edgetx-user-manual respository and attach the translated manual (in .pdf format) to it. Alternately, you can create your own gitbook account, clone the english manual on your account and translate it. If you choose this way, you can simply attach the Gitbook link to the issue.
+Якщо ви хочете долучитися з перекладеною версією посібника користувача, будь ласка, створіть [issue ](https://github.com/EdgeTX/edgetx-user-manual/issues/new/choose)у репозиторії EdgeTX/edgetx-user-manual та прикріпіть перекладений посібник (у форматі .pdf) до нього. Альтернативно, ви можете створити власний обліковий запис Gitbook, скопіювати англійський посібник на свій обліковий запис і перекласти його. Якщо ви оберете цей варіант, просто прикріпіть посилання на Gitbook до звернення.
