@@ -1,6 +1,6 @@
 # Статистики
 
-<figure><img src="../../.gitbook/assets/bwstats.png" alt=""><figcaption><p>Statistics screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwstats.png" alt=""><figcaption><p>Екран статистик</p></figcaption></figure>
 
 Екран **Statistics** надає статистику використання апаратури. Всі дані скидаються після вимкнення апаратури. Надається така інформація:
 
