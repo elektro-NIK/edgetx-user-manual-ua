@@ -58,7 +58,7 @@
     * [Статистика](bw-radios/main-view/statistics.md)
   * [Налаштування моделі](bw-radios/model-select/README.md)
     * [Установка](bw-radios/model-select/setup.md)
-    * [Установлення гелікоптера](bw-radios/model-select/heli-setup.md)
+    * [Налаштування гелікоптера](bw-radios/model-select/heli-setup.md)
     * [Режими польоту/їзди](bw-radios/model-select/flight-modes.md)
     * [Входи, мікшування та виходи](bw-radios/model-select/inputs-mixes-and-outputs/README.md)
       * [Входи](bw-radios/model-select/inputs-mixes-and-outputs/inputs.md)
