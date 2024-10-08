@@ -12,11 +12,11 @@ layout:
     visible: true
 ---
 
-# User Manual for Monochrome Screen Radios
+# Посібник користувача для апаратур з монохромним екраном
 
-<figure><img src="../.gitbook/assets/monoradios (1).png" alt=""><figcaption><p>EdgeTX supported monochrome screen radios</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/monoradios (1).png" alt=""><figcaption><p>Контролери з монохромним екраном, що підтримуються EdgeTX</p></figcaption></figure>
 
-EdgeTX supports the following monochrome screen radios:
+EdgeTX підтримує наступні радіоконтролери з монохромним екраном:
 
 * BETAFPV LiteRadio 3 Pro
 * FrSky QX7 / QX7S / QX7 ACCESS / QX7S ACCESS
