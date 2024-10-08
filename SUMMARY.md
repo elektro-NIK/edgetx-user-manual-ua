@@ -38,7 +38,7 @@
       * [Звичайні телеметричні сенсори](color-radios/model-settings/telemetry/common-telemetry-sensors.md)
   * [Налаштування апаратури](color-radios/radio-settings/README.md)
     * [Інструменти](color-radios/radio-settings/tools.md)
-    * [SD Карата](color-radios/radio-settings/sd-card.md)
+    * [SD Карта](color-radios/radio-settings/sd-card.md)
     * [Установка апаратури](color-radios/radio-settings/radio-setup/README.md)
       * [Додаткові налаштування апаратури](color-radios/radio-settings/radio-setup/additional-radio-settings.md)
     * [Теми](color-radios/radio-settings/themes.md)
