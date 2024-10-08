@@ -39,7 +39,7 @@
   * [Налаштування апаратури](color-radios/radio-settings/README.md)
     * [Інструменти](color-radios/radio-settings/tools.md)
     * [SD Карта](color-radios/radio-settings/sd-card.md)
-    * [Установка апаратури](color-radios/radio-settings/radio-setup/README.md)
+    * [Налаштування апаратури](color-radios/radio-settings/radio-setup/README.md)
       * [Додаткові налаштування апаратури](color-radios/radio-settings/radio-setup/additional-radio-settings.md)
     * [Теми](color-radios/radio-settings/themes.md)
     * [Глобальні функції](color-radios/radio-settings/global-functions.md)
