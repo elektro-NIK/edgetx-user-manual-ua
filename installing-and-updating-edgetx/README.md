@@ -1,43 +1,43 @@
-# Installing and Updating EdgeTX
+# Встановлення та оновлення EdgeTX
 
-There are several ways to install or update EdgeTX on your radio transmitter. You can use the online tool EdgeTX buddy or manually install/update the bootloader and firmware using the bootloader method. There are advantages and disadvantages to both ways, so really, it boils down to person preference.
+Є кілька способів встановити або оновити EdgeTX на вашій радіоапаратурі. Ви можете скористатися онлайн-інструментом EdgeTX Buddy або вручну встановити/оновити завантажувач і мікропрограму за допомогою завантажувача. В обох способів є переваги та недоліки, тому насправді все залежить від ваших уподобань.
 
 ### EdgeTX Buddy
 
-#### Pros
+#### Переваги
 
-* Firmware and SD card contents are all located in one location
-* It takes you step by step through the process
-* Normally a simple process.
+* Вміст прошивки та SD-карти зберігається в одному місці.
+* Ви проходите крок за кроком через процес.
+* Зазвичай простий процес.
 
-#### Cons
+#### Недоліки
 
-* Must use a Chromium-based browser to access (Chrome, MS Edge, Brave, Opera, etc.)
-* You must have the correct SMT32 drivers installed on your computer. Usually, this is automatic. However, some computers install incorrect drivers, which can make this process more difficult.&#x20;
+* Для доступу потрібно використовувати браузер на базі Chromium (Chrome, MS Edge, Brave, Opera тощо).
+* На вашому комп’ютері повинні бути встановлені правильні драйвери SMT32. Зазвичай це відбувається автоматично. Однак деякі комп’ютери встановлюють неправильні драйвери, що може ускладнити цей процес.
 
-### Bootloader Method
+### Завантажувач
 
-#### Pros
+#### Переваги
 
-* Flashing always works
-* The flashing process is quicker.
-* Does not rely on your computer for flashing
+* Встановлення завжди працює.
+* Процес перепрошивання відбувається швидше.
+* Не покладається на ваш комп'ютер для перепрошивання.
 
-#### Cons&#x20;
+#### Недоліки
 
-* Firmware, SD Card, and Sound files must be downloaded individually from different locations and placed manually on the SD Card.
+* Прошивка, вміст SD-картки та звукові файли потрібно завантажувати окремо з різних місць і вручну розміщувати на SD-карті.
 
-**Whichever way you choose, there is a guide that will help you. Below are the migration guides and installation guides for both methods:**
+**Який би спосіб ви не вибрали, є посібник, який вам допоможе. Нижче наведено посібники з міграції та встановлення для обох методів:**
 
-### Migrate from OpenTX to EdgeTX&#x20;
+### Перехід з OpenTX на EdgeTX
 
-[Migrate from OpenTX to EdgeTX using EdgeTX Buddy](update-from-opentx-to-edgetx.md)
+[Міграція з OpenTX на EdgeTX за допомогою EdgeTX Buddy](update-from-opentx-to-edgetx.md)
 
-[Migrate from OpenTX to EdgeTX using the Bootloader](migrate-from-opentx-to-edgetx-using-the-bootloader.md)
+[Міграція з OpenTX на EdgeTX за допомогою завантажувача](migrate-from-opentx-to-edgetx-using-the-bootloader.md)
 
-### Update from an earlier version of EdgeTX
+### Оновлення з попередньої версії EdgeTX
 
-[Update from an earlier version of EdgeTX using EdgeTX Buddy](update-from-opentx-to-edgetx-1.md)
+[Оновлення з попередньої версії EdgeTX за допомогою EdgeTX Buddy](update-from-opentx-to-edgetx-1.md)
 
-[Update from an earlier version of EdgeTX using the Bootloader](update-from-an-earlier-version-of-edgetx-using-the-bootloader.md)
+[Оновлення з попередньої версії EdgeTX за допомогою завантажувача](update-from-an-earlier-version-of-edgetx-using-the-bootloader.md)
 
