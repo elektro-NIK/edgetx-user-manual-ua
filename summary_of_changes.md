@@ -67,48 +67,45 @@
 * Сповіщення
   * Попередження буде відображено, якщо ви спробуєте вимкнути апаратуру, коли підключення тренера все ще активне.
 
-### Monochrome Screen Radios
+### Апаратури з монохромним екраном
 
-*   New Hardware Support
-
-    * Jumper T-Pro V2
-    * Jumper T-14
-    * Jumper T-20
-    * Flysky Gimbal support for Jumper T-20
-    * Flysky Gimbal support for Frsky X9D+2019
-    * RadioMaster Pocket
-    * RadioMaster MT12
-
-
-* General Changes
-  * The mixer now runs at 1000Hz when in USB Joystick mode (needed for F.Sim competitors), also displays mixer run time in statistic/debug screen.
-  * Splash Screen updated with new EdgeTX Logo
-  * Radios with unused flexible serial port will now automatically be defined as **AUX Serial** (MT12).
-* [Main View](bw-radios/main-view/)
-  * Added new view for surface radios with throttle and steering instead of sticks.
-* [Model Settings](bw-radios/model-select/)
-  * Added **C-Interact** option to Pre-start checks section. Allows users to add Interactive Checkboxes to displayed checklists.
-  * On surface radios (EX: MT-12), the throttle trim no longer has an effect on the reverse throttle range.
-* [Flight Modes](bw-radios/model-select/flight-modes.md)
-  * Unused trim switches can now be configured to function as a 3 position momentary switch.
-* [Mixes](bw-radios/model-select/inputs-mixes-and-outputs/mixes.md)
-  * Added configurable precision for **slow up/dn** to be set to either 10ms or 100ms.
-* [Telemetry](bw-radios/model-select/telemetry/)
-  * EdgeTX will play "Telemetry connected" when telemetry connects for the first time of the flight.
-  * The number of configured sensors will be displayed in **parentheses** when the sensor list is collapsed.
-* [Special Functions](bw-radios/model-select/special-functions.md)
-  * All special functions now have the **enable** checkbox.
-  * OLED screen brightness can be controlled with **Backlight** special function.
-  * Added virtual trainer switch (**Tnr**) that can be selected as switch to activate a special function. Switch is ON when the trainer link is active.
-  * Added RGB Led special function to enable and change LED behavior.
-* [Radio Setup](bw-radios/radio-settings/radio-setup.md)
-  * In **GPS settings**, updated the **Time Zone** option to allow configuration in 15 minute intervals.
-  * Added the **Startup Sound** option which toggles whether to enable/disable startup sound.
-  * Added **PPM Units** option- Previously this was a build option.
-  * In the **Enabled Features** section, added the current configuration setting for the active model to the right of the checkbox.
-  * Added the **Rotary Encoder Mode** - **V-N E-I** = Vertical Normal, Edit Inverted (inverted when editing text)
-* [Hardware](bw-radios/radio-settings/hardware.md)
-  * Analog inputs, such as pots and sliders can now be configured as a **Switch**, **Axis X** or **Axis Y**. Additionally, they can also be configured to be inverted.
-  * EdgeTX will now detect at runtime if a serial port is available to allow for SBUS trainer on the external module bay. If so, the configuration option will be available.
-* Alerts
-  * Warning will be displayed if you try to shut down the radio while the trainer connection is still active.
+* Підтримка нових апаратур
+  * Jumper T-Pro V2
+  * Jumper T-14
+  * Jumper T-20
+  * Flysky Gimbal підтримка для Jumper T-20
+  * Flysky Gimbal підтримка для Frsky X9D+2019
+  * RadioMaster Pocket
+  * RadioMaster MT12
+* Загальні зміни
+  * Мікшер тепер працює на частоті 1000 Гц у режимі USB-джойстика (потрібен для учасників F.Sim), також відображає час роботи мікшера на екрані статистики/налагодження.
+  * Екран завантаження оновлено новим логотипом EdgeTX.
+  * Апаратури з невикористаним послідовним портом тепер автоматично визначатимуться як **AUX Serial** (MT12).
+* [Головний екран](bw-radios/main-view/)
+  * Додано новий екран для наземних апаратур із газом і рулевим колесом замість стіків.
+* [Параметри моделі](bw-radios/model-select/)
+  * Додано опцію **C-Interact** до розділу передпольотних перевірок. Дозволяє користувачам додавати інтерактивні чекбокси до відображених чеклістів.
+  * На наземних апаратурах (наприклад: MT-12) триммер газу більше не впливає на діапазон заднього ходу газу.
+* [Режими польоту](bw-radios/model-select/flight-modes.md)
+  * Невикористані триммери тепер можна налаштувати як 3-позиційні перемикачі.
+* [Мікшери](bw-radios/model-select/inputs-mixes-and-outputs/mixes.md)
+  * Додано настроювану точність для **уповільнення** для встановлення 10 мс або 100 мс.
+* [Телеметрія](bw-radios/model-select/telemetry/)
+  * EdgeTX відтворить "Телеметрію підключено", коли телеметрія підключиться вперше під час польоту.
+  * Кількість налаштованих датчиків відображатиметься в **дужках**, коли список датчиків згорнуто.
+* [Спеціальні функції](bw-radios/model-select/special-functions.md)
+  * Усі спеціальні функції тепер мають прапорець **Увімкнути**.
+  * Яскравість OLED екрану можна контролювати за допомогою спеціальної функції **Підсвічування**.
+  * Додано перемикач віртуального тренера (**Tnr**), який можна вибрати як перемикач для активації спеціальної функції. Перемикач увімкнено, коли активне з'єднання тренера.
+  * Додано спеціальну функцію RGB LED для ввімкнення та зміни поведінки світлодіодів.
+* [Налаштування апаратури](bw-radios/radio-settings/radio-setup.md)
+  * У **Налаштуваннях GPS** оновлено параметр **Часовий пояс**, щоб дозволити налаштування з 15-хвилинними інтервалами.
+  * Додано опцію **Звук запуску**, яка вмикає чи вимикає звук запуску.
+  * Додано параметр **Одиниці PPM** - раніше це був варіант збірки.
+  * У розділі **Увімкнені функції** додано поточні параметри конфігурації для активної моделі праворуч від перемикача.
+  * Додано **Режим обертального енкодера** - **V-N E-I** = вертикальний нормальний, редагування інвертований (інвертується під час редагування тексту).
+* [Апаратне забезпечення](bw-radios/radio-settings/hardware.md)
+  * Аналогові входи, такі як потенціометри та повзунки, тепер можна налаштувати як **Перемикач**, **Вісь X** або **Вісь Y**. Крім того, їх також можна налаштувати так, щоб вони були _**інвертовані**_.
+  * EdgeTX тепер визначатиме під час виконання, чи доступний послідовний порт, щоб дозволити тренер SBUS у відсіку зовнішнього модуля. Якщо так, параметр конфігурації буде доступним.
+* Сповіщення
+  * Попередження буде відображено, якщо ви спробуєте вимкнути апаратуру, коли підключення тренера все ще активне.
