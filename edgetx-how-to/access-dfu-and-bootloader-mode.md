@@ -38,12 +38,11 @@
 
 ### Flysky ST16
 
+<figure><img src="../.gitbook/assets/st16_DFU_button.png" alt=""><figcaption></figcaption></figure>
+
 **Bootloader:** Turn off the radio transmitter. Pull both horizontal trims (TR3 and TR4) together and press the power button.
 
 **DFU:** Turn off the radio transmitter. Press and hold the DFU button (circled in the image below) and plug in the USB cable, release the DFU button.\
-
-
-<figure><img src="../.gitbook/assets/st16_DFU_button.png" alt=""><figcaption></figcaption></figure>
 
 ### iFlight Commando8
 
@@ -77,13 +76,13 @@
 
 ### Jumper T-20/T-20S
 
-<figure><img src="../.gitbook/assets/T20DFU.png" alt="" width="563"><figcaption><p>Кнопка DFU на Jumper T-20</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T20DFU.png" alt="" width="563"><figcaption><p>Кнопка DFU на Jumper T-20 v1</p></figcaption></figure>
 
 {% hint style="info" %}
 Примітка: Щоб отримати доступ до кнопки DFU на v1, зніміть антену. Для v2 використовуйте зубочистку, щоб обережно натиснути на кнопку, щоб уникнути пошкодження.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/T20V2.png" alt="" width="563"><figcaption><p></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T20V2.png" alt="" width="563"><figcaption><p>Кнопка DFU на Jumper T-20 v2</p></figcaption></figure>
 
 **Завантажувач**: Вимкніть апаратуру. Натисніть обидва ковпачки тримерів всередину один до одного і натисніть кнопку живлення.
 
