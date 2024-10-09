@@ -1,30 +1,26 @@
-# Access DFU and Bootloader Mode
+# Доступ до DFU та режиму завантажувача
 
-Not all radios go into Bootloader or DFU mode the same way.  Below you will find descriptions how to get into Bootlader and DFU mode for many EdgeTX radios.
+Не всі радіоапаратури однаково переходять у режим завантажувача чи DFU. Нижче ви знайдете опис того, як увійти в режим завантажувача і DFU для багатьох апаратур на EdgeTX.
 
 ### BETAFPV LiteRadio 3 Pro
 
+<figure><img src="../.gitbook/assets/LR3Prodfu.png" alt="" width="375"><figcaption><p>Кнопки завантажувача і DFU на BETAFPV LiteRadio 3 Pro</p></figcaption></figure>
 
+**Завантажувач**: Вимкніть апаратуру. Натисніть кнопку завантажувача та кнопку живлення, відпустіть одночасно.
 
-<figure><img src="../.gitbook/assets/LR3Prodfu.png" alt="" width="375"><figcaption><p>BETAFPV LiteRadio 3 Pro Bootloader and DFU Button</p></figcaption></figure>
-
-**Bootloader**: Turn off the radio transmitter. Press the Bootloader button and Power button, release at the same time.
-
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 {% hint style="info" %}
-Note: In early versions of the LiteRadio 3 Pro, the DFU button was non-functional, which prevented DFU mode from being enabled. However, in the current version of the radio, the DFU button has been fixed and is now working correctly.
+Примітка: У ранніх версіях LiteRadio 3 Pro кнопка DFU була нефункціональною, що не дозволяло ввімкнути режим DFU. Проте в поточній версії радіо кнопку DFU виправили і тепер вона працює коректно.
 {% endhint %}
 
 ### FlySky NV14 / EL18
 
+<figure><img src="../.gitbook/assets/EL18 DFU.png" alt="" width="456"><figcaption><p>Кнопка DFU на FlySky NV14/EL18</p></figcaption></figure>
 
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва тримери всередину та натисніть обидві кнопки живлення.
 
-<figure><img src="../.gitbook/assets/EL18 DFU.png" alt="" width="456"><figcaption><p>FlySky NV14/EL18 DFU button</p></figcaption></figure>
-
-**Bootloader**: Turn off the radio transmitter. Pull both trims inward and press both power buttons.
-
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### Flysky Noble+ (NB4+)
 
@@ -34,13 +30,11 @@ Note: In early versions of the LiteRadio 3 Pro, the DFU button was non-functiona
 
 ### FlySky PL18 / PL18 EV
 
+<figure><img src="../.gitbook/assets/PL18Dfu.png" alt="" width="375"><figcaption><p>Кнопка DFU на PL18 PL18 EV</p></figcaption></figure>
 
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери (TR7 і TR8) один до одного і натисніть обидві кнопки живлення.
 
-<figure><img src="../.gitbook/assets/PL18Dfu.png" alt="" width="375"><figcaption><p>PL18 PL18 EV DFU Button</p></figcaption></figure>
-
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trims (TR7 and TR8) together and press both power buttons.
-
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### Flysky ST16
 
@@ -53,90 +47,88 @@ Note: In early versions of the LiteRadio 3 Pro, the DFU button was non-functiona
 
 ### iFlight Commando8
 
-<figure><img src="../.gitbook/assets/Com8DFU.png" alt="" width="375"><figcaption><p>iFlight Commando8 Boot Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Com8DFU.png" alt="" width="375"><figcaption><p>Кнопка Boot на iFlight Commando8</p></figcaption></figure>
 
-**Bootloader**: Turn off the radio transmitter. Press the Boot button and Power button, release at the same time.
+**Завантажувач**: Вимкніть апаратуру. Натисніть кнопку Boot та кнопку живлення, відпустіть одночасно.
 
-**DFU**: Turn off the radio transmitter. Conect the USB cable from your computer to your radio. Hold down the Boot button, then push and hold the Power button. The screen will stay dark, the LEDs will run from left to right. Radio is now in DFU mode.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB від комп’ютера до неї. Утримуйте кнопку Boot, потім натисніть і утримуйте кнопку живлення. Екран залишатиметься темним, світлодіоди горітимуть зліва направо. Апаратура знаходиться у режимі DFU.
 
 ### Jumper T12/T16/T18
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the USB port on the top of the radio.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB до порту USB у верхній частині радіоапаратури.
 
 ### Jumper T12 MAX
 
-<figure><img src="../.gitbook/assets/T12MAX-dfu-button.png" alt=""><figcaption><p>Jumper T12 MAX DFU Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T12MAX-dfu-button.png" alt=""><figcaption><p>Кнопка DFU на Jumper T12 MAX</p></figcaption></figure>
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### Jumper T14/T15
 
-<figure><img src="../.gitbook/assets/T15-dfu-button.png" alt=""><figcaption><p>Jumper T14/T15 DFU Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T15-dfu-button.png" alt=""><figcaption><p>Кнопка DFU на Jumper T14/T15</p></figcaption></figure>
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### Jumper T-20/T-20S
 
-<figure><img src="../.gitbook/assets/T20DFU.png" alt="" width="563"><figcaption><p>Jumper T-20 DFU Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T20DFU.png" alt="" width="563"><figcaption><p>Кнопка DFU на Jumper T-20</p></figcaption></figure>
 
 {% hint style="info" %}
-Note: To access the DFU button on v1, remove the antenna. For v2, use a toothpick to gently push the button to avoid damage.
+Примітка: Щоб отримати доступ до кнопки DFU на v1, зніміть антену. Для v2 використовуйте зубочистку, щоб обережно натиснути на кнопку, щоб уникнути пошкодження.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/T20V2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/T20V2.png" alt="" width="563"><figcaption><p></p></figcaption></figure>
 
-**Bootloader**: Turn off the radio transmitter. Push both trim hat switches inward together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Натисніть обидва ковпачки тримерів всередину один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### Jumper T-Lite
 
-**Bootloader**: Turn off the radio transmitter. Push both the two inner horizontal trim buttons together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Натисніть обидві внутрішні горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB.
 
 ### Jumper T-Pro / T-Pro V2
 
-<figure><img src="../.gitbook/assets/T-ProDFU.png" alt="" width="375"><figcaption><p>Jumper T-Pro DFU Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/T-ProDFU.png" alt="" width="375"><figcaption><p>Кнопка DFU на Jumper T-Pro</p></figcaption></figure>
 
+**Завантажувач**: Вимкніть апаратуру. Натисніть обидва ковпачки тримерів всередину один до одного і натисніть кнопку живлення.
 
-
-**Bootloader**: Turn off the radio transmitter. Push both trim hat switches inward together and press the power button.
-
-**DFU**: Turn off the radio transmitter. Press and hold the DFU button and plug in the USB cable, release the DFU button.
+**DFU**: Вимкніть апаратуру. Натисніть і утримуйте кнопку DFU, підключіть кабель USB, відпустіть кнопку DFU.
 
 ### RadioMaster MT12
 
-**Bootloader**: Turn off the radio transmitter. Pull both trims T1 and T2 together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва тримера T1 і T2 один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the side USB port (under the rubber cover).
+**DFU**: Вимкніть апаратуру. Підключіть USB-кабель до бічного порту USB (під гумовою кришкою).
 
 ### RadioMaster Pocket
 
-**Bootloader**: Turn off the radio transmitter. Push both trim hat switches inward together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Натисніть обидва тримера всередину один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the USB port on the top of the radio.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB до порту USB у верхній частині радіоапаратури.
 
 ### RadioMaster GX12
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the USB port on the top of the radio (power button LED should light up). Hold down/activate switch SG and then press and release the power button (only needs a momentary press). You can release/deactivate SG now.&#x20;
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB до порту USB у верхній частині радіоапаратури (кнопка живлення засвітиться). Натисніть перемикач SG і тоді натисніть й відпустіть кнопку живлення (потрібно тільки миттєве натискання). Тепер можете відпустити SG.
 
-### RadioMaster (All others - Boxer, T12, Zorro, TX16S)
+### RadioMaster (Всі інші - Boxer, T12, Zorro, TX16S)
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the USB port on the top of the radio.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB до порту USB у верхній частині радіоапаратури.
 
 ### Eachine TX16s
 
-**Bootloader**: Turn off the radio transmitter. Pull both horizontal trim switches together and press the power button.
+**Завантажувач**: Вимкніть апаратуру. Потягніть обидва горизонтальні тримери один до одного і натисніть кнопку живлення.
 
-**DFU**: Turn off the radio transmitter. Plug in the USB cable to the USB port on the top of the radio.
+**DFU**: Вимкніть апаратуру. Підключіть кабель USB до порту USB у верхній частині радіоапаратури.
