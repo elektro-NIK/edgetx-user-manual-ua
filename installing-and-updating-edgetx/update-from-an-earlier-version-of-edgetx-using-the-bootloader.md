@@ -1,58 +1,58 @@
-# Update from an earlier version of EdgeTX using the Bootloader
+# Оновлення з попередньої версії EdgeTX за допомогою завантажувача
 
-### Back-up SD Card Contents
+### Резервне копіювання вмісту SD-карти
 
-**Before making any updates to your radio, we ALWAYS recommend that you back up your current SD Card contents using the following steps.**&#x20;
+**Перед будь-якими оновленнями апаратури ми ЗАВЖДИ рекомендуємо створити резервну копію поточного вмісту SD-карти за допомогою наступних кроків.**&#x20;
 
-With your radio powered on, plug your radio into your computer via USB. When prompted by your radio for the USB mode, select **USB Storage**.&#x20;
+Увімкніть апаратуру, підключіть її до комп’ютера через USB. Коли апаратура запропонує вибрати режим USB, оберіть **USB Storage**.&#x20;
 
-With your computer, copy the entire contents of your SD card to a safe place on your computer. You can use these files again if you need to roll back the update.
+На комп’ютері скопіюйте весь вміст SD-карти у безпечне місце. Ви зможете використовувати ці файли знову, якщо потрібно буде повернутися до попередньої версії.
 
-### SD Card Preparation
+### Підготовка SD-карти
 
-Download and extract the EdgeTX SD card content for your radio type to your computer. The SD card contents can be found here: [https://github.com/EdgeTX/edgetx-sdcard/releases](https://github.com/EdgeTX/edgetx-sdcard/releases)
+Завантажте та розпакуйте вміст SD-карти EdgeTX для вашої апаратури на комп’ютер. Вміст SD-карти можна знайти тут: [https://github.com/EdgeTX/edgetx-sdcard/releases](https://github.com/EdgeTX/edgetx-sdcard/releases)
 
-The list below shows which .zip file to use for different radio types:
+Нижче наведено список .zip файлів для різних типів апаратур:
 
-* c480x272zip (480x272 Horizontal Color Screen) - TX16s, T16, Horus x10s,Horus x12s, most color screen radios...
-* c480x320 (480x320 Horizontal Color Screen)
-* c320x480zip (320x480 Verticle Color Screen)- FlySky Nirvana NV14, EL18
-* bw128x64.zip (128x64 BW Screens) -All monochrome screen radios _except_ X9D series.
-* bw212x64zip (212x64 BW Screens) - X9D, X9D Plus, X9D Plus 2019
+* c480x272zip (480x272 Горизонтальний кольоровий екран) - TX16s, T16, Horus x10s, Horus x12s, більшість апаратур з кольоровими екранами…
+* c480x320 (480x320 Горизонтальний кольоровий екран)
+* c320x480zip (320x480 Вертикальний кольоровий екран) - FlySky Nirvana NV14, EL18
+* bw128x64.zip (128x64 Ч/Б екрани) - всі апаратури з монохромними екранами, _окрім_ серії X9D.
+* bw212x64zip (212x64 Ч/Б екрани) - X9D, X9D Plus, X9D Plus 2019
 
-Copy the extracted files to your radio's SD card. If asked, overwrite the existing files. This will only update the SD card files that are part of the default EdgeTX installation. It will not modify or delete any additional files you have added (LUA scripts, sound files, images, custom themes, model files, radio setup file, etc) that are already existing on the SD card.&#x20;
+Скопіюйте розпаковані файли на SD-карту вашої апаратури. Якщо буде запит, перезапишіть наявні файли. Це оновить лише файли SD-карти, які є частиною стандартної установки EdgeTX. Це не змінить і не видалить додаткові файли, які ви додали самостійно (LUA-скрипти, звукові файли, зображення, власні теми, файли моделей, налаштування радіо тощо), які вже є на SD-карті.&#x20;
 
-Download the desired sound pack ([https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases)), unzip and copy to the "Sounds" folder on your SD card.  If asked, overwrite the existing files.&#x20;
+Завантажте потрібний звуковий пакет ([https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases)), розпакуйте його та скопіюйте у папку "Sounds" на вашій SD-карті. Якщо буде запит, перезапишіть наявні файли.&#x20;
 
-### Flashing the EdgeTX Bootloader and Firmware
+### Встановлення завантажувача та прошивки EdgeTX
 
-Download the current EdgeTX firmware. You can download the latest release .zip file (edgetx-firmware-vX.X.X.zip) directly from Github - [https://github.com/EdgeTX/edgetx/releases/latest](https://github.com/EdgeTX/edgetx/releases/latest)
+Завантажте поточну прошивку EdgeTX. Ви можете завантажити останню версію .zip файлу (edgetx-firmware-vX.X.X.zip) безпосередньо з Github - [https://github.com/EdgeTX/edgetx/releases/latest](https://github.com/EdgeTX/edgetx/releases/latest)
 
-Unzip the file and save the correct .bin file (same name as your radio type) to the "**Firmware**" folder on the SD card for your radio.
+Розпакуйте файл та збережіть відповідний .bin файл (з такою ж назвою, як і модель вашої апаратури) у папку "Firmware" на SD-карті апаратури.
 
-Turn on your radio and navigate to the SD card screen. Open the "Firmware" folder and select the EdgeTX firmware file that you just copied to your SD card. Once the file is selected, select the option to "**Flash bootloader"**. The bootloader will be updated.
-
-{% hint style="info" %}
-**Note:** When updating the bootloader using EdgeTX, you won't see the "Flash bootloader" option if the bootloader file is meant for a different radio target.
-{% endhint %}
-
-Exit back to the main screen and then shut off your radio.
-
-Boot your radio in bootloader mode by holding trim switches T4 and T1 to center while pushing the power button on.
+Увімкніть апаратуру та перейдіть на екран SD-карти. Відкрийте папку "Firmware" і виберіть файл прошивки EdgeTX, який ви щойно скопіювали на SD-карту. Після вибору файлу виберіть опцію "**Flash bootloader**". Завантажувач буде оновлено.
 
 {% hint style="info" %}
-On the Jumper T-Pro, you have to plug in the radio while pressing the Boot0 button to enter DFU mode.
+**Примітка:** Під час оновлення завантажувача за допомогою EdgeTX, ви не побачите опцію "Flash bootloader", якщо файл завантажувача призначений для іншої моделі апаратури.
 {% endhint %}
 
-You will see the EdgeTX bootloader. Select the option "**Write Firmware**". Select the EdgeTX firmware file that you saved to your SD card. Long-press to flash it.
+Вийдіть назад на головний екран, а потім вимкніть апаратуру.
+
+Запустіть апаратуру в режимі завантажувача, утримуючи тримери T4 та T1 до центру під час натискання кнопки живлення.
 
 {% hint style="info" %}
-**Note:** When you're flashing the firmware with the bootloader and the bootloader detects a different target from what it's currently running, it will display an error message stating that the firmware is invalid.
+На Jumper T-Pro потрібно підключити апаратуру утримуючи кнопку Boot0, щоб увійти в режим DFU.
 {% endhint %}
 
-After the flashing is complete, select "**Exit**". The radio will restart and you should be greeted with "**Welcome EdgeTX**".
+Ви побачите завантажувач EdgeTX. Виберіть опцію "**Write Firmware**". Виберіть файл прошивки EdgeTX, який ви зберегли на SD-карті. Натисніть та утримуйте, щоб прошити його.
 
-### Congratulations, you have now successfully updated EdgeTX!
+{% hint style="info" %}
+**Примітка:** Коли ви встановлюєте прошивку за допомогою завантажувача і завантажувач виявляє інший тип пристрою ніж той, що зараз працює, буде відображено повідомлення про помилку що прошивка є недійсною.
+{% endhint %}
+
+Після завершення прошивки виберіть "**Exit**". Апаратура перезавантажиться, і ви побачите привітання "**Welcome EdgeTX**".
+
+### Вітаємо, ви успішно оновили EdgeTX!
 
 
 
