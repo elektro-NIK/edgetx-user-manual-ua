@@ -1,6 +1,6 @@
-# Contributors
+# Учасники
 
-Special thanks to all the people and groups that contributed (directly or indirectly) to this document.
+Особлива подяка всім людям і групам, які зробили свій внесок (прямо чи опосередковано) у цей документ.
 
 * Bill Clark - [https://www.youtube.com/@the-happy-RC-flyer](https://www.youtube.com/@the-happy-RC-flyer)
 * John - RCvidoereviews - [https://www.youtube.com/@RCVideoReviews](https://www.youtube.com/@RCVideoReviews)
