@@ -2,7 +2,7 @@
 
 Щоб оновитися з OpenTX до EdgeTX, вам необхідно мати встановлені як OpenTX, так і EdgeTX Companion на вашому комп'ютері. Ви можете завантажити OpenTX Companion за адресою: [https://downloads.open-tx.org/2.3/release/companion/](https://downloads.open-tx.org/2.3/release/companion/). Ви можете завантажити EdgeTX Companion за адресою: [https://github.com/EdgeTX/edgetx/releases](https://github.com/EdgeTX/edgetx/releases) (Ім'я файлу: edgetx-cpn-\[operation system]-\[version].zip)
 
-### Зробіть резервну копію ваших моделей.
+### Зробіть резервну копію ваших моделей
 
 Увімкніть апаратуру, перейдіть до **Radio Settings**, **Hardware** і прокрутіть униз донизу екрана, потім виберіть **EEPROM backup**. Якщо у вас немає цієї опції, значить, ваша апаратура не зберігає дані в EEPROM, і цей крок можна пропустити.&#x20;
 
