@@ -1,15 +1,15 @@
 ---
-description: Below are some additional useful resources
+опис: Нижче наведено деякі додаткові корисні ресурси
 ---
 
-# Additional Resources
+# Додаткові ресурси
 
 {% embed url="http://open-txu.org/" %}
-OpenTX University - great information on RC planes in general.
+OpenTX University - чудова загальна інформація про RC літаки.
 {% endembed %}
 
 {% embed url="http://rc-soar.blogspot.com/" %}
 
 {% embed url="https://www.air-rc.com/" %}
-A large repository of free model image files that can be used with EdgeTX.
+Велике сховище безкоштовних файлів зображень моделей, які можна використовувати з EdgeTX.
 {% endembed %}
