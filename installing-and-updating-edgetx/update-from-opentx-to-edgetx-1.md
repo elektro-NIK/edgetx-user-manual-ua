@@ -1,104 +1,104 @@
-# Update from an earlier version of EdgeTX using EdgeTX Buddy
+# Оновлення з попередньої версії EdgeTX за допомогою EdgeTX Buddy
 
-### Back-up SD Card Contents
+### Резервне копіювання вмісту SD-карти
 
-**Before making any updates to your radio, we ALWAYS recommend that you back up your current SD Card contents using the following steps.**&#x20;
+**Перед будь-якими оновленнями апаратури ми завжди рекомендуємо зробити резервну копію поточного вмісту вашої SD-карти, використовуючи наступні кроки.**&#x20;
 
-With your radio powered on, plug your radio into your computer via USB. When prompted by your radio for the USB mode, select **USB Storage**.&#x20;
+Увімкніть вашу апаратуру та підключіть її до комп’ютера через USB. Коли на екрані апаратури з’явиться запит на режим USB, виберіть **USB Storage**.&#x20;
 
-With your computer, copy the entire contents of your SD card to a safe place on your computer. You can use these files again if you need to roll back the update.
+Скопіюйте весь вміст вашої SD-карти в надійне місце на комп’ютері. Ви зможете використовувати ці файли якщо доведеться скасувати оновлення.
 
-### Update Bootloader and Firmware
+### Оновлення завантажувача та прошивки
 
-With the radio powered off, plug your radio into your computer via USB. This will connect your radio to the computer via DFU mode.&#x20;
+Підключіть вимкнену апаратуру до комп’ютера через USB. Це підключить вашу апаратуру до комп’ютера в режимі DFU.
 
 {% hint style="info" %}
-On the Jumper T-Pro, you have to plug in the radio while pressing the Boot0 button to enter DFU mode.
+На Jumper T-Pro необхідно підключити апаратуру утримуючи кнопку Boot0 щоб увійти в режим DFU.
 {% endhint %}
 
-Go to this website: [https://buddy.edgetx.org/](https://buddy.edgetx.org/)
+Перейдіть на цей сайт: [https://buddy.edgetx.org/](https://buddy.edgetx.org/)
 
-Select the **Firmware version** and **Radio model** - then **Flash via USB**.
+Виберіть **Firmware version (версію прошивки)** та **Radio model (модель апаратури)**, а потім натисніть **Flash via USB**.
 
 <figure><img src="../.gitbook/assets/update2.png" alt=""><figcaption></figcaption></figure>
 
-On the next screen, select the **SMT32 Bootloader** device and click **Next**.
+На наступному екрані виберіть пристрій **SMT32 Bootloader** і натисніть **Next**.
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
 
 
-If the **SMT32 Bootloader** device is not present, then select **Add New Device**. From the pop up window, select **SMT32 Bootloader** and click **Connect.**
+Якщо пристрій SMT32 Bootloader не з’явився, виберіть Add New Device. У вікні, що з’явилося, виберіть SMT32 Bootloader і натисніть Connect.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** If the SMT32 BOOTLOADER is not available to select, then that usually means that there is an issue with the drivers on your computer. You can install the **ImpulseRC Driver Fixer** to fix your computer drivers. It is available to download from here: [**https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe**](https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe)
+**Примітка:** Якщо SMT32 Bootloader недоступний, то це зазвичай означає проблему з драйверами на вашому комп’ютері. Ви можете встановити **ImpulseRC Driver Fixer** щоб виправити драйвери. Завантажити можна тут: [**https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe**](https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe)
 {% endhint %}
 
 {% hint style="info" %}
-If you cannot get your computer to detect the SMT32 BOOTLOADER, then you must use the bootloader method to update EdgeTX. Skip the remainder of this section and proceed to the [**Update SD Card Contents section**](update-from-opentx-to-edgetx-1.md#update-sd-card-contents). After updating the SD card, we will walk you through updating the firmware via the bootloader.
+Якщо комп’ютер не виявляє SMT32 Bootloader, вам потрібно скористатися методом завантажувача для оновлення EdgeTX. Пропустіть решту цього розділу та перейдіть до [**Оновлення вмісту SD-карти**](update-from-opentx-to-edgetx-1.md#update-sd-card-contents). Після оновлення SD-карти ми допоможемо вам оновити прошивку через завантажувач.
 {% endhint %}
 
-After selecting the **SMT32 Bootloader** device and clicking **Next,** you will be presented with a confirmation screen to verify your settings. Once you have verified everything is correct (Version, Radio, and device) click the **Start Flashing** button.
+Після вибору пристрою **SMT32 Bootloader** і натискання **Next** ви побачите екран підтвердження для перевірки налаштувань. Після перевірки натисніть кнопку **Start Flashing**.
 
 <figure><img src="../.gitbook/assets/update5.png" alt=""><figcaption></figcaption></figure>
 
-EdgeTX buddy will now start the flashing sequence. A progress screen will be displayed to show you the progress.
+EdgeTX Buddy почне процес прошивки і ви побачите екран із прогресом.
 
 <figure><img src="../.gitbook/assets/update6.png" alt=""><figcaption></figcaption></figure>
 
-Once the flashing is complete, the next step is to update your SD card. It is not always necessary to update your SD card contents. However, it is recommended. To update your SD card contents, select the **Setup your SD Card** link from the completion screen, which will take you to the SD Card content screen.&#x20;
+Після завершення прошивки наступним кроком буде оновлення вмісту SD-карти. Це не завжди обов’язково, але рекомендується. Щоб оновити вміст SD-карти виберіть посилання **Setup your SD Card** на екрані завершення, що перенесе вас до сторінки з вмістом SD-карти.&#x20;
 
 <figure><img src="../.gitbook/assets/update7.png" alt=""><figcaption></figcaption></figure>
 
-### Update SD Card Contents
+### Оновлення вмісту SD-карти
 
-Unplug the radio from the computer and power it on.&#x20;
+Від’єднайте апаратуру від комп’ютера та увімкніть її.&#x20;
 
-With the radio turned on, plug it in to your PC via USB and select **USB Storage** when the option is displayed on the radio. Click on the **Select SD Card** option and then navigate to your EdgeTX SD card.&#x20;
+З увімкненою апаратурою підключіть її до комп’ютера через USB і виберіть USB Storage, коли з’явиться відповідний запит. Клацніть на **Select SD Card** і знайдіть свою SD-карту EdgeTX.&#x20;
 
 <figure><img src="../.gitbook/assets/update8.png" alt=""><figcaption></figcaption></figure>
 
-The EdgeTX SD Card will be mounted as a USB Drive on your computer. Select the USB Drive and then click on **Select folder.**
+EdgeTX SD-карта буде змонтована як USB-диск на вашому комп’ютері. Виберіть USB-диск і натисніть **Select folder.**
 
 <figure><img src="../.gitbook/assets/update9.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Your PC may ask you to give EdgeTX buddy permission to your SD card contents.  This is normal and required for buddy to be able to modify the files on the SD Card.
+Ваш комп’ютер може попросити надати EdgeTX Buddy дозвіл на доступ до вмісту SD-карти. Це нормально та потрібно для внесення змін у файли на SD-карті.
 {% endhint %}
 
-On the SD Card Content screen, verify the Firmware version and Radio model are still correct, then select the desired language for the sound pack. Click on **Apply Changes.** A status window will pop up and show you the installation progress. Once the installation of the files is complete, the status window will close.
+На екрані вмісту SD-карти перевірте версію прошивки та модель апаратури, потім виберіть бажану мову для пакету звуків. Натисніть **Apply Changes.** З’явиться вікно статусу яке показує процес установки. Після завершення вікно закриється.
 
 <figure><img src="../.gitbook/assets/update10.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** EdgeTX Buddy will update all SD card files that are part of the default EdgeTX installation. It will not modify or delete any additional files you have added (LUA scripts, sound files, images, custom themes, model files, radio setup file, etc) that are already existing on the SD card.&#x20;
+**Примітка:** EdgeTX Buddy оновить всі файли SD-карти, що є частиною стандартної установки EdgeTX. Він не змінить і не видалить додаткові файли (LUA-скрипти, звукові файли, зображення, теми, файли моделей, налаштування апаратури тощо), які вже існують на SD-карті.&#x20;
 {% endhint %}
 
-### Congratulations, you have now successfully updated EdgeTX!
+### Вітаємо, ви успішно оновили EdgeTX!
 
-If you were not able to flash your firmware with EdgeTX Buddy, follow the steps below to flash the firmware with the bootloader. Keep your radio connected to your computer via USB and in USB storage mode.
+Якщо вам не вдалося встановити прошивку за допомогою EdgeTX Buddy, дотримуйтесь наведених нижче кроків щоб прошити прошивку через завантажувач. Тримайте апаратуру підключеною до комп’ютера через USB у режимі USB storage.
 
-### Update Radio Firmware with the Bootloader
+### Оновлення прошивки апаратури через завантажувач
 
-Navigate back to the **Radio Firmware tab.**
+Перейдіть на вкладку **Radio Firmware.**
 
-Select the **Firmware version** and **Radio model** - then **Download .bin**.
+Виберіть версію прошивки та модель апаратури, потім натисніть **Download .bin**.
 
-After the firmware is downloaded, you will be asked for the location to save the file. Navigate to the radio's SD card and select the **Firmware** folder. Then select **Save**.&#x20;
+Після завантаження прошивки вас попросять вибрати місце для збереження файлу. Перейдіть до SD-карти апаратури та виберіть папку **Firmware**. Потім натисніть **Зберегти**.&#x20;
 
 <figure><img src="../.gitbook/assets/update15.png" alt=""><figcaption></figcaption></figure>
 
-Disconnect the USB cable from the radio and turn off the radio.
+Від’єднайте кабель USB від апаратури та вимкніть її.
 
-Boot your radio into bootloader mode  by holding trim switches T4 and T1 to center while pushing the power button on.
+Завантажте апаратуру в режимі завантажувача, утримуючи тримери T4 і T1 до центру під час натискання кнопки живлення.
 
-You should now see the EdgeTX bootloader. Select the option **Write Firmware**. Select the EdgeTX firmware file that you saved to your SD card. Long-press to flash it.
+Тепер ви повинні побачити завантажувач EdgeTX. Виберіть опцію **Write Firmware**. Виберіть файл прошивки EdgeTX, який ви зберегли на свою SD-карту і утримуйте, щоб прошити його.
 
-After the flashing is complete, select **Exit**. The radio will restart with the updated EdgeTX version.
+Після завершення прошивки виберіть **Exit**. Апаратура перезавантажиться з оновленою версією EdgeTX.
 
-### Congratulations, you have now successfully updated EdgeTX!
+### Вітаємо, ви успішно оновили EdgeTX!
 
 
 
