@@ -1,29 +1,27 @@
-# Radio Settings
+# Налаштування апаратури
 
-### Tools
+### Інструменти
 
-Pressing the **\[SYS]** button from the Main view will open the **Tools** screen. &#x20;
+Натискання кнопки **\[SYS]** на головному екрані відкриє сторінку **Інструменти**. &#x20;
 
-The **Tools** page in Radio Settings is where you can select Lua script-based tools for execution. Lua scripts that are located on the SD card in the **Tools** folder will be listed here. Selecting a tool will execute it. By default, EdgeTX includes several tools. Other tools can be downloaded and added to the SD card as well.  The following tools are included in the default EdgeTX SD card.&#x20;
+На сторінці **Інструменти** в налаштуваннях апаратури ви можете вибрати на основі сценаріїв Lua для запуску. Сценарії Lua, які знаходяться на SD-карті в папці **Tools**, будуть перераховані тут. Вибір інструменту виконає його. За замовчуванням EdgeTX включає кілька інструментів. Інші інструменти також можна завантажити та додати на SD-карту. Наступні інструменти входять до вмісту SD-карти EdgeTX за замовчуванням.&#x20;
 
 ### Wizard Loader
 
 <div>
 
-<figure><img src="../../.gitbook/assets/bwtools1.png" alt=""><figcaption><p>Setup Wizard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwtools1.png" alt=""><figcaption><p>Майстер налаштувань</p></figcaption></figure>
 
- 
-
-<figure><img src="../../.gitbook/assets/bwtools2.png" alt=""><figcaption><p>Setup Wizard Configuration menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwtools2.png" alt=""><figcaption><p>Конфігураційне меню майстера налаштувань</p></figcaption></figure>
 
 </div>
 
-The Wizard Loader tool assists you in setting up a new model by running a setup wizard for a particular model type. Once the model type is selected, the wizard will take you through a series of prompts and then configure your selected model based on the information provided.&#x20;
+Інструмент Wizard Loader допоможе вам налаштувати нову модель, запустивши майстер налаштування для певного типу моделі. Після вибору типу моделі майстер проведе вас через ряд підказок, а потім налаштує вибрану модель на основі наданої інформації.&#x20;
 
-_**NOTE: The wizard does not create a new model, it only configures the currently selected model. You must manually create a new model first and then run the wizard. If you run this wizard on an already configured model, it will overwrite your model settings!**_
+_**ПРИМІТКА: Майстер не створює нову модель, він лише налаштовує поточну вибрану модель. Спершу потрібно вручну створити нову модель, а потім запустити майстер. Якщо ви запустите цей майстер на вже налаштованій моделі, він перепише налаштування вашої моделі!**_
 
 {% hint style="info" %}
-Additional EdgeTX compatible Lua scripts can be downloaded from: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
+Додаткові сценарії Lua, сумісні з EdgeTX, можна завантажити тут: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
 {% endhint %}
 
-Pressing the **\[PAGE>]** button will take you to the **SD Card** screen.
+Натискання кнопки **\[PAGE>]** переведе вас на екран **SD ​​Card**.
