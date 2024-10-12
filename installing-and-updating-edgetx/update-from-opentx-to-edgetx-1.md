@@ -26,8 +26,7 @@
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
-
-Якщо пристрій STM32 Bootloader не з’явився, виберіть Add New Device. У вікні, що з’явилося, виберіть STM32 Bootloader і натисніть Connect.
+Якщо пристрій **STM32 Bootloader** не з’явився, виберіть **Add New Device**. У вікні, що з’явилося, виберіть **STM32 Bootloader** і натисніть **Connect**.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
