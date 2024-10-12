@@ -12,11 +12,11 @@ layout:
     visible: true
 ---
 
-# User Manual for Color Screen Radios
+# Посібник користувача для апаратур з кольоровим екраном
 
-<figure><img src="../.gitbook/assets/colorradios.png" alt=""><figcaption><p>EdgeTX supported color screen radios</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/colorradios.png" alt=""><figcaption><p>Контролери з кольоровим екраном, що підтримуються EdgeTX</p></figcaption></figure>
 
-EdgeTX supports the following color screen radios:
+EdgeTX підтримує наступні радіоконтролери з кольоровим екраном::
 
 * FlySky NV14 / EL18
 * FlySky PL18 / PL18 EV
