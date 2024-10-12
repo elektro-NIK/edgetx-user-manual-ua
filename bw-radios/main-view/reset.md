@@ -1,14 +1,14 @@
-# Reset
+# Скидання
 
-Selecting **Reset** from the pop-up menu will give you the following options:
+Вибір **Reset** зі спливаючого меню надасть вам такі опції:
 
-**Reset flight** - When selected, this option:&#x20;
+**Reset flight** - При виборі цієї опції:&#x20;
 
-* Resets all timers configured with a persistence setting of **Flight** to zero.
-* Resets all discovered telemetry sensor values.
-* Resets all logical switch states
-* Triggers the same checks as loading the model  - i.e. throttle position, switch state, is failsafe set check, display pre-flight checklist if configured, stuck keys test, etc.
+* Скидає всі таймери, налаштовані з параметром збереження Flight, до нуля.
+* Скидає всі виявлені значення телеметричних датчиків.
+* Скидає всі стани логічних перемикачів
+* Запускає ті ж перевірки, що і під час завантаження моделі - тобто, перевірка положення газу, стану перемикачів, чи налаштований failsafe, відображення перевірочного списку перед польотом, тест на зависання клавіш тощо.
 
-**Reset timer 1 / 2 / 3** - Resets only the selected timer to zero regardles of the configured persistence setting.
+**Reset timer 1 / 2 / 3** - Скидає лише вибраний таймер до нуля, незалежно від налаштованого параметра збереження.
 
-**Reset telemetry** - This option resets all discovered telemetry sensor values.
+**Reset telemetry** - Ця опція скидає всі виявлені значення датчиків телеметрії.
