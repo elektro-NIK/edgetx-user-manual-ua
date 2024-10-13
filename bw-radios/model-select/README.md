@@ -1,30 +1,30 @@
-# Model Settings
+# Налаштування моделі
 
-### Model Select
+### Вибір моделі
 
-Pressing the **\[MDL]** button from the Main view will open the **Model Select** screen. &#x20;
+Натискання кнопки **\[MDL]** на головному екрані відкриває сторінку вибору моделі.
 
-<figure><img src="../../.gitbook/assets/bwmodelsel.png" alt=""><figcaption><p>Model Select screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwmodelsel.png" alt=""><figcaption><p>Екран вибору моделі</p></figcaption></figure>
 
-Use the **\[Roller]** or **\[Dial]** to scroll through the model slots.
+Використовуйте **\[Roller]** або **\[Dial]**, щоб прокручувати слоти моделі.
 
-Pressing **\[Enter]** on an empty model slot will give you the following options:
+Натиснувши **\[Enter]** на порожньому слоті моделі, ви отримаєте такі параметри:
 
-* **Create Model** - This option creates a new model with the default configuration options.
-* **Restore Model** - This option creates a new copy of a selected model that has been previously backed up.
+* **Create Model** - створює нову модель із параметрами конфігурації за замовчуванням.
+* **Restore Model** - створює нову копію вибраної моделі, резервну копію якої було попередньо створено.
 
-Pressing **\[Enter]** on an occupied model slot that is not the active model (not marked with an asterix **\***) will give you the following options:
+Натиснувши **\[Enter]** на зайнятому слоті моделі, яка не є активною моделлю (не позначена зірочкою **\***), ви отримаєте такі варіанти:
 
-* **Select Model** - this option selects this model as the active model.
-* **Backup Model** - This option makes a copy of the model in the **Backup** folder on the SD Card.
-* **Copy Model** - This option makes an exact copy of the model and allows you to select which model slot it will be placed in.
-* **Move Model** - This option allows you to move the selected model to a different model slot.
-* **Delete Model** - This option deletes the selected model.
+* **Select Model** - вибирає цю модель як активну.
+* **Backup Model** - створює копію моделі в теці **Backup** на SD-карті.
+* **Copy Model** - створює точну копію моделі та дозволяє вибрати, у який слот моделі її буде розміщено.
+* **Move Model** - дозволяє перемістити вибрану модель в інший слот для моделі.
+* **Delete Model** - видаляє вибрану модель.
 
-Pressing **\[Enter]** on an occupied model slot that is the active model (marked with an asterix **\***) will give you the following options:
+Натиснувши **\[Enter]** на зайнятому слоті моделі, яка є активною моделлю (позначена зірочкою **\***), ви отримаєте такі параметри:
 
-* **Move Model** - This option allows you to move the selected model to a different model slot.
-* **Copy Model** - This option makes an exact copy of the model and allows you to select which model slot it will be placed in.
-* **Backup Model** - This option makes a copy of the model in the **Backup** folder on the SD Card.
+* **Move Model** - дозволяє перемістити вибрану модель в інший слот для моделі.
+* **Copy Model** - створює точну копію моделі та дозволяє вибрати, у який слот моделі її буде розміщено.
+* **Backup Model** - створює копію моделі в теці **Backup** на SD-карті.
 
-Pressing the **\[PAGE>]** button will take you to the **Setup** screen.
+Натиснувши кнопку **\[PAGE>]**, ви потрапите на екран **Налаштування**.
