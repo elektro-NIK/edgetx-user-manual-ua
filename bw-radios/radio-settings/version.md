@@ -1,6 +1,6 @@
-# Version
+# Версія
 
-### Version
+### Версія
 
 The **Version** screen displays information about the current EdgeTX version that is being used:
 
@@ -11,7 +11,7 @@ The **Version** screen displays information about the current EdgeTX version tha
 * **NAME**: Firmware Codename
 * **DATE** - Date & time the firmware was compiled
 
-### Firmware Options&#x20;
+### Firmware Options
 
 To view the build options that were enabled when compiled, highlight the **\[Firmware options]** options and press the **\[Enter]** button.
 
