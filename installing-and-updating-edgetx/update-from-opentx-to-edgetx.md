@@ -42,7 +42,7 @@
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
-Якщо пристрій **STM32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **SMT32 Bootloader** та натисніть **Connect**.
+Якщо пристрій **STM32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **STM32 Bootloader** та натисніть **Connect**.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
