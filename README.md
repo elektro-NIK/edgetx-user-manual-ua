@@ -32,8 +32,8 @@ layout:
 
 Цей розділ бази знань міститиме посилання на додаткові ресурси, які можуть бути корисними користувачам EdgeTX. Зовнішні сторінки, на які тут наведено посилання, не належать EdgeTX. Однак вони перераховані, оскільки можуть бути корисними джерелами додаткової інформації про EdgeTX.
 
-#### Особлива подяка тим, хто зробив внесок у цю базу знань прямо чи опосередковано. <a href="#special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly." id="special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly."></a>
+#### Особлива подяка тим, хто зробив внесок у цю базу знань прямо чи опосередковано, а також команді проєкту [GitBook](https://gitbook.com), які люб'язно надали безплатний доступ до усіх функцій для зручної роботи над цією документацією. <a href="#special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly" id="special-thanks-to-those-that-contributed-to-this-knowledge-base-either-directly-or-indirectly"></a>
 
 Перегляньте список прямих і непрямих учасників у розділі [Учасники](more/contributors.md).
 
-#### Посібник користувача EdgeTX © 2024 by EdgeTX ліцензовано під CC BY-SA 4.0. Для перегляду копії цієї ліцензії перейдіть за посиланням: http://creativecommons.org/licenses/by-sa/4.0/
+#### Посібник користувача EdgeTX © 2024 by EdgeTX ліцензовано під CC BY-SA 4.0. Для перегляду копії цієї ліцензії перейдіть за посиланням: http://creativecommons.org/licenses/by-sa/4.0/
