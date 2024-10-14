@@ -1,65 +1,65 @@
-# Flight / Drive Modes
+# Режими польоту / водіння
 
-Flight modes (FM) and Drive modes (DM) (on surface radios) allow you to have different trim settings for each flight/drive mode. Once multiple flight/drove modes are configured, you can adjust the trim settings in each flight/drive mode without affecting the trim settings in other flight/drive modes (unless they are configured to do so). There are nine possible Flight/Drive modes, with flight/drive Mode 0 being the default mode.
+Режими польоту (Flight modes, FM) та режими водіння (Drive modes, DM) (для наземних апаратур) дозволяють використовувати різні налаштування триммерів для кожного режиму польоту/водіння. Після налаштування кількох режимів можна змінювати триммери для кожного окремого режиму без впливу на інші (якщо не налаштовано по-іншому). Можливо налаштувати до дев’яти режимів польоту/водіння, причому режим польоту/водіння 0 є режимом за замовчуванням.
 
-<figure><img src="../../.gitbook/assets/bwFM.png" alt=""><figcaption><p>Flight Modes Overview screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwFM.png" alt=""><figcaption><p>Екран огляду режимів польоту</p></figcaption></figure>
 
-The Flight/Drive Modes Overview screen shows an overview of the configured Flight/Drive Modes. The information below is displayed for each flight mode row:
+На екрані огляду режимів польоту/водіння відображається інформація про налаштовані режими. Кожен рядок відображає наступні параметри:
 
-* Mode #
-* Mode Name
-* Switch
-* Trim settings (RETA)
+* Номер режиму #
+* Імʼя режиму
+* Перемикач
+* Налаштування триммерів (RETA)
 
-**Check FM Trims:** When check FM trim is pressed, the trims for the current flight/drive mode are temporarily disabled. This is used to test the impact of the current flight/drive mode’s trims on the outputs.
+**Check FM Trims:** Під час натискання цієї кнопки триммери поточного режиму польоту/водіння тимчасово вимикаються. Це використовується для тестування впливу триммерів цього режиму на виходи.
 
-<figure><img src="../../.gitbook/assets/bwFM2.png" alt=""><figcaption><p>Flight Mode Configuration screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwFM2.png" alt=""><figcaption><p>Екран налаштування режиму польоту</p></figcaption></figure>
 
-Selecting a flight/drive mode from the overview screen will open the configuration page, which has the following options:
+Вибір режиму польоту/водіння з екрану огляду відкриє сторінку налаштувань із наступними параметрами:
 
-**Name:** The custom name for the flight mode. If configured, this name will be shown on the upper left position of the main screen next to the battery voltage.
+**Імʼя:** Користувацьке імʼя для режиму польоту. Якщо налаштовано, то це імʼя відображатиметься в лівому верхньому куті головного екрана поруч із показником заряду батареї.
 
-**Switch:** The trigger to enable that flight/drive mode. It can be a switch, pot, telemetry, trim or logical switch.
+**Перемикач:** Тригер для активації цього режиму польоту/водіння. Це може бути перемикач, потенціометр, телеметрія, триммер або логічний перемикач.
 
-**Trims** - To configure the trims, select the trim that you want to configure (each column is one trim). Then scroll to select the flight/drive mode (**0-8**) that will provide the initial trim value and modifier (**=** or **+**). Select **--** to disable the trim.
+**Триммери:** Для налаштування триммерів виберіть триммер який хочете налаштувати (кожна колонка відповідає одному триммеру). Потім прокрутіть, щоб вибрати режим польоту/водіння (**0-8**), що надасть початкове значення триммера та модифікатор (**=** або **+**). Виберіть **--** щоб вимкнути триммер.
 
-When **3P** is selected instead of the flight mode **(0-8)**, the trim will act as a 3 position momentary switch.
+Якщо вибрано **3P** замість режиму польоту **(0-8)**, то триммер буде працювати як 3-позиційна кнопка.
 
-_**Modifier**_ - there are two possible value modifiers **=** and **+.** The **=** modifier uses the trim value directly from the selected flight/drive mode. The **+** modifier uses the trim value from the selected flight/drive mode and then adds the trim value from the flight/drive mode you are configuring.
+_**Модифікатор**_ — доступні два модифікатори значень: **=** і **+**. Модифікатор **=** використовує значення триммера безпосередньо з вибраного режиму польоту/водіння. Модифікатор **+** використовує значення триммера та додає до нього значення яке ви налаштували для поточного режиму.
 
-_Example 1:_ If you are configuring FM1 and set the value to =0, FM1 will have the trim value of the current value of the same trim in FM0. In this case, changes made to the trim in FM1 will also affect the trim in FM0 and vice-versa.
+_Приклад 1:_ Якщо ви налаштовуєте Режим польоту 1 (FM1) і встановлюєте значення на =0, то FM1 матиме триммер еквівалентний значенню цього триммера як в Режиму польоту 0 (FM0). Зміни триммера в FM1 також впливатимуть на FM0 і навпаки.
 
-_Example 2:_ If you are configuring FM1 and set the value to +0, FM1 will have the trim value of the same trim in FM0, plus any trim changes made while in FM1. In this case, changes made to the trim in FM1 do not affect the trim in FM0. However, changes to trim values FM0 will affect trim values in FM1.
+_Приклад 2:_ Якщо ви налаштовуєте Режим польоту 1 (FM1) і встановлюєте значення на +0, то FM1 матиме значення триммера як у Режиму польоту 0 (FM0) плюс зміни триммера зроблені під час перебування в FM1. Зміни триммерів у FM1 не впливатимуть на FM0, але зміни у FM0 впливатимуть на FM1.
 
-**Fade in:** Gradually change the trim value when this flight/drive mode is enabled. Specify the time in seconds (0.0 - 25.0) until the value change is completed.
+**Поступове ввімкнення (Fade in):** Поступова зміна значення триммера під час активації режиму польоту/водіння. Вкажіть час у секундах (0.0 - 25.0), протягом якого відбудеться зміна.
 
-**Fade out:** Gradually change the trim value when this flight/drive mode is disabled. Specify the time in seconds (0.0 - 25.0) until the value change is completed.
+**Поступове вимкнення (Fade out):** Поступова зміна значення триммера під час вимкнення режиму польоту/водіння. Вкажіть час у секундах (0.0 - 25.0), за який відбудеться зміна.
 
 {% hint style="info" %}
-If the trim is turned off (**--**) on the setup page, you will not be able to adjust it at all on the main view screen.
+Якщо триммер вимкнено (**–**) на сторінці налаштувань, ви не зможете його налаштовувати на головному екрані.
 {% endhint %}
 
-### Global Variables
+## Глобальні змінні
 
-Global variables are variables whose values are shared across all the configuration screens of a model. Their values can be used in weights, offsets, differential, expo settings, outputs, and in logical switch comparisons.  The bottom portion of the flight/drive mode configuration screen shows an overview of each global variable for the selected flight/drive mode. For each global variable row, the following information is displayed:
+Глобальні змінні — це змінні, значення яких спільне для всіх екранів налаштувань моделі. Їх значення можуть використовуватися в коефіцієнтах ваги, зсуву, диференціалі, налаштуваннях експоненти, виходах та порівняннях для логічних перемикачів. У нижній частині екрана налаштувань режиму польоту/водіння показується значення кожної глобальної змінної для вибраного режиму. Для кожного рядка глобальної змінної відображаються наступні параметри:
 
-* **Global Variable Number**: Displayed as **GV(1-9)**
-* **Global Variable Name**: User-defined name for the global variable - up to three characters.
-* **Mode:** Where the value of the global variable comes from. Options are:
-  * **Own:** the global variable value for the selected flight/drive mode is manually defined in the **Value** text field.
-  * **FM(1-9)** - global variable value for the selected flight/drive mode is inherited from the flight mode defined in the drop-down.
-* **Value**: The current value of the global variable.
+* **Номер глобальної змінної (Global Variable Number)**: Відображається як **GV(1-9)**
+* **Імʼя глобальної змінної (Global Variable Name)**: Користувацьке імʼя для глобальної змінної – до трьох символів.
+* **Режим (Mode)**: Джерело значення глобальної змінної. Опції:
+  * **Власне (Own)**: Значення глобальної змінної для вибраного режиму польоту/водіння визначається вручну у полі **Value**.
+  * **FM(1-9)**: Значення глобальної змінної успадковується від визначеного режиму польоту в спадному списку.
+* **Значення (Value)**: Поточне значення глобальної змінної.
 
-You can edit the value of the global variable by changing the value in the value text field.  Selecting the global variable number will open the global variable configuration screen will give you the following options:
+Ви можете змінити значення глобальної змінної змінивши його в полі введення значення. Вибір номера глобальної змінної відкриє екран налаштування з наступними опціями:
 
-<figure><img src="../../.gitbook/assets/bwfm3.png" alt=""><figcaption><p>Global Variables configuration screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwfm3.png" alt=""><figcaption><p>Екран налаштування глобальних змінних</p></figcaption></figure>
 
-* **Name** - Name for the global variable. Three characters are allowed.&#x20;
-* **Unit** - (optional) Allows you to add a **%** label to the displayed values when selected. It DOES NOT affect how the values are calculated.
-* **Precision** - Allows you to select the number precision options whole numbers (**0.-**) and decimal (**0.0**). The default value is **0.-**
-* **Min** - Defines the minimum that is allowed for the global variable.
-* **Max** - Defines the maximum value that is allowed for the global variable.
-* **Popup** - When enabled, a pop-up window will be displayed on the main screen when the value of this global variable changes during normal use.
-* **FM1 -> FM8** - Allows you to select the global variable inheritance for the flight/drive mode. **Long press** the field to switch between **Own** and **Inheritence** mode. In **Own** mode, you can define the global variable value for the selected flight mode. In **Inheritance** mode, you can select the Flight Mode that the global variable will inherit the value from.
+* **Імʼя (Name)** – Імʼя глобальної змінної. Дозволено до трьох символів.
+* **Одиниці вимірювання (Unit)** (необов’язково) – Додає символ **%** до відображуваних значень. Це не впливає на розрахунки значень.
+* **Точність (Precision)** – Вибір рівня точності: цілі числа (**0.-**) або десяткові дроби (**0.0**). За замовчуванням встановлено **0.-**.
+* **Мінімум (Min)** – Визначає мінімальне допустиме значення глобальної змінної.
+* **Максимум (Max)** – Визначає максимальне допустиме значення глобальної змінної.
+* **Спливаюче вікно (Popup)** – Якщо ввімкнено, то на головному екрані відображатиметься спливаюче вікно під час зміни значення глобальної змінної.
+* **FM1 -> FM8** – Дозволяє вибрати наслідування значення глобальної змінної для кожного режиму польоту/водіння. **Довге натискання** на поле перемикає між режимами **Own** і **Inheritance**. У режимі **Own** ви можете визначити власне значення для вибраного режиму польоту. У режимі **Inheritance** ви можете вибрати режим польоту, з якого буде успадковано значення.
 
-Pressing the **\[PAGE>]** button will take you to the **Inputs** screen.
+Натискання кнопки **\[PAGE>]** направить вас на екран **Inputs**.
