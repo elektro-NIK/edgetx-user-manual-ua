@@ -1,46 +1,46 @@
-# Mixes
+# Мікшери (Mixes)
 
-The **Mixes** screen  is where several Inputs can be combined into one "Channel Mix". These mixes are then assigned to a radio channel for output. This is also the place where switches, knobs or sliders are assigned to a channel for output. Similar to the Input section, it is also possible to assign a weight, offset or curve to a channel mix.
+Екран **Мікшери** – це місце, де кілька Входів можуть бути об’єднані в один "Канал Мікшування". Ці мікшери потім призначаються радіоканалу для виходу. Це також місце, де до каналу призначаються перемикачі, потенціометри або слайдери для виходу. Подібно до розділу Входи, також можливо призначити вагу, зміщення або криву до каналу мікшування.
 
-<figure><img src="../../../.gitbook/assets/bwmixes1.png" alt=""><figcaption><p>Mixes Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bwmixes1.png" alt=""><figcaption><p>Сторінка Мікшерів</p></figcaption></figure>
 
-The **Mixes** screen shows you an overview of your configured mixes. Each row represents a mixer line and displays the following information from left to right: channel, weight, input, mix name switch. These items are described in the [Mixes configuration options](mixes.md#mixes-configuration-options) area below.
+Екран **Мікшери** показує вам огляд ваших налаштованих мікшерів. Кожен рядок представляє собою лінію мікшування і відображає наступну інформацію зліва направо: канал, вага, вхід, ім'я мікшера, перемикач. Ці елементи описані в розділі [Опції налаштування мікшерів].(mixes.md#mixes-configuration-options) нижче.
 
-Selecting an empty mix line and pressing **\[Enter]** will create a new mix and open the mixes configuration page.&#x20;
+Вибір пустої лінії мікшування та натискання **\[Enter]** створить новий мікшер і відкриє сторінку налаштування мікшерів.&#x20;
 
-Selecting an existing mix line and pressing **\[Enter]** will toggle between **Copy/Paste** mode and **Move** mode. In **Copy/Paste** mode, a copy of the mix line is made, which can be pasted into the desired channel or mix line. In **Move** mode, the selected mix can be moved to a different channel. Press the **\[Return]** button to exit this mode.
+Вибір існуючої лінії мікшування та натискання [Enter] перемикає між режимом Copy/Paste та режимом Move. У режимі Copy/Paste створиться копія лінії мікшування, яку можна вставити в бажаний канал або лінію. У режимі Move вибраний мікшер можна перемістити в інший канал. Натисніть кнопку [Return], щоб вийти з цього режиму.
 
-Selecting an existing mix line and long-pressing **\[Enter]** will give you the following options:
+Вибір існуючої лінії мікшера та тривале натискання **\[Enter]** надасть вам такі опції:
 
-* **Edit** - opens the mixes configuration page for that mix line.
-* **Insert before** - Inserts a new mix line before the selected mix.
-* **Insert after** - Inserts a new mix line after the selected mix.
-* **Copy** - copies the selected mix line.
-* **Move** - selects the mix line to be moved.
-* **Delete** - deletes the selected mix line.
+* **Edit** - відкриває сторінку конфігурації мікшерів для цієї лінії мікшера.
+* **Insert before** - вставляє нову лінію мікшера перед вибраним мікшером.
+* **Insert after** - вставляє нову лінію мікшера після вибраного мікшера.
+* **Copy** - копіює вибрану лінію мікшера.
+* **Move** - вибирає лінію мікшера для переміщення.
+* **Delete** - видаляє вибрану лінію мікшера.
 
-<figure><img src="../../../.gitbook/assets/bwmixes2 (3).png" alt=""><figcaption><p>Mixes Configuration Screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bwmixes2 (3).png" alt=""><figcaption><p>Екран налаштування мікшерів</p></figcaption></figure>
 
-### Mixes Configuration Options
+### Екран Налаштування Мікшерів
 
-The right portion of the mixes configuration page contains a graph that shows the channel range for the mix.
+Права частина сторінки конфігурації міксів містить графік, який показує діапазон каналів для мікшерів.
 
-When the **edit** option is selected for a mix, the following configuration options are available:
+Коли вибрана опція **edit** для мікшера, доступні такі параметри конфігурації:
 
-* **Mix Name** - Name of the mix (optional). Up to 6 characters are allowed.
-* **Source** - The source for the mix. In addition to inputs, you can select sticks, pots, sliders, trims, physical and logical switches, heli mixer outputs, trainer import channel values, and other channels.
-* **Weight**- Percentage of the source value to use. Long-pressing here will switch from numerical value to a global variable.
-* **Offset** - The value added to or subtracted from the source.
-* **Trim** - Specifies whether or not to include the trim values in this mix. For the trim values to be included, the trim field for the relevant input must also be enabled on **INPUTS** screen.
-* **Curve** - Specifies the type of curve that will be used. See the **curve** section on the [Inputs](inputs.md) page for detailed explanations of the different curve types.&#x20;
-* **Switch** - The physical switch that activates this mix line (optional). If no switch is selected, then the mix will be active by default.
-* **Warning** -when selected, the radio will beep when this mix is active. You can choose from OFF or beep patterns 1, 2, 3.&#x20;
-* **Multiplex** - The multiplex setting defines how the current mixer line interacts with the others on the same channel. **Add** will add its output to them, **Multiply** will multiply the result of the lines above it, and **Replace** will replace anything that was done before it with its output.&#x20;
-* **Modes** - Specifies which flight modes this mix is active for. Visible modes are active.
-* **Delay up** - Creates a time delay in seconds between when the source value increases and when it is output.
-* **Delay down** -  Creates a time delay in seconds between when the source value decreases and when it is output.
-* **Slow prec** (precision) - Changes the precision for Slow up/dn between 0.0 and 0.00.
-* **Slow up** - Adjusts the transition speed for source value increases. Specify the time to transition from -100% to + 100% in seconds. You can specify a range from 0.00 seconds to 25.00 seconds.
-* **Slow down** - Adjusts the transition speed for source value decreases. Specify the time to transition from -100% to + 100% in seconds. You can specify a range from 0.00 seconds to 25.00 seconds.
+* **Mix Name** - Назва мікшера (необов'язково). Дозволено до 6 символів.
+* **Source** - Джерело для мікшера. Окрім входів, ви можете вибрати стіки, потенціометри, слайдери, тримери, фізичні та логічні перемикачі, виходи мікшера для вертольотів, значення імпорту каналів від інструктора та інші канали.
+* **Weight**- Відсоток значення джерела, який буде використаний. Довге натискання тут змінить числове значення на глобальну змінну.
+* **Offset** - Значення, яке додається або віднімається від джерела.
+* **Trim** - Визначає, чи включати значення тріму в цей мікшер. Щоб значення тріму були включені, поле тріму для відповідного входу також має бути активоване на екрані **ВХОДИ**.
+* **Curve** - Визначає тип кривої, яка буде використовуватися. Дивіться розділ **Крива** на сторінці [Входи](inputs.md) для детальних пояснень різних типів кривих.&#x20;
+* **Switch** - Фізичний перемикач, який активує цю мікшерну лінію (необов'язково). Якщо перемикач не вибрано, мікшер буде активний за замовчуванням.
+* **Warning** - Коли вибрано, апаратура буде видавати сигнал, якщо цей мікшер активний. Ви можете вибрати OFF або звукові сигнали 1, 2, 3.&#x20;
+* **Multiplex** - Налаштування мультиплексування визначає, як поточний мікшер взаємодіє з іншими на тому ж каналі. **Add** (Додати) додасть свій вихід до них, **Multiply** (Помножити) перемножить значення ліній вище поточної, а **Replace** (Замінити) замінить все, що було зроблено раніше з цим виходом.&#x20;
+* **Modes** - Вказує, для яких режимів польоту цей мікшер активний. Активні видимі режими.
+* **Delay up** - Створює затримку в секундах між тим, коли значення джерела збільшується, і коли воно виводиться.
+* **Delay down** -  Створює затримку в секундах між тим, коли значення джерела зменшується, і коли воно виводиться.
+* **Slow prec** Змінює точність для переходу збільшення/зменшення між 0.0 і 0.00.
+* **Slow up** - Регулює швидкість переходу для збільшення значення джерела. Вкажіть час для переходу від -100% до +100% у секундах. Ви можете вказати діапазон від 0.00 секунд до 25.00 секунд.
+* **Slow down** - Регулює швидкість переходу для зменшення значення джерела. Вкажіть час для переходу від -100% до +100% у секундах. Ви можете вказати діапазон від 0.00 секунд до 25.00 секунд.
 
-Pressing the **\[PAGE>]** button will take you to the **Outputs** screen.
+Натиснення кнопки **\[PAGE>]** перенесе вас на екран **Виходи**.
