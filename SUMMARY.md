@@ -1,4 +1,4 @@
-# Table of contents
+# Зміст
 
 * [Посібник користувача EdgeTX v2.10](README.md)
 * [Зведення змін від версії v2.9](summary\_of\_changes.md)
