@@ -1,4 +1,4 @@
-# Зміст
+# Table of contents
 
 * [Посібник користувача EdgeTX v2.10](README.md)
 * [Зведення змін від версії v2.9](summary\_of\_changes.md)
@@ -82,14 +82,14 @@
 
 ## EdgeTX: Інструкції
 
-* [Доступ до режиму DFU та завантажувача](edgetx-how-to/access-dfu-and-bootloader-mode.md)
-* [Внесок у посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md)
-* [Установка бездротового інструктора з багатопротокольним модулем](edgetx-how-to/set-up-wireless-trainer-with-mpm.md)
-* [Використання Bluetooth з EdgeTX](edgetx-how-to/use-bluetooth-with-edgetx.md)
-* [Налаштування розширеного джойстика з EdgeTX](edgetx-how-to/configure-advanced-joystick-with-edgetx.md)
-* [Інформація про відображення джойстика для розробників ігор](edgetx-how-to/joystick-mapping-information-for-game-developers.md)
-* [Вимкнення сенсорного екрану](edgetx-how-to/disable-touchscreen.md)
-* [Використання трімів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
+* [Доступ до режиму DFU та завантажувача](edgetx-instrukciyi/access-dfu-and-bootloader-mode.md)
+* [Внесок у посібник користувача](edgetx-instrukciyi/contribute-to-the-user-manual.md)
+* [Установка бездротового інструктора з багатопротокольним модулем](edgetx-instrukciyi/set-up-wireless-trainer-with-mpm.md)
+* [Використання Bluetooth з EdgeTX](edgetx-instrukciyi/use-bluetooth-with-edgetx.md)
+* [Налаштування розширеного джойстика з EdgeTX](edgetx-instrukciyi/configure-advanced-joystick-with-edgetx.md)
+* [Інформація про відображення джойстика для розробників ігор](edgetx-instrukciyi/joystick-mapping-information-for-game-developers.md)
+* [Вимкнення сенсорного екрану](edgetx-instrukciyi/disable-touchscreen.md)
+* [Використання трімів для регулювання глобальних змінних](edgetx-instrukciyi/use-trims-as-switches.md)
 
 ## More
 
