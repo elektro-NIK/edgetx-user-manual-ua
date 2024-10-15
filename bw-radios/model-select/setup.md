@@ -1,4 +1,4 @@
-# Setup
+# Установка
 
 <figure><img src="../../.gitbook/assets/bwsetup.png" alt=""><figcaption></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Trainer
+# Інструктор
 
 <figure><img src="../../../.gitbook/assets/trainer1.png" alt=""><figcaption><p>Trainer Screen</p></figcaption></figure>
 
