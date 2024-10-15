@@ -96,7 +96,7 @@
 * [Configure a low battery alert](edgetx-how-to/useful-logical-switches-and-special-functions.md)
 * [Advanced Audio Features](edgetx-how-to/advanced-audio-features.md)
 
-## More
+## Більше
 
 * [Додаткові ресурси](more/additional-resources.md)
 * [Учасники/Contributors](more/contributors.md)
