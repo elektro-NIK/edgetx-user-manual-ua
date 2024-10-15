@@ -91,7 +91,7 @@
 * [Вимкнення сенсорного екрану](edgetx-how-to/disable-touchscreen.md)
 * [Використання трімів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
 
-## More
+## Більше
 
 * [Додаткові ресурси](more/additional-resources.md)
 * [Учасники/Contributors](more/contributors.md)
