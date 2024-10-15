@@ -1,4 +1,4 @@
-# Зміст
+# Table of contents
 
 * [Посібник користувача EdgeTX v2.10](README.md)
 * [Зведення змін від версії v2.9](summary\_of\_changes.md)
@@ -53,7 +53,7 @@
   * [Статистика](color-radios/statistics.md)
 * [Посібник користувача для апаратури з монохромним екраном](bw-radios/README.md)
   * [Інтерфейс користувача](bw-radios/user-inteface.md)
-  * [Основний вигляд](bw-radios/main-view/README.md)
+  * [Головний екран](bw-radios/main-view/README.md)
     * [Скидання](bw-radios/main-view/reset.md)
     * [Статистика](bw-radios/main-view/statistics.md)
   * [Налаштування моделі](bw-radios/model-select/README.md)
