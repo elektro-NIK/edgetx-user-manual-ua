@@ -1,5 +1,5 @@
-# Global Functions
+# Глобальні функції
 
-**Global functions** are special functions that apply to all models on the Radio. They are configured exactly as model **Special Functions** and the same functions are available. For more information about configuring Global Functions, refer to the [Special Functions](../model-select/special-functions.md) section as they are essentially the same.
+**Глобальні функції** — це спеціальні функції, які застосовуються до всіх моделей на апаратурі. Вони налаштовані точно так само, як **Спеціальні функції** моделі, і доступні ті ж самі функції. Щоб отримати додаткові відомості про налаштування глобальних функцій, зверніться до розділу [Спеціальні функції](../model-select/special-functions.md), оскільки вони, по суті, однакові.
 
-Pressing the **\[PAGE>]** button will take you to the **Trainer** screen.
+Натискання кнопки **\[PAGE>]** переведе вас на екран **Тренера**.
