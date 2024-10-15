@@ -18,7 +18,7 @@ Image dimensions shall be 64 x 32 pixels, 16 bit, grayscale, .bmp file. The imag
 
 **Timer 1/2/3** - There are 3 configurable timers in EdgeTX. The following configuration options will be displayed once the timer is no longer set to **OFF**:
 
-#### Timer 1 \[Mode] \[Switch]
+#### Timer 1   \[Mode]   \[Switch]&#x20;
 
 **\[Mode] -** The options include:
 
@@ -29,7 +29,7 @@ Image dimensions shall be 64 x 32 pixels, 16 bit, grayscale, .bmp file. The imag
 * **TH% (Throttle %)** - The timer counts proportionally to the throttle. It counts in real-time at full throttle and half speed at 50% throttle.
 * **THt (Throttle Start)** - The timer starts once the throttle is raised and the configured switch is activated. After starting, the timer ignores the throttle position and will keep counting unless the switch is deactivated.
 
-**\[Switch]** - Select the switch that will trigger the timer to start. If no switch is selected, the timer will trigger based only on the configured mode. In addition to a switch, you can also select a trim, a telemetry source (triggered when telemetry data is received from that source), or physical activity (stick movement or button press) (labeled as **ACT**)
+**\[Switch]** - Select the switch that will trigger the timer to start.  If no switch is selected, the timer will trigger based only on the configured mode. In addition to a switch, you can also select a trim, a telemetry source (triggered when telemetry data is received from that source), or physical activity (stick movement or button press) (labeled as **ACT**)
 
 {% hint style="info" %}
 Those items with a "!" mark in front of the trigger name mean that the condition is reversed. For example, "!SA-" means "when SA switch is not in middle/center position (= up or down)".
@@ -37,9 +37,9 @@ Those items with a "!" mark in front of the trigger name mean that the condition
 
 **Name -** Name of the timer
 
-**Start -** The time used for the timer's advanced functions. The default value is 00:00 and when left as such, the timer operates like a stopwatch, counting upward until stopped. If a different time is entered in this box, then the additional field will appear next to the time with the options: **Remain** or **Elaps**.
+**Start -** The time used for the timer's advanced functions.  The default value is 00:00 and when left as such, the timer operates like a stopwatch, counting upward until stopped.  If a different time is entered in this box, then the additional field will appear next to the time with the options: **Remain** or **Elaps**.
 
-If set to **Remain**, the counter will function like a countdown timer - counting down from the designated time to zero and then alerting the user. If set to **Elaps**, the timer functions like an alarm, counting up from zero until the designated time and then alerting the user.
+If set to **Remain**, the counter will function like a countdown timer - counting down from the designated time to zero and then alerting the user.  If set to **Elaps**, the timer functions like an alarm, counting up from zero until the designated time and then alerting the user.
 
 **Persist. (Persistence):**
 
@@ -58,7 +58,7 @@ If set to **Remain**, the counter will function like a countdown timer - countin
 
 <figure><img src="../../.gitbook/assets/Bwsetup1.png" alt=""><figcaption><p>Function Switches</p></figcaption></figure>
 
-### **Function Switches**
+### **Function Switches**&#x20;
 
 The functions switches are a type of multiposition switch (on select transmitters) that are managed directly by EdgeTX. Physically, they look like a regular 6-pos switch but are much more flexible.
 
@@ -78,7 +78,7 @@ A traditional 6POS is a group of 6 switches that work together, where only one c
 
 **'1', '2' or '3'** define groups. All the switches in a group act together, **where only one (the last pushed) can be active.**
 
-**Always on groups**
+**Always on groups**&#x20;
 
 Selecting this check box makes the assigned group act like a traditional 6-position switch where one button from the group must be on at all times.
 
@@ -104,9 +104,9 @@ Unlike hardware 6-POS implementation (Horus, TX16S,...), software managed switch
 
 **Reset** - This resets all trim values to zero.
 
-**Show trims -** When set to **Yes**, it will display the numerical trim value on the trim bar. When set to **CHANGE**, it will display the numerical value once the trim is no longer at zero.
+**Show trims -** When set to **Yes**, it will display the numerical trim value on the trim bar.  When set to **CHANGE**, it will display the numerical value once the trim is no longer at zero.
 
-**Trim Step: -** Defines the amount of increase/decrease in trim when the trim switch is pressed.
+**Trim Step: -** Defines the amount of increase/decrease in trim when the trim switch is pressed.&#x20;
 
 * Course = 1.6%
 * Medium = 0.8%
@@ -122,12 +122,12 @@ The throttle related configuration options below are displayed in collapsible me
 
 **T-Reverse** - When enabled, this option reverses the output direction of the configured throttle channel.
 
-**T-Source** - The source that will be used for the throttle.
+**T-Source** - The source that will be used for the throttle.&#x20;
 
-**T-Trim-Idle** - When enabled, the throttle trim will only affect the bottom portion of the throttle band.
+**T-Trim-Idle** - When enabled, the throttle trim will only affect the bottom portion of the throttle band.&#x20;
 
 {% hint style="info" %}
-For example, with **Trim idle only** enabled, the throttle stick at the lowest point might have a value of -80 and the center point will still be 0 and the highest point of 100. Without this enabled, the throttle stick at the lowest point might have a value of -80 however, the center point will be 20 and the highest point of 100.
+For example, with **Trim idle only** enabled, the throttle stick at the lowest point might have a value of -80 and the center point will still be 0 and the highest point of 100. Without this enabled, the throttle stick at the lowest point might have a value of -80 however, the center point will be 20 and the highest point of 100.&#x20;
 {% endhint %}
 
 **T-Trim-SW** - The trim switch that will be used to trim the throttle. It is possible to substitute the throttle trim switch with the aileron, rudder, or elevator trim switches.
@@ -177,13 +177,13 @@ The configuration settings for both the Internal and External RF sections work t
 The configuration options are: **OFF** or the _**module name**_ of the installed module as configured in the radio settings. Configuration options are unique to each installed module. Please consult the manufacturer's documentation for configuration options.
 
 {% hint style="info" %}
-Configuration options for the multi-protocol module are described here: [https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
+Configuration options for the multi-protocol module are described here:  [https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
 {% endhint %}
 
 **Receiver number** - A receiver number is a user-assigned number for a model that is sent to the receiver when bound. Each model must have a unique receiver number. However, models using different protocols may have the same receiver number without issues. EdgeTX will inform you when a receiver number is unique or if it is already being used with a text above the number field.
 
 {% hint style="info" %}
-If using the radio in gamepad mode, both internal and external RF modules should be turned off. This will result in increased performance when connected to a computer via USB.
+If using the radio in gamepad mode, both internal and external RF modules should be turned off. This will result in increased performance when connected to a computer via USB.&#x20;
 {% endhint %}
 
 ### **Trainer**
@@ -203,7 +203,7 @@ Below are the possibile configuration options:
   * **PPM frame** - The first field is the length of the PPM frame. The second field is the stop length/delay between pulses. The dropdown is to select the polarity of the signal. The frame length is automatically adjusted to the correct value when the number of transmitted channels is changed. However, this automatically assigned value can be manual changed. _**Note**: In most cases, the default setting does_ not _need to be changed._
 * **Master / Bluetooth** - Master mode using a Bluetooth connection (if installed in radio).
 * **Slave / Bluetooth** - Slave mode using a Bluetooth connection (if installed in radio).
-* **Master / Multi** - Master mode using an additional externally mounted Multi-protocol module for the connection. For more information on this setup, see [set-up-wireless-trainer-with-mpm.md](../../edgetx-instrukciyi/set-up-wireless-trainer-with-mpm.md "mention")
+* **Master / Multi** - Master mode using an additional externally mounted Multi-protocol module for the connection. For more information on this setup, see [set-up-wireless-trainer-with-mpm.md](../../edgetx-how-to/set-up-wireless-trainer-with-mpm.md "mention")
 
 <figure><img src="../../.gitbook/assets/bwsetup5 (1).png" alt=""><figcaption><p>Enabled Features options</p></figcaption></figure>
 
@@ -213,7 +213,7 @@ The **Enabled Features** section allows you to configure which pages are visible
 
 * **Global** - When selected, the tab will take the global value configured in the **Enabled Features** area in **Radio Setup**. The configured global value will display next to the option.
 * **On** - When selected, this tab will be visible when this model is loaded.
-* **Off** - When selected, this tab will not be visible when this model is loaded.
+* **Off** -  When selected, this tab will not be visible when this model is loaded.
 
 {% hint style="info" %}
 _**Note:**_ Turning off a tab only hides the tab and does not change the items already configured in that tab.
@@ -225,10 +225,10 @@ _**Note:**_ Turning off a tab only hides the tab and does not change the items a
 
 ### USB Joystick
 
-The **USB Joystick** has two possible modes, **Classic** and **Advanced**.
+The **USB Joystick** has two possible modes, **Classic** and **Advanced**.&#x20;
 
 {% hint style="info" %}
-If using the radio as a USB Joysitck, both internal and external RF modules should be turned off. When configured as such, the mixer will run at 1000Hz when in Joystick mode (which is needed for F.Sim competitors). Additinally, it also displays mixer run time in statistic/debug screen. This will result in increased performance when connected to a computer via USB.
+If using the radio as a USB Joysitck, both internal and external RF modules should be turned off. When configured as such, the mixer will run at 1000Hz when in Joystick mode (which is needed for F.Sim competitors). Additinally, it also displays mixer run time in statistic/debug screen. This will result in increased performance when connected to a computer via USB.&#x20;
 {% endhint %}
 
 In **Classic mode**, the radio's configured output channels will be sent to the target device in numerical order and mapped to the device's preconfigured USB controller axes and buttons. Below is the default channel mapping for Microsoft Windows.
@@ -245,7 +245,7 @@ In **Classic mode**, the radio's configured output channels will be sent to the 
 
 In **Advanced mode** you can configure the following additional options:
 
-**If. mode (Interface mode):** This indicates to the target device (the device you are connecting your transmitter to) what type of device you are connecting. The options are **Joystick**, **Gamepad**, **MultiAxis.**
+**If. mode (Interface mode):** This indicates to the target device (the device you are connecting your transmitter to) what type of device you are connecting. The options are **Joystick**, **Gamepad**, **MultiAxis.** &#x20;
 
 {% hint style="info" %}
 **Note:** Currently there is a limitation in MS Windows that may limit your transmitter to being only detected as a Joystick, regardless of what is selected in this option. In MacOS, Linux and Andriod this functions properly.
@@ -268,8 +268,8 @@ In **Advanced mode** you can configure the following additional options:
       * **Pulse** - Similar to "Normal" mode. However, instead of continous button press it is represented by a short button press.
       * **SWEmu** - The toggle switch emulations a push button. The first press turns the virtual button on, the second press turns it off.
       * **Delta** - The change of the output channel is represented by 2 buttons. While the output value is decreasing, the first button is pressed. When the output value is increasing, the second button is pressed. If there is no change, then no buttons will be pressed.
-      * **Companion** - This option should be selected when using your transmitter to control the simulator in EdgeTX Companion. It allows the multi-position switches to function properly in the simulator.
-  * **Positions** - The type of button that will be simulated.
+      * **Companion** - This option should be selected when using your transmitter to control the simulator in EdgeTX Companion.  It allows the multi-position switches to function properly in the simulator.
+  * **Positions** - The type of button that will be simulated.&#x20;
     * **Push -** will only map to one button
       * **2POS - 8 POS** - will map to the number of buttons that the switch has (ex: 3POS will map to 3 buttons).
   * **Button No:** The button number that the output will be mapped to and sent to the target device as.
