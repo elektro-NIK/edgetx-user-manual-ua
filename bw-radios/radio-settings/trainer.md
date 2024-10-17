@@ -1,33 +1,33 @@
-# Trainer
+# Тренер
 
-The **Trainer** screen in Radio Settings is used to configure how the radio in Master mode will handle the signals from the radio in Slave mode. It contains the below configuration options.&#x20;
+Екран **Тренер** в Налаштуваннях апаратури використовується для конфігурації того, як радіоапаратура в режимі Master буде обробляти сигнали від радіо в режимі Slave. Він містить наступні параметри конфігурації.
 
-<figure><img src="../../.gitbook/assets/bwtrainer.png" alt=""><figcaption><p>Trainer Ccreen in Radio Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwtrainer.png" alt=""><figcaption><p>Екран Тренер в Налаштуваннях апаратури</p></figcaption></figure>
 
-For each of the four main control inputs (Ail, Ele, Thr, Rud), the following options can be configured (for each row, from left to right).
+Для кожного з чотирьох основних елементів управління (Ail, Ele, Thr, Rud) можна налаштувати такі параметри (для кожного рядка, зліва направо).
 
-**Mode -**  How the radio in Master mode will handle the signals from the radio in Slave mode.&#x20;
+**Режим** – як апаратура в режимі Master оброблятиме сигнали від апаратури в режимі Slave.
 
-* **OFF** - Stick values from the radio in Master mode will be used - no input from the radio in Slave mode.
-* **+=** Adds the stick values from both the radios in Master and Slave modes.
-* **:=** Replaces the stick values from the radio in Master mode with the stick values from the radio in Slave mode. (Default)
-* **Weight** - Percentage of stick travel to use of the radio in Slave mode. Use negative values to change the stick direction.
-* **Source channel** - The channel from the radio in Slave mode that is mapped the control input.
+* **OFF** - використовуватимуться значення стіків з апаратури в режимі Master – жодного введення з апаратури в режимі Slave.
+* **+=** додає значення стіків з обох апаратур (в режимах Master і Slave).
+* **:=** замінює значення стіків з радіо в режимі Master на значення стіків з радіо в режимі Slave. (за умовчанням).
+* **Вага** – відсоток ходу стіку до використання апаратурою в режимі Slave. Використовуйте від’ємні значення, щоб змінити напрямок стіку.
+* **Джерело** – канал з апаратури в режимі Slave, який відображається як керуючий вхід.
 
-**Multiplier** - This value changes the weight of all the sticks together.&#x20;
+**Множник** – це значення змінює вагу всіх стіків разом.
 
-**Cal (calibrate)**- Sets the center stick value of the radio in Slave mode.
+**Каліб. (Калібрування)** - встановлює значення центру стіка апаратури в режимі Slave.
 
 {% hint style="info" %}
-The trim from the radio in Master mode is usually used. Set the trims on the radio in Slave mode to their center.
+Зазвичай використовується тример з апаратури в режимі Master. Встановіть тримери на апаратурі в режимі Slave в центр.
 {% endhint %}
 
 {% hint style="info" %}
-The radio in Master mode is the one that gets bound to the model receiver.
+Апаратура в режимі Master – це та, яка зв’язується з приймачем моделі.
 {% endhint %}
 
 {% hint style="info" %}
-A virtual trainer switch (**Tnr**) can be selected as switch to activate a special function or curve. The switch is ON when the trainer link is active.
+Перемикач віртуального тренера (Tnr) можна вибрати як перемикач для активації спеціальної функції або кривої. Перемикач увімкнуто, коли підключення до тренера активне.
 {% endhint %}
 
-Pressing the **\[PAGE>]** button will take you to the **Hardware** screen.
+Натиснувши кнопку **\[PAGE>]**, ви потрапите на екран **Апаратного забезпечення**.
