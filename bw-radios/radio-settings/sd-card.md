@@ -1,89 +1,92 @@
-# SD Card
+# SD карта
 
 <figure><img src="../../.gitbook/assets/bwsdcard1.png" alt=""><figcaption><p>SD Card Screen</p></figcaption></figure>
 
-The **SD Card** screen shows you the contents of your SD card, allows you to navigate the folders and interact with the files in the folders. All folders contain a README.txt file that describes what type of files belong in this folder. After selecting a file in one of the folders, you will be presented with some of the options below, depending on the file type that was selected:
+Екран **SD карти** показує вміст вашої SD карти, дозволяє переміщатися по папках та взаємодіяти з файлами в папках. Усі папки містять файл README.txt, що описує, які типи файлів належать до цієї папки. Після вибору файлу в одній з папок вам буде представлено деякі з наступних параметрів залежно від вибраного типу файлу:
 
-* **Assign bitmap** - Assigns the selected image file as the model image of the currently selected model.
-* **Copy** - Copies the selected file.
-* **Delete** - Deletes the selected file.
-* **Execute** - Executes a Lua script. Used for files ending in **.lua**
-* **Flash \[target]**- Flashes the selected firmware file to the select target module.  Examples: Flash Bootloader, Flast Internal Multi.
-* **Paste** - Pastes the copied file.
-* **Play** - Plays the selected sound file.
-* **Rename** - Renames the file.
-* **View text** - Views the selected **.txt**, **.csv**, and **.lua** files.&#x20;
+* **Призначити зображення** - призначає вибраний файл зображення як зображення моделі для поточної вибраної моделі.
+* **Копіювати** - копіює вибраний файл.
+* **Видалити** - видаляє вибраний файл.
+* **Виконати** - виконує сценарій Lua. Використовується для файлів із розширенням .lua
+* **Прошити \[ціль]** — перемикає вибраний файл прошивки у вибраний цільовий модуль. Приклади: Прошити апаратуру, Прошити внутр. Multi.
+* **Вставити** – вставляє скопійований файл.
+* **Відтворити** - відтворює вибраний звуковий файл.
+* **Перейменувати** - перейменовує файл.
+* **Переглянути текст** – перегляд вибраних файлів **.txt**, **.csv** і **.lua**.
 
-The folders listed on the SD card screen are the same as what you will see when connecting your radio to your computer. Below are the folder names and explanations for all the folders that come with the default EdgeTX SD Card.&#x20;
+Папки, перелічені на екрані SD-карти, такі самі, як і те, що ви побачите, під'єднавши апаратуру до комп’ютера. Нижче наведено назви папок і пояснення для всіх папок, які постачаються разом зі стандартною SD-карткою EdgeTX.
 
 ### BACKUP
 
-The backup folder contains model files for models that were backed up from the EEPROM. This folder will only be present on radios that store the model files in EEPROM.
+Папка резервного копіювання містить файли моделей, які були скопійовані з EEPROM. Ця папка буде присутня лише на радіоапаратурах, які зберігають файли моделі в EEPROM.
 
 ### FIRMWARE
 
-Place the firmware files that you want to flash in this folder. This folder is empty by default (except for the readme.txt file). When selecting a .bin file you will be given the option to flash the firmware to a particular module. Also, only firmware files in this location will be visible from the bootloader menu.
+Помістіть у цю папку файли прошивки, які ви хочете прошивати. За замовчуванням ця папка порожня (за винятком файлу readme.txt). Під час вибору файлу .bin вам буде надано можливість перепрошити мікропрограму для певного модуля. Крім того, у меню завантажувача буде видно лише файли мікропрограм у цьому місці.
 
 ### IMAGES
 
-_NOTE: This folder is only used for radios with 212x64 displays._&#x20;
+ПРИМІТКА. Ця папка використовується лише для радіоапаратур з екраном 212x64.
 
-Place your custom model image files in this folder. This folder is empty by default (except for the readme.txt file). Selecting an image file will give you the option to **Assign Bitmap**, which assigns the selected image file as the model image of the currently selected model.
+Розмістіть ваші файли зображень для моделей в цій папці. За замовчуванням ця папка порожня (за винятком файлу readme.txt). Вибір файлу зображення дасть вам можливість **Призначити зображення**, яке призначає вибраний файл зображення як зображення моделі для поточної вибраної моделі.
 
-The ideal image size for _model images_ is 64x32 pixels. The picture format should be .bmp The image file name should not exceed 9 characters and the image formatting should be 4 bit indexed colored mode.
+Ідеальний розмір _зображення моделі_ – 64x32 пікселя. Формат зображення має бути .bmp. Назва файлу зображення не має перевищувати 9 символів, а режим зображення має бути 4-бітним індексованим кольором.
 
 {% hint style="info" %}
-[https://www.skyraccoon.com/](https://www.skyraccoon.com/) has a large repository of free image files that can be used with EdgeTX.
+[https://www.skyraccoon.com/](https://www.skyraccoon.com/)  має велике сховище безкоштовних файлів зображень, які можна використовувати з EdgeTX.
 {% endhint %}
 
 ### LOGS
 
-This is where the log files that are configured in the [special function](../model-select/special-functions.md) **SD Logs** are written. These files can be viewed with the **View text** option. This folder is empty by default (except for the readme.txt file).
+Тут записуються файли журналів, налаштовані в спеціальній функції **SD лог**. Ці файли можна переглядати за допомогою параметра **Переглянути текст**. За замовчуванням ця папка порожня (за винятком файлу readme.txt).
 
 ### MODELS
 
-This is where the model files, label information, and preflight checklists are stored.  Each model will have a **model\[#].yml** file that contains all configured options.&#x20;
+Тут зберігаються файли моделі, інформація про підпис та списки передпольотних перевірок. Кожна модель матиме файл **model\[#].yml**, який містить усі налаштовані параметри.
 
-Models that are deleted via the radio will be moved to the **DELETED** folder that is included in this folder. The remaining model files are what will be visible on the **Model Select** screen.
+Моделі, видалені через апаратуру, будуть переміщені в папку **DELETED**, яка розміщена в поточній папці. Решта файлів моделі буде видно на екрані **Вибір моделі**.
 
-If you have configured the **Display checklist** option in model settings, the model notes file goes in this folder. The model notes file must be a .txt file and must have the EXACT same name as the model it is for, for example: Mobula6.txt. The text in the file is up to the user.
+Якщо ви налаштували опцію **Чекліст** у параметрах моделі, файл нотаток моделі зберігається в цій папці. Файл нотаток моделі має бути файлом .txt і мати ТОЧНО таку саму назву, що й модель, для якої він призначений, наприклад: Mobula6.txt. Текст у файлі залежить від користувача.
 
 ### RADIO
 
-This folder contains the **radio.yml** file. This file contains all the radio configuration data. If this file is corrupted or missing, the radio will go into **Emergency Mode** and will create a new radio.yml file with the default settings.&#x20;
+Ця папка містить файл **radio.yml**. Цей файл містить усі дані конфігурації радіоапаратури. Якщо цей файл пошкоджений або відсутній, апаратура перейде в **Аварійний режим** і створить новий файл radio.yml із налаштуваннями за замовчуванням.
 
 {% hint style="info" %}
-If the radio.yml file is manually edited, the **manuallyEdited:** tag must be set to **1** in the radio.yml file or the radio will think it is corrupted, go into **Emergency Mode** and will create a new radio.yml file with the default settings. The original .yml file will be saved in the folder.
+Якщо файл radio.yml редагується вручну, для тегу **manuallyEdited**: має бути встановлено значення **1** у файлі radio.yml, інакше апаратура вважатиме, що його пошкоджено, перейде в **Аварійний режим** і створить новий файл radio.yml із стандартними налаштуваннями. Оригінальний файл .yml буде збережено в папці.
 {% endhint %}
 
 ### SCREENSHOTS
 
-This is where the screenshot image files that are configured in the [special function](../model-select/special-functions.md) **Screenshot** are written. This folder is empty by default (except for the readme.txt file).
+Тут записуються файли зображень знімків екрана, які налаштовані у [Спеціальній функції](../model-select/special-functions.md) **Скриншот**. За замовчуванням ця папка порожня (за винятком файлу readme.txt).
 
 ### SCRIPTS
 
-This folder and its subfolders are where the Lua scripts get placed. It contains the following sub-folders by default. You can download additional Lua scripts from [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts).
+У цій папці та її вкладених папках розміщуються сценарії Lua. Він містить такі підтеки за замовчуванням. Ви можете завантажити додаткові сценарії Lua з [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts).
 
-* **Functions** - This folder is where the functions Lua scripts that can be activated by the [special function](../../color-radios/model-settings/special-functions.md) **Lua Script** must be placed. This folder is empty by default (except for the readme.txt file).  More information about function Lua scripts can be found here: [Function Scripts](https://luadoc.edgetx.org/part\_i\_-\_script\_type\_overview/function\_scripts).
-* **Mixes** - This folder is where the Lua mixer scripts shall be placed. This folder is empty by default (except for the readme.txt file). More information about Mixer Lua scripts can be found here: [Custom Mixer Scripts](https://luadoc.edgetx.org/part\_i\_-\_script\_type\_overview/mix)
-* **RGBLED** - This folder is where Lua scripts that control the RGB Leds (if hardware available) are stored.
-* **Tools** - Contains the Lua scripts that are available in the [Tools](../../color-radios/radio-settings/tools.md) screen.&#x20;
-* **Wizards** - Contains the Wizard Lua scripts that are available in the [Tools](../../color-radios/radio-settings/tools.md) screen.&#x20;
+* **Functions** - у цій папці мають бути розміщені функції сценаріїв Lua, які можна активувати [Спеціальною функцією](../../color-radios/model-settings/special-functions.md) **Lua Script**. За замовчуванням ця папка порожня (за винятком файлу readme.txt). Більше інформації про функцій сценаріїв Lua  можна знайти тут: [Function Scripts](https://luadoc.edgetx.org/part\_i\_-\_script\_type\_overview/function\_scripts).
+* Мікси — у цій папці розміщуються сценарії змішувача Lua. За замовчуванням ця папка порожня (за винятком файлу readme.txt). Додаткову інформацію про сценарії Mixer Lua можна знайти тут: Custom Mixer Scripts
+* **Mixes** - у цій папці розміщуються сценарії Lua мікшера. За замовчуванням ця папка порожня (за винятком файлу readme.txt). Додаткову інформацію про сценарії Lua мікшера можна знайти тут: [Custom Mixer Scripts](https://luadoc.edgetx.org/part\_i\_-\_script\_type\_overview/mix)
+* **RGBLED** - у цій папці зберігаються сценарії Lua, які керують світлодіодами RGB (за наявності апаратного забезпечення).
+* **Tools** - містить сценарії Lua, доступні на екрані [Інструменти](../../color-radios/radio-settings/tools.md).
+* **Wizards** - містить сценарії Майстра налаштувань Lua, доступні на екрані [Інструменти](../../color-radios/radio-settings/tools.md).
 
 ### SOUNDS
 
-This folder is where the EdgeTX sound packs for your radio get placed. The sound packs are language-specific and correlate to the **Voice language** option in **Radio Setup**. Selecting a sound file from this folder will give you the option **Play**, which plays the selected sound file.
+У цій папці зберігаються звукові пакети EdgeTX для вашої радіоапаратури. Звукові пакети залежать від мови та співвідносяться з параметром **Мова голосу** в меню **Налаштування апаратури**. Якщо вибрати звуковий файл із цієї папки, ви отримаєте опцію **Відтворити**, яка відтворить вибраний звуковий файл.
 
-Sound packs are available for manual download at: [https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases).  It is also possible to create custom sounds to use in EdgeTX. For your custom sounds to be playable by EdgeTX ensure that they meet the following criteria:
+Звукові пакети доступні для завантаження вручну за адресою: https://github.com/EdgeTX/edgetx-sdcard-sounds/releases. Також можна створювати спеціальні звуки для використання в EdgeTX. Щоб ваші спеціальні звуки могли відтворюватися EdgeTX, переконайтеся, що вони відповідають таким критеріям:
 
-* File Name: 123456.wav (up to 6 characters plus .wav)
-* Sample Rate: 32 kHz (or 16 Khz, 8Khz)
-* Bits / Sample: 16 (or 8)
-* Tracks: 1, mono
-* Compression Codec: PCM
+Звукові пакети доступні для завантаження вручну за адресою: [https://github.com/EdgeTX/edgetx-sdcard-sounds/releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases). Також можна створювати спеціальні звуки для використання в EdgeTX. Щоб ваші спеціальні звуки могли відтворюватися EdgeTX, переконайтеся, що вони відповідають таким критеріям:
+
+* Ім’я файлу: 123456.wav (до 6 символів плюс .wav)
+* Частота дискретизації: 32 кГц (або 16 кГц, 8 кГц)
+* Бітність: 16 (або 8)
+* Доріжки: 1, моно
+* Кодек стиснення: PCM
 
 {% hint style="info" %}
-For a demonstration video of how to make your own custom sounds that will work with EdgeTX, check out: [https://www.youtube.com/watch?v=DqF7HUsFrnE](https://www.youtube.com/watch?v=DqF7HUsFrnE)
+Демонстраційне відео про те, як створювати власні звуки, які працюватимуть із EdgeTX: [https://www.youtube.com/watch?v=DqF7HUsFrnE](https://www.youtube.com/watch?v=DqF7HUsFrnE)
 {% endhint %}
 
-Pressing the **\[PAGE>]** button will take you to the **Radio Setup** screen.
+Натиснувши кнопку **\[PAGE>]**, ви потрапите на екран **Налаштування апаратури**.
