@@ -1,18 +1,19 @@
-# Heli Setup
+# Налаштування гелікоптера
 
-The **Heli Setup** page in Model Settings is an optional page that is available on custom-compiled versions of EdgeTX. The heli setup page is often used for collective pitch mixing (CCPM) used in flybared helicopters where the receiver directly controls the swashplate servos. Most flybarless helicopters do not need to configure this page. The outputs of the CCPM mixer are CYC1, CYC2, and CYC3, which need to be assigned to an output channel on the Mixes screen.
+Сторінка **Heli Setup** в налаштуваннях моделі є додатковою опцією, яка доступна в спеціально скомпільованих версіях EdgeTX. Сторінка налаштування гелікоптера часто використовується для колективного змішування кроку (Cyclic-Collective-Pitch-Mixing), яке застосовується у гелікоптерах з флайбаром, де приймач безпосередньо керує сервоприводами автомату перекосу. Більшість гелікоптерів без флайбару не потребують налаштування цієї сторінки. Виходи мікшера CCPM – це CYC1, CYC2 і CYC3, які потрібно призначити на канал виходу на екрані Mixes.
 
-<figure><img src="../../.gitbook/assets/bwheli.png" alt=""><figcaption><p>Heli Setup screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwheli.png" alt=""><figcaption><p>Екран налаштування гелікоптера</p></figcaption></figure>
 
-The heli setup screen has the following configuration options:
 
-* **Swash Type** - Swash type for your model. Options are **120, 120x, 140, and 90.**
-* **Swash Ring** - Set the swash ring limit only as needed. **1** = maximum limit -> **100** or **0** = no limit.&#x20;
-* **Long. cyc. source** - Select source input.
-  * **Weight** - Percentage value of the stick travel to use.
-* **Lateral cyc.source** -Select source input.
-  * **Weight** - Percentage value of the stick travel to use.
-* **Coll. pitch source** - Select source input.&#x20;
-  * **Weight** - Percentage value of the stick travel to use.
+Екран гелікоптера містить такі налаштування:
 
-Pressing the **\[PAGE>]** button will take you to the **Flight Modes** screen.
+* **Swash Type** (Тип автомату перекосу) – Тип автомату перекосу для вашої моделі. Опції: **120, 120x, 140 та 90.**
+* **Swash Ring** (Кільце автомату перекосу) – Встановіть обмеження кільця автомату перекосу (лише за необхідності). **1** = максимальне обмеження -> **100** або **0** = без обмеження.
+* **Long. cyc. source** – Виберіть вхідний сигнал джерела.
+  * **Weight** – Відсоткове значення ходу стіка, яке використовується.
+* **Lateral cyc.source** – Виберіть вхідний сигнал джерела.
+  * **Weight** – Відсоткове значення ходу стіка, яке використовується.
+* **Coll. pitch source** – Виберіть вхідний сигнал джерела.
+  * **Weight** – Відсоткове значення ходу стіка, яке використовується.
+
+Натискання кнопки **\[PAGE>]** переведе вас на екран **Flight Modes**.
