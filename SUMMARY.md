@@ -72,7 +72,7 @@
       * [Звичайні телеметричні сенсори](bw-radios/model-select/telemetry/common-telemetry-sensors.md)
     * [Дисплей](bw-radios/model-select/display.md)
   * [Налаштування апаратури](bw-radios/radio-settings/README.md)
-    * [SD Карта](bw-radios/radio-settings/sd-card.md)
+    * [SD карта](bw-radios/radio-settings/sd-card.md)
     * [Налаштування апаратури](bw-radios/radio-settings/radio-setup.md)
     * [Глобальні функції](bw-radios/radio-settings/global-functions.md)
     * [Тренер](bw-radios/radio-settings/trainer.md)
