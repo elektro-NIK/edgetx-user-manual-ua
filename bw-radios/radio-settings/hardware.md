@@ -1,100 +1,99 @@
-# Hardware
+# Апаратне забезпечення
 
-The **Hardware** screen is where you configure hardware specific-settings for your radio. It shows all physical hardware objects (sticks, pots, switches) and allows for their modifications. It is also where you can calibrate your sticks and pots. It also contains additional configuration options.
+Екран **Апаратне забезпечення** — це місце, де ви налаштовуєте спеціальні параметри обладнання для своєї радіоапаратури. Він показує всі фізичні апаратні об’єкти (стіки, потенціометри, перемикачі) і дозволяє їх модифікувати. Тут також можна відкалібрувати свої стіки та потенціометри. Він також містить додаткові параметри конфігурації.
 
-<figure><img src="../../.gitbook/assets/bwhardware1.png" alt=""><figcaption><p>Hardware Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwhardware1.png" alt=""><figcaption><p>Екран апаратного забезпечення</p></figcaption></figure>
 
-### **Calibration**
+### **Калібрування**
 
-To calibrate your physical radio controls (sticks, pots, sliders & 6-position switch), highlight the **\[Calibration]** option and press the **\[Enter]** button. The radio will prompt you through the calibration steps.&#x20;
+Щоб відкалібрувати фізичні елементи керування апаратури (стіки, потенціометри, повзунки та 6-позиційний перемикач), виділіть параметр **\[Калібрування]** та натисніть кнопку **\[Enter]**. Апаратура підкаже вам виконати кроки калібрування.
 
 {% hint style="info" %}
-For your gimbal calibration, use a left-to-right & up-to-down movement for the gimbals, not a circular movement! Additionally, use the normal amount of pressure at the endpoints. Excessive endpoint pressure will cause the gimbal to be miscalibrated.&#x20;
+Для калібрування стіків використовуйте рухи вліво-вправо та вгору-вниз, а не кругові рухи! Крім того, використовуйте звичайний рівень тиску в кінцевих точках. Надмірний тиск у кінцевій точці спричинить неправильне калібрування стіків.
 {% endhint %}
 
 {% hint style="info" %}
-If your radio has a 6 position switch (not to be confused with customisable switches - these do not need calibrating), the procedure for calibrating this is to press each button in sequence from left to right, with a one second pause between each press, when prompted to calibrate analog inputs such as gimbals/axis, pots and sliders.
+Якщо ваша апаратура має 6-позиційний перемикач (не плутати із користувацькими перемикачами - вони не потребують калібрування), то процедура його калібрування полягає в послідовному натисканні кожної кнопки зліва-направо із затримкою в 1 секунду між кожним натисканням. Це робиться під час калібрування аналогових входів (стіки/осі, потенціометри і слайдери).
 {% endhint %}
 
-### Inputs, Sticks, Pots, and Switches Buttons List
+### Список входів, стіків, потенціометрів і перемикачів
 
-Selecting one of the Axis, Pots, or Switches lines from the list will allow you to add a 3 character label to the control as well as change the type of control as needed. Additionally, you can invert the direction of the Pots by selecting the **`->`** at the end of the line, which will then change to `<-` .
+Вибір одного з рядків Вісі, Потенціометри або Перемикачі зі списку дозволить вам додати мітку з 3 символів до елемента управління, а також змінити тип елемента керування за потреби. Крім того, ви можете змінити напрям потенціометрів, вибравши **->** наприкінці рядка, тоді мітка зміниться на `<-`
 
-### Additional hardware configuration options
+### Додаткові параметри конфігурації обладнання
 
-<figure><img src="../../.gitbook/assets/bw128_radio_setup_hardware_bottom.png" alt=""><figcaption><p>Hardware Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bw128_radio_setup_hardware_bottom.png" alt=""><figcaption><p>Екран апаратного забезпечення</p></figcaption></figure>
 
-**Batt. Calib** (Battery Calibration) - Set this value to match the transmitter battery voltage. This ensures that the displayed battery voltage is accurate.
+**Batt. калібр.** (калібрування батареї) – установіть це значення відповідно до напруги батареї апаратури. Це гарантує точність відображеної напруги акумулятора.
 
-**RTC Batt** - The current voltage of the RTC battery. The RTC (real time clock) battery keeps the radio's date and time accurate even when no main radio battery is present.
+**RTC Batt** - поточна напруга батареї RTC. Батарея RTC (годинник реального часу) забезпечує точність дати та часу апаратури, навіть якщо основний акумулятор апаратури відсутній.
 
-**Check RTC** - When enabled, checks the RTC battery at startup and warns you if the battery voltage is low.
+**Перевір. RTC** - якщо ввімкнено, перевіряє батарею RTC під час запуску та попереджає, якщо напруга батареї низька.
 
-**Audio Mute** - When enabled, puts the transmitter in mute mode until a sound needs to be played. This prevents interference noise from high-powered TX modules from coming out of the transmitter speakers.&#x20;
+**Аудіо стоп** - якщо ввімкнено, перемикає апаратуру у режим без звуку, доки не потрібно буде відтворити звук. Це запобігає шуму перешкод від потужних модулів TX через динаміки передавача.
 
-**Internal RF Type** - Select the module type for the internal module bay. Options are: **Multi, XJT, ISRM, CRSF**.  When **CRSF** is selected, you can also select the baud rate. You can read more about baud rates [here](https://www.expresslrs.org/2.0/quick-start/transmitters/tx-prep/).
+**Внутрішній RF Тип** – виберіть тип модуля для внутрішнього модуля. Варіанти: **Multi**, **XJT**, **ISRM**, **CRSF**. Якщо вибрано **CRSF**, ви також можете вибрати швидкість передачі даних. Ви можете прочитати більше про швидкість передачі даних [тут](https://www.expresslrs.org/2.0/quick-start/transmitters/tx-prep/).
 
-**Sample Mode** (**External RF)**- Options are **Normal** and **OneBit**. The default setting of **Normal** should be used by most users. Only users of  X9D+ and X7 radios may want to use **OneBit** mode.
+**Режим вибірки (зовнішній RF)** - параметри **Normal** і **OneBit**. Параметр за замовчуванням **Normal** має використовувати більшість користувачів. Лише користувачі радіоапаратур X9D+ і X7 можуть використовувати режим **OneBit**.
 
 {% hint style="info" %}
-The X9D+ and X7 radios have a slow inverter that causes problems with the reception of fast UART signals, resulting in telemetry warnings and issues with LUA scripts using the CRSF protocol. A 10k resistor on the circuit board could be replaced to fix the issue, but this was not always effective. EdgeTX has developed OneBit Mode, which changes the UART sampling behavior to ignore slow leading edges, allowing the CRSF protocol to be run at the full 400k baud rate without hardware modifications to the radio.
+Апаратури X9D+ і X7 мають повільний інвертор, який спричиняє проблеми з прийомом швидких сигналів UART, що призводить до попереджень телеметрії та проблем зі сценаріями LUA, що використовують протокол CRSF. Щоб вирішити проблему, можна було замінити резистор 10 кОм на друкованій платі, але це не завжди було ефективним. EdgeTX розробив режим OneBit, який змінює поведінку дискретизації UART, щоб ігнорувати повільні передні фронти, дозволяючи протоколу CRSF працювати на повній швидкості 400к без модифікації апаратного забезпечення радіоапарутури.
 {% endhint %}
 
 #### **Bluetooth**
 
 {% hint style="info" %}
-_**Note:** This option is only visible on custom compiled versions of EdgeTX with the **Bluetooth** flag enabled._
+**Примітка**. Ця опція доступна лише для скомпільованих версій EdgeTX із увімкненим прапорцем **Bluetooth**.
 {% endhint %}
 
-**Mode - mode that the bluetooth module will be used in. The options are:**
+**Режим** - режим, у якому буде використовуватися модуль Bluetooth. Варіанти:
 
-* **---** - Off
-* **Telemetry** - used for sending telemtry data over bluetooth.
-* **Trainer** - used for bluetooth trainer mode
+* **---** - вимкнено
+* **Телеметрія** - використовується для надсилання даних телеметрії через Bluetooth.
+* **Тренер** - використовується для режиму тренера через Bluetooth.
 
-One a mode is selected, you will see the following information:
+Після вибору режиму ви побачите таку інформацію:
 
-* **PIN Code** - PIN code for bluetooth device in the radio (visible in **Telemetry** mode only)
-* **Local addr -** Identifying address of the bluetooth device in the radio.
-* **Dist addr -** Identifying address of bluetooth device that radio is connected to.
+* **PIN код** - PIN код для Bluetooth-пристрою в апаратурі (видно лише в режимі **Телеметрія**)
+* **Своя адреса -** адреса Bluetooth пристрою в апаратурі.
+* **Адр. призначення -** адреса Bluetooth пристрою до якого підключається апаратура.
 
-**Name -** the name the bluetooth device will be seen as.
+**Ім'я** - ім'я, під яким відображатиметься пристрій Bluetooth.
 
-**Serial Port** - Displays a list of available auxiliary serial ports that can be configured and used. The listed ports are based on the ports that are available in the particular radio hardware. The ports listed below are for example only and may not be present in your radio.
+**Послід. шина** - відображає список доступних допоміжних послідовних портів, які можна налаштувати та використовувати. Перераховані порти базуються на портах, доступних у конкретній радіоапаратурі. Перелічені нижче порти наведені лише для прикладу та можуть бути відсутніми у вашій радіоапаратурі.
 
-*   **AUX1** - First available auxiliary serial port can be configured with the below options:
+* **AUX1** - перший доступний допоміжний послідовний порт можна налаштувати за допомогою наведених нижче параметрів:
+  * **OFF** - вимкнено.
+  * **Дзеркал. телем.** - ті самі телеметричні дані, які надходять до відсіку зовнішнього модуля, надсилаються до послідовного порту.
+  * **Вхід телеметрії** - отримувати телеметричні дані через послідовний порт.
+  * **SBUS тренер** - з'єднує апаратури викладача та студента через послідовний порт.
+  * **LUA** - надсилати/отримувати дані до/зі сценарію Lua.
+  * **GPS** - отримувати дані телеметрії GPS через послідовний порт.
+  * **CLI** - надсилати команди на апаратуру через командний рядок.
+* **USB-VCP** - віртуальний COM-порт. Це один із варіантів, які пропонуються під час підключення  до ПК із більшістю радіоапаратур. Часто встановлюється на "CLI" для апаратур із внутрішніми модулями ExpressLRS, щоб виконувати оновлення мікропрограми.
 
-    * **OFF** - Turned off.
-    * **Telem Mirror** - The same telemetry data that goes to the external module bay is sent to the serial port.&#x20;
-    * **Telemetry In** - Receive telemetry data over the serial port.
-    * **SBUS Trainer** - Connect the Instructor and Student radios over the serial port.
-    * **LUA** - Send/receive data to/from Lua script.
-    * **GPS** - Receive GPS telemetry data over the serial port.
-    * **CLI** - Send commands to the radio via the command line.&#x20;
-
-
-* **USB-VCP** - Virtual COM Port. This is one of the options presented when connecting your radio to the PC with most radios. Is often set to 'CLI' for radios with internal ExpressLRS RF modules in order to do firmware updates.
-
-**ADC Filter** - Enables or disables the ADC Filter. This filter can also be enabled/disabled per model in the model settings.
+**Фільтр АЦП** - вмикає або вимикає фільтр АЦП. Цей фільтр також можна ввімкнути/вимкнути для кожної моделі в налаштуваннях моделі.
 
 {% hint style="info" %}
-The ADC filter is a filter for the proportional channels (sticks, pots, sliders), smoothing out smaller fast movements that occur due to noise in the system electronics. Normally, this filter should be _disabled_ for models with flight controllers.&#x20;
+Фільтр АЦП - це фільтр для пропорційних каналів (стіки, потенціометри, слайдери), який  згладжує маленькі швидкі рухи, які виникають через шуми в електроніці системи. Зазвичай цей фільтр має бути вимкнено для моделей з контролерами польоту.
 {% endhint %}
 
-**Ext. RAS** - (Formerly SWR) Reflected antenna signal. Lower numbers are better, with a 1:1 ratio being theoretically the best. Not supported by all RF Protocols.
+**Ext. RAS** - (раніше SWR) відбитий сигнал антени. Менші цифри кращі, теоретично найкращим є співвідношення 1:1. Підтримується не всіма радіочастотними протоколами.
 
-### Debug
+### Налагодження
 
-The debug section allows for testing and debugging of the analog controls and keys.
+Розділ налагодження дозволяє тестувати та налагоджувати аналогові елементи керування та перемикачі.
 
-<div><figure><img src="../../.gitbook/assets/bwhardware3.png" alt=""><figcaption><p>Debug Analogs screen</p></figcaption></figure> <figure><img src="../../.gitbook/assets/bwhardware4.png" alt=""><figcaption><p>Debug Keys screen</p></figcaption></figure></div>
+<div>
+<figure><img src="../../.gitbook/assets/bwhardware3.png" alt=""><figcaption><p>Екран налагодження аналогових елементів</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwhardware4.png" alt=""><figcaption><p>Екран налагодження перемикачів</p></figcaption></figure>
+</div>
+<figure><img src="../../.gitbook/assets/bw128_radio_setup_hardware_debug_cs.png" alt=""><figcaption><p>Екран налагодження користувацьких перемикачів</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/bw128_radio_setup_hardware_debug_cs.png" alt=""><figcaption><p>Debug Customizable Switches</p></figcaption></figure>
+**Налагодження аналог.** – на цих екранах відображатимуться дані для ваших аналогових елементів керування (стіки, повзунки, потенціометри, 6-позиційний перемикач). Є два режими перегляду - Калібровані аналогові елементи, Необроблені аналогові елементи (5 Гц).
 
-**Debug Analogs**  - These screens will show you the data for your analog controls (Sticks, Sliders, Pots, 6-position switch). There are two views - Calibrated Analogs, Raw Analogs (5 Hz).
+**Налагодження перем.** - на цьому екрані відображатимуться цифрові дані для ваших клавіш, перемикачів, панелей і поворотного енкодера (ролера).
 
-**Debug Keys** - This screen will show you the digital data for your keys, switches, trims, and the rotary encoder (roller).
+**Налагодження кор.перем.** (деякі апаратури) - на цьому екрані відображаються фізичні та логічні стани користувацьких перемикачів, також стан або колір світлодіодів (якщо апаратура підтримує користувацькі RGB перемикачі).
 
-**Debug Customisable Switches** (select radios) - This screen will show you the physical and logical state of the customisable switches, as well as the led state or color (if the handset supports RGB customisable switches).&#x20;
-
-Pressing the **\[PAGE>]** button will take you to the **Version** screen.
+Натиснувши кнопку **\[PAGE>]**, ви перейдете на екран **Версія**.
