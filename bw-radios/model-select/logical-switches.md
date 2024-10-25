@@ -1,33 +1,33 @@
-# Logical Switches
+# Логічні перемикачі
 
-Logical Switches are virtual two-position switches whose values (ON/OFF or +100/-100) are based on the evaluation (true/false) of a defined logical expression. Once configured, logical switches can be used anywhere in EdgeTX that a physical switch can be defined.
+Логічні перемикачі — це віртуальні двопозиційні перемикачі, чиї значення (ВКЛ/ВИКЛ або +100/-100) базуються на оцінці (істинно/хибно) визначеного логічного виразу. Після налаштування логічні перемикачі можна використовувати всюди в EdgeTX, де можна визначити фізичний перемикач.
 
-The **Logical Switches** page shows you all the configured logical switches as well as an overview of their configured options.
+Сторінка **Logical Switches** показує всі налаштовані логічні перемикачі та огляд їхніх налаштувань.
 
-<figure><img src="../../.gitbook/assets/bwlogswitch1.png" alt=""><figcaption><p>Logical Switches Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwlogswitch1.png" alt=""><figcaption><p>Екран логічних перемикачів</p></figcaption></figure>
 
-Selecting a logic switch will give you the following options:
+Вибравши логічний перемикач, ви отримаєте наступні опції:
 
-* **Edit** - Opens the Logical Switches configuration page for the selected logical switch.
-* **Copy** - Copies the selected logical switch
-* **Paste** - Pastes a copied logical switch onto the selected logical switch. Note: it will overwrite the selected logical switch.
-* **Clear** - Deletes all configuration options for the selected logical switch.
+* **Edit** (Редагувати) — Відкриває сторінку налаштування для вибраного перемикача.
+* **Copy** (Копіювати) — Копіює вибраний логічний перемикач.
+* **Paste** (Вставити) — Вставляє скопійований логічний перемикач на обране місце. Примітка: це перезапише обраний перемикач.
+* **Clear** (Очистити) — Видаляє всі налаштування для обраного логічного перемикача.
 
-<figure><img src="../../.gitbook/assets/bwlogswitch2.png" alt=""><figcaption><p>Logical Switches Configuration Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwlogswitch2.png" alt=""><figcaption><p>Екран налаштування логічних перемикачів</p></figcaption></figure>
 
-After selecting to edit a logical switch, you will have the following configuration options:
+Після вибору редагування логічного перемикача, вам будуть доступні наступні параметри:
 
-* **Func** - The logical function that you want to use. See [Logical Switch Functions](logical-switches.md#logical\_switches\_judgment\_conditions\_and\_logical\_expressions) below for a description of the possible functions you can use.
-* **V1** - The first variable in the expression to evaluate.
-* **V2** -The second variable in the expression to evaluate.
-* **AND switch** - Switch that must be active to allow the logical switch to be evaluated for activation.
-* **Duration** - The duration that the logical switch will remain active (true) once meeting activation criteria.&#x20;
-* **Delay** - Delay between when the activation criteria for the logical switch has been met and when the logical switch changes to the activated state (true).
+* **Func** — Логічна функція, яку ви хочете використовувати. Див. [Логічні функції перемикачів](logical-switches.md#logical\_switches\_judgment\_conditions\_and\_logical\_expressions) нижче для опису можливих функцій.
+* **V1** — Перша змінна у виразі для оцінки.
+* **V2** — Друга змінна у виразі для оцінки.
+* **AND перемикач** — Перемикач, який має бути активним, щоб дозволити оцінку та активацію логічного перемикача.
+* **Duration** — Тривалість, протягом якої логічний перемикач залишатиметься активним (істинним) після досягнення умов активації.
+* **Delay** — Затримка між моментом досягнення умов активації та моментом, коли логічний перемикач змінює стан на активний (істинний).
 
-### Logical Switch Functions <a href="#logical_switches_judgment_conditions_and_logical_expressions" id="logical_switches_judgment_conditions_and_logical_expressions"></a>
+### Функції логічних перемикачів <a href="#logical_switches_judgment_conditions_and_logical_expressions" id="logical_switches_judgment_conditions_and_logical_expressions"></a>
 
-In the expression, a and b represent sources (sticks, switches, etc.), and x represents the constants (values) to be compared.
+У виразах a та b представляють джерела (стіки, перемикачі тощо), а x представляє константи (значення), з якими порівнюють.
 
-<table><thead><tr><th width="137">Expression</th><th width="606">Description</th></tr></thead><tbody><tr><td>a=x</td><td>True when the source V1 is exactly the same as the constant V2.</td></tr><tr><td>a~x</td><td>True when the source V1 is about the same as the constant V2.</td></tr><tr><td>a>x</td><td>True when the source  V1 is greater than the constant V2.</td></tr><tr><td>a&#x3C;x</td><td>True when the source  V1 is less than the constant V2.</td></tr><tr><td>|a|>x</td><td>True when the absolute value of the source V1 is greater than the constant V2.</td></tr><tr><td>|a|&#x3C;x</td><td>True when the absolute value of the source V1 is less than the constant V2.</td></tr><tr><td>AND</td><td>True when both sources V1 and V2 are TRUE.</td></tr><tr><td>OR</td><td>True when either source V1 or V2 is TRUE.</td></tr><tr><td>XOR</td><td>True when the source V1 and V2 positions do not match.</td></tr><tr><td>Edge</td><td>Momentarily true when the source V1 has been active for the defined period of time and then deactivated. The first time field (T1) under V1 is the minimum active duration required for source V1 to activate the logical switch. The second time (T2) is the maximum time allowed for the source V1 to be active for the logic switch to be activated. When T2 is set to --, the logical switch will be true regardless of how long V1 has been active. When T2 is set to 3, if V1 is active for more than 3 seconds, the logical switch will not be set to true when the source is deactivated. When T2 is set to &#x3C;&#x3C;, the logical switch will be true when the time conditions in T1 are met without source V1 being deactivated.</td></tr><tr><td>a=b</td><td>True when source V1 is the same as source V2.</td></tr><tr><td>a>b</td><td>True if source V1 is greater than source V2.</td></tr><tr><td>a&#x3C;b</td><td>True if source V1 is less than source V2.</td></tr><tr><td>△>x</td><td>Momentarily true every time the source V1 changes by more than the amount indicated by the constant V2. </td></tr><tr><td>|△|>x</td><td>Momentarily true every time the absolute value of the source V1 changes by more than the amount indicated by the constant V2.</td></tr><tr><td>Tim (Timer)</td><td>Momentarily true every xxx seconds. Argument V1 is the duration that the logical switch is true (active). Argument V2 is the time between logical switch activations. Repeats timer cycle as long as the defined switch is active.</td></tr><tr><td>Stky (Sticky)</td><td>"Sticks" true after switch V1 is active (true) and stays active (true) regardless of V1 position until switch V2 is activated (true) and "unsticks" or deactivates (false) the logical switch.</td></tr></tbody></table>
+<table><thead><tr><th width="137">Вираз</th><th width="606">Опис</th></tr></thead><tbody><tr><td>a=x</td><td>Істинно, коли джерело V1 точно відповідає константі V2.</td></tr><tr><td>a~x</td><td>Істинно, коли джерело V1 приблизно дорівнює константі V2.</td></tr><tr><td>a>x</td><td>Істинно, коли джерело V1 більше за константу V2.</td></tr><tr><td>a&#x3C;x</td><td>Істинно, коли джерело V1 менше за константу V2.</td></tr><tr><td>|a|>x</td><td>Істинно, коли абсолютне значення джерела V1 більше за константу V2.</td></tr><tr><td>|a|&#x3C;x</td><td>Істинно, коли абсолютне значення джерела V1 менше за константу V2.</td></tr><tr><td>AND</td><td>Істинно, коли обидва джерела V1 і V2 є ІСТИННИМИ.</td></tr><tr><td>OR</td><td>Істинно, коли будь-яке з джерел V1 або V2 є ІСТИННИМ.</td></tr><tr><td>XOR</td><td>Істинно, коли значення джерел V1 та V2 не збігаються.</td></tr><tr><td>Edge</td><td>Моментально істинно, коли джерело V1 було активним протягом заданого періоду часу, а потім деактивувалося. Перше поле часу (T1) для V1 є мінімальною тривалістю активності, необхідною для активації логічного перемикача. Друге поле часу (T2) є максимальною тривалістю активності V1, щоб логічний перемикач активувався. Якщо T2 встановлено на “–”, логічний перемикач буде істинним, незалежно від того, як довго було активним V1. Якщо T2 встановлено на 3, то якщо V1 буде активним більше ніж 3 секунди, логічний перемикач не стане істинним при деактивації джерела. Якщо T2 встановлено на “<<”, логічний перемикач стане істинним, коли часові умови T1 будуть виконані без деактивації джерела V1.</td></tr><tr><td>a=b</td><td>Істинно, коли джерело V1 дорівнює джерелу V2.</td></tr><tr><td>a>b</td><td>Істинно, якщо джерело V1 більше за джерело V2.</td></tr><tr><td>a&#x3C;b</td><td>Істинно, якщо джерело V1 менше за джерело V2.</td></tr><tr><td>△>x</td><td>Моментально істинно кожного разу, коли значення джерела V1 змінюється більше, ніж на значення V2. </td></tr><tr><td>|△|>x</td><td>Моментально істинно щоразу, коли абсолютне значення джерела V1 змінюється більше, ніж на величину, вказану константою V2.</td></tr><tr><td>Tim (Таймер)</td><td>Моментально істинно кожні xxx секунд. Аргумент V1 — це тривалість, протягом якої логічний вимикач є істинним (активним). Аргумент V2 — це час між активаціями логічного вимикача. Цикл таймера повторюється, доки визначений вимикач активний.</td></tr><tr><td>Stky (Sticky)</td><td>«Прилипає» як істинний після того, як перемикач V1 стає активним (істинним) і залишається активним (істинним) незалежно від положення V1, поки не активується перемикач V2 (істинний), який «відлипає» або деактивує (робить хибним) логічний вимикач.</td></tr></tbody></table>
 
-Pressing the **\[PAGE>]** button will take you to the **Special Functions** screen.
+Натискання кнопки **\[PAGE>]** переведе вас на екран **Спеціальні функції**.
