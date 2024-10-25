@@ -2,238 +2,228 @@
 
 <figure><img src="../../.gitbook/assets/bw128_model_setup.png" alt=""><figcaption></figcaption></figure>
 
-The **Setup** screen is where you start to configure your model. It contains the following settings:
+Екран **Setup** — це місце, де ви починаєте налаштовувати вашу модель. Він містить такі налаштування:
 
-**Name** - Name of the model. The maximum number of characters is 10.
+**Name** - Ім'я моделі. Максимальна кількість символів — 10.
 
-* To edit the text, using the **\[roller]** or **\[dial]**, press the button, scroll to select the desired letter, then press the button again to move to the next space. To toggle between lower and upper case, long-press the button. Press the **\[RTN]** button to exit out of text editing mode.
+* Щоб редагувати текст, використовуючи **\[roller]** або **\[dial]**, натисніть кнопку, прокрутіть для вибору бажаної літери, потім знову натисніть кнопку, щоб перейти до наступного пробілу. Для перемикання між малими та великими літерами утримуйте кнопку. Натисніть кнопку **\[RTN]**, щоб вийти з режиму редагування тексту.
 
-**Image** - Image displayed on the main view (only for radios with 212 x 64 displays).
-
-{% hint style="info" %}
-Image dimensions shall be 64 x 32 pixels, 16 bit, grayscale, .bmp file. The image must be stored in the **IMAGES** folder of the SD card.
-{% endhint %}
-
-### **Timers**
-
-**Timer 1/2/3** - There are 3 configurable timers in EdgeTX. The following configuration options will be displayed once the timer is no longer set to **OFF**:
-
-#### Timer 1   \[Mode]   \[Switch]&#x20;
-
-**\[Mode] -** The options include:
-
-* **OFF** - The timer is not used
-* **ON** - The timer runs all the time
-* **Strt (Start)** - The timer starts once the configured switch is activated. After the time is started, the timer ignores the switch position.
-* **THs (Throttle)** - The timer starts once the throttle is raised and the configured switch is activated. The timer will stop counting if either the throttle position is lowered back to the minimum value or the configured switch is deactivated.
-* **TH% (Throttle %)** - The timer counts proportionally to the throttle. It counts in real-time at full throttle and half speed at 50% throttle.
-* **THt (Throttle Start)** - The timer starts once the throttle is raised and the configured switch is activated. After starting, the timer ignores the throttle position and will keep counting unless the switch is deactivated.
-
-**\[Switch]** - Select the switch that will trigger the timer to start.  If no switch is selected, the timer will trigger based only on the configured mode. In addition to a switch, you can also select a trim, a telemetry source (triggered when telemetry data is received from that source), or physical activity (stick movement or button press) (labeled as **ACT**)
+**Image** - Зображення, яке відображається на головному екрані (тільки для радіоапаратур із дисплеями 212 x 64).
 
 {% hint style="info" %}
-Those items with a "!" mark in front of the trigger name mean that the condition is reversed. For example, "!SA-" means "when SA switch is not in middle/center position (= up or down)".
+Розміри зображення мають бути 64 x 32 пікселі, 16 біт, відтінки сірого, файл .bmp. Зображення повинно бути збережене в папці **IMAGES** на SD-карті.
 {% endhint %}
 
-**Name -** Name of the timer
+### **Timers (Таймери)**
 
-**Start -** The time used for the timer's advanced functions.  The default value is 00:00 and when left as such, the timer operates like a stopwatch, counting upward until stopped.  If a different time is entered in this box, then the additional field will appear next to the time with the options: **Remain** or **Elaps**.
+**Timer 1/2/3** - В EdgeTX є 3 конфігуровані таймери. Наступні параметри конфігурації будуть відображені, коли таймер більше не встановлено на **OFF**:
 
-If set to **Remain**, the counter will function like a countdown timer - counting down from the designated time to zero and then alerting the user.  If set to **Elaps**, the timer functions like an alarm, counting up from zero until the designated time and then alerting the user.
+#### Timer 1 \[Mode] \[Switch]
+
+**\[Mode]** - Параметри включають:
+
+* **OFF** - Таймер не використовується
+* **ON** - Таймер працює весь час.
+* **Strt (Start)** - Таймер запускається, щойно активується налаштований перемикач. Після запуску таймера він ігнорує положення перемикача.
+* **THs (Throttle)** - Таймер запускається, щойно підвищується положення газу та активується налаштований перемикач. Таймер зупиняє відлік, якщо або положення газу знижується до мінімального значення, або налаштований перемикач деактивується.
+* **TH% (Throttle %)** - Таймер відраховує пропорційно до положення газу. Він відраховує в реальному часі на повному газу і на половину швидкості при 50% газу.
+* **THt (Throttle Start)** - Таймер запускається, щойно підвищується положення газу та активується налаштований перемикач. Після запуску таймер ігнорує положення газу і продовжує відлік, поки перемикач не буде деактивований.
+
+**\[Switch]** - Виберіть перемикач, який буде запускати таймер. Якщо жодного перемикача не вибрано, таймер буде спрацьовувати лише на основі налаштованого режиму. Крім перемикача, ви також можете вибрати тример, джерело телеметрії (спрацьовує, коли отримуються дані телеметрії з цього джерела) або фізичну активність (рух стіка або натискання кнопки) (позначену як **ACT**).
+
+{% hint style="info" %}
+Ті елементи, які мають знак "**!**" перед назвою тригера, означають, що умова є зворотною. Наприклад, "**!SA-**" означає "коли перемикач **SA** не знаходиться в середньому/центральному положенні (= вгору або вниз)".
+{% endhint %}
+
+**Name** - Ім'я таймера
+
+**Start** - Час, що використовується для розширених функцій таймера. Значення за замовчуванням — 00:00, і коли його залишають таким, таймер працює як секундомір, відраховуючи вгору до зупинки. Якщо ввести інший час у це поле, поруч із часом з'явиться додаткове поле з параметрами: **Remain** або **Elaps**.
+
+Якщо встановлено **Remain**, лічильник функціонуватиме як таймер зворотного відліку — відраховуючи від заданого часу до нуля, а потім сповіщаючи користувача. Якщо встановлено **Elaps**, таймер функціонуватиме як будильник, відраховуючи від нуля до заданого часу і потім сповіщаючи користувача.
 
 **Persist. (Persistence):**
 
-* **OFF** - The timer value is reset when switching models or when the radio is turned off / on.
-* **Flight** - The timer value is NOT reset when switching models or when the radio is turned off / on. The timer value is only reset when the **Reset flight** option is selected in the [Reset](../main-view/reset.md) menu.
-* **Manual Reset** - The timer value is reset only when it is individually selected to be reset (example: Reset timer1) in the [Reset](../main-view/reset.md) menu.
+* **OFF** - Значення таймера скидається при переключенні моделей або при вимкненні/увімкненні апаратури.
+* **Flight** - Значення таймера НЕ скидається при переключенні моделей або при вимкненні/увімкненні апаратури. Значення таймера скидається лише при виборі опції **Reset flight** у меню [Скидання](../main-view/reset.md).
+* **Manual Reset** - Значення таймера скидається лише тоді, коли його окремо вибрано для скидання (наприклад: Reset timer1) у меню [Скидання](../main-view/reset.md).
 
-**Minute (Minute Call)** - If selected, you will be notified every minute that passes as described in the **Countdown** option.
+**Minute (Minute Call)** - Якщо вибрано, ви будете отримувати сповіщення кожну хвилину, що минає, як описано в опції **Countdown**.
 
 **Count Down:**
 
-* **Silent** - No notification is given until the timer reaches zero. When it reaches zero, you will hear one beep.
-* **Beeps** - The radio will beep every second starting at the time designated.
-* **Voice** - The radio will count down by second starting at the time designated.
-* **Haptic** - The radio will vibrate every second starting at the time designated.
+* **Silent** - Сповіщення не подається, поки таймер не досягне нуля. Коли він досягає нуля, ви почуєте один звук сигналу.
+* **Beeps** - Апаратура буде подавати звуковий сигнал щосекунди, починаючи з установленого часу.
+* **Voice** - Апаратура буде відраховувати секунди, починаючи з установленого часу.
+* **Haptic** - Апаратура буде вібрувати щосекунди, починаючи з установленого часу.
 
-<figure><img src="../../.gitbook/assets/bw128_customisable_switches.png" alt=""><figcaption><p>Customizable Switches</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bw128_customisable_switches.png" alt=""><figcaption><p>Користувацькі перемикачі</p></figcaption></figure>
 
-### **Customizable Switches**&#x20;
+### **Користувацькі перемикачі** (Customizable Switches)
 
-The customizable switches are a type of multi-position switch (on select transmitters) that are managed directly by EdgeTX. Physically, they look like a regular 6-pos switch but are much more flexible.
+Користувацькі перемикачі - це тип багатопозиційного перемикача (на деяких апаратурах), який керується безпосередньо EdgeTX. Фізично вони виглядають як звичайний 6-позиційний перемикач, але є набагато більш гнучкими.
 
-Unlike other switches managed at the radio level, customizable switches are defined per model and configured in the model setup page. They contain the following configuration options:
+На відміну від інших перемикачів, які керуються на рівні апаратури, користувацькі перемикачі визначаються для кожної моделі окремо та налаштовуються на сторінці налаштування моделі. Вони містять такі параметри конфігурації:
 
 **Switch Type**
 
-* **None**: the switch is disabled
-* **Toggle**: they are active only during the push duration
-* **2POS**: pushing the switch will alternate the state between OFF and On
+* **None**: перемикач вимкнений.
+* **Toggle:** вони активні лише під час натискання.
+* **2POS**: натискання на перемикач чергує стан між OFF і On.
 
 **Switch group**
 
-A traditional 6POS is a group of 6 switches that work together, where only one can be active at a time. Customizable switches expand that concept and let you choose how the switches should be grouped.
+Традиційний 6POS — це група з 6 перемикачів, які працюють разом, причому активним може бути лише один з них. Користувацькі перемикачі розширюють цю концепцію і дозволяють вибрати, як перемикачі повинні бути згруповані.
 
-'**-**' defines a customizable switch with no group. Pushing it will only affect this switch.
+'**-**' визначає користувацький перемикач без групи. Натискання на нього вплине лише на цей перемикач.
 
-**'1', '2' or '3'** define groups. All the switches in a group act together, **where only one (the last pushed) can be active.**
+'**1**', '**2**' або '**3**' визначають групи. Усі перемикачі в групі діють разом, причому **активним може бути лише один (останній натиснутий)**.
 
-**Always on groups**&#x20;
+**Always on groups**
 
-Selecting this check box makes the assigned group act a bit like a traditional 6-position switch where one button (and only one) from the group must be on at all times.
+Вибір цього чекбоксу дозволяє призначеній групі діяти схоже до традиційного 6-позиційного перемикача, де одна кнопка (і тільки одна) з групи повинна бути ввімкнена завжди.
 
 **Startup Position**
 
-**Start** - Defines the state that each switch will be in when the model is loaded.
+**Start** - Визначає стан, в якому буде перебувати кожен перемикач при завантаженні моделі.
 
-* **↑** Switch is inactive
-* **↓** Switch is active
-* **=** Switch is set to the same state it was in when the model was last used (it keeps old state).
+* **↑** Перемикач неактивний.
+* **↓** Перемикач активний.
+* **=** Перемикач встановлений у той самий стан, в якому він був, коли модель востаннє використовувалася (зберігає старий стан).
 
 {% hint style="info" %}
-To use customisable switches like a traditional hardware 6-POS implementation (Horus, TX16S,...), leave the customizable switches at the default settings (all switches set to 2POS, Group 1). Configure Group 1 to be "Always On" and SW1 to be selected on model/radio start. You can then use select GR1 on the input or mixes page, to get just like the prior 6-POS behaviour.&#x20;
+Для використання користувацьких перемикачів як традиційний апаратний 6-позиційний (Horus, TX16S,...), залиште налаштування за замовчуванням (усі перемикачі як 2POS, Group 1). Налаштуйте Group 1 на "Always On" та активацію SW1 на старті моделі/апаратури. Тоді ви можете вибрати GR1 на сторінці входів або мікшерів, щоб мати таку-ж поведінку як в 6-позиційного перемикача.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/setup2.png" alt=""><figcaption><p>Trims settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/setup2.png" alt=""><figcaption><p>Налаштування тримерів</p></figcaption></figure>
 
-### **Trims**
+### **Trims (Тримери)**
 
-**E.Limits (Extended Limits)** **-** When enabled, it increases the minimum and maximum range for the output values to -150 and 150. Extended limits are necessary if the full range of the control surface cannot be reached with standard limits.
+**E.Limits (Extended Limits)** **-** При ввімкненні розширює мінімальний і максимальний діапазон вихідних значень до -150 і 150. Розширені межі необхідні, якщо не вдається досягти повного діапазону керуючої поверхні зі стандартними межами.
 
-**E. Trims) Extended Trims -** Increases the maximum trim adjustment value from **±**&#x32;5% to **±**&#x31;00%.
+**E. Trims (Extended Trims) -** Збільшує максимальне значення регулювання з ±25% до ±100%.
 
-**Reset** - This resets all trim values to zero.
+**Reset** - Це скидає всі значення регулювання до нуля.
 
-**Show trims -** When set to **Yes**, it will display the numerical trim value on the trim bar.  When set to **CHANGE**, it will display the numerical value once the trim is no longer at zero.
+**Show trims -** Коли встановлено на **Yes**, на панелі регулювання відображатиметься числове значення регулювання. Коли встановлено на **CHANGE**, числове значення відображатиметься, коли регулювання не буде дорівнювати нулю.
 
-**Trim Step: -** Defines the amount of increase/decrease in trim when the trim switch is pressed.&#x20;
+**Trim Step:** — Визначає величину збільшення/зменшення в режимі тримування, коли натискається перемикач тримування.
 
 * Course = 1.6%
 * Medium = 0.8%
 * Fine = 0.4%
 * Extra Fine = 0.2%
-* Exponential = 0.2% near the center and the step value increases exponentially as the distance from the center increases.
+* Exponential = 0.2% поблизу центру, а величина кроку зростає експоненційно, коли відстань від центру збільшується.
 
-<figure><img src="../../.gitbook/assets/bwsetup3 (1).png" alt=""><figcaption><p>Throttle Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwsetup3 (1).png" alt=""><figcaption><p>Налаштування газу</p></figcaption></figure>
 
-### **Throttle**
+### **Throttle (Газ)**
 
-The throttle related configuration options below are displayed in collapsible menu.
+Параметри конфігурації, що стосуються газу, відображаються в меню нижче.
 
-**T-Reverse** - When enabled, this option reverses the output direction of the configured throttle channel.
+**T-Reverse** - Коли ця опція увімкнена, вона змінює напрямок виходу налаштованого каналу газу.
 
-**T-Source** - The source that will be used for the throttle.&#x20;
+**T-Source** - Джерело, яке буде використовуватися для газу.
 
-**T-Trim-Idle** - When enabled, the throttle trim will only affect the bottom portion of the throttle band.&#x20;
+**T-Trim-Idle** - Коли ця опція увімкнена, тримування газу вплине лише на нижню частину діапазону газу.
 
 {% hint style="info" %}
-For example, with **Trim idle only** enabled, the throttle stick at the lowest point might have a value of -80 and the center point will still be 0 and the highest point of 100. Without this enabled, the throttle stick at the lowest point might have a value of -80 however, the center point will be 20 and the highest point of 100.&#x20;
+Наприклад, якщо увімкнено лише **Trim idle only**, важіль газу в найнижчій точці може мати значення -80, а центральна точка залишиться 0, тоді як найвища точка буде 100. Якщо це не увімкнено, важіль газу в найнижчій точці може мати значення -80, однак центральна точка буде 20, а найвища точка залишиться 100.
 {% endhint %}
 
-**T-Trim-SW** - The trim switch that will be used to trim the throttle. It is possible to substitute the throttle trim switch with the aileron, rudder, or elevator trim switches.
+**T-Trim-SW** - Перемикач тримування, який буде використовуватися для тримування газу. Можна замінити перемикач тримування газу на перемикачі тримування елерона, керма напрямку або керма висоти.
 
 {% hint style="info" %}
-On surface radios (EX: MT-12), the throttle trim has no effect on the reverse throttle range and has some effect over the entire forward throttle range.
+На радіоапаратурі для наземних моделей (наприклад, MT-12) тример газу не впливає на діапазон реверсивного газу і має певний вплив на весь діапазон переднього газу.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/BWPrestartChecks.png" alt=""><figcaption><p>Pre-start Checks options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BWPrestartChecks.png" alt=""><figcaption><p>Опції передстартових перевірок</p></figcaption></figure>
 
-### Pre-start Checks
+### Pre-start Checks (Передстартові  перевірки)
 
-Whenever a new model is loaded, EdgeTX will conduct pre-flight checks based on the checks that are configured on this page. If any of the checks are failed, EdgeTX will give the user an audio and visual warning that must be acknowledged before using the model. The following preflight checks below are displayed in collapsible menu.
+Кожного разу, коли завантажується нова модель, EdgeTX проводить перевірки перед польотом на основі налаштувань, конфігурованих на цій сторінці. Якщо будь-яка з перевірок не пройдена, EdgeTX видасть звукове та візуальне попередження, яке потребує підтвердження перед використанням моделі. Наступні перевірки перед польотом відображаються у меню, що згортається:
 
-**Checklist** - When this option is selected, the model notes file will be displayed when the model is loaded. A valid model notes file must be in the **Models** folder on the SD card. The model notes file must be a .txt file and must have the EXACT same name as the model it is for, for example: Mobula6.txt. The text in the file is up to the user.
-
-**C-Interact** (Interactive checklist) - This option is used with the **Checklist** option. When this option is selected, any line of text in the checklist file that begins with **=** will display as a check box when the checklist is displayed. All displayed checkboxes must be **checked** by selecting them in order to close the checklist.
-
-**T-Warning** - When selected, the radio will check that the throttle is at the minimum value for the configured throttle source in the **T-Source** configuration option.
-
-**Cust-Pos** - When this option is selected, the value designated in **Pos. %** will be used for the **T.Warning**.
-
-**Pos. %** - minimum value of the throttle for the throttle warning when **Cust-Pos** is enabled.
-
-**S-Warning** - The section displays all the switches that are configured on the radio and allows you to select which position is the correct position for the switch state check. Selecting the switch will cycle through the available switch positions or turn the check off for the switch completely. A long press of **\[Enter]** while this section is highlighted will set all the switch positions to the currently configured physical positions of the switches.
-
-**Pot warn.** - When activated, this option checks the position of the pots & sliders. There are three options - **OFF**, **ON** and **Auto**. When **ON** or **AUTO** is selected, buttons for the available pots and sliders will appear. To enable the pot warning for an individual pot, select the pot with the **\[roller]** or **\[dial]** and click the button to highlight it. Highlighted pots are enabled.
-
-* **OFF** - Pot and slider positions are not checked.
-* **ON**- Positions are checked against manually configured pot and slider positions. To manually set the check position, select the item that you want to set, and long-press the **\[Enter]** button to set its current position for the check.
-* **Auto** - Positions are checked for pots and sliders and compared to the last automatically saved position before the radio was turned off or the model was changed.
-
-**Ctr Beep** - Allows you to turn on/off the center beep function for the individual sticks, pots, and sliders by highlighting them with the **\[roller]** or **\[dial]** and pressing the button. When a switch is highlighted, the function is enabled.
-
-**Glob. Funcs** - When enabled, global functions programmed in the radio settings will apply to this model. When disabled, global functions will not apply to this model.
-
-**ADC filter** - Enables/disables the ADC filter for this model. The **Global** option will take the value designated in the radio settings, which is _on_ by default.
+* **Checklist** - Коли ця опція обрана, файл нотаток моделі відобразиться при завантаженні моделі. Дійсний файл нотаток моделі повинен бути у папці **Models** на карті пам'яті. Файл нотаток моделі повинен бути у форматі .txt та мати ТОЧНО таку ж назву, як і модель, для якої призначений, наприклад: Mobula6.txt. Текст у файлі залежить від користувача.
+* **C-Interact (Інтерактивний список перевірок)** - Ця опція використовується разом з опцією **Checklist**. Коли ця опція обрана, будь-яка стрічка тексту у файлі перевірок, що починається з **=**, відобразиться як прапорець під час відображення списку перевірок. Всі відображені прапорці потрібно **відзначити**, щоб закрити список перевірок.
+* **T-Warning (Попередження про газ)** - При виборі радіо перевірить, чи знаходиться газ на мінімальному значенні для конфігурованого джерела газу в опції **T-Source**.
+* **Cust-Pos (Користувацька позиція)** - Коли ця опція обрана, значення, зазначене в **Pos. %**, буде використано для **T-Warning**.
+* **Pos. % (Позиція газу)** - мінімальне значення газу для попередження про газ, коли **Cust-Pos** увімкнено.
+* **S-Warning (Попередження про перемикачі)** - У цьому розділі відображаються всі перемикачі, які налаштовані на радіо, та дозволяє вибрати, яка позиція є правильною для перевірки стану перемикача. Вибираючи перемикач, ви циклічно переключаєтеся між доступними позиціями перемикача або повністю вимикаєте перевірку для перемикача. A long press of **\[Enter]** while this section is highlighted will set all the switch positions to the currently configured physical positions of the switches.
+* **Pot warn. (Попередження про потенціометри)** - При активації ця опція перевіряє позицію потенціометрів і слайдерів. Є три опції - **OFF**, **ON** і **AUTO**. При виборі **ON** або **AUTO**, з’являться кнопки для доступних потенціометрів і слайдерів. Щоб увімкнути попередження для кожного окремого потенціометра, виберіть його за допомогою **\[roller]** або **\[dial]** та натисніть кнопку, щоб виділити. Виділені потенціометри активовані.
+  * **OFF** - Позиції потенціометрів та слайдерів не перевіряються.
+  * **ON** - Позиції перевіряються на вручну налаштовані позиції потенціометрів і слайдерів. Щоб вручну встановити перевірочну позицію, виберіть елемент, який хочете налаштувати, та довго натискайте кнопку **\[Enter]**, щоб встановити його поточну позицію для перевірки.
+  * **Auto** - Позиції перевіряються для потенціометрів і слайдерів та порівнюються з останньою автоматично збереженою позицією перед вимкненням радіо або зміною моделі.
+* **Ctr Beep** - Дозволяє вмикати/вимикати функцію звукового сигналу у центрі для окремих стіків, потенціометрів і слайдерів, виділяючи їх за допомогою **\[roller]** або **\[dial]** та натискаючи кнопку. Коли перемикач виділений, функція активується.
+* **Glob. Funcs** - Коли увімкнено, глобальні функції, запрограмовані в налаштуваннях радіо, застосовуватимуться до цієї моделі. Коли вимкнено, глобальні функції не застосовуються до цієї моделі.
+* **ADC filter** - Увімкнення/вимкнення фільтра ADC для цієї моделі. Опція **Global** прийме значення, зазначене в налаштуваннях апаратури, яке за замовчуванням _увімкнено_.
 
 {% hint style="info" %}
-The ADC filter is a filter for the proportional channels (sticks, pots, sliders), smoothing out smaller fast movements that occur due to noise in the system electronics. Normally, this filter should be _disabled_ for models with flight controllers.
+**Фільтр ADC** - це фільтр для пропорційних каналів (стіки, потенціометри, слайдери), який згладжує дрібні швидкі рухи, що виникають через шум в електроніці системи. Зазвичай цей фільтр слід _вимкнути_ для моделей з контролерами польоту.
 {% endhint %}
 
 #### Internal / External RF
 
-The configuration settings for both the Internal and External RF sections work the same. The only difference is that the **Internal RF** section is for configuring the built-in module and the **External RF** section is for configuring an RF module in the external module bay.
+Налаштування конфігурації для внутрішнього та зовнішнього RF секцій працюють однаково. Єдина відмінність полягає в тому, що **Внутрішній RF** секція призначена для налаштування вбудованого модуля, а **Зовнішній RF** секція - для налаштування RF модуля в зовнішньому модульному відсіку.
 
-The configuration options are: **OFF** or the _**module name**_ of the installed module as configured in the radio settings. Configuration options are unique to each installed module. Please consult the manufacturer's documentation for configuration options.
-
-{% hint style="info" %}
-Configuration options for the multi-protocol module are described here:  [https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
-{% endhint %}
-
-**Receiver number** - A receiver number is a user-assigned number for a model that is sent to the receiver when bound. Each model must have a unique receiver number. However, models using different protocols may have the same receiver number without issues. EdgeTX will inform you when a receiver number is unique or if it is already being used with a text above the number field.
+Конфігураційні параметри: **OFF** або _**module name**_ встановленого модуля, як налаштовано в параметрах апаратури. Параметри конфігурації унікальні для кожного встановленого модуля. Будь ласка, зверніться до документації виробника для отримання інформації про конфігураційні параметри.
 
 {% hint style="info" %}
-If using the radio in gamepad mode, both internal and external RF modules should be turned off. This will result in increased performance when connected to a computer via USB.&#x20;
+Параметри конфігурації для мультипротокольного модуля описані тут:[https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
 {% endhint %}
 
-### **Trainer**
+**Receiver number** (Номер приймача) — це призначений користувачем номер для моделі, який надсилається до приймача під час прив'язки. Кожна модель повинна мати унікальний номер приймача. Однак моделі, які використовують різні протоколи, можуть мати однаковий номер приймача без проблем. EdgeTX повідомить вас, коли номер приймача унікальний або якщо він вже використовується, за допомогою тексту над полем для введення номера.
 
-**Trainer Mode** - The **Trainer Mode** option is where you can configure the CPPM passthrough mode and method. When enabled, this allows the CPPM signals from a radio in _**Slave**_ mode to be passed through to another radio in Master mode which will then pass the signal to the model it is connected to. CPPM passthrough can be used for several different use cases, such as: connecting a head tracker, Instructor / Student training mode, and controlling complex models that require more stick inputs than available on a standard transmitter.
+{% hint style="info" %}
+Якщо використовуєте апаратура у режимі геймпаду, внутрішній та зовнішній RF модулі можуть бути вимкнені. Це підвищить продуктивність при підключенні до комп'ютера через USB.
+{% endhint %}
 
-**Master mode** - This is the mode for the radio that will be connected to the model. This radio also shall configure the special/global function (Trainer) to activate the passthrough mode. When the passthrough mode is activated, the CPPM signals from the radio in _**Slave mode**_ will be sent to the model for control.
+### **Trainer (Інструктор)**
 
-**Slave mode** - This is the mode for the radio that will pass it's CPPM values to the radio in _**Master mode,**_ which are then sent to the model.
+**Trainer Mode** — опція **Trainer Mode** дозволяє налаштувати режим та метод CPPM passthrough. При ввімкненні ця функція дозволяє передавати CPPM сигнали з радіоконтроллера в режимі _**Slave**_ до іншого радіоконтроллера в режимі _**Master**_, який передає сигнал на модель. CPPM passthrough може використовуватися для різних завдань, таких як: підключення трекера голови, навчальний режим Інструктор / Студент та керування складними моделями, які потребують більше каналів, ніж є на стандартному передавачі.
 
-Below are the possibile configuration options:
+**Master mode** — це режим для радіоконтроллера, що підключається до моделі. Цей радіоконтроллер також має налаштувати спеціальну/глобальну функцію (Trainer) для активації режиму passthrough. Коли passthrough активовано, CPPM сигнали з радіоконтроллера в режимі _**Slave**_ передаватимуться на модель для керування.
 
-* **OFF** - Trainer mode is not used for this model.
-* **Master/Jack** - Master mode using a cable connection.
-* **Slave/Jack** - Slave mode using a cable connection.
-  * **Ch. Range** - This is the range of channels that will be sent to the radio in Master mode. Channel 10 is the recommended last channel to use.
-  * **PPM frame** - The first field is the length of the PPM frame. The second field is the stop length/delay between pulses. The dropdown is to select the polarity of the signal. The frame length is automatically adjusted to the correct value when the number of transmitted channels is changed. However, this automatically assigned value can be manual changed. _**Note**: In most cases, the default setting does_ not _need to be changed._
-* **Master / Bluetooth** - Master mode using a Bluetooth connection (if installed in radio).
-* **Slave / Bluetooth** - Slave mode using a Bluetooth connection (if installed in radio).
-* **Master / Multi** - Master mode using an additional externally mounted Multi-protocol module for the connection. For more information on this setup, see [set-up-wireless-trainer-with-mpm.md](../../edgetx-how-to/set-up-wireless-trainer-with-mpm.md "mention")
+**Slave mode** — це режим для радіоконтроллера, який передає свої значення CPPM на радіоконтроллер у режимі _**Master**_, які потім передаються на модель.
 
-<figure><img src="../../.gitbook/assets/bwsetup5 (1).png" alt=""><figcaption><p>Enabled Features options</p></figcaption></figure>
+Нижче наведено можливі параметри конфігурації:
+
+* **OFF** — Trainer Mode не використовується для цієї моделі.
+* **Master/Jack** — режим Master із використанням кабельного підключення.
+* **Slave/Jack** — режим Slave із використанням кабельного підключення.
+  * **Ch. Range** — це діапазон каналів, які будуть передані на радіоконтроллер у режимі Master. Канал 10 рекомендовано використовувати як останній.
+  * **PPM frame** — перше поле відповідає за довжину PPM кадру. Друге поле — за тривалість паузи/затримки між імпульсами. У випадаючому меню можна вибрати полярність сигналу. Довжина кадру автоматично підлаштовується під правильне значення при зміні кількості переданих каналів. Однак це значення можна змінити вручну. Примітка: у більшості випадків змінювати налаштування за замовчуванням не потрібно.
+* **Master / Bluetooth** — режим Master із використанням Bluetooth підключення (якщо встановлено в радіоконтроллері).
+* **Slave / Bluetooth** — режим Slave із використанням Bluetooth підключення (якщо встановлено в радіоконтроллері).
+* **Master / Multi** — режим Master із використанням додаткового зовнішнього мультипротокольного модуля для підключення. Для отримання додаткової інформації про цю конфігурацію дивіться[set-up-wireless-trainer-with-mpm.md](../../edgetx-how-to/set-up-wireless-trainer-with-mpm.md "mention")
+
+<figure><img src="../../.gitbook/assets/bwsetup5 (1).png" alt=""><figcaption><p>Налаштування увімкнених функцій</p></figcaption></figure>
 
 ### Enabled Features
 
-The **Enabled Features** section allows you to configure which pages are visible in the selected model's radio setup and model settings area of EdgeTX. The page names are displayed in a collapsible menu with the following configurable options:
+Розділ **Enabled Features** дозволяє налаштувати, які сторінки видимі в налаштуванні радіоконтроллера обраної моделі та в області налаштувань моделі EdgeTX. Назви сторінок відображаються у меню, що згортається з наступними опціями налаштувань:
 
-* **Global** - When selected, the tab will take the global value configured in the **Enabled Features** area in **Radio Setup**. The configured global value will display next to the option.
-* **On** - When selected, this tab will be visible when this model is loaded.
-* **Off** -  When selected, this tab will not be visible when this model is loaded.
+* **Global** — при виборі ця вкладка отримає глобальне значення, налаштоване в області **Enabled Features** в **Налаштуваннях апаратури**. Налаштоване глобальне значення відображатиметься поруч з опцією.
+* **On** - при виборі ця вкладка буде видима, коли ця модель завантажена.
+* **Off** - при виборі ця вкладка не буде видима, коли ця модель завантажена.
 
 {% hint style="info" %}
-_**Note:**_ Turning off a tab only hides the tab and does not change the items already configured in that tab.
+**Примітка:** Вимкнення вкладки лише приховує вкладку і не змінює елементи, вже налаштовані в цій вкладці.
 
-**EXCEPTION:** Turning off the Global / Special Functions tab _**will**_ disable configured global / special functions for that model.
+**ВИКЛЮЧЕННЯ:** Вимкнення вкладки Global / Special Functions _**призведе**_ до відключення налаштованих глобальних / спеціальних функцій для цієї моделі.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/bwjoy4.png" alt=""><figcaption><p>USB Joystick advanced mode settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwjoy4.png" alt=""><figcaption><p>Налаштування розширеного режиму USB-джойстика</p></figcaption></figure>
 
 ### USB Joystick
 
-The **USB Joystick** has two possible modes, **Classic** and **Advanced**.&#x20;
+**USB Joystick** має два можливих режими: **Classic** та **Advanced**.
 
 {% hint style="info" %}
-If using the radio as a USB Joystick, both internal and external RF modules should be turned off. When configured as such, the mixer will run at 1000Hz when in Joystick mode (which is needed for F.Sim competitors). Additionally, it also displays mixer run time in statistic/debug screen. This will result in increased performance when connected to a computer via USB. \
+Якщо використовуєте радіоконтроллер як USB Joystick, внутрішні та зовнішні RF модулі можуть бути вимкнені. При такій конфігурації мікшер працюватиме на частоті 1000 Гц у режимі Joystick (що необхідно для учасників F.Sim). Додатково, він також відображає час роботи мікшера на екрані статистики/налагодження. Це підвищить продуктивність при підключенні до комп'ютера через USB. \
 \
 The advanced joystick mode is not available for black-and-white display radios with less than 1 MB of flash memory due to this feature not fitting into the available memory footprint.
 {% endhint %}
 
-In **Classic mode**, the radio's configured output channels will be sent to the target device in numerical order and mapped to the device's preconfigured USB controller axes and buttons. Below is the default channel mapping for Microsoft Windows.
+У режимі **Classic Mode** налаштовані вихідні канали радіоконтроллера будуть передані цільовому пристрою в числовому порядку та відображені на попередньо налаштовані осі та кнопки USB контролера пристрою. Нижче наведено відображення каналів за замовчуванням для Microsoft Windows.
 
 * Ch 1 - X Axis
 * Ch 2 - Y Axis
@@ -245,45 +235,45 @@ In **Classic mode**, the radio's configured output channels will be sent to the 
 * Ch 8 - Slider
 * CH 9 - Ch 32 - Buttons 1 - 24
 
-In **Advanced mode** you can configure the following additional options:
+У режимі **Advanced Mode** ви можете налаштувати такі додаткові опції:
 
-**If. mode (Interface mode):** This indicates to the target device (the device you are connecting your transmitter to) what type of device you are connecting. The options are **Joystick**, **Gamepad**, **MultiAxis.** &#x20;
+**If. mode (Interface mode)**: Це вказує цільовому пристрою (пристрою, до якого ви підключаєте свій передавач), який тип пристрою ви підключаєте. Опції: **Joystick, Gamepad, MultiAxis**.
 
 {% hint style="info" %}
-**Note:** Currently there is a limitation in MS Windows that may limit your transmitter to being only detected as a Joystick, regardless of what is selected in this option. In MacOS, Linux and Andriod this functions properly.
+**Примітка:** В даний час існує обмеження в MS Windows, яке може обмежити ваш передавач до виявлення лише як Joystick, незалежно від вибору в цій опції. У MacOS, Linux та Android ця функція працює належним чином.
 {% endhint %}
 
-**Circ. cut (Circular cutout)** - For axis pairs (X-Y, Z-rX): By default, the range of the axis pairs is a rectangular area. With this option, the axis will be limited to a circular area (like gamepad controllers commonly are). Options are : **None** or **X-Y, Z-rX** or **X-Y, rX-rY** or **X-Y, Z-rZ**
+**Circ. cut (Circular cutout)** — для пар осей (X-Y, Z-rX): за замовчуванням діапазон пар осей має прямокутну область. З цією опцією осі будуть обмежені круглою областю (як це зазвичай буває у контролерах gamepad). Опції: **None** або **X-Y, Z-rX** або **X-Y, rX-rY** або **X-Y, Z-rZ**.
 
 **Channel Settings**
 
-**Mode** - For each output channel, you can select the mode that you want to use for that channel. The available options are **None**, **Btn**, **Axis**, **Sim**.
+**Mode** — для кожного вихідного каналу ви можете вибрати режим, який хочете використовувати для цього каналу. Доступні опції: **None, Btn, Axis, Sim.**
 
-* **None** - Channel is not used
+* **None** — канал не використовується.
 
-<figure><img src="../../.gitbook/assets/bwjoy1.png" alt=""><figcaption><p>Button mode options for a selected channel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwjoy1.png" alt=""><figcaption><p>Опції режиму кнопки для вибраного каналу</p></figcaption></figure>
 
-* **Btn** - Channel is used to simulate a button. Configuration options include:
-  * **Inversion** - Inverts the output channel signal. Options are: **On** / **Off**
+* **Btn** — канал використовується для симуляції кнопки. Опції конфігурації включають:
+  * **Inversion** - інвертує сигнал вихідного каналу. Опції: **On / Off**
   * **Button Mode** -
-    * **Normal** - Each postion of a multiposition switch is represented by a button. The current switch state is represented by a continous button press.
-      * **Pulse** - Similar to "Normal" mode. However, instead of continous button press it is represented by a short button press.
-      * **SWEmu** - The toggle switch emulations a push button. The first press turns the virtual button on, the second press turns it off.
-      * **Delta** - The change of the output channel is represented by 2 buttons. While the output value is decreasing, the first button is pressed. When the output value is increasing, the second button is pressed. If there is no change, then no buttons will be pressed.
-      * **Companion** - This option should be selected when using your transmitter to control the simulator in EdgeTX Companion.  It allows the multi-position switches to function properly in the simulator.
-  * **Positions** - The type of button that will be simulated.&#x20;
-    * **Push -** will only map to one button
-      * **2POS - 8 POS** - will map to the number of buttons that the switch has (ex: 3POS will map to 3 buttons).
-  * **Button No:** The button number that the output will be mapped to and sent to the target device as.
+    * **Normal** - кожна позиція перемикача з кількома положеннями представляється кнопкою. Поточний стан перемикача представлений безперервним натисканням кнопки.
+      * **Pulse** - подібно до режиму "**Normal**". Однак замість безперервного натискання кнопки воно представлено коротким натисканням кнопки.
+      * **SWEmu** - перемикач перемикає кнопку. Перше натискання вмикає віртуальну кнопку, друге натискання вимикає її.
+      * **Delta** - зміна вихідного каналу представлена двома кнопками. Поки значення виходу зменшується, перша кнопка натискається. Коли значення виходу зростає, натискається друга кнопка. Якщо зміни немає, кнопки не натискаються.
+      * **Companion** - цю опцію слід вибрати, коли ви використовуєте свій передавач для управління симулятором у EdgeTX Companion. Вона дозволяє перемикачам з кількома положеннями функціонувати належним чином у симуляторі.
+  * **Positions** - тип кнопки, яка буде симульована.
+    * **Push -** буде відображатися лише на одну кнопку.
+      * **2POS - 8 POS** - буде відповідати кількості кнопок, які має перемикач (наприклад, 3POS відповідатиме 3 кнопкам).
+  * **Button No:** номер кнопки, до якої буде прив’язано вихід і яка буде надіслана цільовому пристрою.
 
-<figure><img src="../../.gitbook/assets/bwjoy2.png" alt=""><figcaption><p>Axis mode options for a selected channel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwjoy2.png" alt=""><figcaption><p>Параметри режиму осі для вибраного каналу</p></figcaption></figure>
 
-* **Axis** - The channel is used to simulate an axis and will be mapped to one of the target device's default axes.
-  * Axis options are: **X**, **Y**, **Z**, **rotX** (rotation X), **rotY**, **rotZ**
+* **Axis** — канал використовується для симуляції осі та буде відображений на одну зі стандартних осей цільового пристрою.
+  * Опції осі: **X, Y, Z, rotX** (обертання X), **rotY, rotZ.**
 
-<figure><img src="../../.gitbook/assets/bwjoy3.png" alt=""><figcaption><p>Sim mode options for selected channel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwjoy3.png" alt=""><figcaption><p>Параметри режиму SIM для вибраного каналу</p></figcaption></figure>
 
-* **Sim** - The channel is used to simulate a common sim axis and it will be listed on the target device as the selected option (ex: Thr)
-  * Sim Axis options are: **Ail**, **Ele**, **Rud**, **Thr, Acc**, **Brk**, **Steer**, **Dpad**
+* **Sim** — канал використовується для симуляції загальної осі симулятора і буде відображатися на цільовому пристрої як вибрана опція (наприклад: Thr).
+  * Опції симуляції осі: **Ail**, **Ele**, **Rud**, **Thr, Acc**, **Brk**, **Steer**, **Dpad**
 
-Pressing the **\[PAGE>]** button will take you to the **Heli Setup** screen.
+Натискання кнопки **\[PAGE>]** переведе вас на екран **Налаштування гелікоптера**.
