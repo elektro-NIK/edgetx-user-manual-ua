@@ -84,7 +84,7 @@
 
 * [Доступ до режиму DFU та завантажувача](edgetx-how-to/access-dfu-and-bootloader-mode.md)
 * [Внесок у посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md)
-* [Установка бездротового інструктора з багатопротокольним модулем](edgetx-how-to/set-up-wireless-trainer-with-mpm.md)
+* [Налаштування бездротового інструктора з мультипротокольним модулем](edgetx-how-to/set-up-wireless-trainer-with-mpm.md)
 * [Використання Bluetooth з EdgeTX](edgetx-how-to/use-bluetooth-with-edgetx.md)
 * [Налаштування розширеного джойстика з EdgeTX](edgetx-how-to/configure-advanced-joystick-with-edgetx.md)
 * [Інформація про відображення джойстика для розробників ігор](edgetx-how-to/joystick-mapping-information-for-game-developers.md)
