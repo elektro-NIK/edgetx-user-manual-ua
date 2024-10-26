@@ -1,77 +1,77 @@
-# Configure Advanced Joystick with EdgeTX
+# Налаштування розширеного джойстика з EdgeTX
 
-### General
+### Загальні параметри
 
-1. Please try the **classic mode first**. Handling joystick input has undergone many different designs. For example Windows has 6 joystick APIs - all with different quirks.
-2. **Interface mode Gamepad** is usually the right one.
-3. To ease switching between Advanced and Classic mode try using **channels 1 - 8 for axis** and **channels 9 - 32 for buttons**.
-4. After **changing the joystick** configuration you likely have to disconnect and then reconnect the USB cable. Otherwise systems might still use the old joystick description to read the new data.
+1. Спробуйте спочатку **classic mode**. Обробка вводу від джойстика пройшла через багато різних реалізацій. Наприклад, Windows має 6 різних API для джойстиків — усі з власними особливостями.
+2. **Interface mode Gamepad** зазвичай є правильним.
+3. Для полегшення переходу між розширеним і класичним режимами спробуйте використовувати **канали 1 - 8 для осей** і **канали 9 - 32 для кнопок**.
+4. Після зміни конфігурації джойстика, ймовірно, вам потрібно буде відключити, а потім знову під'єднати USB-кабель. Інакше системи можуть все ще використовувати старий опис джойстика для зчитування нових даних.
 
-### Analog Axis
+### Аналогові осі
 
-1. Most modern applications use the **USB HID ID** to identify the meaning of an axis.
-2. Legacy applications frequently use the **order** the axis where configured in.
-3. A few applications use the **reverse order** the axis where configured in.
-4. **Duplicate axis** are rarely supported. Some APIs do support two Slider axis.
-5. **Inverted axis**: Many applications expect the left and right Y axis to go the other way. The direction can be reversed with Weight -100% or in the advanced Joystick configuration.
-6. **Windows** does support "axis" and "sim". However mixing both types is not always supported.
-7. **Linux** maps following inputs onto the same axis and uses the input value with the lowest channel number.
+1. Більшість сучасних застосунків використовують **USB HID ID** для ідентифікації значення осі.
+2. Застарілі застосунки часто використовують **прямий порядок**, в якому осі були налаштовані.
+3. Деякі застосунки використовують **зворотний порядок**, в якому осі були налаштовані.
+4. **Duplicate axis** рідко підтримуються. Деякі API підтримують два слайдери.
+5. **Inverted axis**: Багато додатків очікують, що осі Y лівого та правого джойстика будуть направлені в інший бік. Напрямок можна перевернути за допомогою Weight -100% або в розширеній конфігурації джойстика.
+6. **Windows** підтримує "axis" та "sim". Однак змішування обох типів не завжди підтримується.
+7. **LInux** відображає наступні входи на одну вісь і використовує вхідне значення з найменшим номером каналу.
    * sim Thr + axis Slider → ABS\_THROTTLE
    * sim Rud + axis Dial → ABS\_RUDDER
    * axis Wheel + sim Steer → ABS\_WHEEL
-8. **Android** treats **sim Acc** and **sim Brk** as half axis. EdgeTX channel outputs \[-100%, 0% and +100%] are interpreted by Android as \[0%, 50% and 100%]. Consider following configuration if your physical input is one analog stick:
+8. **Android** розглядає sim **Acc** і sim **Brk** як половинні осі. Виходи каналу EdgeTX \[-100%, 0% і +100%] інтерпретуються Android як \[0%, 50% і 100%]. Розгляньте наступну конфігурацію, якщо ваш фізичний вхід — це один аналоговий стік:
    * sim Acc = input (axis 1: Offset -50%, Func "x>0") mixed with (Weight 200%)
    * sim Brk = input (axis 1: Offset -50%, Func "x<0") mixed with (Weight -200%)
 
-#### Common Axis Mapping
+### Загальне відображення осей
 
-| channel | Android   | Betaflight  | Dualsense | EdgeTX Classic | EdgeTX pre 2.9 |
-| ------- | --------- | ----------- | --------- | -------------- | -------------- |
-| CH1     | axis X    | axis X      | axis X    | axis X         | axis X         |
-| CH2     | axis Y    | axis Y      | axis Y    | axis Y         | axis Y         |
-| CH3     | axis Z    | axis Z      | axis Z    | axis Z         | axis Z         |
-| CH4     | axis rotZ | axis rotX   | axis rotZ | axis rotX      | axis rotX      |
-| CH5     | sim Brk   | axis rotZ   | axis rotX | axis rotY      | axis rotY      |
-| CH6     | sim Acc   | axis rotY   | axis rotY | axis rotZ      | axis rotZ      |
-| CH7     |           | axis Slider |           | axis Slider    | axis Slider    |
-| CH8     | sim Dpad  | axis Dial   | sim Dpad  | axis Dial      | axis Slider    |
+| Канал | Android   | Betaflight  | Dualsense | EdgeTX Classic | EdgeTX pre 2.9 |
+| ----- | --------- | ----------- | --------- | -------------- | -------------- |
+| CH1   | axis X    | axis X      | axis X    | axis X         | axis X         |
+| CH2   | axis Y    | axis Y      | axis Y    | axis Y         | axis Y         |
+| CH3   | axis Z    | axis Z      | axis Z    | axis Z         | axis Z         |
+| CH4   | axis rotZ | axis rotX   | axis rotZ | axis rotX      | axis rotX      |
+| CH5   | sim Brk   | axis rotZ   | axis rotX | axis rotY      | axis rotY      |
+| CH6   | sim Acc   | axis rotY   | axis rotY | axis rotZ      | axis rotZ      |
+| CH7   |           | axis Slider |           | axis Slider    | axis Slider    |
+| CH8   | sim Dpad  | axis Dial   | sim Dpad  | axis Dial      | axis Slider    |
 
-Similar layouts:
+**Схожі макети:**
 
-| other controller | use layout     |
-| ---------------- | -------------- |
-| OpenTX           | EdgeTX pre 2.9 |
-| Orqa FPV.Ctrl    | EdgeTX pre 2.9 |
-| Stadia           | Android        |
-| XBox             | Android        |
+| Інші контролери | Використане відображення |
+| --------------- | ------------------------ |
+| OpenTX          | EdgeTX pre 2.9           |
+| Orqa FPV.Ctrl   | EdgeTX pre 2.9           |
+| Stadia          | Android                  |
+| XBox            | Android                  |
 
 #### sim Dpad
 
-Sim Dpad emulates a **directional pad** also known as **hat switch** or point of view switch. Most application decode the 8 ordinal directions and "center". Some applications only decode the 4 cardinal directions and "center" (e.g. Northeast is treated as North).
+Sim Dpad емулює **навігаційну клавіатуру**, також відому як **хрестовина** або **перемикач точки огляду** (POV). Більшість додатків розпізнають 8 основних напрямків і "центр". Деякі додатки розпізнають лише 4 базові напрямки та "центр" (наприклад, північний схід розглядається як північ).
 
-| direction  | from    | to     |
-| ---------- | ------- | ------ |
-| North      | -100.0% | -88.1% |
-| Northeast  | -88.0%  | -76.4% |
-| East       | -76.3%  | -64.6% |
-| Southeast  | -64.6%  | -52.9% |
-| South      | -52.8%  | -41.2% |
-| Southwest  | -41.1%  | -29.5% |
-| West       | -29.4%  | -17.8% |
-| Northwest  | -17.7%  | -6.1%  |
-| **Center** | -6.0%   | 5.7%   |
-| North      | 5.8%    | 17.4%  |
-| Northeast  | 17.5%   | 29.1%  |
-| East       | 29.2%   | 40.8%  |
-| Southeast  | 40.9%   | 52.5%  |
-| South      | 52.6%   | 64.3%  |
-| Southwest  | 64.4%   | 76.0%  |
-| West       | 76.1%   | 87.7%  |
-| Northwest  | 87.8%   | 100.0% |
+| Напрямок        | від     | до     |
+| --------------- | ------- | ------ |
+| Північ          | -100.0% | -88.1% |
+| Північний схід  | -88.0%  | -76.4% |
+| Схід            | -76.3%  | -64.6% |
+| Південний схід  | -64.6%  | -52.9% |
+| Південь         | -52.8%  | -41.2% |
+| Південний захід | -41.1%  | -29.5% |
+| Захід           | -29.4%  | -17.8% |
+| Північний захід | -17.7%  | -6.1%  |
+| **Центр**       | -6.0%   | 5.7%   |
+| Північ          | 5.8%    | 17.4%  |
+| Північний схід  | 17.5%   | 29.1%  |
+| Схід            | 29.2%   | 40.8%  |
+| Південний схід  | 40.9%   | 52.5%  |
+| Південь         | 52.6%   | 64.3%  |
+| Південний захід | 64.4%   | 76.0%  |
+| Захід           | 76.1%   | 87.7%  |
+| Північний захід | 87.8%   | 100.0% |
 
-#### Axis IDs
+#### Осі IDs
 
-| EdgeTX      | HID name    | USB HID ID |
+| EdgeTX      | HID ім'я    | USB HID ID |
 | ----------- | ----------- | ---------- |
 | axis X      | X           | 0x00010030 |
 | axis Y      | Y           | 0x00010031 |
@@ -91,47 +91,47 @@ Sim Dpad emulates a **directional pad** also known as **hat switch** or point of
 | sim Steer   | Steering    | 0x000200C8 |
 | sim Dpad    | Hat switch  | 0x00010039 |
 
-### Buttons
+### Кнопки
 
-1. Buttons are **identified** by their USB HID ID.
-2. The **meaning** of a specific button ID is not standardized.
-3. **Duplicate buttons** (_e.g. button 1, button 1_) are not supported. The button with the higher channel number is used.
-4. **Buttons as axis**: Some applications need analog button information. Use a mixer to forward the digital button state to an analog axis.
-5. **Ghost buttons**: For Joysticks and Gamepads the required minimum amount of buttons is automatically created. Similarly if only button 15 is configured the missing buttons 0 - 14 are automatically created. These buttons have no input and are always off.
-6. **Android** generally supports buttons 0 to 14 with the same mapping as Linux. Support for buttons in bold is [mandatory](https://source.android.com/docs/compatibility/14/android-14-cdd#7261\_button\_mappings) for all Android devices.
-7. **Widows** generally supports buttons 0 to 9 with the same mapping as Xbox.
+1. Кнопки **ідентифікуються** за їх USB HID ID.
+2. **Значення** конкретного ID кнопки не стандартизоване.
+3. **Дубльовані кнопки** (_наприклад, кнопка 1, кнопка 1_) не підтримуються. Використовується кнопка з вищим номером каналу.
+4. **Кнопки як осі:** деякі додатки потребують аналогової інформації про кнопку. Використовуйте мікшер, щоб перенаправити цифровий стан кнопки на аналогову вісь.
+5. **Примарні кнопки:** для джойстиків і геймпадів мінімальна кількість кнопок автоматично створюється. Аналогічно, якщо налаштована лише кнопка 15, відсутні кнопки 0-14 автоматично створюються. Ці кнопки не мають вводу і завжди вимкнені.
+6. **Android** зазвичай підтримує кнопки 0-14 з таким же відображенням, як і Linux. Підтримка кнопок, виділених жирним шрифтом, є [обов'язковою](https://source.android.com/docs/compatibility/14/android-14-cdd#7261\_button\_mappings) для всіх Android-пристроїв.
+7. **Windows** зазвичай підтримує кнопки 0-9 з таким же відображенням, як і Xbox.
 
 | EdgeTX    | **Android** / Linux         | Dualsense | **Windows** / XBox | USB HID ID |
 | --------- | --------------------------- | --------- | ------------------ | ---------- |
-| button 0  | **BTN\_A** - 304            | square    | **A**              | 0x00090001 |
-| button 1  | **BTN\_B** - 305            | cross     | **B**              | 0x00090002 |
-| button 2  | BTN\_C - 305                | circle    | **X**              | 0x00090003 |
-| button 3  | **BTN\_X** - 307            | triangle  | **Y**              | 0x00090004 |
-| button 4  | **BTN\_Y** - 308            | L1        | **left bumper**    | 0x00090005 |
-| button 5  | BTN\_Z - 309                | R1        | **right bumper**   | 0x00090006 |
-| button 6  | **BTN\_TL** - 310           | L2        | **back**           | 0x00090007 |
-| button 7  | **BTN\_TR** - 311           | R2        | **start**          | 0x00090008 |
-| button 8  | BTN\_TL2 - 312              | create    | **left stick**     | 0x00090009 |
-| button 9  | BTN\_TR2 - 313              | options   | **right stick**    | 0x0009000A |
-| button 10 | BTN\_SELECT - 314           | L3        | left trigger       | 0x0009000B |
-| button 11 | BTN\_START - 315            | R3        | right trigger      | 0x0009000C |
-| button 12 | BTN\_MODE - 316             | home      | guide              | 0x0009000D |
-| button 13 | **BTN\_THUMBL** - 317       | touchpad  |                    | 0x0009000E |
-| button 14 | **BTN\_THUMBR** - 318       | mute      |                    | 0x0009000F |
-| button 15 |                             |           |                    | 0x00090010 |
-| button 16 | BTN\_TRIGGER\_HAPPY1 - 704  |           |                    | 0x00090011 |
-| button 17 | BTN\_TRIGGER\_HAPPY2 - 705  |           |                    | 0x00090012 |
-| button 18 | BTN\_TRIGGER\_HAPPY3 - 706  |           |                    | 0x00090013 |
-| button 19 | BTN\_TRIGGER\_HAPPY4 - 708  |           |                    | 0x00090014 |
-| button 20 | BTN\_TRIGGER\_HAPPY5 - 709  |           |                    | 0x00090015 |
-| button 21 | BTN\_TRIGGER\_HAPPY6 - 710  |           |                    | 0x00090016 |
-| button 22 | BTN\_TRIGGER\_HAPPY7 - 711  |           |                    | 0x00090017 |
-| button 23 | BTN\_TRIGGER\_HAPPY8 - 712  |           |                    | 0x00090018 |
-| button 24 | BTN\_TRIGGER\_HAPPY9 - 713  |           |                    | 0x00090019 |
-| button 25 | BTN\_TRIGGER\_HAPPY10 - 714 |           |                    | 0x0009001A |
-| button 26 | BTN\_TRIGGER\_HAPPY11 - 715 |           |                    | 0x0009001B |
-| button 27 | BTN\_TRIGGER\_HAPPY12 - 716 |           |                    | 0x0009001C |
-| button 28 | BTN\_TRIGGER\_HAPPY13 - 717 |           |                    | 0x0009001D |
-| button 29 | BTN\_TRIGGER\_HAPPY14 - 718 |           |                    | 0x0009001E |
-| button 30 | BTN\_TRIGGER\_HAPPY15 - 719 |           |                    | 0x0009001F |
-| button 31 | BTN\_TRIGGER\_HAPPY16 - 720 |           |                    | 0x00090020 |
+| кнопка 0  | **BTN\_A** - 304            | квадрат   | **A**              | 0x00090001 |
+| кнопка 1  | **BTN\_B** - 305            | хрестик   | **B**              | 0x00090002 |
+| кнопка 2  | BTN\_C - 305                | коло      | **X**              | 0x00090003 |
+| кнопка 3  | **BTN\_X** - 307            | трикутник | **Y**              | 0x00090004 |
+| кнопка 4  | **BTN\_Y** - 308            | L1        | **лівий бампер**   | 0x00090005 |
+| кнопка 5  | BTN\_Z - 309                | R1        | **правий бампер**  | 0x00090006 |
+| кнопка 6  | **BTN\_TL** - 310           | L2        | **назад**          | 0x00090007 |
+| кнопка 7  | **BTN\_TR** - 311           | R2        | **почати**         | 0x00090008 |
+| кнопка 8  | BTN\_TL2 - 312              | створити  | **лівий стік**     | 0x00090009 |
+| кнопка 9  | BTN\_TR2 - 313              | опції     | **правий стік**    | 0x0009000A |
+| кнопка 10 | BTN\_SELECT - 314           | L3        | лівий тригер       | 0x0009000B |
+| кнопка 11 | BTN\_START - 315            | R3        | правий тригер      | 0x0009000C |
+| кнопка 12 | BTN\_MODE - 316             | додому    | довідка            | 0x0009000D |
+| кнопка 13 | **BTN\_THUMBL** - 317       | тачпад    |                    | 0x0009000E |
+| кнопка 14 | **BTN\_THUMBR** - 318       | тиша      |                    | 0x0009000F |
+| кнопка 15 |                             |           |                    | 0x00090010 |
+| кнопка 16 | BTN\_TRIGGER\_HAPPY1 - 704  |           |                    | 0x00090011 |
+| кнопка 17 | BTN\_TRIGGER\_HAPPY2 - 705  |           |                    | 0x00090012 |
+| кнопка 18 | BTN\_TRIGGER\_HAPPY3 - 706  |           |                    | 0x00090013 |
+| кнопка 19 | BTN\_TRIGGER\_HAPPY4 - 708  |           |                    | 0x00090014 |
+| кнопка 20 | BTN\_TRIGGER\_HAPPY5 - 709  |           |                    | 0x00090015 |
+| кнопка 21 | BTN\_TRIGGER\_HAPPY6 - 710  |           |                    | 0x00090016 |
+| кнопка 22 | BTN\_TRIGGER\_HAPPY7 - 711  |           |                    | 0x00090017 |
+| кнопка 23 | BTN\_TRIGGER\_HAPPY8 - 712  |           |                    | 0x00090018 |
+| кнопка 24 | BTN\_TRIGGER\_HAPPY9 - 713  |           |                    | 0x00090019 |
+| кнопка 25 | BTN\_TRIGGER\_HAPPY10 - 714 |           |                    | 0x0009001A |
+| кнопка 26 | BTN\_TRIGGER\_HAPPY11 - 715 |           |                    | 0x0009001B |
+| кнопка 27 | BTN\_TRIGGER\_HAPPY12 - 716 |           |                    | 0x0009001C |
+| кнопка 28 | BTN\_TRIGGER\_HAPPY13 - 717 |           |                    | 0x0009001D |
+| кнопка 29 | BTN\_TRIGGER\_HAPPY14 - 718 |           |                    | 0x0009001E |
+| кнопка 30 | BTN\_TRIGGER\_HAPPY15 - 719 |           |                    | 0x0009001F |
+| кнопка 31 | BTN\_TRIGGER\_HAPPY16 - 720 |           |                    | 0x00090020 |
