@@ -22,25 +22,23 @@
 
 <figure><img src="../.gitbook/assets/update2.png" alt=""><figcaption></figcaption></figure>
 
-На наступному екрані виберіть пристрій **SMT32 Bootloader** і натисніть **Next**.
+На наступному екрані виберіть пристрій **STM32 Bootloader** і натисніть **Next**.
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Якщо пристрій SMT32 Bootloader не з’явився, виберіть Add New Device. У вікні, що з’явилося, виберіть SMT32 Bootloader і натисніть Connect.
+Якщо пристрій **STM32 Bootloader** не з’явився, виберіть **Add New Device**. У вікні, що з’явилося, виберіть **SMT32 Bootloader** і натисніть **Connect**.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Примітка:** Якщо SMT32 Bootloader недоступний, то це зазвичай означає проблему з драйверами на вашому комп’ютері. Ви можете встановити **ImpulseRC Driver Fixer** щоб виправити драйвери. Завантажити можна тут: [**https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe**](https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe)
+**Примітка:** Якщо STM32 Bootloader недоступний, то це зазвичай означає проблему з драйверами на вашому комп’ютері. Ви можете встановити **ImpulseRC Driver Fixer** щоб виправити драйвери. Завантажити можна тут: [**https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe**](https://impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe)
 {% endhint %}
 
 {% hint style="info" %}
-Якщо комп’ютер не виявляє SMT32 Bootloader, вам потрібно скористатися методом завантажувача для оновлення EdgeTX. Пропустіть решту цього розділу та перейдіть до [**Оновлення вмісту SD-карти**](update-from-opentx-to-edgetx-1.md#update-sd-card-contents). Після оновлення SD-карти ми допоможемо вам оновити прошивку через завантажувач.
+Якщо комп’ютер не виявляє STM32 Bootloader, вам потрібно скористатися методом завантажувача для оновлення EdgeTX. Пропустіть решту цього розділу та перейдіть до [**Оновлення вмісту SD-карти**](update-from-opentx-to-edgetx-1.md#update-sd-card-contents). Після оновлення SD-карти ми допоможемо вам оновити прошивку через завантажувач.
 {% endhint %}
 
-Після вибору пристрою **SMT32 Bootloader** і натискання **Next** ви побачите екран підтвердження для перевірки налаштувань. Після перевірки натисніть кнопку **Start Flashing**.
+Після вибору пристрою **STM32 Bootloader** і натискання **Next** ви побачите екран підтвердження для перевірки налаштувань. Після перевірки натисніть кнопку **Start Flashing**.
 
 <figure><img src="../.gitbook/assets/update5.png" alt=""><figcaption></figcaption></figure>
 

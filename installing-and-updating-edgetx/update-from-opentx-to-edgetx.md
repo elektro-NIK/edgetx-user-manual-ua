@@ -38,17 +38,15 @@
 
 <figure><img src="../.gitbook/assets/update2.png" alt=""><figcaption></figcaption></figure>
 
-На наступному екрані виберіть пристрій **SMT32 Bootloader** та натисніть **Next**.
+На наступному екрані виберіть пристрій **STM32 Bootloader** та натисніть **Next**.
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Якщо пристрій **SMT32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **SMT32 Bootloader** та натисніть **Connect**.
+Якщо пристрій **STM32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **STM32 Bootloader** та натисніть **Connect**.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
-Після вибору пристрою **SMT32 Bootloader** та натискання **Next** ви побачите екран підтвердження для перевірки ваших налаштувань. Після того як ви переконаєтеся, що все вірно (версія, модель апаратури та пристрій), натисніть кнопку **Start Flashing**.
+Після вибору пристрою **STM32 Bootloader** та натискання **Next** ви побачите екран підтвердження для перевірки ваших налаштувань. Після того як ви переконаєтеся, що все вірно (версія, модель апаратури та пристрій), натисніть кнопку **Start Flashing**.
 
 <figure><img src="../.gitbook/assets/update5.png" alt=""><figcaption></figcaption></figure>
 
