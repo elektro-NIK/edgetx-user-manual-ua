@@ -1,97 +1,97 @@
-# Special Functions
+# Спеціальні функції
 
-The **Special Functions** section is where you can configure the special functions that are included in EdgeTX. These special functions add additional functionality beyond normal model controls, such as enabling trainer mode, playing a sound, adjusting the radio backlight, adjusting radio volume, etc. On the special functions screen, you will see all configured special functions as well as some of the configured options such as function name, activation switch, if the function is enabled, and other configuration options.
+Розділ **Special Functions** — це місце, де ви можете налаштувати спеціальні функції, включені в EdgeTX. Ці спеціальні функції додають додаткові можливості, виходячи за межі звичайного управління моделлю, такі як увімкнення режиму тренера, відтворення звуку, регулювання підсвічування або гучності радіоапаратури тощо. На екрані спеціальних функцій ви побачите всі налаштовані спеціальні функції, а також деякі з налаштованих опцій, такі як назва функції, перемикач активації, чи увімкнена функція, та інші параметри конфігурації.
 
-<figure><img src="../../.gitbook/assets/bwsf1.png" alt=""><figcaption><p>Special Functions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwsf1.png" alt=""><figcaption><p>Спеціальні функції</p></figcaption></figure>
 
-### Configuring Special Functions
+### **Налаштування спеціальних функцій**
 
-To configure a special function, select the desired special function row and press the **\[Enter]** button. Then, scroll with the **\[Roller]** to select the attribute that you want to edit (it will be highlighted) and press the **\[Enter]** button to edit it (it will now be blinking). Edit the option by scrolling with the **\[Roller]** and pressing the **\[Enter]** button to select the desired option. Once all the options are configured, press the **\[Return]** button to exit out of editing mode for the special function.
+Щоб налаштувати спеціальну функцію, виберіть рядок бажаної спеціальної функції і натисніть кнопку **\[Enter]**. Потім прокрутіть за допомогою **\[Roller]**, щоб вибрати атрибут, який ви хочете редагувати (він буде підсвічений), і натисніть кнопку **\[Enter]** для редагування (тепер він буде мигати). Відредагуйте опцію, прокручуючи за допомогою **\[Roller]** та натискаючи кнопку **\[Enter]** для вибору бажаної опції. Після того, як всі опції налаштовані, натисніть кнопку **\[Return]**, щоб вийти з режиму редагування для спеціальної функції.
 
-All special functions have the configuration options below. Additional options may be added based on the selected function. See the **Functions** section below for these additional options.
+Всі спеціальні функції мають наведені нижче параметри конфігурації. Додаткові опції можуть бути додані залежно від вибраної функції. Дивіться розділ **Functions** нижче для цих додаткових опцій.
 
-* **Trigger** - The switch or trigger that will make the special function active. Long pressing on this section will allow you to quickly select the category of the switch and filter the results. You can select the following filters: _**Switches**_, _**Trims**_, _**Logical Switches**,_ _**Other**_ and _**Invert**_
-* **Function** - The function that will be used. See below for function descriptions.
-* **Enable** - Toggle on/off to enable the function. To be able to activate the special function by a switch, it must be enabled. This option is usually the last option listed as a checkbox on the far right of the screen. Disabled special functions will not function regardless of the configured switch position.
+* **Trigger** — перемикач або тригер, який активує спеціальну функцію. Довге натискання на цю секцію дозволить швидко вибрати категорію перемикача та відфільтрувати результати. Ви можете вибрати такі фільтри: **Switches, Trims, Logical Switches, Other** та **Invert**.
+* **Function** - функція, яка буде використовуватися. Дивіться нижче для опису функцій.
+* **Enable** - перемикач для ввімкнення/вимкнення функції. Щоб активувати спеціальну функцію за допомогою перемикача, вона повинна бути увімкнена. Ця опція зазвичай є останньою в списку, представлена у вигляді чекбокса на крайньому правому боці екрана. Вимкнені спеціальні функції не працюватимуть незалежно від налаштованого положення перемикача.
 
-### Functions
+### Functions (Функції)
 
-Below are all the available functions in EdgeTX, what they do, as well as what additional configuration options that will be shown when the function is selected.
+Нижче наведені всі доступні функції в EdgeTX, їх призначення, а також додаткові параметри конфігурації, які будуть відображені при виборі функції.
 
-**Override** (Channel Override) - Overrides the defined channel with the defined value.
+**Override** (Перевизначення каналу) - перевизначає канал заданим значенням.
 
-* **CH** - Channel to be overridden
-* **Value** - Value to replace the normal channel value. (Range -100 to +100)
+* **CH** - Канал, який буде перевизначеним.
+* **Value** - Значення, яке замінить нормальне значення каналу. (Діапазон -100 до +100).
 
-**Trainer -** Enables trainer mode.
+**Trainer -** Увімкнення режиму інструктора.
 
-* **Value** - Specifies which controls will be given over to the student. Options include **Sticks** (all sticks), **Rud** (Rudder), **Ele** (Elevator), **Thr** (Throttle), **Ail** (Aileron), and **Chans** (all channels).&#x20;
+* **Value** - вказує, які елементи управління будуть передані студенту. Опції включають **Sticks** (всі стіки), **Rud** (кермо напрямку), **Ele** (кермо висоти), **Thr** (газ), **Ail** (елерон) та **Chans** (всі канали).
 
-**Inst. Trim** (Instant Trim)- Sets all trims to the current values of their respective sticks.
+**Inst. Trim** (Instant Trim)- Встановлює всі регулювання на поточні значення їхніх відповідних стіків.
 
-**Reset** (Reset Timer)- Resets the timer or telemetry specified in the value back to their initial values.
+**Reset** (Reset Timer)- Скидає таймер або телеметрію, зазначені у значенні, назад до їхніх початкових значень.
 
-* **Reset** - Options are **Tmr 1, Tmr 2, Tmr 3, All,** and **Telemetry.** See [**Reset Telemetry**](../main-view/reset.md) for more information on what data is reset for each option.
+* **Reset** - опції: **Tmr 1, Tmr 2, Tmr 3, All** та **Telemetry**. Дивіться розділ [**Скидання**](../main-view/reset.md) для отримання додаткової інформації про те, які дані скидаються для кожної опції.
 
-**Set** (Set Timer) - Sets the specified timer to the specified value.
+**Set** (Set Timer) - Встановлює вказаний таймер на зазначене значення.
 
-* **Timer** - Options are **Tmr 1, Tmr 2, Tmr 3**
-* **Value** - The range is 00:00:00 to 08:59:59&#x20;
+* **Timer** - Опції **Tmr 1, Tmr 2, Tmr 3**
+* **Value** - Діапазон: 00:00:00 до 08:59:59.
 
-**Adjust** (Adjust Global Variable) - Changes the value of the specified global variable.
+**Adjust** (Adjust Global Variable) - Змінює значення вказаної глобальної змінної.
 
-* **Global var** - Select the global variable that you want to adjust.
-* **Mode** - Select the mode to change the global variable. Options are: **Constant, Mixer Source, Global var, Inc/Decrement.** Long-press the **\[Enter]** button to select the mode.
-  * **Constant** - Sets the specified global variable to the defined constant value.
-  * **Mixer Source** - Sets the specified global variable to the defined mixer source value.
-  * **Global Var** - Sets the specified global variable to the defined global variable value.
-  * **Inc/Decrement** - Increments/decrements the specified global variable by the specified amount.
+* **Global var** - Виберіть глобальну змінну, яку ви хочете налаштувати.
+* **Mode** - Виберіть режим для зміни глобальної змінної. Опції: **Constant**, **Mixer Source**, **Global var**, **Inc/Decrement**. Довге натискання кнопки **\[Enter]** дозволить вибрати режим.
+  * **Constant** - Встановлює вказану глобальну змінну на визначене постійне значення.
+  * **Mixer Source** - Встановлює вказану глобальну змінну на визначене значення джерела мікшера.
+  * **Global Var** - Встановлює вказану глобальну змінну на визначене значення глобальної змінної.
+  * **Inc/Decrement** -Збільшує/зменшує вказану глобальну змінну на зазначену величину.
 
-**Volume** - Changes the radio volume. The change source is specified in the Volume dropdown.
+**Volume** - Змінює гучність апаратури. Джерело зміни вказується в випадаючому меню **Volume**.
 
-**SetFailsafe** - Sets the custom failsafe values for the selected module (Internal/External) to the current stick position when activated. For this option to work, the Failsafe mode for the RF module must be set to **custom**.
+**SetFailsafe** - Встановлює користувацькі значення аварійного скидання для вибраного модуля (внутрішнього/зовнішнього) на поточне положення стіків при активації. Щоб ця опція працювала, режим аварійного скидання для RF модуля має бути налаштований на **custom**.
 
-**Play Sound** - Plays the sound selected in the value field when activated.
+**Play Sound** - Відтворює звук, вибраний у полі значення, при активації.
 
-* **Value** - Sound to play. Possible values are **Beep1/2/3, Warn1/2, Cheep, Ratata, Tick, Siren, Ring, SciFi, Robot, Chirp, Tada, Crickt, AlmClk**. _Note: SD card sound pack is not required._
-* **Repeat** - Frequency to repeat the sound. Options are **!1x** (do not play at startup even if the switch is active), **1x** (play once), **1s** thru **60s** (play every xx seconds).
+* **Value** - Звук для відтворення. Можливі значення: **Beep1/2/3, Warn1/2, Cheep, Ratata, Tick, Siren, Ring, SciFi, Robot, Chirp, Tada, Crickt, AlmClk**. _Примітка: набір звуків на SD-карті не є обов'язковим._
+* **Repeat** - Частота повторення звуку. Опції: **!1x** (не відтворювати при запуску, навіть якщо перемикач активний), **1x** (відтворити один раз), **1s** до **60s** (відтворювати кожні xx секунд).
 
-**Play Track** - Plays the .wav sound file selected in the value field when activated.
+**Play Track** - Відтворює .wav файл звуку, вибраний у полі значення, при активації.
 
-* **Value** - .wav sound file to play from the SD card.
-* **Repeat** - Frequency to repeat the track. Options are **!1x** (do not play at startup even if the switch is active),  **1x** (play once), **1s** thru **60s** (play every xx seconds).
+* **Value** - .wav файл звуку для відтворення з SD-карти.
+* **Repeat** - Частота повторення треку. Опції: **!1x** (не відтворювати при запуску, навіть якщо перемикач активний), **1x** (відтворити один раз), **1s** до **60s** (відтворювати кожні xx секунд).
 
-**Play Val -** Announces the value of the selected element in the value field.
+**Play Val -** Оголошує значення обраного елемента в полі значення.
 
-* **Value** - The source for the value to announce. It can be an input, stick, pot, slider, trim, physical and logical switch, trainer import channel value, global variable, telemetry sensor or channel.
-* **Repeat** - Frequency to repeat the announcement. Options are **!1x** (do not announce at startup even if the switch is active), **1x** (announce once), **1s** thru **60s** (announce every xx seconds).
+* **Value** - Джерело значення для оголошення. Це може бути вхід, стіки, потенціометр, повзунок, тример, фізичний та логічний перемикач, значення каналу імпорту інструктора, глобальна змінна, сенсор телеметрії або канал.
+* **Repeat** - Частота повторення оголошення. Опції: **!1x** (не оголошувати при запуску, навіть якщо перемикач активний), **1x** (оголосити один раз), **1s** до **60s** (оголошувати кожні xx секунд).
 
-**Lua Script** - Executes the Lua script defined in the value field. The Lua script must be located in /SCRIPTS/FUNCTIONS/ folder on the SD card. Lua scripts that display information on the screen cannot be executed with this special function.
+**Lua Script** - Виконує Lua скрипт, визначений у полі значення. Lua скрипт повинен знаходитись у папці /SCRIPTS/FUNCTIONS/ на SD-карті. Lua скрипти, які відображають інформацію на екрані, не можуть бути виконані з цією спеціальною функцією.
 
-* **Value** - LUA script file to play from the SD card.
-* **Repeat** - Frequency to repeat the Lua script. Options are: **ON** (repeat indefinately as long as switch is active) or **1x** (once)
+* **Value** - LUA скрипт файл для відтворення з SD-картки.
+* **Repeat** - Частота повторення Lua скрипта. Опції: **ON** (повторювати безкінечно, поки перемикач активний) або **1x** (один раз).
 
-**BgMusic** - Plays the .wav file selected in the value field on a loop when enabled. The file shall be in the SOUNDS/(language)/ folder on the SD card.
+**BgMusic** - Відтворює .wav файл, обраний у полі значення, в циклі, коли активовано. Файл має бути в папці SOUNDS/(language)/ на SD-карті.
 
-**BgMusic II** - Temporarily pauses the .wav file playback specified in the **BgMusic**
+**BgMusic II** - Тимчасово призупиняє відтворення .wav файлу, зазначеного в BgMusic
 
-**Vario** - Enables the variometer beeping sound for the ascent and descent of the model.
+**Vario** - Увімкнення звукового сигналу варіометра під час підйому та спуску моделі.
 
-**Haptic** - Causes the radio to vibrate (haptic feedback) when enabled.
+**Haptic** - Викликає вібрацію радіоапаратури (тактильний зворотний зв'язок) при активації.
 
-* **Value** - Type of vibration pattern. Options are: 0 - 4.
-* **Repeat** - Frequency to repeat the vibration pattern. Options are **!1x** (do not vibrate at startup even if the switch is active), **1x** (vibrate once), **1s** thru **60s** (vibrate every xx seconds).
+* **Value** - Тип візерунка вібрації. Опції: 0 - 4.
+* **Repeat** - Частота повторення візерунка вібрації. Опції: **!1x** (не вібрувати при запуску, навіть якщо перемикач активний), **1x** (вібрувати один раз), **1s** до **60s** (вібрувати кожні xx секунд).
 
-**SD Logs** - Creates a log .csv file of the radio and telemetry values in the LOGS folder on the SD Card. The radio will create a new entry into the log file based on the frequency configured in the **Value** setting.  The value options are **0.0s** - **25.5s** (Note: 0.0 effectively disables this option). Each time the function is activated, the radio will create a new log file provided that the function is activated at least as long as the value setting. **Note:** Logging will not start if SD card has less than 50mb of free space.&#x20;
+**SD Logs** - Створює лог-файл  у форматі .csv значень радіоапаратури та телеметрії в папці LOGS на SD-карті. Апаратура створюватиме новий запис у лог-файлі на основі частоти, налаштованої в параметрі **Value**. Значення опцій: **0.0s - 25.5s** (Примітка: 0.0 ефективно вимикає цю опцію). Кожного разу, коли функція активується, апаратура створює новий лог-файл за умови, що функція активована принаймні так довго, як вказано в налаштуванні значення. **Примітка:** Логування не почнеться, якщо на SD-карті менше ніж 50 МБ вільного місця.
 
-**Backlight** - adjusts the screen contrast (LED screens) or OLED brightness (OLED screens) based on the source defined in the value dropdown.
+**Backlight** - регулює контрастність екрана (LED-екрани) або яскравість OLED (OLED-екрани) на основі джерела, визначеного в випадаючому меню значення.
 
-**Screenshot** -  Creates screenshot as a .bmp file in the SCREENSHOT folder on the SD Card.
+**Screenshot** - Створює скріншот у форматі .bmp у папці SCREENSHOT на SD-карті.
 
-**RacingMode** - Enables racing mode (low latency) for FrSky Archer RS receivers. Racing mode must also be enabled in External RF Module Settings.
+**RacingMode** - Увімкнення режиму перегонів (низька затримка) для приймачів FrSky Archer RS. Режим перегонів також повинен бути увімкнений у налаштуваннях зовнішнього RF модуля.
 
-**Audio Amp Off** (select radios) - Disables the Audio Amplifier so that no sound comes from the speaker, including annoying feedback or interferance. This option is only available on select radios.
+**Audio Amp Off** (select radios) - Вимикає аудіо підсилювач, щоб з динаміка не звучали звуки, включаючи неприємний зворотний зв'язок або перешкоди. Ця опція доступна тільки на вибраних апаратурах.
 
-**RGB Led** - Executes the selected LED related Lua script on the SD card in the **Scripts** -> **RGBLED** folder.
+**RGB Led** - Виконує обраний Lua скрипт, пов'язаний з LED, на SD-карті в папці **Scripts -> RGBLED.**
 
-Pressing the **\[PAGE>]** button will take you to the **Telemetry** screen.
+Натиснення кнопки **\[PAGE>]** перенесе вас на екран **Телеметрії.**
