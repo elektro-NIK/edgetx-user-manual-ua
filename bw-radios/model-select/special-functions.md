@@ -1,39 +1,39 @@
-# Special Functions
+# Спеціальні функції
 
-The **Special Functions** section is where you can configure the special functions that are included in EdgeTX. These special functions add additional functionality beyond normal model controls, such as enabling trainer mode, playing a sound, adjusting the radio backlight, adjusting radio volume, etc. On the special functions screen, you will see all configured special functions as well as some of the configured options such as function name, activation switch, if the function is enabled, and other configuration options.
+Розділ **Special Functions** — це місце, де ви можете налаштувати спеціальні функції, включені в EdgeTX. Ці спеціальні функції додають додаткові можливості, виходячи за межі звичайного управління моделлю, такі як увімкнення режиму тренера, відтворення звуку, регулювання підсвічування або гучності радіоапаратури тощо. На екрані спеціальних функцій ви побачите всі налаштовані спеціальні функції, а також деякі з налаштованих опцій, такі як назва функції, перемикач активації, чи увімкнена функція, та інші параметри конфігурації.
 
-<figure><img src="../../.gitbook/assets/bwsf1.png" alt=""><figcaption><p>Special Functions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bwsf1.png" alt=""><figcaption><p>Спеціальні функції</p></figcaption></figure>
 
-### Configuring Special Functions
+### **Налаштування спеціальних функцій**
 
-To configure a special function, select the desired special function row and press the **\[Enter]** button. Then, scroll with the **\[Roller]** to select the attribute that you want to edit (it will be highlighted) and press the **\[Enter]** button to edit it (it will now be blinking). Edit the option by scrolling with the **\[Roller]** and pressing the **\[Enter]** button to select the desired option. Once all the options are configured, press the **\[Return]** button to exit out of editing mode for the special function.
+Щоб налаштувати спеціальну функцію, виберіть рядок бажаної спеціальної функції і натисніть кнопку **\[Enter]**. Потім прокрутіть за допомогою **\[Roller]**, щоб вибрати атрибут, який ви хочете редагувати (він буде підсвічений), і натисніть кнопку **\[Enter]** для редагування (тепер він буде мигати). Відредагуйте опцію, прокручуючи за допомогою **\[Roller]** та натискаючи кнопку **\[Enter]** для вибору бажаної опції. Після того, як всі опції налаштовані, натисніть кнопку **\[Return]**, щоб вийти з режиму редагування для спеціальної функції.
 
-All special functions have the configuration options below. Additional options may be added based on the selected function. See the **Functions** section below for these additional options.
+Всі спеціальні функції мають наведені нижче параметри конфігурації. Додаткові опції можуть бути додані залежно від вибраної функції. Дивіться розділ **Functions** нижче для цих додаткових опцій.
 
-* **Trigger** - The switch or trigger that will make the special function active. Long pressing on this section will allow you to quickly select the category of the switch and filter the results. You can select the following filters: _**Switches**_, _**Trims**_, _**Logical Switches**,_ _**Other**_ and _**Invert**_
-* **Function** - The function that will be used. See below for function descriptions.
-* **Enable** - Toggle on/off to enable the function. To be able to activate the special function by a switch, it must be enabled. This option is usually the last option listed as a checkbox on the far right of the screen. Disabled special functions will not function regardless of the configured switch position.
+* **Trigger** — перемикач або тригер, який активує спеціальну функцію. Довге натискання на цю секцію дозволить швидко вибрати категорію перемикача та відфільтрувати результати. Ви можете вибрати такі фільтри: **Switches, Trims, Logical Switches, Other** та **Invert**.
+* **Function** - функція, яка буде використовуватися. Дивіться нижче для опису функцій.
+* **Enable** - перемикач для ввімкнення/вимкнення функції. Щоб активувати спеціальну функцію за допомогою перемикача, вона повинна бути увімкнена. Ця опція зазвичай є останньою в списку, представлена у вигляді чекбокса на крайньому правому боці екрана. Вимкнені спеціальні функції не працюватимуть незалежно від налаштованого положення перемикача.
 
-### Functions
+### Functions (Функції)
 
-Below are all the available functions in EdgeTX, what they do, as well as what additional configuration options that will be shown when the function is selected.
+Нижче наведені всі доступні функції в EdgeTX, їх призначення, а також додаткові параметри конфігурації, які будуть відображені при виборі функції.
 
 **Adjust** (Adjust Global Variable) - Changes the value of the specified global variable.
 
-* **Global var** - Select the global variable that you want to adjust.
-* **Mode** - Select the mode to change the global variable. Options are: **Constant, Mixer Source, Global var, Inc/Decrement.** Long-press the **\[Enter]** button to select the mode.
-  * **Constant** - Sets the specified global variable to the defined constant value.
-  * **Mixer Source** - Sets the specified global variable to the defined mixer source value.
-  * **Global Var** - Sets the specified global variable to the defined global variable value.
-  * **Inc/Decrement** - Increments/decrements the specified global variable by the specified amount.
+* **Global var** - Виберіть глобальну змінну, яку ви хочете налаштувати.
+* **Mode** - Виберіть режим для зміни глобальної змінної. Опції: **Constant**, **Mixer Source**, **Global var**, **Inc/Decrement**. Довге натискання кнопки **\[Enter]** дозволить вибрати режим.
+  * **Constant** - Встановлює вказану глобальну змінну на визначене постійне значення.
+  * **Mixer Source** - Встановлює вказану глобальну змінну на визначене значення джерела мікшера.
+  * **Global Var** - Встановлює вказану глобальну змінну на визначене значення глобальної змінної.
+  * **Inc/Decrement** -Збільшує/зменшує вказану глобальну змінну на зазначену величину.
 
 **Audio Amp Off** (select radios) - Disables the Audio Amplifier so that no sound comes from the speaker, including annoying feedback or interferance. This option is only available on select radios.
 
 **Backlight** - adjusts the screen contrast (LED screens) or OLED brightness (OLED screens) based on the source defined in the value dropdown.
 
-**BgMusic** - Plays the .wav file selected in the value field on a loop when enabled. The file shall be in the SOUNDS/(language)/ folder on the SD card.
+**BgMusic** - Відтворює .wav файл, обраний у полі значення, в циклі, коли активовано. Файл має бути в папці SOUNDS/(language)/ на SD-карті.
 
-**BgMusic II** - Temporarily pauses the .wav file playback specified in the **BgMusic**
+**BgMusic II** - Тимчасово призупиняє відтворення .wav файлу, зазначеного в BgMusic
 
 **Haptic** - Causes the radio to vibrate (haptic feedback) when enabled.
 
@@ -72,7 +72,7 @@ Below are all the available functions in EdgeTX, what they do, as well as what a
 * **Switch** - Which customizable switch to press
 * **Time** - How long to press the customizable switch for. Options are 0.0 to 25.5 seconds. Input to the button will be ignored while this time is being served, allowing this to automate a press of the button, and block input (and retrigger of the function) until the time has elapsed.&#x20;
 
-**RacingMode** - Enables racing mode (low latency) for FrSky Archer RS receivers. Racing mode must also be enabled in External RF Module Settings.
+**RacingMode** - Увімкнення режиму перегонів (низька затримка) для приймачів FrSky Archer RS. Режим перегонів також повинен бути увімкнений у налаштуваннях зовнішнього RF модуля.
 
 **Reset** (Reset Timer)- Resets the timer or telemetry specified in the value back to their initial values.
 
@@ -107,4 +107,4 @@ Below are all the available functions in EdgeTX, what they do, as well as what a
 
 **Volume** - Changes the radio volume. The change source is specified in the Volume dropdown.
 
-Pressing the **\[PAGE>]** button will take you to the **Telemetry** screen.
+Натиснення кнопки **\[PAGE>]** перенесе вас на екран **Телеметрії.**
