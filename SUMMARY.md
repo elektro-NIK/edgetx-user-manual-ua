@@ -92,7 +92,7 @@
 * [Налаштування розширеного джойстика з EdgeTX](edgetx-how-to/configure-advanced-joystick-with-edgetx.md)
 * [Інформація про відображення джойстика для розробників ігор](edgetx-how-to/joystick-mapping-information-for-game-developers.md)
 * [Вимкнення сенсорного екрану](edgetx-how-to/disable-touchscreen.md)
-* [Використання трімів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
+* [Використання тримерів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
 * [Configure a low battery alert](edgetx-how-to/useful-logical-switches-and-special-functions.md)
 * [Advanced Audio Features](edgetx-how-to/advanced-audio-features.md)
 
