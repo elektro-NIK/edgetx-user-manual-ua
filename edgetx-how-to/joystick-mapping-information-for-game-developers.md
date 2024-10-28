@@ -4,22 +4,22 @@
 
 1. EdgeTX може передавати інформацію про джойстик / геймпад через USB HID з ID (VID\_1209\&PID\_4F54 / 1209:4F54).
 2. EdgeTX виконує налаштовувану обробку вхідних сигналів, включаючи мертві зони, змішування та нелінійне масштабування.
-3. Різноманітні [контроллери](https://edgetx.org/supportedradios/) працюють на EdgeTX. За замовчуванням усі пристрої виводять один і той самий формат звіту "Класичний джойстик" з 8 аналоговими осями та 24 цифровими кнопками.
+3. Різноманітні [радіоапаратури](https://edgetx.org/supportedradios/) працюють на EdgeTX. За замовчуванням усі пристрої використовують один і той самий режим "Класичний джойстик" з 8 аналоговими осями та 24 цифровими кнопками.
 4. Кнопки є цифровими. (0 = off, 1 = on).
 5. Аналогові осі мають роздільну здатність 11 біт.
 
 ### Linux: evdev
 
-[evdev API](https://www.kernel.org/doc/html/latest/input/input.html) у Linux використовує **open** (fcntl.h) with **/dev/input/event**\[...] та **read** (unistd.h) для читання  **input\_event** (linux/joystick.h).
+[evdev API](https://www.kernel.org/doc/html/latest/input/input.html) у Linux використовує **open** (fcntl.h) із **/dev/input/event**\[...] та **read** (unistd.h) для читання  **input\_event** (linux/joystick.h).
 
-#### identity
+#### Ідентифікація
 
-1. EVIOCGID : device\_id.vendor is 4617 / 0x1209
-2. EVIOCGID : device\_id.product is 20308 / 0x4F54
+1. EVIOCGID : device\_id.vendor це 4617 / 0x1209
+2. EVIOCGID : device\_id.product це 20308 / 0x4F54
 
-#### input labels
+#### Мітки входів
 
-| EdgeTX | event name           | event code          |
+| EdgeTX | назва події          | код події           |
 | ------ | -------------------- | ------------------- |
 | CH1    | ABS\_X               | EV\_ABS 0           |
 | CH2    | ABS\_Y               | EV\_ABS 1           |
@@ -56,13 +56,13 @@
 
 ### Linux: joystick
 
-Linux's [joystick API](https://www.kernel.org/doc/html/latest/input/joydev/index.html) використовує **open** (fcntl.h) with **/dev/input/js** та **read** (unistd.h) для читання **js\_event** (linux/joystick.h).
+[Joystick API](https://www.kernel.org/doc/html/latest/input/joydev/index.html) в Linux використовує **open** (fcntl.h) із **/dev/input/js** та **read** (unistd.h) для читання **js\_event** (linux/joystick.h).
 
-#### identity
+#### Ідентифікація
 
 JSIOCGNAME це "EdgeTX \[...] Joystick" або "OpenTX \[...] Joystick". Середня частина ("\[...]") є специфічною для пристрою.
 
-#### input labels
+#### Мітки входів
 
 | EdgeTX | read js\_event       |
 | ------ | -------------------- |
@@ -79,11 +79,11 @@ JSIOCGNAME це "EdgeTX \[...] Joystick" або "OpenTX \[...] Joystick". Сер
 
 Windows's [DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842\(v=vs.85\)) використовує IDirectInputDevice8::**GetDeviceState** для читання **DIJOYSTATE** (dinput.h). DIJOYSTATE2 (c\_dfDIJoystick2) виводить ту ж інформацію.
 
-#### identity
+#### Ідентифікація
 
-DIDEVICEINSTANCE.guidProduct починається з "4F541209-". Кінцева частина GUID є специфічною для пристрою..
+DIDEVICEINSTANCE.guidProduct починається з "4F541209-". Кінцева частина GUID є специфічною для пристрою.
 
-#### input labels
+#### Мітки входів
 
 | EdgeTX | DIJOYSTATE      |
 | ------ | --------------- |
@@ -102,14 +102,14 @@ DIDEVICEINSTANCE.guidProduct починається з "4F541209-". Кінцев
 
 ### Windows: Multimedia
 
-Windows' [Multimedia API](https://learn.microsoft.com/en-us/windows/win32/api/joystickapi/) використовує **joyGetPosEx** для читання **JOYINFOEX** (joystickapi.h). Старіший joyGetPos / JOYINFO підтримує лише CH1-CH3 та CH9-CH32 з таким же мапінгом, як у новішого JOYINFOEX.
+Windows [Multimedia API](https://learn.microsoft.com/en-us/windows/win32/api/joystickapi/) використовує **joyGetPosEx** для читання **JOYINFOEX** (joystickapi.h). Старіший joyGetPos / JOYINFO підтримує лише CH1-CH3 та CH9-CH32 з таким же відображенням, як у новішого JOYINFOEX.
 
-#### identity
+#### Ідентифікація
 
 1. JOYCAPS.wMid це 4617 / 0x1209
 2. JOYCAPS.wPid це 20308 / 0x4F54
 
-#### input labels
+#### Мітки входів
 
 | EdgeTX | JOYINFOEX            |
 | ------ | -------------------- |
@@ -129,14 +129,14 @@ Windows' [Multimedia API](https://learn.microsoft.com/en-us/windows/win32/api/jo
 
 ### Windows: Raw Input
 
-Windows' [Raw Input API](https://learn.microsoft.com/en-us/windows/win32/inputdev/about-raw-input) використовує **GetRawInputData** (WinUser.h), **HidP\_GetUsageValue** та **HidP\_GetUsages** (hidpi.h).
+Windows [Raw Input API](https://learn.microsoft.com/en-us/windows/win32/inputdev/about-raw-input) використовує **GetRawInputData** (WinUser.h), **HidP\_GetUsageValue** та **HidP\_GetUsages** (hidpi.h).
 
-#### identity
+#### Ідентифікація
 
 1. RID\_DEVICE\_INFO\_HID.dwVendorId це 4617 / 0x1209
 2. RID\_DEVICE\_INFO\_HID.dwProductId це 20308 / 0x4F54
 
-#### input labels
+#### Мітки входів
 
 | EdgeTX | HidP\_Get\[...]Value     | UsagePage | Usage  |
 | ------ | ------------------------ | --------- | ------ |
@@ -155,14 +155,14 @@ Windows' [Raw Input API](https://learn.microsoft.com/en-us/windows/win32/inputde
 
 ### Windows: Windows.Gaming.Input
 
-Windows' [RawGameController](https://learn.microsoft.com/en-us/uwp/api/windows.gaming.input.rawgamecontroller) використовую **winrt::Windows::Gaming::Input::RawGameController** (winrt/Windows.Gaming.Input.h).
+Windows [RawGameController](https://learn.microsoft.com/en-us/uwp/api/windows.gaming.input.rawgamecontroller) використовую **winrt::Windows::Gaming::Input::RawGameController** (winrt/Windows.Gaming.Input.h).
 
-#### identity
+#### Ідентифікація
 
 1. RawGameController::HardwareVendorId це 4617 / 0x1209
 2. RawGameController::HardwareProductId це 20308 / 0x4F54
 
-#### input labels
+#### Мітки входів
 
 | EdgeTX | GetCurrentReading |
 | ------ | ----------------- |
