@@ -11,7 +11,7 @@
 * [Посібник користувача для апаратури з кольоровим екраном](color-radios/README.md)
   * [Користувацький інтерфейс](color-radios/user-interface/README.md)
     * [Віртуальні клавіатури](color-radios/user-interface/virtual-keyboards.md)
-    * [Трім Навігація](color-radios/user-interface/trim-navigation.md)
+    * [Навігація тримерами](color-radios/user-interface/trim-navigation.md)
   * [Управління моделями](color-radios/select-model.md)
   * [Налаштування моделі](color-radios/model-settings/README.md)
     * [Установка моделі](color-radios/model-settings/model-setup/README.md)
