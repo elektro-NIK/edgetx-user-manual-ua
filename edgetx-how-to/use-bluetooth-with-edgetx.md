@@ -1,39 +1,39 @@
-# Use Bluetooth with EdgeTX
+# Використання Bluetooth з EdgeTX
 
-The support for Bluetooth in EdgeTX is limited to:
+Підтримка Bluetooth в EdgeTX обмежується:
 
-* Bluetooth Trainer Mode
-* Bluetooth Telemetry Streaming
+* Bluetooth режим тренера&#x20;
+* Bluetooth потокова передача телеметрії
 
-The following Bluetooth options are **not** supported.
+Наступні опції Bluetooth не підтримуються:
 
-* Bluetooth Audio
-* Wireless file access and transfers
-* Bluetooth joystick
+* Bluetooth аудіо
+* Бездротовий доступ до файлів і їх передача
+* Bluetooth джойстик
 
-### Firmware
+### Прошивка
 
-To use Bluetooth, you will need a custom compiled version of EdgeTX that needs to be built with the **BLUETOOTH=YES** CMake flag. You can create customized versions of EdgeTX using the CloudBuild tab on the[ EdgeTX Buddy website](https://buddy.edgetx.org/).
+Для використання Bluetooth вам знадобиться спеціально скомпільована версія EdgeTX, яка повинна бути зібрана з прапором CMake **BLUETOOTH=YES**. Ви можете створити персоналізовані версії EdgeTX, використовуючи вкладку CloudBuild на вебсайті [EdgeTX Buddy](https://buddy.edgetx.org/).
 
-Once the correct version of EdgeTX firmware is installed in your radio, the Bluetooth configuration options will be available on the **Hardware** page of **Radio** Settings.
+Після встановлення правильної версії прошивки EdgeTX у вашій радіоапаратурі опції конфігурації Bluetooth будуть доступні на сторінці **Апаратне забезпечення** (**Hardware)** в **Налаштуваннях апаратури**.
 
-### Hardware
+### Апаратне забезпечення (Hardware)
 
-The only off-the-shelf bluetooth modules supported by EdgeTX are:&#x20;
+Єдиними стандартними модулями Bluetooth, які підтримуються EdgeTX, є:
 
 [FrSky Bluetooth Module](https://de.aliexpress.com/item/4001192317700.html?gatewayAdapt=glo2deu)
 
 [FrSky ACCESS PARA Wireless Module](https://www.horusrc.com/en/frsky-horus-x10-para-wireless-module.html)
 
-You can also create your own Bluetooth module by purchasing an ESP32 development kit and flashing it with the firmware from following project:[ https://btwifimod.gitbook.io/untitled/getting-started/hardware](https://btwifimod.gitbook.io/untitled/getting-started/hardware)
+Ви також можете створити власний модуль Bluetooth, придбавши розробницький комплект ESP32 і прошивши його прошивкою з наступного проєкту:[ https://btwifimod.gitbook.io/untitled/getting-started/hardware](https://btwifimod.gitbook.io/untitled/getting-started/hardware)
 
-### Telemetry Applications
+### **Застосування телеметрії**
 
-The [INAV Telemetry Viewer app](https://play.google.com/store/apps/details?id=crazydude.com.telemetry) can be used on your Android smartphone to view your telemetry data over bluetooth.
+Додаток [INAV Telemetry Viewer app](https://play.google.com/store/apps/details?id=crazydude.com.telemetry) можна використовувати на вашому смартфоні Android для перегляду даних телеметрії через Bluetooth.
 
-### Other Important Notes:
+### Інші важливі зауваження:
 
-* Bluetooth is only supported on radios that have at least one AUX serial port.
-* The compile time option **Bluetooth** will reserve one AUX port (on radios with 2 AUX ports, AUX2 is reserved for Bluetooth) and it will NOT be available in the normal user interface for other purposes.
-* EdgeTX Bluetooth trainer or telemetry has nothing to do with internal or external RF module Bluetooth functionality.
-* EdgeTX Bluetooth can NOT be used for Bluetooth joystick functionality at the moment.
+* Bluetooth підтримується лише на радіоапаратурах, які мають принаймні один послідовний порт AUX.
+* Опція компіляції Bluetooth зарезервує один AUX порт (на радіоапаратурах з 2 AUX портами, AUX2 зарезервований для Bluetooth), і він НЕ буде доступний у звичайному інтерфейсі користувача для інших цілей.
+* Bluetooth-інструктор або телеметрія EdgeTX не мають нічого спільного з функціональністю Bluetooth внутрішнього або зовнішнього RF модуля.
+* На цей момент Bluetooth EdgeTX НЕ може використовуватися для функціональності Bluetooth джойстика.
