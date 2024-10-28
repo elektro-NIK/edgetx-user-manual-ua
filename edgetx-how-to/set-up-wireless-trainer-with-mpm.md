@@ -1,19 +1,19 @@
-# Set-up wireless trainer with a Multi -protocol module
+# Налаштування бездротового інструктора з мультипротокольним модулем
 
-#### Prerequisites
+#### **Попередні вимоги**
 
-In order to setup a wireless trainer connection with the Multi-protocolm Module, you will need the following:
+Щоб налаштувати бездротове з'єднання інструктора з мультипротокольним модулем, вам знадобиться наступне:
 
-* A student radio with a FrSky D16 capable TX module
-* An instructor radio with:&#x20;
-  * A Multi-protocol module to serve as the RX
-  * An additional TX module to use to communicate with the model (protocol does not matter, but must match the protocol use by the RX on the model)
+* Радіоапаратура студента з модулем TX, сумісним з FrSky D16.
+* Радіоапаратура інструктора з:
+  * Багатопротокольним модулем, який слугуватиме як RX.
+  * Додатковий модуль TX для зв'язку з моделлю (протокол не має значення, але повинен відповідати протоколу, що використовується RX на моделі).
 
-#### Setup
+#### Налаштування
 
-Ensure that the model is bound to the desired TX module and operational on the instructor radio.
+Переконайтеся, що модель зв'язана з бажаним модулем TX і працює на радіоапаратурі інструктора.
 
-On the Instructor radio, configure the **Trainer** section of **Radio Settings**. See [Trainer](../color-radios/radio-settings/trainer.md) section for more information on how to set this page up.
+На радіоапаратурі інструктора налаштуйте розділ **Тренер** (**Trainer**) в налаштуваннях радіо. Дивіться розділ [Тренер](https://elektronik.gitbook.io/edgetx-ua/color-radios/radio-settings/trainer) для отримання додаткової інформації про налаштування цієї сторінки.
 
 <div>
 
@@ -25,7 +25,7 @@ On the Instructor radio, configure the **Trainer** section of **Radio Settings**
 
 </div>
 
-On the Instructor radio, configure the **Trainer** section of **Model Settings**. For the **Mode**, select **Master/Multi**
+На радіоапаратурі інструктора налаштуйте розділ **Тренер** (**Trainer**) в меню **Налаштування моделі** (**Model Settings**). Для режиму **Режим** (**Mode**), виберіть **Master/Multi**
 
 <div>
 
@@ -37,7 +37,7 @@ On the Instructor radio, configure the **Trainer** section of **Model Settings**
 
 </div>
 
-On the Instructor radio, configure the special function _**Trainer**_. Designate a switch to activate the mode and make sure the function is enabled.
+На радіоапаратурі інструктора налаштуйте спеціальну функцію _**Trainer**_. Призначте перемикач для активації режиму та переконайтеся, що функція увімкнена.
 
 <div>
 
@@ -49,7 +49,7 @@ On the Instructor radio, configure the special function _**Trainer**_. Designate
 
 </div>
 
-On the Instructor radio, configure the **Internal RF** and **External RF** sections in **Model Setup**. The RF Module's mode that will communicate with the Student radio should be set to _**Multi, FRSkyRX**_ and RF Protocol: _**Multi**_. Also, configure a receiver number. Both the Instructor and Student radios need to use this same receiver number. The other RX module should be configured to communicate with the model.
+На радіоапаратурі інструктора налаштуйте розділи **Internal RF** та **External RF** у меню **Налаштування моделі**. Режим RF модуля, який буде спілкуватися зі студентською радіоапаратурою, має бути встановлений на _**Multi**_, _**FRSkyRX**_ та RF протокол: _**Multi**_. Також налаштуйте номер приймача. Обидві апаратури інструктора та студента повинні використовувати один і той самий номер приймача. Інший RX модуль має бути налаштований для зв'язку з моделлю.
 
 <div>
 
@@ -61,7 +61,7 @@ On the Instructor radio, configure the **Internal RF** and **External RF** secti
 
 </div>
 
-One the Student radio, configure either the Internal RF or External RF (which ever module will be used) to communicate to the Instructor radio. If using a multi-protocol module it should be set to _**Multi, FRSkyX**_ and RF Protocol: _**D16**_. Configure the receiver number to the same number configured in the step above.
+На студентській радіоапаратурі налаштуйте або внутрішній або зовнішній радіомодуль (залежно від використовуваного модуля) для зв'язку з радіоапаратурою інструктора. Якщо використовується багатопротокольний модуль, він має бути налаштований на _**Multi**_, _**FRSkyX**_ та RF протокол: _**D16**_. Налаштуйте номер приймача на той самий номер, який було налаштовано на попередньому етапі.
 
 <div>
 
@@ -73,7 +73,7 @@ One the Student radio, configure either the Internal RF or External RF (which ev
 
 </div>
 
-On the Student radio, no configuration of the **Trainer** section in the **Model Settings** or **Radio Settings** is necessary, leave the **Mode** option in the **Trainer** section of **Model Settings** configured to **Off**.
+На студентській радіоапаратурі налаштування розділу **Тренер** в меню **Налаштування моделі** або **Налаштування апаратури** не потрібні, залиште опцію **Режим** (**Mode**) у розділі **Тренер** (**Trainer**) в меню **Налаштування моделі** налаштованою на **Off**.
 
 <div>
 
@@ -85,6 +85,6 @@ On the Student radio, no configuration of the **Trainer** section in the **Model
 
 </div>
 
-**Trainer mode is now configured.**
+**Режим інструктора тепер налаштований**
 
-You can test this by watching the channel monitor on the Instructor radio, activating trainer mode via the configured switch and moving the sticks on the student radio. If configured correctly, you should see the stick movements from the student radio on the channel monitor on the Instructor radio.
+Ви можете протестувати це, спостерігаючи за монітором каналів на радіоапаратурі інструктора, активуючи режим інструктора через налаштований перемикач і рухаючи стиками на студентській радіоапаратурі. Якщо налаштування виконано правильно, ви повинні бачити рухи стиків зі студентської радіоапаратури на моніторі каналів радіоапаратури інструктора.
