@@ -1,23 +1,23 @@
-# Disable Touchscreen
+# Вимкнення сенсорного екрану
 
-There are various reasons on why you may want to disable the touchscreen. Unintentional touches during a flight could change your model configuration which can be a risk.
+Існують різні причини, чому ви можете захотіти вимкнути сенсорний екран. Ненавмисні дотики під час польоту можуть змінити конфігурацію вашої моделі, що може бути небезпечно.
 
-Therefore we can create a [global function](../color-radios/radio-settings/global-functions.md) or[ special function](../color-radios/model-settings/special-functions.md) using the **No Touch** feature to disable and enable the touch feature. While global functions apply to all models, the special function is defined on individual models.
+Тому ми можемо створити [Глобальну функцію](../color-radios/radio-settings/global-functions.md) або[ Спеціальну функцію](../color-radios/model-settings/special-functions.md), використовуючи функцію **Сенсор вимк.** (**No Touch**) для вимкнення та ввімкнення функції сенсорного вводу. Глобальні функції застосовуються до всіх моделей, тоді як спеціальна функція визначається для окремих моделей.
 
-## Disable touch screen with a global function
+### Вимкнути сенсорний екран за допомогою глобальної функції
 
-In the following example we use switch SF to disable the touch screen with a global function.
+У наведеному прикладі ми використовуємо перемикач SF, щоб вимкнути сенсорний екран за допомогою глобальної функції.
 
-<figure><img src="../.gitbook/assets/create-no-touch-global-function.png" alt=""><figcaption><p>create a global function to disable touch with switch SF</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/create-no-touch-global-function.png" alt=""><figcaption><p>Створення глобальної функції для вимкнення сенсорного екрана з використанням перемикача SF</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/show-no-touch-global-function.png" alt=""><figcaption><p>show the global function</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/show-no-touch-global-function.png" alt=""><figcaption><p>Список глобальних функцій</p></figcaption></figure>
 
-## Disable touch screen with a special function
+### Вимкнути сенсорний екран за допомогою спеціальної функції
 
-Customizable switches or logical switches cannot be used in global functions. But we can use a special function to enable and disable the touch screen with a customizable switch.
+Користувацькі перемикачі або логічні перемикачі не можуть бути використані в глобальних функціях. Але ми можемо використовувати спеціальну функцію, щоб увімкнути та вимкнути сенсорний екран за допомогою налаштовуваного перемикача.
 
-<figure><img src="../.gitbook/assets/list-customizable-switches-mo-touch.png" alt=""><figcaption><p>setup of customizable switches</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/list-customizable-switches-mo-touch.png" alt=""><figcaption><p>Налаштування користувацьких перемикачів</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/show-no-touch-special-function.png" alt=""><figcaption><p>create a special function to disable touch with SW1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/show-no-touch-special-function.png" alt=""><figcaption><p>Створення спеціальної функції для вимкнення сенсорного екрана за допомогою SW1</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/show-no-touch-special-function.png" alt=""><figcaption><p>list of special functions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/show-no-touch-special-function.png" alt=""><figcaption><p>Список спеціальних функцій</p></figcaption></figure>
