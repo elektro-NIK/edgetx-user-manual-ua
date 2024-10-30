@@ -1,33 +1,33 @@
-# Flight Modes
+# Режими польоту
 
-<figure><img src="../../.gitbook/assets/color_model_fm.png" alt=""><figcaption><p>Flight Modes page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_model_fm.png" alt=""><figcaption><p>Екран огляду режимів польоту</p></figcaption></figure>
 
-Flight modes allow you to have different trim settings for each flight mode. Once multiple flight modes are configured, you can adjust the trim settings in each flight mode without affecting the trim settings in other flight modes (unless they are configured to do so). There are 9 possible flight modes to use, with Flight Mode 0 being the default flight mode.
+Режими польоту (Flight modes, FM) дозволяють використовувати різні налаштування триммерів для кожного режиму польоту. Після налаштування кількох режимів можна змінювати триммери для кожного окремого режиму без впливу на інші (якщо не налаштовано по-іншому). Можливо налаштувати до дев’яти режимів польоту, причому режим польоту 0 є режимом за замовчуванням.
 
-The **Flight Mode** screen displays an overview of each flight mode. The highlighed flight mode designates the active flight mode. Selecting a flight mode will take you to the configuration page for that flight mode.
+Екран **Режим польоту** відображає огляд кожного режиму польоту. Активний режим польоту позначається виділенням. Вибір режиму польоту перенесе вас на сторінку налаштувань для цього режиму.
 
-**Check FM Trims:** When the check FM trims button is pressed, the trims for the current flight mode are temporarily disabled. This is used to test the impact of the current flight mode’s trims on the outputs.
+**Check FM Trims:** Під час натискання цієї кнопки триммери поточного режиму польоту тимчасово вимикаються. Це використовується для тестування впливу триммерів цього режиму на виходи.
 
-<figure><img src="../../.gitbook/assets/color_model_fm_edit.png" alt=""><figcaption><p>Flight Mode configuration page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_model_fm_edit.png" alt=""><figcaption><p>Екран налаштування режиму польоту</p></figcaption></figure>
 
-The flight mode conifiguration screen has the following options:
+Екран налаштувань режиму польоту має такі параметри:
 
-**Name:** The custom name for the flight mode. If configured, this name will be shown on the lower center position of the main screen between the trims.
+**Імʼя:** Користувацьке імʼя для режиму польоту. Якщо налаштовано, то це імʼя відображатиметься в нижній центральній частині головного екрана між тримерами.
 
-**Switch:** The trigger to enable that flight mode. It can be a switch, pot, telemetry, trim or logical switch. This option is not shown on FM0, as it is always active unless another flight mode is specifically enabled.&#x20;
+**Перемикач:** Тригер для активації цього режиму польоту. Це може бути перемикач, потенціометр, телеметрія, триммер або логічний перемикач. This option is not shown on FM0, as it is always active unless another flight mode is specifically enabled.&#x20;
 
-**Fade in:** Gradually change the trim value when this flight mode is enabled. Specify the time in seconds (0.0 - 25.0) until the value change is completed.
+**Поступове ввімкнення (Fade in):** Поступова зміна значення триммера під час активації режиму польоту. Вкажіть час у секундах (0.0 - 25.0), протягом якого відбудеться зміна.
 
-**Fade out:** Gradually change the trim value when this flight mode is disabled. Specify the time in seconds (0.0 - 25.0) until the value change is completed.
+**Поступове вимкнення (Fade out):** Поступова зміна значення триммера під час вимкнення режиму польоту. Вкажіть час у секундах (0.0 - 25.0), за який відбудеться зміна.
 
-**Trims:** To configure the trims, select the trim that you want to configure to make sure that it is turned on (yellow). Then select the flight mode (**0-8**) that will provide the initial trim value and modifier (**=** or **+**) from the drop-down menu. When **3P** is selected instead of the flight mode (0-8), the trim will act as a 3 position momentary switch.
+**Тримери:** Щоб налаштувати тримери, виберіть потрібний тример для налаштування, щоб переконатися, що він увімкнений (виділений жовтим). Потім оберіть режим польоту (**0-8**), який надасть початкове значення тримера та модифікатор (**=** або **+**) з випадаючого меню. Якщо вибрано **3P** замість режиму польоту (0-8), тример буде діяти як 3-позиційна кнопка.
 
-Modifier - there are two possible value modifiers **=** and **+.** The **=** modifier uses the trim value directly from the selected flight mode. The **+** modifier uses the trim value from the selected flight mode and then adds the trim value from the flight mode you are configuring.
+Модифікатор — доступні два модифікатори значень: **=** і **+**. Модифікатор **=** використовує значення триммера безпосередньо з вибраного режиму польоту. Модифікатор **+** використовує значення триммера та додає до нього значення яке ви налаштували для поточного режиму.
 
-_Example 1:_ If you are configuring FM1 and set the value to =0, FM1 will have the trim value of the current value of the same trim in FM0. In this case, changes made to the trim in FM1 will also affect the trim in FM0 and vice-versa.
+_Приклад 1:_ Якщо ви налаштовуєте Режим польоту 1 (FM1) і встановлюєте значення на =0, то FM1 матиме триммер еквівалентний значенню цього триммера як в Режиму польоту 0 (FM0). Зміни триммера в FM1 також впливатимуть на FM0 і навпаки.
 
-_Example 2:_ If you are configuring FM1 and set the value to +0, FM1 will have the trim value of the same trim in FM0, plus any trim changes made while in FM1, In this case, changes made to the trim in FM1 do not affect the trim in FM0. However, changes to trim values FM0 will affect trim values in FM1.
+_Приклад 2:_ Якщо ви налаштовуєте Режим польоту 1 (FM1) і встановлюєте значення на +0, то FM1 матиме значення триммера як у Режиму польоту 0 (FM0) плюс зміни триммера зроблені під час перебування в FM1. Зміни триммерів у FM1 не впливатимуть на FM0, але зміни у FM0 впливатимуть на FM1.
 
 {% hint style="info" %}
-If the trim is turned off (white) on the Trims setup page, you will not be able to adjust it at all on the main screen.
+Якщо триммер вимкнено (виділений білим) на сторінці налаштувань, ви не зможете його налаштовувати на головному екрані.
 {% endhint %}
