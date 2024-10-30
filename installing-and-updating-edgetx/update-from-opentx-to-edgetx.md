@@ -38,17 +38,15 @@
 
 <figure><img src="../.gitbook/assets/update2.png" alt=""><figcaption></figcaption></figure>
 
-На наступному екрані виберіть пристрій **SMT32 Bootloader** та натисніть **Next**.
+На наступному екрані виберіть пристрій **STM32 Bootloader** та натисніть **Next**.
 
 <figure><img src="../.gitbook/assets/update3.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Якщо пристрій **SMT32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **SMT32 Bootloader** та натисніть **Connect**.
+Якщо пристрій **STM32 Bootloader** не відображається, виберіть **Add New Device**. У спливаючому вікні виберіть **STM32 Bootloader** та натисніть **Connect**.
 
 <figure><img src="../.gitbook/assets/update4.png" alt=""><figcaption></figcaption></figure>
 
-Після вибору пристрою **SMT32 Bootloader** та натискання **Next** ви побачите екран підтвердження для перевірки ваших налаштувань. Після того як ви переконаєтеся, що все вірно (версія, модель апаратури та пристрій), натисніть кнопку **Start Flashing**.
+Після вибору пристрою **STM32 Bootloader** та натискання **Next** ви побачите екран підтвердження для перевірки ваших налаштувань. Після того як ви переконаєтеся, що все вірно (версія, модель апаратури та пристрій), натисніть кнопку **Start Flashing**.
 
 <figure><img src="../.gitbook/assets/update5.png" alt=""><figcaption></figcaption></figure>
 
@@ -109,5 +107,5 @@ _На жаль, неможливо скопіювати налаштування
 {% endhint %}
 
 {% hint style="info" %}
-Your Lua Scripts from OpenTX will still be on your SD Card. However, they may not all work with EdgeTX and may need to be re-installed to get them to work.  You can find a list of EdgeTX-compatible LUA scripts here: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
+Ваші сценарії Lua від OpenTX залишаться на вашій SD-карті. Однак не всі вони можуть працювати з EdgeTX і, можливо, їх потрібно перевстановити, щоб вони запрацювали. Ви можете знайти список сценаріїв LUA, сумісних з EdgeTX, тут: [https://github.com/EdgeTX/lua-scripts](https://github.com/EdgeTX/lua-scripts)
 {% endhint %}

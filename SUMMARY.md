@@ -11,7 +11,7 @@
 * [Посібник користувача для апаратури з кольоровим екраном](color-radios/README.md)
   * [Користувацький інтерфейс](color-radios/user-interface/README.md)
     * [Віртуальні клавіатури](color-radios/user-interface/virtual-keyboards.md)
-    * [Трім Навігація](color-radios/user-interface/trim-navigation.md)
+    * [Навігація тримерами](color-radios/user-interface/trim-navigation.md)
   * [Управління моделями](color-radios/select-model.md)
   * [Налаштування моделі](color-radios/model-settings/README.md)
     * [Установка моделі](color-radios/model-settings/model-setup/README.md)
@@ -84,12 +84,12 @@
 
 * [Доступ до режиму DFU та завантажувача](edgetx-how-to/access-dfu-and-bootloader-mode.md)
 * [Внесок у посібник користувача](edgetx-how-to/contribute-to-the-user-manual.md)
-* [Установка бездротового інструктора з багатопротокольним модулем](edgetx-how-to/set-up-wireless-trainer-with-mpm.md)
+* [Налаштування бездротового інструктора з мультипротокольним модулем](edgetx-how-to/set-up-wireless-trainer-with-mpm.md)
 * [Використання Bluetooth з EdgeTX](edgetx-how-to/use-bluetooth-with-edgetx.md)
 * [Налаштування розширеного джойстика з EdgeTX](edgetx-how-to/configure-advanced-joystick-with-edgetx.md)
 * [Інформація про відображення джойстика для розробників ігор](edgetx-how-to/joystick-mapping-information-for-game-developers.md)
 * [Вимкнення сенсорного екрану](edgetx-how-to/disable-touchscreen.md)
-* [Використання трімів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
+* [Використання тримерів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
 
 ## Більше
 

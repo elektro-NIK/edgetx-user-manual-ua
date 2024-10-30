@@ -1,35 +1,35 @@
-# Sensor Configuration
+# Налаштування сенсорів
 
-<figure><img src="../../../.gitbook/assets/bwtelemetry2.png" alt=""><figcaption><p>Sensor Configuration page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bwtelemetry2.png" alt=""><figcaption><p>Сторінка налаштування сенсорів</p></figcaption></figure>
 
-The below options can be configured for sensors:
+Нижче наведені параметри, які можна налаштувати для сенсорів:
 
-* **Name:** Name of the sensor - up to 4 characters.
-* **Type:** Options are **custom** or **calculated**. Custom sensors are defined by the hardware. Calculated sensors are a sensors whose value is calculated using other sensors values. See below for more information on calculated sensors.
-* **ID:** This number indicates what type of sensore it is. It contains two parts. The first part is the ID number which defines the sensor type. The second part is the instance number for the hardware. If multiple sensors of the same type are configures, the instance numbers must be unique.
-* **Unit:** The unit for the sensor. This unit is used when the sensor value is displayed on the screen or read aloud.
-* **Precison:** Specifies the number of digits after the decimal point when the sensor value is displayed on the screen. The number is truncated based on this setting.
-* **Ratio:** Specifies the ratio value to multiply with the sensor value as needed by some sensors.
-* **Offset:** Specifies the offset value to add to the sensor value.
-* **Auto Offset:** When selected, the first received value is used as offset. You can use the [Reset telemetry](../../main-view/reset.md) option to reset the offset on already configured sensors.
-* **Positive:** When selected, the value of the sensor will be displayed only when it is a positive number. Displays zero when the sensor value becomes a negative number.
-* **Filter:** When selected, the sensor value becomes a rolling average of the last 5 received values.
-* **Logs:**  When selected, the value of this sensor will be saved in the log file. SD Card logging is configured in Special Functions or Global Functions.
+* **Name:** Назва сенсора - до 4 символів.
+* **Type:** Варіанти - **custom** або **calculated**. **Custom** сенсори визначені апаратним забезпеченням. **Calculated** сенсори - це сенсори, значення яких розраховуються з використанням значень інших сенсорів. Дивіться нижче для отримання додаткової інформації про обчислювальні сенсори.
+* **ID:** Цей номер вказує на тип сенсора. Він містить дві частини. Перша частина - це номер ID, який визначає тип сенсора. Друга частина - номер екземпляра для апаратного забезпечення. Якщо налаштовано кілька сенсорів одного типу, номери екземплярів повинні бути унікальними.
+* **Unit:** Одиниця для сенсора. Ця одиниця використовується, коли значення сенсора відображається на екрані або читається вголос.
+* **Precison:** Точність вказує кількість знаків після десяткової крапки, коли значення сенсора відображається на екрані. Число обрізається відповідно до цієї налаштування.
+* **Ratio:** Вказує значення співвідношення для множення зі значенням сенсора, як це потрібно для деяких сенсорів.
+* **Offset:** Вказує значення зсуву, яке додається до значення сенсора.
+* **Auto Offset:** При виборі перше отримане значення використовується як зсув. Можна використовувати опцію [Скидання](../../main-view/reset.md), щоб скинути зсув на вже налаштованих сенсорах. &#x20;
+* **Positive:** При виборі значення сенсора буде відображатися лише тоді, коли воно є позитивним числом. Відображає нуль, коли значення сенсора стає негативним.
+* **Filter:** При виборі значення сенсора стає ковзаючим середнім останніх 5 отриманих значень.
+* **Logs:** При виборі значення цього сенсора буде збережено в лог-файлі. Запис на SD-карті налаштовується в Special Functions або Global Functions.
 
-Calculated sensors contain the additional configuration options:
+Обчислювальні сенсори містять додаткові параметри конфігурації:
 
-* **Formula:** Type of calculation to use. Options include:
-  * **Add:** Add the values of up to 4 designated sensors.
-  * **Average:** Calculates the average value of up to four designated sensors.&#x20;
-  * **Minimum:** Find the minimum value of up to 4 designated sensors.
-  * **Maximum:** Find the maximum value of up to 4 designated sensors.
-  * **Multiply:** Multiplies the value of 2 sensors.
-  * **Totalize:** Calculate the cumulative value of one sensor.
-  * **Cell:** This is the formula for FrSKY Lipo battery sensor. It displays cell voltage specified by the number in "Cell index" field.\
-    If you specify "Lowest" in "Cell index" field, the voltage of the cell with the lowest is displayed. \
-    If you specify "Highest" in "Cell index" field, the voltage of the cell with the highest is displayed.\
-    If you specify "Delta" in "Cell index" field, the voltage difference between lowest and highest cell is displayed
-  * **Consumpt:** Calculates the power consumption (mAh) by cumulatively add the values of current sensor.
-  * **Distance:** Calculates the distance between the receiver and the radio using GPS sensor and altimeter values.
-* **Source 1, 2, 3, 4:** The sensors that will provide the argument values that are used in the formula defined above.
-* **Persistent:** When selected the sensor values will be saved when switching between models or powering down the radio.
+* **Formula:** Тип обчислення для використання. Варіанти включають:
+  * **Add:** Сумує значення до 4 призначених сенсорів.
+  * **Average:** Обчислює середнє значення до чотирьох призначених сенсорів.
+  * **Minimum:** Знаходить мінімальне значення до 4 призначених сенсорів.
+  * **Maximum:** Знаходить максимальне значення до 4 призначених сенсорів.
+  * **Multiply:** Множить значення 2 сенсорів.
+  * **Totalize:** Обчислює кумулятивне значення одного сенсора.
+  * **Cell:** Це формула для сенсора LiPo акумулятора FrSKY. Відображає напругу елемента, зазначену номером у полі "Cell index".&#x20;
+    * Якщо вказати "Lowest" у полі "Cell index", відображається напруга елемента з найнижчою напругою.&#x20;
+    * Якщо вказати "Highest" у полі "Cell index", відображається напруга елемента з найвищою напругою.
+    * Якщо вказати "Delta" у полі "Cell index", відображається різниця напруги між найнижчим і найвищим елементом.
+  * **Consumpt:** Обчислює спожиту ємність (mAh) шляхом кумулятивного додавання значень сенсора струму.
+  * **Distance:** Обчислює відстань між приймачем і апаратурою з використанням значень GPS та альтиметра.
+* **Source 1, 2, 3, 4:** Сенсори, які нададуть значення аргументів, які використовуються у формулі, визначеній вище.
+* **Persistent:** При виборі значення сенсорів зберігаються при перемиканні між моделями або вимкненні апаратури.

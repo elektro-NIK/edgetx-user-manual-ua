@@ -1,9 +1,9 @@
-# Channel Monitor
+# Монітор каналів
 
-The Channel Monitor shows both the output value (top bar) and mix value (bottom bar) for each of the 32 radio channels, spread across 4 pages of 8. &#x20;
+**Монітор каналів** показує вихідне значення (верхня панель) і значення мікшера (нижня панель) для кожного з 32 радіоканалів, розподілених на 4 сторінки по 8 елементів.
 
-<figure><img src="../.gitbook/assets/channelmonitor.png" alt=""><figcaption><p>Channels Monitor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/channelmonitor.png" alt=""><figcaption><p>Монітор каналів</p></figcaption></figure>
 
-The 5th page of the channel monitor is the logical switches monitor. On this page, you will see the status (activated/non-activated) of all logical switches. Logical switches that are activated are highlighted.&#x20;
+5-та сторінка монітора каналів – це монітор логічних перемикачів. На цій сторінці ви побачите стан (активований/неактивований) усіх логічних перемикачів. Активовані логічні перемикачі виділено.
 
-<figure><img src="../.gitbook/assets/channelmonitor2.png" alt=""><figcaption><p>Logical Switches Monitor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/channelmonitor2.png" alt=""><figcaption><p>Монітор логічних перемикачів</p></figcaption></figure>
