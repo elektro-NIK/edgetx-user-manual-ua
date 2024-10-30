@@ -33,3 +33,11 @@ User Manual for Monochrome Radios in Russian
 _Work in progress!_
 
 [https://robertomirax.gitbook.io/untitled/](https://robertomirax.gitbook.io/untitled/)
+
+### Ukrainian / Українська
+
+Credit: guys form https://fpvua.org
+
+_Work in progress!_
+
+[https://elektronik.gitbook.io/edgetx-ua](https://elektronik.gitbook.io/edgetx-ua)
