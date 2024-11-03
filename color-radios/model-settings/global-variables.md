@@ -1,29 +1,27 @@
-# Global Variables
+# Глобальні змінні
 
-Global variables are variables whose values are shared across all the configuration screens of a model. Their values can be used in weights, offsets, differential, expo settings, outputs, and in logical switch comparisons.  The **Global Variables** screen of Model Settings shows the value of each global variable for each flight mode.
+Глобальні змінні – це змінні, значення яких є спільними для всіх екранів конфігурації моделі. Їхні значення можна використовувати у вагових коефіцієнтах, зсувах, диференціалі, параметрах експоненти, виходах і в порівняннях логічних перемикачів. Екран **Глобальних змінних** в меню **Налаштування моделі** показує значення кожної глобальної змінної для кожного режиму польоту.
 
-<figure><img src="../../.gitbook/assets/color_model_GVs.png" alt=""><figcaption><p>Global variables screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_model_GVs.png" alt=""><figcaption><p>Екран глобальних змінних</p></figcaption></figure>
 
-Selecting a global variable from the global variable screen will give you the following options:
+Вибір глобальної змінної на екрані глобальних змінних дасть вам такі параметри:
 
-* **Edit** - Opens the global variable configuration screen for the selected global variable.
-* **Clear** - Clears the global variable values for all flight modes for the selected global variable.
+* **Редагувати** – відкриває екран конфігурації глобальної змінної для вибраної глобальної змінної.
+* **Очистити** – очищає значення глобальної змінної для всіх режимів польоту для вибраної глобальної змінної.
 
-<figure><img src="../../.gitbook/assets/GVE.png" alt=""><figcaption><p>Global Variable configuration screen.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GVE.png" alt=""><figcaption><p>Екран конфігурації глобальної змінної</p></figcaption></figure>
 
-The global variable configuration screen is where you assign a value and other configuration options to a global variable. Additionally, you can select how the value of the global variable is defined for every flight mode - either the value is manually defined or inherited from another selected flight mode. It contains the following configuration options:
+На екрані конфігурації глобальної змінної ви призначаєте значення та інші параметри конфігурації глобальній змінній. Крім того, ви можете вибрати, як значення глобальної змінної буде визначено для кожного режиму польоту – це значення буде визначено вручну або успадковано з іншого вибраного режиму польоту. Він містить такі параметри конфігурації:
 
-* **Name** - Name for the global variable. Three characters are allowed. If left blank, it will use the default GV# as the  name.
-* **Unit** - (optional) Allows you to add a **%** label to the displayed values when selected. It DOES NOT affect how the values are calculated.
-* **Precision** - Allows you to select the number precision options whole numbers (**0.-**) and decimal (**0.0**). The default value is **0.-**
-* **Min** - Defines the minimum that is allowed for the global variable.
-* **Max** - Defines the maximum value that is allowed for the global variable.
-* **Popup -** When enabled, a popup message will be displayed when the value of a GV changes with the new GV value (see image below).
-* **FM0** - The value of the global variable on Flight Mode 0.
-* **FM1 -> FM8** -  When the toggle switch is enabled or disabled, the following applies:
-  * Toggle switch disabled - global variable value for the selected flight mode is inherited from the flight mode defined in the drop-down.
-  * Toggle switch enabled (highlighted) - the global variable value for the selected flight mode is manually defined in the text field.
+* **Ім'я** (**Name**) - ім'я глобальної змінної. Допускається три символи. Якщо залишити порожнім, то встановиться стандартна - GV#.
+* **Одиниці виміру** (**Unit**) – (необов’язково) дозволяє додати позначку % до відображених значень, якщо вибрано. Це НЕ впливає на спосіб обчислення значень.
+* **Точність** (**Precision**) – дозволяє вибрати параметри точності чисел: цілі числа (**0.-**) і один знак після крапки (**0.0**). Значення за замовчуванням **0.-**
+* **Мін** (**Min**) – визначає мінімум, дозволений для глобальної змінної.
+* **Макс** (**Max**) – визначає максимальне значення, дозволене для глобальної змінної.
+* **Спливаюче вікно** (**Popup**) – якщо ввімкнено, спливаюче повідомлення відображатиметься, коли значення GV зміниться на нове значення GV (див. зображення нижче).
+* **FM0** – значення глобальної змінної в Режимі польоту 0.
+* **FM1 -> FM8** - коли перемикач увімкнено або вимкнено, застосовується наступне:
+  * Перемикач вимкнено – значення глобальної змінної для вибраного режиму польоту успадковується від режиму польоту, визначеного у випадаючому списку.
+  * Перемикач увімкнено (виділено) – значення глобальної змінної для вибраного режиму польоту визначається вручну в текстовому полі.
 
-
-
-<figure><img src="../../.gitbook/assets/GVE2.png" alt=""><figcaption><p>Popup message of global variable change</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GVE2.png" alt=""><figcaption><p>Спливаюче повідомлення про зміну глобальної змінної</p></figcaption></figure>
