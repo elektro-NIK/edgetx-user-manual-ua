@@ -1,61 +1,61 @@
-# Inputs
+# Входи
 
-The **Inputs** screen of Model Settings is where you map your physical radio controls (for example: sticks, sliders, and pots) to a software input to be used by the radio. After the control has been mapped it is then possible to apply modifiers to the inputs such as a weight, offset or curve which will then be applied anywhere that input is used. Although it is possible to also assign switches as inputs, it is normally not needed as switch outputs seldomly need to be modified by a weight, offset or curve. By default, EdgeTX will automatically map your contoller sticks to Aileron, Elevator, Throttle, Rudder based on the default channel order defined in [Radio Setup.](../../radio-settings/radio-setup/)
+Екран **Входи (Inputs)** дозволяє вам прив'язувати фізичні елементи керування вашої апаратури (наприклад, стіки, слайдери та потенціометри) до програмних вхідних сигналів, які будуть використовуватись апаратурою. Після того, як елемент керування прив'язаний, можна застосовувати модифікатори до вхідних сигналів, такі як вага, зсув або крива, які будуть застосовані там, де використовується цей вхід. Хоча також можна призначати перемикачі як вхідні сигнали, зазвичай це не потрібно, оскільки виходи перемикачів рідко потребують змін за допомогою ваги, зсуву або кривої. За замовчуванням EdgeTX автоматично прив'язує стіки вашого контролера до газу, елерону, керма висоти та напрямку на основі порядку каналів, визначеного у [**Налаштуваннях апаратури.**](../../radio-settings/radio-setup/)
 
 {% hint style="info" %}
-Your input channels may default to a different order based on the settings defined in [Radio Setup](../../radio-settings/radio-setup/).
+Ваші вхідні канали можуть за замовчуванням мати інший порядок на основі налаштувань, визначених у [**Налаштуваннях апаратури.**](../../radio-settings/radio-setup/)
 {% endhint %}
 
 {% hint style="info" %}
-The Inputs section is also commonly referred to as "**Dual Rates"** as it was previously called this in earlier versions of OpenTX.
+Розділ Входи також часто називають "**Dual Rates"**, оскільки в попередніх версіях OpenTX він мав саме таку назву.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/inputs.jpg" alt=""><figcaption><p>Inputs screen in Model Settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inputs.jpg" alt=""><figcaption><p>Екран Входів у Налаштуваннях Моделі</p></figcaption></figure>
 
-Selecting the **+** **button** will show you a list of available inputs that can be configured. After selecting an input, the input configuration page for that input will open. Selecting an existing input will give you the following options:
+Вибір кнопки **+** покаже список доступних входів, які можна налаштувати. Після вибору входу відкриється сторінка налаштувань для цього входу. Вибір існуючого входу надасть такі опції:
 
-* **Edit** - opens the input configuration page for that input line.
-* **Insert before** - Inserts a new input line before the selected input.
-* **Insert after**- Inserts a new input line after the selected input.
-* **Copy** - copies the selected input line.
-* **Move** - selects the input line to be moved. The input is moved using one of the paste commands after a new line is selected (i.e. cut & paste).
-* **Delete** - deletes the selected input line.
-* **Paste before** - pastes the copied or moved input line before the selected input line.
-* **Paste after** - pastes the copied or moved input line before the selected input line.
+* **Edit** - відкриває сторінку налаштування входу для цієї лінії входу.
+* **Insert before** - вставляє нову лінію входу перед вибраною лінією входу.
+* **Insert after** - вставляє нову лінію входу після вибраної.
+* **Copy** - копіює вибрану лінію входу.
+* **Move** - вибирає лінію входу для переміщення. Вхід переміщується за допомогою однієї з команд вставки після вибору нової лінії (тобто, вирізати та вставити).
+* **Delete** - видаляє вибрану лінію входу.
+* **Paste before** - вставляє скопійовану або переміщену лінію входу перед вибраною лінією входу.
+* **Paste after** - вставляє скопійовану або переміщену лінію входу після вибраної лінії входу.
 
-<figure><img src="../../../.gitbook/assets/inputs2.jpg" alt=""><figcaption><p>Input Configuration Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inputs2.jpg" alt=""><figcaption><p>Сторінка налаштування входу</p></figcaption></figure>
 
-### Input configuration page
+### Сторінка налаштування входу
 
-The input configuration page allows you to edit the input configuation parameters. To the right of the configuration parameters, you can see a live graph that shows how your configuration options will affect the slope of the input.
+Сторінка налаштування входу дозволяє редагувати параметри конфігурації входу. Справа від параметрів конфігурації ви можете побачити графік в реальному часі, який показує, як ваші параметри конфігурації вплинуть на нахил входу.
 
-* **Input Name** - Name for the input. Four character are possible.
-* **Line Name** - Name of the individual line in the input. Multiple physical inputs can be mapped to one input by adding an additional input line under the input.
+* **Input Name** - Назва для входу. Можна використовувати три символи.
+* **Line Name** - Назва окремої лінії у вході. До одного входу можна прив’язати кілька фізичних входів, додавши додаткову лінію входу під основним входом.
 
-<figure><img src="../../../.gitbook/assets/multiple_input_lines.jpg" alt=""><figcaption><p>Example of multiple input lines under one input</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/multiple_input_lines.jpg" alt=""><figcaption><p>Приклад кількох вхідних ліній на одному вході</p></figcaption></figure>
 
-* **Source** - The physical control used for the input. In addition to physical controls, you can also specify MAX (always returns 100), MIN (always returns -100), cyclics, trim switches, channel values and more. Moving the physical control after the source has been selected will automatically map it to that input.
-* **Weight** - Percentage value of the stick travel to use (often referred to as "rates").
-* **Offset** - The value added to or subtracted from the input source.
-* **Switch** - The switch that activates the input line. If no switches are defined then it is always active.
-* **Curve** - Specifies the type of curve that will be used. The following curve options exist:
-  * **Diff** - Multiplies only the range above or below the middle (0) by the specified %.
-  * **Expo** -The input value is changed exponentially. Increasing the % will result with a gentle slope near the middle(0). Decreasing the % will result in a steep slope near the middle (0). With a % of 0, the slope will be linear.
+* **Source** - Фізичний елемент управління, що використовується для входу. Крім фізичних елементів управління, ви також можете вказати MAX (завжди повертає 100), MIN (завжди повертає -100), циклічні елементи, тримери, значення каналів та інше. Переміщення фізичного елемента управління після вибору джерела автоматично прив’яже його до цього входу.
+* **Weight** - Відсоткове значення ходу стіка, яке потрібно використовувати (часто називається "rates").
+* **Offset** - Значення, яке додається до або віднімається від джерела входу.
+* **Switch** - Перемикач, який активує вхідну лінію. Якщо перемикачі не визначені, вхід завжди активний.
+* **Curve** - Вказує тип кривої, яка буде використана. Існують такі варіанти кривих:
+  * **Diff** - Множить тільки діапазон вище або нижче середнього (0) на вказаний %.
+  * **Expo** - Значення входу змінюється експоненційно. Збільшення % призведе до плавнішого нахилу біля середнього (0). Зменшення % призведе до різкішого нахилу біля середнього (0). При 0% нахил буде лінійним.
   *   **Func** -
 
-      <table><thead><tr><th width="116">Function</th><th width="575">Slope Behavior</th></tr></thead><tbody><tr><td>---</td><td>The slope will be linear.</td></tr><tr><td>X>0</td><td>The range below the middle (0) is always 0. Above the middle (0), the slope is linear.</td></tr><tr><td>X&#x3C;0</td><td>The range above the middle (0) is always 0. Below the middle (0), the slope is linear.</td></tr><tr><td>|X|</td><td>The range above the middle (0), the reaction is linear. The sign is inverted in the range below the middle (0). The curve draws a V-shaped graph.</td></tr><tr><td>f>0</td><td>The range above the middle (0) is always +100. The range below the middle (0) is always 0. The output value will always be either 0 or +100.</td></tr><tr><td>f&#x3C;0</td><td>The range above the middle (0) is always 0. The range below the middle (0) is always -100. The output value will always be either 0 or -100.</td></tr><tr><td>|f|</td><td>The range above the middle (0) is always +100. The range below the middle (0) is always -100. The output value will always be either +100 or -100.</td></tr></tbody></table>
-  * **Cstm** - assigns a custom defined curve. See [Curves](../curves.md) for more information about custom defined curves.
+      <table><thead><tr><th width="116">Функція</th><th width="575">Поведінка нахилу</th></tr></thead><tbody><tr><td>---</td><td>Нахил буде лінійним.</td></tr><tr><td>X>0</td><td>Діапазон нижче середнього (0) завжди 0. Вище середнього (0) нахил лінійний.</td></tr><tr><td>X&#x3C;0</td><td>Діапазон вище середнього (0) завжди 0. Нижче середнього (0) нахил лінійний.</td></tr><tr><td>|X|</td><td>Діапазон вище середнього (0) реагує лінійно. Знак інвертується в діапазоні нижче середнього (0). Крива малює графік у формі V.</td></tr><tr><td>f>0</td><td>Діапазон вище середнього (0) завжди +100. Діапазон нижче середнього (0) завжди 0. Значення виходу завжди буде 0 або +100.</td></tr><tr><td>f&#x3C;0</td><td>Діапазон вище середнього (0) завжди 0. Діапазон нижче середнього (0) завжди -100. Значення виходу завжди буде 0 або -100.</td></tr><tr><td>|f|</td><td>Діапазон вище середнього (0) завжди +100. Діапазон нижче середнього (0) завжди -100. Значення виходу завжди буде +100 або -100.</td></tr></tbody></table>
+  * **Cstm** - призначає користувацьку криву. Дивіться [Криві](../curves.md) для отримання додаткової інформації про користувацькі криві.
 
 {% hint style="info" %}
-Values for weight, offset and curve % can also be defined by a configured global values Selecting the **GV** button will display a list of configured global values to select from.
+Значення для ваги, зсуву та % кривої також можуть бути визначені за допомогою налаштованих глобальних змінних. Вибір кнопки **GV** відобразить список налаштованих глобальних значень для вибору.
 {% endhint %}
 
-When selecting the gear button at the bottom of the screen, the following option window will be displayed.
+Коли натискаєте кнопку налаштувань внизу екрану, відобразиться наступне вікно опцій.
 
 <figure><img src="../../../.gitbook/assets/inputs3.jpg" alt=""><figcaption></figcaption></figure>
 
-**Side** - Specifies the input range for which this line setting is valid. If you select **---**, it will be valid in the entire range of Source values. If you select **x>0**, it will be valid in the upper half of the value of Source. If you select **x<0**, it will be valid in the lower half of the value of Source.
+**Side** - Вказує діапазон вхідних значень, для якого це налаштування рядка є дійсним. Якщо ви виберете **---**, воно буде дійсним у всьому діапазоні значень джерела. Якщо ви виберете **x>0**, воно буде дійсним у верхній половині значення джерела. Якщо ви виберете **x<0**, воно буде дійсним у нижній половині значення джерела.
 
-**Trim** - Specifies whether or not to include the trim values in this input. Additionally, you can select a different trim to use for this input.
+**Trim** - Вказує, чи потрібно включати значення підстроювання в цей вхід. Додатково ви можете вибрати інше підстроювання для використання в цьому вході.
 
-**Modes** - Specifies which flight modes this input is active for.
+**Modes** - Вказує, в яких режимах польоту цей вхід активний.
