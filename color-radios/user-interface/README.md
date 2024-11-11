@@ -1,75 +1,73 @@
-# User Interface
+# Користувацький інтерфейс
 
-The user interface of EdgeTX can be navigated by physical buttons, the touch interface, or a combination of both.
+Інтерфейсом користувача EdgeTX можна керувати фізичними кнопками, сенсорним інтерфейсом або їх комбінацією.
 
-<figure><img src="../../.gitbook/assets/buttonnavigation.jpg" alt=""><figcaption><p>Common buttons for navigation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/buttonnavigation.jpg" alt=""><figcaption><p>Загальні кнопки для навігації</p></figcaption></figure>
 
-### **Buttons:**
+### **Кнопки:**
 
-*   **\[SYS]** - System Button\
-    \- Short press **\[SYS]** button to go to the [Radio Settings](../radio-settings/) page.&#x20;
+* **\[SYS]** - Кнопка системи\
+  \- натисніть коротко кнопку **\[SYS]** щоб перейти до сторінки [Налаштування системи](../radio-settings/)\
+  \- натисніть довго кнопку **\[SYS]** щоб перейти до сторінки [Налаштування апаратури](../radio-settings/radio-setup/)
+* **\[MDL]** - Кнопка моделей\
+  \- натисніть коротко кнопку **\[MDL]** щоб перейти до сторінки [Налаштування моделі](../model-settings/)\
+  \- натисніть довго кнопку **\[MDL]** щоб перейти до сторінки [Управління моделями](../select-model.md)
+* **\[RTN] -** Повернення / Назад\
+  \- натисніть коротко кнопку **\[RTN]** щоб повернутися до попередньої сторінки, попереднього меню або скасувати дію
+* **\[PAGE>]** / **\[PAGE<]** - Наступна та попередня сторінка\
+  \- використовується для навігації між різними екранами, вкладками або налаштуваннями параметрів залежно від екрана
+* **\[TELE] -** Телеметрія\
+  \- натисніть коротко кнопку **\[TELE]** щоб перейти до сторінки [Налаштування екрана](../screen-settings/)\
+  \- натисніть довго кнопку **\[TELE]** щоб перейти до сторінки [Монітор каналів](../channel-monitor.md)
+* **\[Roller]** або **\[Dial]** - Наступне та попереднє значення\
+  \- ролер використовується для навігації між параметрами меню
+* **\[Enter]** - Прийняти\
+  \- використовується для вибору опції, функції або підтвердження значення\
+  \- натисніть **\[Roller]** або **\[Dial]** щоб вибрати або увійти
 
-    \- Long press the **\[SYS]** button to go to the [Radio Setup](../radio-settings/radio-setup/) page.
-* **\[MDL]** - Model Button\
-  \- Short press **\[MDL]** button to go to the [Model Settings](../model-settings/) page\
-  \- Long press **\[MDL]** button to go to the [Select Model](../select-model.md) page
-* **\[RTN] -** Return / Back \
-  \- Short press **\[RTN]** button to return to the previous page, previous menu or cancel action
-* **\[PAGE>] / \[PAGE<]** - Page next & page previous\
-  \- Used to navigate between different screens, tabs, or options settings, depending on the screen.
-*   **\[TELE] -** Telemetry \
-    \- Short press the **\[TELE]** button to go to the [Screen Settings](../screen-settings/) page
+### Додаткові функції кнопки системи та моделі
 
-    &#x20;-Long press the **\[TELE]** button to go to the [Channel Monitor](../channel-monitor.md) page
-* **\[Roller]** or **\[Dial]** - Next & previous value\
-  The roller is used to navigate through menu options. &#x20;
-* **\[Enter]** - Accept \
-  \- Used to select option, function or accept value\
-  \- Push **\[Roller]** or **\[Dial]** button to select or enter.
+Кнопки системи та моделі мають різні функції залежно від того, на якому екрані ви перебуваєте в інтерфейсі користувача:
 
-### Additional System and Model button functionalities
+**На екрані Налаштування апаратури:**
 
-The system and model buttons have different functionalities based on what screen you are in the user interface:
+* натисніть коротко **\[MDL]**, щоб перейти до екрана Налаштування моделі
+* натисніть довго **\[MDL]**, щоб перейти до екрана Управління моделями
 
-**In the Radio Setup screen:**
+**На екрані Налаштування моделі:**
 
-* Short press **\[MDL]** navigates to the Model Setup screen
-* Long press **\[MDL]** navigates to Manage Models screen
+* натисніть коротко **\[SYS]**, щоб перейти до екрана Налаштування системи
+* натисніть довго **\[SYS]**, щоб перейти до екрана Налаштування апаратури
+* натисніть коротко **\[MDL]**, щоб перейти до екрана Монітор каналів
+* натисніть довго **\[MDL]**, щоб перейти до екрана Управління моделями
 
-**In the Model Setup screen:**
+**На екрані Монітор каналів:**
 
-* Short press **\[SYS]** navigates to the Radio Setup (TOOLS) screen
-* Long press **\[SYS]** navigates to the Radio Setup (SETUP) screen
-* Short press **\[MDL]** navigates to the Channel Monitor (existing function)
-* Long press **\[MDL]** navigates to the Manage Models screen
+* натисніть коротко **\[MDL]**, щоб перейти до екрана Налаштування моделі
+* натисніть довго **\[MDL]**, щоб перейти до екрана Управління моделями
+* натисніть коротко **\[SYS]**, щоб перейти до екрана Налаштування системи
+* натисніть довго **\[SYS]**, щоб перейти до екрана Налаштування апаратури
 
-**In the Channels Monitor screen:**
+**На екрані Управління моделями:**
 
-* Short press **\[MDL]** navigates to the Model Setup screen
-* Long press **\[MDL]** navigates to the Manage Models screen
-* Short press **\[SYS]** navigates to the Radio Setup (TOOLS) screen
-* Long press **\[SYS]** navigates to the Radio Setup (SETUP) screen
+* натисніть коротко **\[MDL]**, щоб перейти до екрана Налаштування моделі
+* натисніть коротко **\[SYS]**, щоб перейти до екрана Налаштування системи
+* натисніть довго **\[SYS]**, щоб перейти до екрана Налаштування апаратури
 
-**In the Manage Model screen:**
+### **Сенсорний інтерфейс**:
 
-* Short press **\[MDL]** navigates to the Model Setup screen
-* Short press **\[SYS]** navigates to the Radio Setup (TOOLS) screen
-* Long press **\[SYS]** navigates to the Radio Setup (SETUP) screen
-
-### **Touch Interface**:
-
-Certain radios are equipped with a touch screen.  On these radios, you can interface with the menu options either with touch or physical buttons.&#x20;
+Деякі радіоапаратури оснащені сенсорним екраном. На цих апаратурах ви можете працювати з параметрами меню за допомогою сенсорних або фізичних кнопок.
 
 {% hint style="info" %}
-It is possible to disable the touch interface by configuring a special function. See  [special-functions.md](../model-settings/special-functions.md "mention") for more information.
+Сенсорний інтерфейс можна відключити, налаштувавши спеціальну функцію. Для отримання додаткової інформації див. [Спеціальні функції](../model-settings/special-functions.md).
 {% endhint %}
 
-Touch the EdgeTX icon in the upper left corner of the screen to open the main navigation menu. Touch the desired menu option to select it.
+Торкніться піктограми EdgeTX у верхньому лівому куті екрана, щоб відкрити головне навігаційне меню. Торкніться потрібного пункту меню, щоб вибрати його.
 
-<figure><img src="../../.gitbook/assets/color_quick-menu.png" alt=""><figcaption><p>Main navigation menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_quick-menu.png" alt=""><figcaption><p>Головне меню навігації</p></figcaption></figure>
 
 {% hint style="info" %}
-For models that have a valid model checklist file in the **Models** folder, a **Model Notes** icon is added after the **Manage Models** icon.
+Для моделей, які мають дійсний файл чекліста моделі у папці **MODELS**, піктограма **Нотатки моделі** додається після піктограми **Керування моделями**.
 {% endhint %}
 
-Pressing the roller from the main screen will also open the main navigation menu. You can then scroll using the roller to the desired menu option and select it by pressing the roller.
+Натискання ролера з головного екрана також відкриває головне навігаційне меню. Потім за допомогою ролера можна перейти до потрібного пункту меню та вибрати його, натиснувши ролер.
