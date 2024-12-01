@@ -1,15 +1,14 @@
-# Enabled Features
+# Увімкнений функціонал
 
-<figure><img src="../../../.gitbook/assets/enabledfeatures.png" alt=""><figcaption><p>Enabled Features</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enabledfeatures.png" alt=""><figcaption><p>Увімкнений функціонал</p></figcaption></figure>
 
-The **Enabled Features** section of **Model Setup** allows you to configure which tabs are visible in the selected model's radio setup and model settings area of EdgeTX. You can select the following options:
-
-* **Global** - When selected, the tab will take the global value configured in the **Enabled Features** area in **Radio Setup**. The configured global value will display next to the option.
-* **On** - When selected, this tab will be visible when this model is loaded.
-* **Off** -  When selected, this tab will not be visible when this model is loaded.
+Розділ **Увімкнений функціонал** у **Налаштуваннях моделі** дозволяє налаштовувати, які вкладки будуть відображатися у налаштуваннях апаратури та моделі в EdgeTX для вибраної моделі. Ви можете обрати наступні опції:
+* **Глобально** (Global) - Якщо вибрано, вкладка використовуватиме глобальне значення, налаштоване в розділі **Увімкнений функціонал** у **Налаштуваннях апаратури**. Налаштоване глобальне значення буде відображено поруч із опцією.
+* **Увімкнено** (On) - Якщо вибрано, ця вкладка буде видимою для цієї моделі.
+* **Вимкнено** (Off) - Якщо вибрано, ця вкладка не буде видимою для цієї моделі.
 
 {% hint style="info" %}
-_**Note:**_ Turning off a tab only hides the tab and does not change the items already configured in that tab.
+_**Примітка:**_ Вимкнення вкладки лише приховує її та не змінює елементи, які вже налаштовані у цій вкладці.
 
-**EXCEPTION:** Turning off the Global / Special Functions tab will disable configured global / special functions for that model.
+**ВИНЯТОК:** Вимкнення вкладки Глобальні/Спеціальні функції вимикає налаштовані глобальні/спеціальні функції для цієї моделі.
 {% endhint %}
