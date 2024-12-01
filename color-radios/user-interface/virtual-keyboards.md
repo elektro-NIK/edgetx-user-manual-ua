@@ -6,51 +6,51 @@
 
 ### Комбінації клавіш для текстової клавіатури за допомогою апаратних клавіш
 
-#### Radios with a single PGUP/DN keys and the X12S:
+#### Апаратури з однією кнопкою PGUP/DN та X12S:
 
-* **\[SYS]** = cursor left
-* **LONG \[SYS]** = cursor to start
-* **\[MDL]** = change keyboard mode (alpha upper, alpha lower, numbers + special, numeric)
-* **LONG \[MDL]** = backspace
-* **\[PGDN]** = toggle case
-* **\[PGUP]** (X12S) = toggle case
-* **LONG** PGDN = delete
-* **\[TELE]** = cursor right
-* **LONG \[TELE]** = cursor to end
+* **\[SYS]** = курсор ліворуч
+* **\[SYS] довго** = курсор на початок
+* **\[MDL]** = змінити режим клавіатури (верхній регістр, нижній регістр, цифри + спеціальні символи, цифри)
+* **\[MDL] довго** = backspace
+* **\[PGDN]** = перемкнути регістр
+* **\[PGUP]** (X12S) = перемкнути регістр
+* **\[PGDN] довго** = delete
+* **\[TELE]** = курсор праворуч
+* **\[TELE] довго** = курсор в кінець
 
-#### Radios with separate PGUP and PGDN keys:
+#### Апаратури із двома окремими кнопками PGUP та PGDN:
 
-* **\[SYS]** = change keyboard mode (alpha upper, alpha lower, numbers + special, numeric)
-* **LONG \[MDL]** = backspace
-* **\[PGDN]** = cursor right
-* **LONG \[PGDN]** = cursor to end
-* **\[PGUP]** = cursor left
-* **LONG** PGUP = cursor to start
-* **\[TELE]** = toggle case
-* **LONG \[TELE]** = delete
+* **\[SYS]** = змінити режим клавіатури (верхній регістр, нижній регістр, цифри + спеціальні символи, цифри)
+* **\[MDL] довго** = backspace
+* **\[PGDN]** = курсор праворуч
+* **\[PGDN] довго** = курсор в кінець
+* **\[PGUP]** = курсор ліворуч
+* **\[PGUP] довго** = курсор на початок
+* **\[TELE]** = перемкнути регістр
+* **\[TELE] довго** = delete
 
-<figure><img src="../../.gitbook/assets/Keyboard2.png" alt=""><figcaption><p>Virtual Number Keyboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Keyboard2.png" alt=""><figcaption><p>Віртуальна цифрова клавіатура</p></figcaption></figure>
 
-### Shortcuts to the number keyboard using the hardware keys.
+### Комбінації клавіш для цифрової клавіатури за допомогою апаратних клавіш.
 
-#### Radios with a single PGUP/DN keys and the X12S
+#### Апаратури з однією кнопкою PGUP/DN та X12S:
 
 * **\[SYS]** = '-'
-* **LONG \[SYS]** = 'MIN'
+* **\[SYS] довго** = 'MIN'
 * **\[MDL]** = '>>'
-* **LONG** **\[MDL]**= '+/-'
+* **\[MDL] довго** = '+/-'
 * **\[PGDN]** & **\[PGUP]** = '<<'
-* **LONG** **\[PGDN]** & **\[PGUP]** = 'DEF'
+* **\[PGDN]** & **\[PGUP] довго** = 'DEF'
 * **\[TELE]** = '+'
-* **LONG \[TELE]** = 'MAX'
+* **\[TELE] довго** = 'MAX'
 
-#### Radios with separate PGUP and PGDN keys:
+#### Апаратури із двома окремими кнопками PGUP та PGDN:
 
 * **\[SYS]** = '<<'
-* **LONG \[SYS]** = 'MIN'
+* **\[SYS] довго** = 'MIN'
 * **\[MDL]** = '>>'
-* **LONG \[MDL]** = 'MAX'
+* **\[MDL] довго** = 'MAX'
 * **\[PGDN]** = '+'
 * **\[PGUP]** = '-'
 * **\[TELE]**= '+/-'
-* **LONG** **\[TELE]** = 'DEF'
+* **\[TELE] довго** = 'DEF'
