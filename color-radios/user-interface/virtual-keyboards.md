@@ -1,10 +1,10 @@
-# Virtual Keyboards
+# Віртуальні клавіатури
 
-To allow for the easy entry of text and numbers, EdgeTX uses virtual text and number keyboards that can be interacted by either the touchscreen or roller. Additionally, there are shortcut keys that are mapped to the hardware buttons as described below:
+Щоб полегшити введення тексту та чисел, EdgeTX використовує віртуальні текстові та цифрові клавіатури, якими можна керувати за допомогою сенсорного екрану або ролера. Крім того, є комбінації клавіш, які зіставляються з апаратними кнопками, як описано нижче:
 
-<figure><img src="../../.gitbook/assets/keyboard1.png" alt=""><figcaption><p>Virtual Text Keyboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/keyboard1.png" alt=""><figcaption><p>Віртуальна текстова клавіатура</p></figcaption></figure>
 
-### Shortcuts to the text keyboard using the hardware keys.
+### Комбінації клавіш для текстової клавіатури за допомогою апаратних клавіш
 
 #### Radios with a single PGUP/DN keys and the X12S:
 
@@ -17,8 +17,6 @@ To allow for the easy entry of text and numbers, EdgeTX uses virtual text and nu
 * **LONG** PGDN = delete
 * **\[TELE]** = cursor right
 * **LONG \[TELE]** = cursor to end
-
-
 
 #### Radios with separate PGUP and PGDN keys:
 
