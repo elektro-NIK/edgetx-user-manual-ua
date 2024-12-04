@@ -1,84 +1,85 @@
-# Manage Models
+# Управління моделями
 
-The Manage Models screen allows you to create new models, select which model is active, create and apply model labels, and create model templates.
+Екран «Керування моделями» дозволяє створювати нові моделі, вибирати активну модель, створювати та застосовувати мітки моделей, а також створювати шаблони моделей.
 
-<figure><img src="../.gitbook/assets/ManageModels1.png" alt=""><figcaption><p>Manage Models screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ManageModels1.png" alt=""><figcaption><p>Екран керування моделями</p></figcaption></figure>
 
-### Selecting & managing existing models&#x20;
+### Вибір наявних моделей і керування ними
 
-The active model's name will be highlighted (yellow in this case) and displayed on the screen's top bar. Double-tapping an active model will give you the following options:
+Ім'я активної моделі буде виділено (у цьому випадку жовтим) і відображено на верхній панелі екрана. Двічі торкнувшись активної моделі, ви отримаєте такі параметри:
 
-* **Duplicate model** - This option creates an exact duplicate of the model with the same name. Changes to the model name or other settings need to be made in the [Model Settings ](model-settings/)tab.
-* **Label Model** - When this option is selected, all configured labels will be displayed and can be selected for this model. More Information about [Model Labels](select-model.md#model-labels) is below.&#x20;
-* **Save as template** - this option saves a copy of the model as a model template.
+* **Дублювати модель (Duplicate model)** – цей параметр створює точну копію моделі з таким самим ім’ям. Зміни до назви моделі або інших налаштувань потрібно внести на вкладці [Налаштування моделі](model-settings/).
+* **Мітка моделі (Label Model)** – якщо вибрано цей параметр, відображатимуться всі налаштовані мітки, які можна вибрати для цієї моделі. Більше інформації про [Мітки моделі](select-model.md#mitki-modelis) наведено нижче.
+* **Зберегти як шаблон (Save as template)** - ця опція зберігає копію моделі як шаблон моделі.
 
 {% hint style="info" %}
-Changes to models saved as templates do not update the templates themselves.
+Зміни моделей, збережених як шаблони, не оновлюють самі шаблони.
 {% endhint %}
 
-Double-tapping on a non-active model (unhighlighted) will give you the following options:
+Двічі торкнувшись неактивної моделі (невиділеної), ви отримаєте такі параметри:
 
-* **Select model** - this option selects this model as the active model.
-* **Duplicate model** - same as described above.
-* **Delete model** - this option moves the model to the deleted folder on the SD Card. _Only models that are not active can be deleted._
-* **Label model** - same as described above.
-* **Save as template** - same as described above.
+* **Вибрати модель (Select model)** - цей параметр вибирає поточну модель як активну.
+* **Дублювати модель (Duplicate model)** - так само як описано вище.
+* **Видалити модель (Delete model)** - ця опція переміщує модель до папки Deleted на SD-карті. _Можна видалити лише неактивні моделі_.
+* **Мітка моделі (Label model)** - так само як описано вище.
+* **Зберегти як шаблон (Save as template)** - так само як описано вище.
 
-### Creating a new model
+### Створення нової моделі
 
-To create a new model, select the **New Model** button in the upper right corner. You will then be presented with the following options:&#x20;
+Щоб створити нову модель, виберіть кнопку **Нова модель (New Model)** у верхньому правому куті. Після цього вам буде запропоновано такі варіанти:
 
-<figure><img src="../.gitbook/assets/new_model_options.png" alt=""><figcaption><p>New model options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/new_model_options.png" alt=""><figcaption><p>Варіанти нової моделі</p></figcaption></figure>
 
-* **Blank Model** - This will create a blank model with only the default options configured.
-* **Wizard** - This will launch the new model wizard and create the model as configured in the wizard.
-* **Personal** - This option will allow you to select one of your saved model templates and then create a copy of it as a new model.
+* **Порожня модель (Blank Model)** – буде створено порожню модель лише з параметрами за замовчуванням.
+* **Майстер (Wizard)** – це запустить майстер нової моделі та створить модель, як налаштовано в майстрі.
+* **Особистий (Personal)** – цей параметр дозволить вам вибрати один зі збережених шаблонів моделі, а потім створити його копію як нову модель.
 * **SoarETX** - This will display pre-configured model templates for radio-controlled model sailplanes.
 * **SoarETX\_v2** - This will display the more updated v2 of the pre-configured model templates for radio-controlled model sailplanes.
+* Тут також відображатимуться будь-які додаткові папки, які ви створили в **TEMPLATES** на SD-карті. Якщо будь-яка з наведених вище кнопок не відображається, пакет SD-карт не встановлено або оновлено неправильно.
 
-### Model Labels
+### Мітки моделі
 
-Model labels allow you to give each model one or more labels. You are then able to filter the models displayed in the **Manage Models** screen based on the labels that you select. This allows people with many configured models to find them easier.  By default, the **Favorites** and **Unlabeled** labels are created automatically. All models are considered **unlabeled** until a label is applied to them.
+Мітки моделей дозволяють присвоїти кожній моделі одну або кілька міток. Потім ви зможете фільтрувати моделі, що відображаються на екрані **Керування моделями (Manage Models)**, на основі вибраних міток. Це дозволяє людям із багатьма налаштованими моделями легше їх знаходити. За замовчуванням мітки **Вибране (Favorites)** та **Без міток (Unlabeled)** створюються автоматично. Усі моделі вважаються **Без міток**, поки до них не буде призначено мітку.
 
-### Filtering models using labels
+### Фільтрація моделей за допомогою міток
 
-To filter the visible models based on their labels, select the filter or filters from the left column. It will automatically filter out the models that do not have those model labels. For more information on how the filters work or to configure advanced filtering options, see: [Additional Radio settings](radio-settings/radio-setup/additional-radio-settings.md)
+Щоб відфільтрувати видимі моделі за їхніми мітками, виберіть фільтр або фільтри з лівого стовпця. Він автоматично відфільтровує моделі, які не мають цих міток. Щоб отримати додаткові відомості про роботу фільтрів або налаштувати розширені параметри фільтрації, див.: [Додаткові налаштування апаратури](radio-settings/radio-setup/additional-radio-settings.md).
 
-### Assigning labels to models
+### Присвоєння міток моделям
 
-To assign a label to a model, double-tap on the model or press **\[Enter]** when the model is selected and then select **Label Models**. Once selected, all configured labels will be displayed and one or more labels can be selected for this model. Labels applied to the model will be designated with a _**check**_ icon.
+Щоб призначити мітку моделі, двічі торкніться моделі або натисніть **\[Enter]**, коли модель вибрано, а потім виберіть **Мітки моделі (Label Models)**. Після вибору відобразяться всі налаштовані мітки, і для цієї моделі можна буде вибрати одну або кілька міток. Мітки, застосовані до моделі, будуть позначені _**галочкою**_.
 
-### Creating new model labels
+### Створення нових міток моделі
 
-To create a new model label, select the **New** button on the bottom left of the screen. The **Enter Label** pop-up will appear and you can enter the desired label name. Select **Save** to save the new label.
+Щоб створити нову мітку моделі, виберіть кнопку **Новий (New)** у нижній лівій частині екрана. З’явиться спливаюче вікно **Введіть мітку (Enter Label)**, і ви зможете ввести потрібну назву мітки. Виберіть **Зберегти (Save)**, щоб зберегти нову мітку.
 
-### Editing model labels
+### Редагування міток моделі
 
-Long press \[Enter] or long tap on desired label and you be shown a menu with the following options:
+Утримуйте \[Enter] або утримуйте потрібну мітку, і ви побачите меню з такими параметрами:
 
-* Rename Label - change the label's name
-* Delete Label - Deletes the label from the label list and from all models that have it assigned.&#x20;
-* Move Up - positions the label higher on the list&#x20;
-* Move Down - - positions the label lower on the list
+* Перейменувати мітку (Rename Label) - змінити назву мітки
+* Видалити мітку (Delete Label) - видаляє мітку зі списку міток і з усіх моделей, яким вона призначена.
+* Перемістити вгору (Move Up) - розміщує мітку вище в списку
+* Перемістити вниз (Move Down) - розміщує мітку нижче в списку
 
-### Sorting models
+### Сортування моделей
 
-The drop-down menu below the label list is for sorting the filtered models. Models can be sorted as described below:
+Спадне меню під списком міток призначене для сортування відфільтрованих моделей. Моделі можна сортувати, як описано нижче:
 
-* Name A-Z
-* Name Z-A
-* Least Used
-* Most Used
+* Ім'я A-Z (Name A-Z)
+* Ім'я Z-A (Name Z-A)
+* Рідко використовувані (Least Used)
+* Часто використовувані (Most Used)
 
-### Selecting the layout for the model list
+### Вибір макета для списку моделей
 
-There are 4 layouts for the model list in the Manage Models page:
+Існує 4 макети для списку моделей на сторінці Керування моделями (Manage Models):
 
-<figure><img src="../.gitbook/assets/MMLayouts.png" alt=""><figcaption><p>Model List Layouts</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/MMLayouts.png" alt=""><figcaption><p>Макети списку моделей</p></figcaption></figure>
 
-* Large image (2x2) - Default layout
-* Small image (3x3)
-* Name only, 2 columns (2x6)
-* Name only, 1 column (1x6)
+* Великі зображення (2x2) – макет за замовчуванням
+* Малі зображення (3x3)
+* Лише назви, 2 колонки (2x6)
+* Лише назви, 1 колонка (1x6)
 
-The layout can be changed by pressing the **Layout** button (next to the **New** button), which will cycle through the available layouts.
+Розкладку можна змінити, натиснувши кнопку **Макет (Layout)** (поруч із кнопкою **Нова (New)**), яка перемикатиме доступні розкладки.
