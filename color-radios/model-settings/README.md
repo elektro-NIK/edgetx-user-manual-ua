@@ -1,20 +1,20 @@
-# Model Settings
+# Параметри моделі
 
 <figure><img src="../../.gitbook/assets/color_model_setup (1).png" alt=""><figcaption><p>Model Setup screen</p></figcaption></figure>
 
-The **Model Settings** screen contains all the options to configure your model. Across the top of the page you will see icons that will take you to different pages of model settings when selected. The default screen for model settings is the[model-setup](model-setup/ "mention") screen.&#x20;
+Екран **Параметри моделі** містить усі параметри для налаштування вашої моделі. У верхній частині сторінки ви побачите піктограми, які переведуть вас на різні сторінки налаштувань моделі, якщо їх вибрати. Екраном за замовчуванням для налаштувань моделі є екран [model-setup](model-setup/ "mention").
 
-The icons at the top of the screen include (in order from left to right):
+Значки у верхній частині екрана (в порядку зліва направо):
 
-* [Model Setup](model-setup/)
-* [Heli Setup](heli-setup.md)
-* [Flight modes](flight-modes.md)
-* [Inputs](inputs-mixes-and-outputs/inputs.md)
-* [Mixes](inputs-mixes-and-outputs/mixes.md)
-* [Outputs](inputs-mixes-and-outputs/outputs.md)
-* [Curves](curves.md)
-* [Global Variables](global-variables.md)
-* [Logical Switches](logical-switches.md)
-* [Special Functions](special-functions.md)
+* [Налаштування моделі](model-setup/)
+* [Налаштування гелікоптера](heli-setup.md)
+* [Режими польоту](flight-modes.md)
+* [Входи](inputs-mixes-and-outputs/inputs.md)
+* [Мікшери](inputs-mixes-and-outputs/mixes.md)
+* [Виходи](inputs-mixes-and-outputs/outputs.md)
+* [Криві](curves.md)
+* [Глобальні змінні](global-variables.md)
+* [Логічні перемикачі](logical-switches.md)
+* [Спеціальні функції](special-functions.md)
 * Custom Scripts
-* [Telemetry](telemetry/)
+* [Телеметрія](telemetry/)
