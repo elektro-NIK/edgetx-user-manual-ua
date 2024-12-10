@@ -1,48 +1,41 @@
 ---
-description: General model settings
+description: Загальні налаштування моделі
 ---
 
-# Model Setup
+# Налаштування моделі
 
-<div align="center">
+<div align="center"><figure><img src="../../../.gitbook/assets/modelsetup.png" alt=""><figcaption><p>Вкладка Налаштування моделі в розділі Параметри моделі</p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/modelsetup.png" alt=""><figcaption><p>Model Setup tab under Model Settings</p></figcaption></figure>
+Сторінка **Налаштування моделі** є сторінкою за замовчуванням для **Параметрів моделі**, з якої ви починаєте налаштовувати свою модель. Він містить такі налаштування:
 
-</div>
+#### Ім'я моделі (Model name)
 
-The **model setup** page is the default page for model settings and is where you start to configure your model. It contains the following settings:
+Введіть бажану назву для моделі. Максимальна кількість символів – 15.
 
-#### Model name
+#### Мітки (Labels)
 
-Enter the desired name for the model. The maximum number of characters is 15.
+Тут ви можете призначити мітку з визначеного вами списку міток. За замовчуванням мітка моделі буде **Без мітки (Unlabeled)**. Детальніше про створення міток можна дізнатися на сторінці [select-model.md](../../select-model.md "mention").
 
-#### Labels
+#### Зображення моделі (Model image)
 
-Here you may assign a label from your defined label list.  By default, the model label will be **Unlabeled.** More information on creating labels can be found on the  [select-model.md](../../select-model.md "mention") page.
-
-#### Model image
-
-When the folder icon is selected, a window will pop up allowing you to select an image file from the images folder on your SD Card.
+Після вибору піктограми папки з’явиться спливаюче вікно, у якому можна вибрати файл зображення з папки зображень на карті пам'яті.
 
 {% hint style="info" %}
-To avoid performance issues, the model image size should not exceed 192 x 114 pixels. For more information on model image requirements, please see the **Images** portion of the [SD Card](../../radio-settings/sd-card.md) section.
+Щоб уникнути проблем з продуктивністю, розмір зображення моделі не повинен перевищувати 192 x 114 пікселів. Додаткову інформацію про вимоги до зображення моделі див. у пункті **Зображення** розділу [SD картка](../../radio-settings/sd-card.md).
 {% endhint %}
 
 {% hint style="info" %}
-[https://www.skyraccoon.com/](https://www.skyraccoon.com/) has a large repository of free image files that can be used with EdgeTX.
+[https://www.skyraccoon.com/](https://www.skyraccoon.com/) має велике сховище безкоштовних файлів зображень, які можна використовувати з EdgeTX.
 {% endhint %}
 
+#### Фільтр АЦП (ADC Filter)
 
-
-#### ADC Filter
-
-Enables/disables the ADC filter for this model. The _**global**_ option will take the value designated in the radio settings, which is _on_ by default.
+Вмикає/вимикає фільтр АЦП для цієї моделі. Якщо обрано **Глобально (Global)**, то значення буде наслідувано з однойменного пункту в Налаштуваннях апаратури, яке _ввімкнено_ за замовчуванням.
 
 {% hint style="info" %}
-The ADC filter is a filter for the proportional channels (sticks, pots, sliders), smoothing out smaller fast movements that occur due to noise in the system electronics. Normally, this filter should be _disabled_ for models with flight controllers.
+Фільтр АЦП - це фільтр для пропорційних каналів (стіки, потенціометри, слайдери), згладжуючи малі швидкі рухи, які виникають через шуми в електроніці системи. Зазвичай цей фільтр має бути _вимкнено_ для моделей з контролерами польоту.
 {% endhint %}
 
 {% hint style="info" %}
-Timers that are enabled will show as highlighted on the Model Setup screen.
+Увімкнені таймери відображатимуться як виділені на екрані Налаштування моделі.
 {% endhint %}
-
