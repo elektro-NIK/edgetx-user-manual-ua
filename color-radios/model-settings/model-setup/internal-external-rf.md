@@ -1,102 +1,102 @@
-# Internal / External RF
+# Внутрішній / Зовнішній RF
 
-The configuration settings for both the Internal and External RF pages work the same. The only difference is that the **Internal RF** section is for configuring the built-in module and the **External RF** section is for configuring an RF module in the external module bay.
+Параметри конфігурації для сторінок Внутрішній (Internal) і Зовнішній (External) RF працюють однаково. Єдина відмінність полягає в тому, що розділ Внутрішній RF (Internal RF) призначений для налаштування вбудованого модуля, а розділ Зовнішній RF (External RF) призначений для налаштування модуля RF у відсіку зовнішнього модуля.
 
-The Internal / External RF modules are "active" for a model when the buttons are yellow and inactive when they are white.
+Внутрішній/зовнішній радіочастотний модуль «активний» для моделі, коли кнопки жовті, і неактивні, якщо вони білі.
 
-<div><figure><img src="../../../.gitbook/assets/internalrf.png" alt=""><figcaption><p>Internal RF with multi-protocol module selected</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/externalrf.png" alt=""><figcaption><p>External RF with CRSF selected</p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/internalrf.png" alt=""><figcaption><p>Вибрано внутрішній мультипротокольний модуль</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/externalrf.png" alt=""><figcaption><p>Вибрано зовнішній CRSF модуль</p></figcaption></figure></div>
 
-#### Receiver number
+#### Номер приймача
 
-The receiver number is a user-assigned number for a model that is sent to the receiver when bound. Each model must have a unique receiver number. However, models using different protocols may have the same receiver number without issues.  EdgeTX will inform you when a receiver number is unique or if it is already being used with a text above the number field.
+Номер приймача — це номер моделі, який призначає користувач і надсилається приймачу під час зв’язування. Кожна модель повинна мати унікальний номер приймача. Однак моделі, які використовують різні протоколи, можуть без проблем мати однаковий номер приймача. EdgeTX повідомить вам текстом над полем номера, чи номер одержувача є унікальним, чи він  використовується.
 
 {% hint style="warning" %}
-If using the radio in gamepad mode, both internal and external RF modules should be turned off. This will result in increased performance when connected to a computer via USB.&#x20;
+У разі використання радіоапаратури в режимі геймпада внутрішній і зовнішній радіочастотні модулі повинні бути вимкнені. Це призведе до підвищення продуктивності при підключенні до комп’ютера через USB.
 {% endhint %}
 
-#### Mode Options
+#### Параметри режиму
 
-* **Off** - RF Module is not used
-* **PPM** - Pulse position modulation, used by many generic JR compatible modules.
-  * **Telemetry** - No telemetry or MLink
-  * **Channel Range** - Channels that will be used.
-  * **PPM Frame** – Frame length, pulse length, and polarity of the PPM frame. The frame length is automatically adjusted to the correct value when the number of transmitted channels is changed. However, this automatically assigned value can be manual changed.
-* **XJT** -&#x20;
-  * **Protocol**- D16, B8, LR2
-  * **Channel Range** - Channels that will be used.
-  * **Failsafe Mode** - Available in D16 protocol. The receiver will use this setting when the transmitter signal is not being received (signal loss).
-    * **Not Set** - failsafe mode is not set.&#x20;
-    * **Hold** – The receiver keeps channel values at their last received state from the transmitter.
-    * **No pulses** – No PWM pulses are output.
-    * **Receiver** – Follows the fail-safe settings configured on the receiver. Follow the instructions that come with the receiver.
-    * **Custom** – The receiver changes the channel values to the custom set values.
-      * **Custom Set** – Each channel can have its own setting. The options are a value, hold and no pulses.
-  * **Receiver Number** -  a user-assigned number for a model that is sent to the receiver when bound
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
-  * **Range** . This puts the transmitter into range check mode. When in this mode, the RSSI value is displayed and a sound is made every 5 seconds.
+* **Вимкнено (Off)** - модуль RF не  використовується
+* **PPM** - Pulse position modulation, використовується багатьма загальними JR-сумісними модулями.
+  * **Телеметрія (Telemetry)** – без телеметрії чи MLink
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Кадр PPM (PPM Frame)** – довжина кадру, тривалість імпульсу та полярність кадру PPM. Довжина кадру автоматично регулюється до правильного значення при зміні кількості переданих каналів. Однак це автоматично призначене значення можна змінити вручну.
+* **XJT** -
+  * **Протокол (Protocol)** - D16, B8, LR2
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Режим безаварійності (Failsafe Mode)** - доступний у протоколі D16. Приймач використовуватиме цей параметр, коли сигнал передавача не приймається (втрата сигналу).
+    * **Не встановлено (Not Set)** - безаварійний режим вимкнено.
+    * **Утримання (Hold)** – приймач зберігає значення каналу в стані останнього отриманого від передавача.
+    * **Без імпульсів (No pulses)** – імпульси ШІМ не виводяться.
+    * **Приймач (Receiver)** – дотримуватися параметрів безаварійності, налаштованих на приймачі. Дотримуйтесь інструкцій, що додаються до приймача.
+    * **Користувацький (Custom)** – приймач змінює значення каналів на задані значення.
+      * **Користувацький набір** – кожен канал може мати власне налаштування. Опції: Значення, Утримання та Без імпульсів.
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
+  * **Діапазон (Range)** – перемикає передавач у режим перевірки діапазону. У цьому режимі відображається значення RSSI й кожні 5 секунд лунає звуковий сигнал.
 * **DSM2**
-  * **Protocol** - LP45, DSM2, DSMX
-  * **Channel Range** - Channels that will be used.
-  * **Receiver Number** -  a user-assigned number for a model that is sent to the receiver when bound
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
-  * **Range** . This puts the transmitter into range check mode. When in this mode, the RSSI value is displayed and a sound is made every 5 seconds.
+  * **Протокол (Protocol)** - LP45, DSM2, DSMX
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
+  * **Діапазон (Range)** – перемикає передавач у режим перевірки діапазону. У цьому режимі відображається значення RSSI й кожні 5 секунд лунає звуковий сигнал.
 * **CRSF**
-  * **Baud Rate** - the speed to which the Transmitter module and the Radio Handset communicate.
-  * **Status** - Shows the packet radio configured on the trasmitter module.
-  * **Channel Range** - Channels that will be used.
-  * **Receiver Number** -  a user-assigned number for a model that is sent to the receiver when bound
-* **Multi** - Multiprotocol Module. The configuration options are unique to each selected protocol Configuration options for the multi-protocol module are described here:  [https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
+  * **Baud Rate** - швидкість, з якою обмінюються даними модуль передавача та радіоапаратура.
+  * **Статус (Status)** - показує пакети радіозв'язку, налаштовані на модулі передавача.
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування
+* **Multi** - багатопротокольний модуль. Параметри конфігурації є унікальними для кожного вибраного протоколу Параметри конфігурації для багатопротокольного модуля описані тут: [https://www.multi-module.org/using-the-module/protocol-options](https://www.multi-module.org/using-the-module/protocol-options)
 * **R9M**
-  * **Mode**- FCC, EU, 868MHz, 915 MHZ
-  * **Failsafe Mode** - The receiver will use this setting when the transmitter signal is not being received (signal loss).
-    * **Not Set** - failsafe mode is not set.&#x20;
-    * **Hold** – The receiver keeps channel values at their last received state from the transmitter.
-    * **No pulses** – No PWM pulses are output.
-    * **Receiver** – Follows the fail-safe settings configured on the receiver. Follow the instructions that come with the receiver.
-    * **Custom** – The receiver changes the channel values to the custom set values.
-      * **Custom Set** – Each channel can have its own setting. The options are a value, hold and no pulses.
-  * **Receiver Number** -  a user-assigned number for a model that is sent to the receiver when bound
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
-  * **Range** . This puts the transmitter into range check mode. When in this mode, the RSSI value is displayed and a sound is made every 5 seconds.
-  * **RF Power** - The output power for the transmitter module. The options change based on the selected mode.
-* **R9M Access    Note:** In order for the mode **R9M ACCESS** to be visible in the mode dropdow&#x6E;**,** the AUX1 or AUX2 serial port must be configured to **External Module** on the [Hardware](../../radio-settings/hardware.md) page.&#x20;
-  * **Channel Range** - Channels that will be used.
-  * **Failsafe Mode** - The receiver will use this setting when the transmitter signal is not being received (signal loss).
-    * **Not Set** - failsafe mode is not set.&#x20;
-      * **Hold** – The receiver keeps channel values at their last received state from the transmitter.
-      * **No pulses** – No PWM pulses are output.
-      * **Receiver** – Follows the fail-safe settings configured on the receiver. Follow the instructions that come with the receiver.
-      * **Custom** – The receiver changes the channel values to the custom set values.
-        * **Custom Set** – Each channel can have its own setting. The options are a value, hold and no pulses
-  * **Module -** _Please refer to FrSky documentation for these configuration settings_
+  * **Режим (Mode)** - FCC, EU, 868MHz, 915 MHZ
+  * **Режим безаварійності (Failsafe Mode)** - приймач використовуватиме цей параметр, коли сигнал передавача не приймається (втрата сигналу).
+    * **Не встановлено (Not Set)** - безаварійний режим вимкнено.
+    * **Утримання (Hold)** – приймач зберігає значення каналу в стані останнього отриманого від передавача.
+    * **Без імпульсів (No pulses)** – імпульси ШІМ не виводяться.
+    * **Приймач (Receiver)** – дотримуватися параметрів безаварійності, налаштованих на приймачі. Дотримуйтесь інструкцій, що додаються до приймача.
+    * **Користувацький (Custom)** – приймач змінює значення каналів на задані значення.
+      * **Користувацький набір** – кожен канал може мати власне налаштування. Опції: Значення, Утримання та Без імпульсів.
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
+  * **Діапазон (Range)** – перемикає передавач у режим перевірки діапазону. У цьому режимі відображається значення RSSI й кожні 5 секунд лунає звуковий сигнал.
+  * **Потужність RF (RF Power)** - вихідна потужність для модуля передавача. Параметри змінюються залежно від вибраного режиму.
+* **R9M Access** Примітка: щоб режим **R9M ACCESS** був видимим у спадному списку режимів, послідовний порт AUX1 або AUX2 має бути налаштований як **Зовнішній модуль** на сторінці [Апаратне забезпечення](../../radio-settings/hardware.md).
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Режим безаварійності (Failsafe Mode)** - приймач використовуватиме цей параметр, коли сигнал передавача не приймається (втрата сигналу).
+    * **Не встановлено (Not Set)** - безаварійний режим вимкнено.
+    * **Утримання (Hold)** – приймач зберігає значення каналу в стані останнього отриманого від передавача.
+    * **Без імпульсів (No pulses)** – імпульси ШІМ не виводяться.
+    * **Приймач (Receiver)** – дотримуватися параметрів безаварійності, налаштованих на приймачі. Дотримуйтесь інструкцій, що додаються до приймача.
+    * **Користувацький (Custom)** – приймач змінює значення каналів на задані значення.
+      * **Користувацький набір** – кожен канал може мати власне налаштування. Опції: Значення, Утримання та Без імпульсів.
+  * **Модуль (Module)** – _будь ласка, зверніться до документації FrSky для цих параметрів конфігурації_
     * Register
-      * Range
-      * Options
-  * **Receiver No (Number)** -  a user-assigned number for a model that is sent to the receiver when bound
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
+    * Range
+    * Options
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування.
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
 * **GHST** - ImmersionRC Ghost
-  * **Channel Range** - Channels that will be used.
-  * **Raw 12 bits** - enable 12bit mode
-* **SBUS**&#x20;
-  * **Channel Range** - Channels that will be used.
-  * **Refresh Rate** - Rate of refresh in milliseconds
-    * **Inversion** - Normal, Non-inverted
-* **FLYSKY**&#x20;
-  * **Protocol** - AFHDS3, AFHDS2A
-  * **Module Status** - Status of the module
-  * **Type** - _Please refer to FLYSKY documentation for these configuration settings_
-    * **Module Options**- _Please refer to FLYSKY documentation for these configuration settings_
-  * **Channel Range** - Channels that will be used.
-  * **Failsafe Mode** - The receiver will use this setting when the transmitter signal is not being received (signal loss).
-    * **Not Set** - failsafe mode is not set.&#x20;
-    * **Hold** – The receiver keeps channel values at their last received state from the transmitter.
-    * **No pulses** – No PWM pulses are output.
-    * **Receiver** – Follows the fail-safe settings configured on the receiver. Follow the instructions that come with the receiver.
-    * **Custom** – The receiver changes the channel values to the custom set values.
-      * **Custom Set** – Each channel can have its own setting. The options are a value, hold and no pulses.
-  * **Receiver (number)** -  a user-assigned number for a model that is sent to the receiver when bound
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Raw 12 bits** - увімкнути 12-бітний режим.
+* **SBUS**
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Частота оновлення (Refresh Rate)** - частота оновлення в мілісекундах
+  * **Інверсія (Inversion)** - Звичайний, Не інвертований
+* **FLYSKY**
+  * **Протокол (Protocol)** - AFHDS3, AFHDS2A
+  * **Статус модуля (Module Status)** - статус модуля
+  * **Тип (Type)** - _будь ласка, зверніться до документації FLYSKY для цих параметрів конфігурації_
+  * **Параметри модуля (Module Options)** - _будь ласка, зверніться до документації FLYSKY, щоб дізнатися про ці налаштування конфігурації_
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Режим безаварійності (Failsafe Mode)** - приймач використовуватиме цей параметр, коли сигнал передавача не приймається (втрата сигналу).
+    * **Не встановлено (Not Set)** - безаварійний режим вимкнено.
+    * **Утримання (Hold)** – приймач зберігає значення каналу в стані останнього отриманого від передавача.
+    * **Без імпульсів (No pulses)** – імпульси ШІМ не виводяться.
+    * **Приймач (Receiver)** – дотримуватися параметрів безаварійності, налаштованих на приймачі. Дотримуйтесь інструкцій, що додаються до приймача.
+    * **Користувацький (Custom)** – приймач змінює значення каналів на задані значення.
+      * **Користувацький набір** – кожен канал може мати власне налаштування. Опції: Значення, Утримання та Без імпульсів.
+  * **Номер приймача (Receiver number)** – присвоєний користувачем номер для моделі, який надсилається одержувачу під час зв’язування
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
 * **LemonRx DSMP**
-  * **Channel Range** - Channels that will be used.
-  * **Bind** - This puts the transmitter into bind mode. When in this mode the transmitter will make a chirp sound every 2.5 seconds.
-  * **Range** . This puts the transmitter into range check mode. When in this mode, the RSSI value is displayed and a sound is made every 5 seconds.
+  * **Діапазон каналів (Channel Range)** - канали, які будуть використовуватися.
+  * **Прив’язати (Bind)** – перемикає передавач у режим прив’язки. У цьому режимі передавач буде видавати звуковий сигнал кожні 2,5 секунди.
+  * **Діапазон (Range)** – перемикає передавач у режим перевірки діапазону. У цьому режимі відображається значення RSSI й кожні 5 секунд лунає звуковий сигнал.
