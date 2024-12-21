@@ -1,27 +1,27 @@
-# Trims
+# Тримери
 
-<figure><img src="../../../.gitbook/assets/trims.png" alt=""><figcaption><p>Trims settings page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trims.png" alt=""><figcaption><p><strong>Сторінка налаштувань тримерів</strong></p></figcaption></figure>
 
-Trims are used adjust the center position of a given stick axis. EdgeTX has the following time configuration options:
+**Тримери (Trims)** використовуються для коригування центрального положення осі важеля. EdgeTX має такі параметри налаштування часу:
 
-**Reset** - This resets all trim values to zero.
+**Reset** - Скидає всі значення трімерів на нуль.
 
-**Trim Step:** Defines the amount of increase/decrease in trim when the trim switch is pressed.&#x20;
+**Trim Step:** Визначає розмір кроку збільшення/зменшення тримера при натисканні на перемикач тримера.
 
 * Course = 1.6%
 * Medium = 0.8%
 * Fine = 0.4%
 * Extra Fine = 0.2%
-* Exponential = 0.2% near the center and the step value increases exponentially as the distance from the center increases.
+* Exponential = 0.2% поблизу центру, крок збільшується експоненційно при віддаленні від центру
 
-**Extended Trims**: Increases the maximum trim adjustment value from **±**25% to **±**100%.
+**Extended Trims**: Збільшує максимальне значення коригування тримерів з ±25% до ±100%.
 
 {% hint style="info" %}
-When switching from extended trims to normal trims, the extended trim value will remain until the trim is adjusted, then it will jump to the max/min normal trim value.
+При переході від розширених тримерів до нормальних, значення розширеного трімера залишатиметься до моменту коригування тримера, після чого значення повернеться до максимального/мінімального нормального тримера.
 {% endhint %}
 
-**Display trims:** Option to display the numerical trim value on the trim bar. Options are:
+**Display trims:** Опція для відображення числового значення тримера на панелі тримерів. Доступні опції:
 
-* **No -** Does not display the numerical trim value on the trim bar
-* **Yes** - Displays the numerical trim value on the trim bar once the trim is no longer at zero.
-* **Change -** Momentarily displays the numerical trim value on the trim bar (2 seconds) once the trim is no longer at zero.
+* **No -** Не відображати числове значення тримера на панелі тримерів.
+* **Yes** - Відображати числове значення тримера на панелі тримерів, коли тример не знаходиться на нулі.
+* **Change -** Миттєво відображати числове значення тримера на панелі тримерів (2 секунди), коли тример не знаходиться на нулі.

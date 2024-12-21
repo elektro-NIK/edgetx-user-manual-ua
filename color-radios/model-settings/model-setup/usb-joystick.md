@@ -1,67 +1,67 @@
-# USB Joystick
+# USB джойстик
 
-The USB Joystick has two possible modes, **Classic** and **Advanced**.&#x20;
+USB-джойстик має два можливі режими: **Класичний** і **Розширений**.
 
-<figure><img src="../../../.gitbook/assets/usbjoystick1.png" alt=""><figcaption><p>USB Joystick Classic mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/usbjoystick1.png" alt=""><figcaption><p>USB джойстик в класичному режимі</p></figcaption></figure>
 
-In **Classic mode**, the radio's configured output channels will be sent to the target device in numerical order and mapped to the device's preconfigured USB controller axes and buttons. Below is the default channel mapping for Microsoft Windows.
+У **Класичному режимі (Classic mode)** вихідні канали, налаштовані на радіоапаратурі, будуть передаватися на цільовий пристрій у числовому порядку та відображатися на попередньо налаштованих осях і кнопках USB-контролера пристрою. Нижче наведено стандартне відображення каналів для Microsoft Windows.
 
 {% hint style="info" %}
-If using the radio as a USB Joysitck, both internal and external RF modules should be turned off. When configured as such, the mixer will run at 1000Hz when in Joystick mode (which is needed for F.Sim competitors). Additinally, it also displays mixer run time in statistic/debug screen. This will result in increased performance when connected to a computer via USB.&#x20;
+При використанні апаратури як USB джойстика, як внутрішні, так і зовнішні RF модулі повинні бути вимкнені. Коли радіоапаратура налаштована таким чином, мікшер працює на частоті 1000 Гц в режимі джойстика (що необхідно для учасників F.Sim). Крім того, це також відображає час роботи мікшера на екрані статистики/налагодження. Це забезпечить покращену продуктивність при підключенні до комп'ютера через USB.
 {% endhint %}
 
-* Ch1 - X Axis
-* Ch 2 - Y Axis
-* Ch 3 - Z Axis
-* Ch4 - X Rotation
-* Ch 5 - Y Rotation
-* Ch 6 - Z Rotation
+* Ch1 - вісь X
+* Ch 2 - вісь Y
+* Ch 3 - вісь Z
+* Ch4 - поворот X
+* Ch 5 - поворот Y
+* Ch 6 - поворот Z
 * Ch 7 - Dial
-* Ch 8 - Slider
-* CH 9 - Ch 32 - Buttons 1 - 24
+* Ch 8 - слайдер
+* CH 9 - Ch 32 - кнопки 1 - 24
 
-<figure><img src="../../../.gitbook/assets/usbjoystick.png" alt=""><figcaption><p>USB Joystick Advanced mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/usbjoystick.png" alt=""><figcaption><p>Режим USB джойстика - розширений</p></figcaption></figure>
 
-In **Advanced mode** you can configure the following options:
+У **Розширеному режимі (Advanced mode)** можна налаштувати такі параметри:
 
-**Interface mode:** This indicates to the target device (the device you are connecting your transmitter to) what type of device you are connecting. The options are **Joystick**, **Gamepad**, **MultiAxis.** &#x20;
+**Interface mode:** Це вказує цільовому пристрою (пристрою, до якого підключена ваша апаратура), який тип пристрою ви підключаєте. Доступні опції: Joystick, Gamepad, MultiAxis.
 
 {% hint style="info" %}
-**Note:** Currently there is a limitation in MS Windows that may limit your transmitter to being only detected as a Joystick, regardless of what is selected in this option. In MacOS, Linux and Andriod this functions properly.
+**Примітка**: Наразі є обмеження в MS Windows, яке може призвести до того, що ваша апаратура буде виявлена лише як Joystick, незважаючи на вибір іншої опції. У MacOS, Linux та Android цей параметр працює належним чином.
 {% endhint %}
 
-**Circular cutout**: For axis pairs (X-Y, Z-rX): By default, the range of the axis pairs is a rectangular area. With this option, the axis will be limited to a circular area (like gamepad controllers commonly are). Options are : **None** or **X-Y, Z-rX** or **X-Y, rX-rY** or **X-Y, Z-rZ**
+**Circular cutout**: для пар осей (X-Y, Z-rX): За замовчуванням діапазон осей є прямокутною областю. З цією опцією вісі будуть обмежені круглою областю (як це часто робиться в геймпадах). Доступні опції: **None** або **X-Y, Z-rX**, або **X-Y, rX-rY**, або **X-Y, Z-rZ**.
 
-**Output channels 1-32**
+**Вихідні канали 1-32**
 
-**Mode**: For each output channel, you can select the mode that you want to use for that channel. The available options are **None**, **Btn**, **Axis**, **Sim**.
+**Mode**: Для кожного вихідного каналу ви можете вибрати режим, який хочете використовувати для цього каналу. Доступні опції: **None, Btn, Axis, Sim.**
 
-**None** - Channel is not used
+**None** - Канал не використовується.
 
-<figure><img src="../../../.gitbook/assets/usbjoystick2.png" alt=""><figcaption><p>Button mode options for a selected channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/usbjoystick2.png" alt=""><figcaption><p>Опції режиму кнопки для вибраного каналу.</p></figcaption></figure>
 
-**Btn** - Channel is used to simulate a button. Configuration options include:
+**Btn** - канал використовується для імітації кнопки. Параметри конфігурації включають:
 
-* **Inversion** - Inverts the output channel signal. Options are: **On** / **Off**
-* **Button Mode** -
-  * **Normal** - Each postion of a multiposition switch is represented by a button. The current switch state is represented by a continous button press.
-  * **Pulse** - Similar to "Normal" mode. However, instead of continous button press it is represented by a short button press.
-  * **SWEmu** - The toggle switch emulations a push button. The first press turns the virtual button on, the second press turns it off.
-  * **Delta** - The change of the output channel is represented by 2 buttons. While the output value is decreasing, the first button is pressed. When the output value is increasing, the second button is pressed. If there is no change, then no buttons will be pressed.
-  * **Companion** - This option should be selected when using your transmitter to control the simulator in EdgeTX Companion.  It allows the multi-position switches to function properly in the simulator.
-* **Positions** - The type of button that will be simulated.&#x20;
-  * **Push -** will only map to one button
-  * **2POS - 8 POS** - will map to the number of buttons that the switch has (ex: 3POS will map to 3 buttons).
-* **Button No:** The button number that the output will be mapped to and sent to the target device as.
+* **Inversion** - Інвертує сигнал вихідного каналу. Опції: **Увімкнено / Вимкнено.**
+* **Button Mode:**
+  * **Normal** - Кожна позиція перемикача з кількома позиціями представлена кнопкою. Поточний стан перемикача представлений як безперервне натискання кнопки.
+  * **Pulse** - Подібно до режиму "Normal". Однак, замість безперервного натискання кнопки, це представлено коротким натисканням кнопки.
+  * **SWEmu** - Перемикач імітує кнопку. Перше натискання вмикає віртуальну кнопку, друге натискання вимикає її.
+  * **Delta** - Зміна значення вихідного каналу представлена двома кнопками. Коли значення зменшується, натискається перша кнопка. Коли значення збільшується, натискається друга кнопка. Якщо зміни немає, кнопки не натискаються.
+  * **Companion** - Цей параметр слід вибрати при використанні вашої апаратури для керування симулятором в EdgeTX Companion. Він дозволяє правильно працювати багатопозиційним перемикачам в симуляторі.
+* **Positions** - Тип кнопки, яка буде імітована.
+  * **Push -** буде відображатись лише на одну кнопку.
+  * **2POS - 8 POS** - відобразить кількість кнопок, яку має перемикач (наприклад: 3POS відобразить 3 кнопки).
+* **Button No:** Номер кнопки, до якої буде відображено вихід та надіслано на цільовий пристрій.
 
-<figure><img src="../../../.gitbook/assets/usbjoystick3.png" alt=""><figcaption><p>Axis mode options for a selected channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/usbjoystick3.png" alt=""><figcaption><p>Опції режиму осі для вибраного каналу</p></figcaption></figure>
 
-**Axis -** The channel is used to simulate an axis and will be mapped to one of the target device's default axes.
+**Axis -** Канал використовується для симуляції осі й буде відображений на одну з осей за замовчуванням цільового пристрою.
 
-* Axis options are: X, Y, Z, rotX (rotation x), rotY, rotZ
+* Опції осі: X, Y, Z, rotX (обертання по осі X), rotY, rotZ.
 
-<figure><img src="../../../.gitbook/assets/usbjoystick4.png" alt=""><figcaption><p>Sim mode options for selected channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/usbjoystick4.png" alt=""><figcaption><p>Параметри режиму симуляції для вибраного каналу</p></figcaption></figure>
 
-**Sim -** The channel is used to simulate a common sim axis and it will be listed on the target device as the selected option (ex: Thr)
+**Sim -** Канал використовується для симуляції стандартної осі симулятора і буде відображений на цільовому пристрої як обрана опція (наприклад: **Thr**).
 
-* Sim Axis options are: **Ail**, **Ele**, **Rud**, **Thr**, **Acc**, **Brk**, **Steer**, **Dpad**
+* Опції осі симулятора: **Ail, Ele, Rud, Thr, Acc, Brk, Steer, Dpad.**
