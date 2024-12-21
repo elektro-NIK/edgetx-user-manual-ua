@@ -1,17 +1,17 @@
-# Throttle
+# Газ (Throttle)
 
-<figure><img src="../../../.gitbook/assets/throttle.png" alt=""><figcaption><p>Throttle page settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/throttle.png" alt=""><figcaption><p>Налаштування сторінки газу</p></figcaption></figure>
 
-EdgeTX has to possibility to select a specific source and trim for the model throttle and allows for the following configuration options:
+EdgeTX має можливість вибору конкретного джерела та тримера для газу моделі й дозволяє налаштувати такі опції:
 
-**Reverse:** When enabled, this option reverses the output direction of the configured throttle channel.
+**Reverse:** Коли ввімкнено, ця опція змінює напрямок виходу налаштованого каналу газу.
 
-**Source:** The source that will be used for the throttle.&#x20;
+**Source:** Джерело, яке буде використовуватися для газу.
 
-**Trim idle only**: When enabled, the throttle trim will only affect the bottom portion of the throttle band.&#x20;
+**Trim idle only:** Коли ввімкнено, тример газу впливатиме лише на нижню частину діапазону газу.
 
 {% hint style="info" %}
-For example, with **Trim idle only** enabled, the throttle stick at the lowest point might have a value of -80 and the center point will still be 0 and the highest point of 100. Without this enabled, the throttle stick at the lowest point might have a value of -80 however, the center point will be 20 and the highest point of 100.&#x20;
+Наприклад, якщо опція **Trim idle only** увімкнена, стік газу у найнижчій точці може мати значення -80, центр залишатиметься на 0, а найвища точка — 100. Без цієї опції стік газу у найнижчій точці також може мати значення -80, але центр буде на 20, а найвища точка — 100.
 {% endhint %}
 
-**Trim switch:** The trim switch that will be used to trim the throttle. It is possible to substitute the throttle trim switch with the aileron, rudder, or elevator trim switches.
+**Trim switch - П**еремикач тримера, який буде використовуватися для тримування газу. Можна замінити перемикач тримера газу на тример елерона, керма напрямку або керма висоти.

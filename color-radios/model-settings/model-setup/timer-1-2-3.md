@@ -1,52 +1,51 @@
-# Timer 1/2/3
+# Таймер 1/2/3
 
-<figure><img src="../../../.gitbook/assets/timers.png" alt=""><figcaption><p>Timer configuration page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/timers.png" alt=""><figcaption><p>Сторінка налаштування таймера</p></figcaption></figure>
 
-EdgeTX provides 3 timers that can be custom programmed.  Below are the configuration options.
+EdgeTX надає 3 таймери, які можна налаштувати вручну. Ось опції налаштування:
 
-**Name:**  Name of the timer
+**Name:** Назва таймера.
 
-**Mode**:
+**Mode:**
 
-* **OFF**- The timer is not used
-* **ON** - The timer runs all the time
-* **Start** -The timer starts once the configured switch is activated. After the time is started, the timer ignores the switch position.
-* **Throttle** - The timer starts once the throttle is raised and the configured switch is activated. The timer will stop counting if either the throttle position is lowered back to the minimum value or the configured switch is deactivated.
-* **Throttle %** - The timer counts proportionally to the throttle. It counts in real time at full throttle and at half speed at 50% throttle.
-* **Throttle Start** - The timer starts once the throttle is raised and the configured switch is activated. After starting, the timer ignores the throttle position and will keep counting unless the switch is deactivated.
-
-{% hint style="info" %}
-**Throttle**, **Throttle %**, and **Throttle Start** can be triggered by a switch, dial, or the value of another channel instead of just the throttle. This is specified in **Source** field of the [throttle.md](throttle.md "mention") section in **Model Setup**
-{% endhint %}
-
-**Switch-** Select the switch that will trigger the timer to start.  If no switch is selected, the timer will trigger based only on the configured mode. In addition to a switch, you can also select a trim, a telemetry source (triggered when telemetry data is received from that source), or physical activity (stick movement or button press) (labeled as **ACT**)
+* **OFF** — Таймер не використовується.
+* **ON** — Таймер працює постійно.
+* **Start** — Таймер запускається, коли активується налаштований перемикач. Після запуску таймер ігнорує положення перемикача.
+* **Throttle** — Таймер запускається, коли піднято газ і активовано налаштований перемикач. Таймер зупиняється, якщо газ знижено до мінімального значення або деактивовано налаштований перемикач.
+* **Throttle %** — Таймер рахуватиме пропорційно до газу. Він працюватиме в реальному часі на повному газі та на половину швидкості при 50% газу.
+* **Throttle Start** — Таймер запускається, коли піднято газ і активовано налаштований перемикач. Після запуску таймер ігнорує положення газу і продовжує рахувати, поки не буде деактивовано перемикач.
 
 {% hint style="info" %}
-Those items with a "!" mark in front of the trigger name mean that the condition is reversed. For example, "!SA-" means "when SA switch is not in middle/center position (= up or down)".
+**Throttle**, **Throttle %** та **Throttle Start** можуть бути активовані не лише газом, але й перемикачем, ролером або значенням іншого каналу. Це вказується в полі **Source** розділу [throttle.md](throttle.md "mention") в налаштуваннях моделі.
 {% endhint %}
 
-**Start-** The time used for the timer's advanced functions.  The default value is 00:00 and when left as such, the timer operates like a stopwatch, counting upward until stopped.  If a different time is entered in this box, then the additional **Direction** drop-down menu option will appear.
+**Switch** - Виберіть перемикач, який активує запуск таймера. Якщо перемикач не вибрано, таймер буде запускатися лише на основі налаштованого режиму. Окрім перемикача, можна також вибрати трім, джерело телеметрії (активується, коли отримуються дані телеметрії з цього джерела) або фізичну активність (рух стіка або натискання кнопки) (позначено як ACT).
 
-**Direction** - If set to **Show Remaining**, the counter will function like a countdown timer - counting down from the designated time to zero and then alerting the user.  If set to **Show Elapsed**, the timer functions like an alarm, counting up from zero until the designated time and then alerting the user.
+{% hint style="info" %}
+Елементи, які мають знак "!" перед назвою тригера, означають, що умова є зворотною. Наприклад, "!SA-" означає "коли перемикач SA не знаходиться в середньому/центральному положенні (= вгорі або внизу)".
+{% endhint %}
 
-**Minute Call** - If selected, you will be notified every minute that passes as described in the **Count Down** option.
+**Start** - Час, який використовується для розширених функцій таймера. Значення за замовчуванням — 00:00, і коли це значення залишено, таймер працює як секундомір, рахуючи вгору до зупинки. Якщо в це поле введено інший час, з'явиться додатковий параметр у меню вибору **Direction**.
+
+**Direction** - Якщо встановлено **Show Remaining**, таймер працюватиме як зворотний відлік — рахуючи від заданого часу до нуля, після чого сповістить користувача. Якщо встановлено **Show Elapsed**, таймер працюватиме як будильник, рахуючи від нуля до заданого часу, після чого сповістить користувача.
+
+**Minute Call** - Якщо вибрано, ви будете отримувати сповіщення кожну хвилину, що минає, як описано в опції **Count Down**.
 
 **Count Down:**
 
-* **Silent** - No notification is given until the timer reaches zero. When it reaches zero, you will hear one beep.
-* **Beeps** - The radio will beep every second starting at the time designated.
-* **Voice** - The radio will count down by second starting at the time designated.
-* **Haptic** -The radio will vibrate every second starting at the time designated.
-* **Beeps & Haptic** - The radio will beep and vibrate every second starting at the time designated.
-* **Voice & Haptic** - The radio will count down and vibrate by second starting at the time designated.
+* **Silent** - Жодне сповіщення не буде надано, поки таймер не досягне нуля. Коли таймер досягне нуля, ви почуєте один сигнал.
+* **Beeps** - Апаратура буде подавати сигнал кожну секунду, починаючи з вказаного часу.
+* **Voice** - Апаратура буде відраховувати секунди, починаючи з вказаного часу.
+* **Haptic** - Апаратура буде вібрувати кожну секунду, починаючи з вказаного часу.
+* **Beeps & Haptic** - Апаратура буде подавати сигнал і вібрувати кожну секунду, починаючи з вказаного часу.
+* **Voice & Haptic** - Апаратура буде відраховувати секунди й вібрувати, починаючи з вказаного часу.
 
 **Persistent:**
 
-* **Off** - The timer value is reset when switching models or when the radio is turned off / on.
-* **Flight** - The timer value is NOT reset when switching models or when radio is turned off / on. The timer value is only reset when the **Reset flight** option is selected in the [Reset telemetry ](../../reset-telemetry.md)menu.
-* **Manual Reset -** The timer value is reset only when it is individually selected to be reset (example: Reset timer1) in the [Reset telemetry ](../../reset-telemetry.md)menu.
+* **Off** - Значення таймера скидається при зміні моделей або коли радіоапаратура вимикається/вмикається.
+* **Flight** - Значення таймера НЕ скидається при зміні моделей або коли радіоапаратура вимикається/вмикається. Значення таймера скидається тільки при виборі опції **Reset flight** у меню [Скидання телеметрії](../../reset-telemetry.md)
+* **Manual Reset -** Значення таймера скидається тільки тоді, коли його окремо вибрано для скидання (наприклад: **Reset timer1**) у меню [Скидання телеметрії](../../reset-telemetry.md)
 
 {% hint style="info" %}
-The **Flight** persistent setting can be set for multiple timers and then these timers can be reset simultaneously with the **Reset flight** option.
+Налаштування **Flight persistent** можна встановити для кількох таймерів, після чого ці таймери можна скинути одночасно за допомогою опції **Reset flight**.
 {% endhint %}
-

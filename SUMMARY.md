@@ -20,7 +20,7 @@
       * [Інструктор](color-radios/model-settings/model-setup/trainer.md)
       * [Таймер 1/2/3](color-radios/model-settings/model-setup/timer-1-2-3.md)
       * [Попередня перевірка](color-radios/model-settings/model-setup/preflight-checks.md)
-      * [Тріми](color-radios/model-settings/model-setup/trims.md)
+      * [Тримери](color-radios/model-settings/model-setup/trims.md)
       * [Газ (Throttle)](color-radios/model-settings/model-setup/throttle.md)
       * [Увімкнені функції](color-radios/model-settings/model-setup/enabled-features.md)
       * [USB Джойстик](color-radios/model-settings/model-setup/usb-joystick.md)
