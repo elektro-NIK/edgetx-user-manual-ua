@@ -1,29 +1,28 @@
-# Statistics
+# Статистика
 
-<figure><img src="../.gitbook/assets/stats1.png" alt=""><figcaption><p>Statistics screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/stats1.png" alt=""><figcaption><p>Екран Статистики</p></figcaption></figure>
 
-The **Statistics** screen presents you with statistics regarding radio usage. Except for Battery, all data is reset once the radio is powered off. The following information is provided:
+Екран **Статистики** надає інформацію про використання апаратури. Окрім пункту "Батарея", усі дані скидаються після вимкнення апаратури. Наведено таку інформацію:
 
-* **Session** - The amount of time that the radio has been turned on.&#x20;
-* **Battery** - The amount of time that the radio has been on since the last reset.
-* **Throttle** - The amount of time that the throttle has was above the 0% stick position.
-* **Throttle %** - The amount of time that the throttle has was above the 50% stick position.
-* **Timer** - The current values of Timer 1, Timer 2, Timer 3.
+* **Session** - Час, протягом якого апаратура була ввімкнена.
+* **Battery** - Час, протягом якого апаратура працювала з моменту останнього скидання.
+* **Throttle** - Час, протягом якого газ був вище 0% положення стіка.
+* **Throttle %** - Час, протягом якого газ був вище 50% положення стіка.
+* **Timer** - Поточні значення Таймера 1, Таймера 2, Таймера 3.
 
-<figure><img src="../.gitbook/assets/stats2.png" alt=""><figcaption><p>Debug Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/stats2.png" alt=""><figcaption><p>Екран Налагодження</p></figcaption></figure>
 
-The debug screen provides data points used by the developers when debugging issues in the software. Most users will not find the information useful on this screen unless debugging issues with developers. The following debug information is provided.
+Екран Налагодження надає дані, які використовуються розробниками для налагодження програмного забезпечення. Більшість користувачів не знайдуть інформацію на цьому екрані корисною, якщо тільки не займаються налагодженням разом із розробниками. Надається така інформація для налагодження:
 
-* **TMix max** - Maximum mixer task duration.
-* **Free mem** - Current free radio memory in bytes.
-* **Lua scripts**&#x20;
-  * **Duration(ms) -** Maximum Lua duration in milliseconds.
-  * **Interval(ms)** - Maximum Lua interval in milliseconds.
-  * **Script(B)** - Memory used by LUA scripts.
-  * **Widget(B)** - Memory used by LUA widgets.
-  * **Extra(B)** - Memory used by LUA bitmap functions.
+* **TMix max** - Максимальна тривалість завдання мікшера.
+* **Free mem** - Поточна вільна пам'ять апаратури у байтах.
+* **Lua scripts**
+  * **Duration(ms) -** Максимальна тривалість виконання Lua у мілісекундах.
+  * **Interval(ms)** - Максимальний інтервал виконання Lua у мілісекундах.
+  * **Script(B)** - Пам'ять, використана Lua-скриптами.
+  * **Widget(B)** - Пам'ять, використана Lua-віджетами.
+  * **Extra(B)** - Пам'ять, використана функціями Lua для роботи з бітмапами.
 * **Free stack**
-  * **\[Menu]** - Minimum free stack memory for menu tasks.
-  * **\[Mix]** - Minimum free stack memory for mixer tasks.
-  * **\[Audio]** - Minimum free stack memory for audio tasks.
-
+  * **\[Menu]** - Мінімальна вільна пам'ять стека для завдань меню.
+  * **\[Mix]** - Мінімальна вільна пам'ять стека для завдань мікшера.
+  * **\[Audio]** - Мінімальна вільна пам'ять стека для завдань аудіо.

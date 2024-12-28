@@ -1,14 +1,14 @@
-# Reset Telemetry
+# Скидання телеметрії
 
-<figure><img src="../.gitbook/assets/color_quick-menu_reset-telemetry.png" alt=""><figcaption><p>Reset telemetry screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/color_quick-menu_reset-telemetry.png" alt=""><figcaption><p>Екран Скидання телеметрії</p></figcaption></figure>
 
-**Reset session** - When selected, this option:&#x20;
+**Reset session** - Коли обрано, ця опція:
 
-* Resets all timers configured with a persistence setting of **Flight** to zero.
-* Resets all discovered telemetry sensor values.
-* Resets all logical switch states
-* Triggers the same checks as loading the model  - i.e. throttle position, switch state, is failsafe set check, display pre-flight checklist if configured, stuck keys test, etc.
+* Скидає всі таймери, налаштовані з параметром збереження "Flight", до нуля.
+* Скидає всі знайдені значення телеметричних сенсорів.
+* Скидає всі стани логічних перемикачів.
+* Виконує ті ж перевірки, що й при завантаженні моделі, тобто перевірка положення газу, стану перемикачів, налаштування failsafe, відображення передпольотного списку перевірок, тест на завислі клавіші тощо.
 
-**Reset timer 1 / 2 / 3** - Resets only the selected timer to zero regardles of the configured persistence setting.
+**Reset timer 1 / 2 / 3** - Скидає лише вибраний таймер до нуля, попри налаштовані параметри збереження.
 
-**Reset telemetry** - This option resets all discovered telemetry sensor values.
+**Reset telemetry** - Ця опція скидає всі знайдені значення телеметричних сенсорів.

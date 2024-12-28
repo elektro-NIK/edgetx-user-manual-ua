@@ -1,46 +1,46 @@
-# Telemetry
+# Телеметрія
 
-Telemetry is data received from the model to the radio from various sensors. These sensors may be in included in the radio receiver or flight controller, or may be separate sensors, such as GPS, variometer, or magnetometer. Telemetry data that is received can be displayed by EdgeTX in widgets, configured in alarms or audio call-outs.
+Телеметрія — це дані, що передаються від моделі до радіо з різних сенсорів. Ці сенсори можуть бути вбудовані в радіоприймач або польотний контролер, або бути окремими сенсорами, такими як GPS, варіометр чи магнітометр. Отримані телеметричні дані можуть відображатися в EdgeTX у віджетах, налаштовуватися для тривог або звукових сповіщень.
 
-<figure><img src="../../../.gitbook/assets/color_model_telemetry.png" alt=""><figcaption><p>Telemetry screen in Model Settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/color_model_telemetry.png" alt=""><figcaption><p>Екран Телеметрія в меню Параметри моделі</p></figcaption></figure>
 
-### **Sensors**
+### **Sensors (Сенсори)**
 
-All prevously configured sensors are listed here. Sensors that are highlighted have received data since the model was loaded or the telemetry values were reset. A small circle icon will flash to the left of the sensor value when it has received a data update. Sensor values in black designate the sensors that are receiving regular updates. Sensor values that are red are no longer receiving regular updates. See [Recognized Sensors](../../../bw-radios/model-select/telemetry/common-telemetry-sensors.md) for a list of commonly used sensors in EdgeTX.
+Усі раніше налаштовані сенсори перераховані тут. Сенсори, що виділені, отримали дані з моменту завантаження моделі або скидання значень телеметрії. Маленька кругла іконка буде блимати ліворуч від значення сенсора, коли він отримав оновлення даних. Значення сенсорів чорного кольору позначають сенсори, що отримують регулярні оновлення. Сенсори, що відображаються червоним кольором, більше не отримують регулярні оновлення. Для списку найпоширеніших сенсорів, що підтримуються в EdgeTX, дивіться розділ "[Звичайні телеметричні сенсори](../../../bw-radios/model-select/telemetry/common-telemetry-sensors.md)".
 
-The following options are listed under the sensor list.
+Наступні опції доступні в списку сенсорів:
 
-* **Discover New:** When selected, it will look for new sensors on the model and automatically configure them.&#x20;
-* **Add New:** When selected, it will create a new blank sensor for that must be configured manually.&#x20;
-* **Delete All:** This option will delete all prevously configured sensors. _**Note**_: _This button will not be visible if there are no sensors configured._
+* **Discover New:** Після вибору ця опція шукає нові сенсори на моделі та автоматично налаштовує їх.
+* **Add New:** Після вибору створюється новий порожній сенсор, який потрібно налаштувати вручну.
+* **Delete All:** Ця опція видалить усі раніше налаштовані сенсори. **Примітка:** Кнопка не буде видимою, якщо сенсори не налаштовані.
 * **Show instance ID:**
-* **Ignore Instances:** This options prevents mutltiple sensors from reporting the same telemetry data.
+* **Ignore Instances:** Ця опція запобігає надходженню однакових телеметричних даних від кількох сенсорів.
 
-If you select a specific sensor, you will get the following options:&#x20;
+Якщо ви виберете конкретний сенсор, будуть доступні такі опції:
 
-* **Edit**: Allows you to edit the sensor's configuration options.
-* **Copy**: Creates a copy of that sensor.
-* **Delete**: Deletes that sensor.
+* **Edit**: Дозволяє редагувати налаштування сенсора.
+* **Copy**: Створює копію цього сенсора.
+* **Delete**: Видаляє цей сенсор.
 
-See the [Sensor Configuration Options](sensor-configuration-options.md) page for detailed description of all the configuration options for setting-up or editing sensors.
+Перегляньте сторінку [Опції налаштування сенсорів](sensor-configuration-options.md) для детального опису всіх налаштувань для налаштування або редагування сенсорів.
 
 ### **Rx-Stats**
 
-Here you can configure the threshold for the RX alarms. The Rx-Stats label will change (Rx-Stats, RSSI, Rqly, Sgnl) depending on the protocol that is used with the model.
+Тут ви можете налаштувати пороги для аварійних сигналів RX. Позначка **Rx-Stats** змінюватиметься (Rx-Stats, RSSI, Rqly, Sgnl) залежно від протоколу, який використовується з моделлю.
 
-* **Low alarm** - The threshhold value when the "RF signal low" voice prompt will be played. The recommended value is 45.
-* **Critical alarm** - The threshhold value when the "RF signal critical" voice prompt will be played. The recommended value is 42.
-* **Disable telemetry alarms** - When enabled, no alarm voice prompts will be played.
+* **Low alarm** - Поріг, при якому буде програватися голосова підказка "RF signal low". Рекомендоване значення — 45.
+* **Critical alarm** - Поріг, при якому буде програватися голосова підказка "RF signal critical". Рекомендоване значення — 42.
+* **Disable telemetry alarms** - Коли активовано, голосові підказки не будуть програватися.
 
-### **Variometer**
+### **Variometer (Варіометр)**
 
-A variometer detects changes in the model altitude.  EdgeTX can alert the user of these altitude changes by providing a rising/lower pitched tone. Use the **Variometer** menu on the Radio Setup page to set the actual frequency and volume of the tone to be played. The following options exist to configure the variometer alarm.
+Варіометр визначає зміни висоти моделі. EdgeTX може попереджати користувача про ці зміни висоти, відтворюючи звук підвищення чи зниження тону. Для налаштування реальної частоти та гучності тону, який буде програватися, використовуйте меню **Variometer** на сторінці налаштувань радіо.
 
 {% hint style="info" %}
-You will need to use a **Vario** Special or Global Function to enable this functionality!
+Для налаштування варіометра потрібно використовувати **Vario Special** або **Global Function**.
 {% endhint %}
 
-* **Source** - Specifies the sensor to use as the variometer. It is selected from the telemetry sensors added in **Sensors** section.
-* **Range** - Specifies the ascent/descent range that will trigger the change in the Variometer beeping pitch. If climb/descent rate is within the range specified here, beeping pitch will change according to that value. When it goes beyond the range specified here, beeping pitch will stop changing. Units are meters/second or feet/second based on the **Units** setting on the [Radio Setup](../../radio-settings/radio-setup/) page.
-* **Center** - Specify the range for ignoring changes in climb/descent rates. When the climb/descent rate is within the range specified here, the beeping pitch will not change.
-* **Tone/Silent** - Specifies whether to beep when climb/descent rate is within the range specified by **Center**.
+* **Source** - Визначає сенсор, який буде використовуватися як варіометр. Сенсор вибирається з сенсорів телеметрії, доданих у розділі **Sensors**.
+* **Range** - Визначає діапазон підйому/спадання, який змінює тон варіометра. Якщо швидкість підйому/спадання знаходиться в межах цього діапазону, тон буде змінюватися відповідно до цього значення. Коли швидкість виходить за межі зазначеного діапазону, тон не змінюватиметься. Одиниці виміру — метри/секунду або футів/секунду, залежно від налаштувань одиниць на сторінці [Налаштування апаратури](../../radio-settings/radio-setup/)&#x20;
+* **Center** - Визначає діапазон, в межах якого зміни швидкості підйому/спадання ігноруватимуться. Коли швидкість підйому/спадання знаходиться в межах цього діапазону, тон варіометра не змінюватиметься.
+* **Tone/Silent** - Визначає, чи буде відтворюватися звуковий сигнал, коли швидкість підйому/спадання знаходиться в межах діапазону **Center**.
