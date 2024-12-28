@@ -1,214 +1,204 @@
-# Widgets
+# Віджети
 
 {% hint style="info" %}
-After a widget has been setup, long pressing on the widget will give you the two menu options: **Full screen** and **Widget** settings. For some widgets, full-screen mode will offer additional functionality. To exit out of full-screen mode, long-press the RTN / Back button.
+Після налаштування віджету, довге натискання на віджет надасть два меню: Повний екран та Налаштування віджету. Для деяких віджетів режим Повного екрану пропонує додаткову функціональність. Щоб вийти з режиму Повного екрану, затисніть кнопку RTN / Назад.
 {% endhint %}
 
-Below are descriptions and configuration options for widgets included with EdgeTX.
+Нижче наведено описи та параметри конфігурації для віджетів, що входять до складу EdgeTX.
 
 ### BattAnalog
 
-<figure><img src="../../.gitbook/assets/wid_battanal.png" alt=""><figcaption><p>BattAnalog Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_battanal.png" alt=""><figcaption><p>BattAnalog Віджет</p></figcaption></figure>
 
-Displays a graphical representation of the charge level of a Lipo/Li-ion. It will automatically detect the cell count of the battery. It works with telemetry where only the total battery voltage is received. The configurable options are:
+Відображає графічне представлення рівня заряду батареї Lipo/Li-ion. Вона автоматично виявляє кількість комірок батареї. Працює з телеметрією, де отримується лише загальна напруга батареї. Налаштовувані параметри:
 
-* **Sensor** - Sensor for the battery voltage to use.
-* **Color** - Opens the color picker to choose the color for the text.
-* **Show\_Total\_Voltage** - Shows total battery voltage (instead of calculated cell voltage) when enabled.
-* **Lithium\_Ion** - Adjusts the minumum battery voltage used in calculating the remaining battery percentage from 3.0 to 2.8 when enabled.
+* **Sensor** - Датчик для використання напруги батареї.
+* **Color** - Відкриває вибір кольору для тексту.
+* **Show\_Total\_Voltage** - Відображає загальну напругу батареї (замість розрахованої напруги комірки), коли увімкнено.
+* **Lithium\_Ion** - Налаштовує мінімальну напругу батареї, що використовується для розрахунку залишкового відсотка заряду батареї, з 3.0 на 2.8, коли увімкнено.
 
 ### BattCheck
 
-<figure><img src="../../.gitbook/assets/wid_battcheck.png" alt=""><figcaption><p>BattCheck Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_battcheck.png" alt=""><figcaption><p>BattCheck Віджет</p></figcaption></figure>
 
-Displays a graphical representation of the charge level of a Lipo/Li-ion. It works with telemetry where individual cell voltage is received, such as FLVSS liPo Voltage Sensor. The configurable options are:
+Відображає графічне представлення рівня заряду батареї Lipo/Li-ion. Працює з телеметрією, де отримується напруга окремих комірок, наприклад, за допомогою датчика напруги FLVSS LiPo. Налаштовувані параметри:
 
-* **Sensor** - Sensor for the battery voltage to use.
-* **Color** - Opens the color picker to choose the color for the text.
-* **Shadow** - When enabled, adds a shadow to the text.
-* **LowestCell** - When enabled, shows only the voltage of the lowest cell (vs. showing all cell voltages).
-* **Lithium\_Ion** - Adjusts the minimum battery voltage used in calculating the remaining battery percentage from 3.0 to 2.8 when enabled.
+* **Sensor** - Датчик для використання напруги батареї.
+* **Color** - Відкриває вибір кольору для тексту.
+* **Shadow** - Коли увімкнено, додає тінь до тексту.
+* **LowestCell** - Коли увімкнено, показує лише найнижчу напругу комірки (замість відображення напруги усіх комірок).
+* **Lithium\_Ion** - Налаштовує мінімальну напругу батареї, що використовується для розрахунку залишкового відсотка заряду батареї, з 3.0 на 2.8, коли увімкнено.
 
 ### Counter
 
-<figure><img src="../../.gitbook/assets/wid_counter.png" alt=""><figcaption><p>Counter Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_counter.png" alt=""><figcaption><p>Counter Віджет</p></figcaption></figure>
 
-A counter that incrementally counts. The configurable options are:
+Лічильник, який поступово збільшується. Налаштовувані параметри:
 
-* **Color** - Opens the color picker to choose the color for the text.
-* **Shadow** - When enabled, adds a shadow to the text.
+* **Color** - Відкриває вибір кольору для тексту.
+* **Shadow** - Коли увімкнено, додає тінь до тексту.
 
 ### **Event Demo**
 
-<div>
+<div><figure><img src="../../.gitbook/assets/widgets5.jpg" alt=""><figcaption><p>Counter та Event Demo Віджети</p></figcaption></figure> <figure><img src="../../.gitbook/assets/widgets6.jpg" alt=""><figcaption><p>Event Demo Widget повний екран</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/widgets5.jpg" alt=""><figcaption><p>Counter and Event Demo Widgets</p></figcaption></figure>
+Демонструє обробку подій клавіш та дотиків у повноекранному режимі. Тільки для демонстраційних цілей. Налаштовувані параметри:
 
- 
+* **Size** - Змінює розмір коробки в у повноекранному режимі.
 
-<figure><img src="../../.gitbook/assets/widgets6.jpg" alt=""><figcaption><p>Event Demo Widget Full Screen</p></figcaption></figure>
+### **Flights**
 
-</div>
+<figure><img src="../../.gitbook/assets/wid_flights.png" alt=""><figcaption><p>Flights Віджет</p></figcaption></figure>
 
-Demonstrates handling of key and touch events in full screen mode. For demo purposed only. The configurable options are:
+Рахує кількість ваших польотів. Він надасть голосову підказку, коли політ почнеться, завершиться, а також загальну кількість польотів для моделі.
 
-* **Size** - Changes the size of the box in full screen mode.
+Налаштовувані параметри:
 
-### **Flights**&#x20;
+* **switch** - Визначений перемикач для арму.
+* **motor\_channel** - Канал для двигуна.
+* **min\_flight\_duration** - Мінімальна тривалість польоту, щоб він був зарахований.
+* **text\_color** - Відкриває вибір кольору для тексту.
+* **debug** - Коли увімкнено, відображає статусну інформацію на віджеті.
 
-<figure><img src="../../.gitbook/assets/wid_flights.png" alt=""><figcaption><p>Flights Widget</p></figcaption></figure>
+Додаткові примітки щодо цього віджету:
 
-Counts your number of flights. It will give you a verbal queue when the flight has started, finished as well as the total flights for the model.&#x20;
+Політ вважається успішним, якщо через 30 секунд двигун працює на більш ніж 25%, телеметрія активна (що вказує на підключення моделі), і перемикач арму увімкнено. Політ вважається завершеним після 8 секунд відключення батареї (визначається відсутністю телеметрії) — попередження: не використовуйте цей віджет, якщо модель використовує GV9 (GV9 FM0 — це місце збереження підрахунку польотів)!
 
-The configurable options are:
-
-* **switch** - Designated Arm/Safe switch.
-* **motor\_channel** - Channel for the motor.
-* **min\_flight\_duration** - Minimum flight duration for the flight to be counted.
-* **text\_color** - Opens the color picker to choose the color for the text.
-* **debug** - When enabled, shows status information on the widget.
-
-_**Additional notes regarding this widget:**_
-
-The flight is considered successful if after 30sec the engine is above 25%, telemetry is active (to indicated that the model connected), and safe switch ON. The flight is considered ended after 8 seconds of battery disconnection (detected by no telemetry) -- warning: do NOT use this widget if model is using GV9 (GV9 FM0 is where the flight count is stored)!
-
-The widget assumes the following: the model has a motor, the motor is activated on channel 3 (can be configured in settings), there is telemetry with one of the above \[RSSI|RxBt|A1|A2|1RSS|2RSS|RQly], there is a safe switch (arm switch), and global variable GV9 is free (i.e. not used).
+Віджет припускає, що: модель має двигун, двигун активується на каналі 3 (можна налаштувати в параметрах), є телеметрія з одним з наступних \[RSSI|RxBt|A1|A2|1RSS|2RSS|RQly], є перемикач арму, і глобальна змінна GV9 вільна (не використовується).
 
 ### Gauge
 
-<figure><img src="../../.gitbook/assets/wid_gauge (1).png" alt=""><figcaption><p>Gauge Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_gauge (1).png" alt=""><figcaption><p>Gauge Віджет</p></figcaption></figure>
 
-Shows a bar graph for the source value. The configurable options are:
+Показує стовпчикову діаграму для значення джерела. Налаштовувані параметри:
 
-* **Source** - Source for the gauge.
-* **Min** - Minimum value for the gauge. This value will be 0%&#x20;
-* **Max** - Maximum value for the gauge. This value will be 100%&#x20;
-* **Color** - Opens the color picker to choose the color for the gauge text and bar.
+* **Source** - Джерело для вимірювача.
+* **Min** - Мінімальне значення для вимірювача. Це значення буде 0%.
+* **Max** - Максимальне значення для вимірювача. Це значення буде 100%.
+* **Color** - Відкриває вибір кольору для тексту та стовпця вимірювача.
 
 ### **Gauge Rotary**
 
-<figure><img src="../../.gitbook/assets/wid_gaugerotary.png" alt=""><figcaption><p>Gauge Rotary Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_gaugerotary.png" alt=""><figcaption><p>Gauge Rotary Віджет</p></figcaption></figure>
 
-&#x20;A configurable analog style gauge with a needle. Also shows the minimum and maximum values that were read by the gauge with green and red needles. The configurable options are:
+Конфігурований аналоговий стиль вимірювача зі стрілкою. Також показує мінімальні та максимальні значення, які були зчитані вимірювачем, за допомогою зеленої та червоної стрілок. Налаштовувані параметри:
 
-* **Source** - Source for the gauge.
-* **Min** - The minimum (lowest) gauge value.
-* **Max** - The maximum (highest) gauge value.
-* **HighasGreen** - **Enable** for a sensor where high values are good. **Disable** for sensor where low values are good.
-* **Precision** - The precision of the number value to display in decimals.&#x20;
+* **Source** - Джерело для вимірювача.
+* **Min** - Мінімальне (найнижче) значення вимірювача.
+* **Max** - Максимальне (найвище) значення вимірювача.
+* **HighasGreen** - **Enable** для сенсора, де високі значення є хорошими. **Disable** для сенсора, де низькі значення є хорошими.
+* **Precision** - Точність значення числа для відображення в десяткових.
 
 ### **Ghost**
 
-<figure><img src="../../.gitbook/assets/wid_ghost.jpg" alt=""><figcaption><p>Ghost Widget Normal Mode and VTX Mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_ghost.jpg" alt=""><figcaption><p>Ghost віджет Normal Mode та VTX Mode</p></figcaption></figure>
 
-The Ghost widget will display RF receiver or video transmitter telemetry data based on the mode that is configured.&#x20;
+Віджет Ghost відображатиме телеметричні дані приймача RF або відеопередавача залежно від налаштованого режиму.
 
-In normal mode, the widget provides RF Mode (RFMD), Frame Rate (FRATE), Link Quality (RQLY), and Transmit Power (TPWR)&#x20;
+У звичайному режимі віджет надає RF режим (RFMD), Частоту кадрів (FRATE), Якість з'єднання (RQLY) та Потужність передачі (TPWR).
 
-In video mode, the widget provides Video Band (VBAN), Video Frequency (VFRQ), Video channel (VCHAN), and Video Power (VPWR)
+У відеорежимі віджет надає Відеобанд (VBAN), Відеочастоту (VFRQ), Відеоканал (VCHAN) та Відеопотужність (VPWR).
 
 ### **LibGUI Demo**
 
-<figure><img src="../../.gitbook/assets/wid_libgui.jpg" alt=""><figcaption><p>LibGUI Demo Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_libgui.jpg" alt=""><figcaption><p>LibGUI Demo Віджет</p></figcaption></figure>
 
-This widget is a demo for the LibGUI library. This library is not normally run by itself. Instead, it provides interactive functions to other Lua scripts that use it. The widget must be run in full-screen mode to demo the library's functionality.
+Цей віджет є демонстрацією бібліотеки LibGUI. Ця бібліотека зазвичай не працює самостійно. Натомість вона надає інтерактивні функції іншим Lua-скриптам, які її використовують. Віджет повинен працювати в повноекранному режимі для демонстрації функціональності бібліотеки.
 
 ### **Model info**
 
-<figure><img src="../../.gitbook/assets/wid_modelinfo (1).png" alt=""><figcaption><p>Model Info Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_modelinfo (1).png" alt=""><figcaption><p>Model Info Віджет</p></figcaption></figure>
 
-Displays the selected model name and picture (if configured in model settings). The configurable options are:
+Віджет відображає вибране ім'я моделі та зображення (якщо налаштовано в параметрах моделі). Налаштовувані опції:
 
-* **Color** - Opens the color picker to choose the color for the name text.
-* **Size** - Size for the name text. Options are STD (Default), BOLD, XXS, XS, L, XL, XXL
-* **Fill background?** - Adds a solid background color to the widget when enabled
-* **BG Color** - Opens the color picker to choose the color for the background.
-* **Use Theme Color** - When enabled, overrides the text color with the text color of the configured theme.
+* **Color** - Відкриває вибір кольору для тексту імені.
+* **Size** - Розмір тексту імені. Опції: STD (За замовчуванням), BOLD, XXS, XS, L, XL, XXL
+* **Fill background?** - Додає суцільний фон до віджета, коли увімкнено.
+* **BG Color** - Відкриває вибір кольору для фону.
+* **Use Theme Color** - Коли увімкнено, замінює колір тексту на колір тексту, налаштований у темі.
 
-### **Outputs**&#x20;
+### **Outputs**
 
-<figure><img src="../../.gitbook/assets/wid_outputs.png" alt=""><figcaption><p>Outputs Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_outputs.png" alt=""><figcaption><p>Outputs Віджет</p></figcaption></figure>
 
-Shows the channel output values in a bar graph. The number of channels that are displayed is dependent on the size of the widget. The configurable options are:
+Показує значення вихідних каналів у вигляді стовпчастої діаграми. Кількість каналів, що відображаються, залежить від розміру віджета. Налаштовувані опції:
 
-* **First channel** - selects the first channel to display in the widget.
-* **Fill background** - Adds a solid background color to the widget when enabled
-* **BG Color** - Opens the color picker to choose the color for the background.
-* **Text Color** - Opens the color picker to choose the color for the text.
-* **Color** -  Opens the color picker to choose the color for the output bars.
+* **First channel** - вибирає перший канал для відображення у віджеті.
+* **Fill background** - Додає суцільний фон до віджета, коли увімкнено.
+* **BG Color** - Відкриває вибір кольору для фону.
+* **Text Color** - Відкриває вибір кольору для тексту.
+* **Color** - Відкриває вибір кольору для стовпців виходу.
 
 ### Serial Power Port Demo
 
-<figure><img src="../../.gitbook/assets/wid_serialpower.png" alt=""><figcaption><p>Serial Power Port Demo Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_serialpower.png" alt=""><figcaption><p>Serial Power Port Demo Віджет</p></figcaption></figure>
 
-A demo widget to show you how the power port can be used. It must be run in full screen mode.
+Демо-віджет, який показує, як можна використовувати послідовний порт. Повинен працювати в повноекранному режимі.
 
 ### **SOARETX**
 
-<figure><img src="../../.gitbook/assets/wid_soaretx.jpg" alt=""><figcaption><p>SoarETX Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_soaretx.jpg" alt=""><figcaption><p>SoarETX віджет</p></figcaption></figure>
 
-The EdgeTX version of the SoarOTX tool.  It is a package of sailplane models for EdgeTX transmitters. It provides Lua scripts for timing and scorekeeping, graphing of log data (e.g. altitude graphs), and model configuration.
+Версія EdgeTX інструмента SoarOTX. Це набір моделей для планерів для радіопередавачів EdgeTX. Він надає Lua скрипти для таймера та ведення рахунку, графіки даних журналу (наприклад, графіки висоти) та конфігурації моделей.&#x20;
 
-For more information about the configuration and use of this widget please see  [https://github.com/jfrickmann/SoarOTX/wiki/SoarETX-for-color-radios](https://github.com/jfrickmann/SoarOTX/wiki/SoarETX-for-color-radios).
+Для додаткової інформації щодо налаштування та використання цього віджета, будь ласка, дивіться: [https://github.com/jfrickmann/SoarOTX/wiki/SoarETX-for-color-radios](https://github.com/jfrickmann/SoarOTX/wiki/SoarETX-for-color-radios).
 
-A demo of this tool can be seen here: [https://www.youtube.com/watch?v=5NSvxUNKM\_c](https://www.youtube.com/watch?v=5NSvxUNKM\_c)
+Демонстрацію цього інструмента можна подивитися тут: [https://www.youtube.com/watch?v=5NSvxUNKM\_c](https://www.youtube.com/watch?v=5NSvxUNKM_c)
 
 ### **Text**
 
-<figure><img src="../../.gitbook/assets/wid_text.png" alt=""><figcaption><p>Text Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_text.png" alt=""><figcaption><p>Text Віджет</p></figcaption></figure>
 
-Displays a user-customizable text field. The configurable options are:
+Відображає текстове поле, яке можна налаштувати користувачем. Налаштовувані параметри:
 
-* **Text** - Text to display
-* **Color** - Opens the color picker to choose the color for the text.&#x20;
-* **Size** - Size for the text. Options are STD (Default), BOLD, XXS, XS, L, XL, XXL
-* **Shadow** - When enabled, adds a shadow to the text.
-* **Alignment** - Alignment of the text in the text box. Options are: Left, Center, Right
+* **Text** - Текст для відображення.
+* **Color** - Відкриває колірну палітру для вибору кольору тексту.
+* **Size** - Розмір тексту. Опції: STD (за замовчуванням), BOLD, XXS, XS, L, XL, XXL.
+* **Shadow** - При ввімкненні додається тінь до тексту.
+* **Alignment** - Вирівнювання тексту в текстовому полі. Опції: Ліворуч, Центр, Праворуч.
 
 ### **Timer**
 
-<figure><img src="../../.gitbook/assets/wid_timer.png" alt=""><figcaption><p>Timer Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_timer.png" alt=""><figcaption><p>Timer Віджет</p></figcaption></figure>
 
-Displays the selected timer. No configurable options other than timer selection.
+Відображає вибраний таймер. Немає налаштувань, окрім вибору таймера.
 
+### **Timer2**
 
+<figure><img src="../../.gitbook/assets/wid_timer2.png" alt=""><figcaption><p>Timer2 Віджет</p></figcaption></figure>
 
-### **Timer2**&#x20;
+Відображає вибраний таймер з масштабованим текстом таймера залежно від розміру віджета та має наступні налаштування:
 
-<figure><img src="../../.gitbook/assets/wid_timer2.png" alt=""><figcaption><p>Timer2 Widget</p></figcaption></figure>
+* **TextColor** - Відкриває вибір кольору для тексту.
+* **Timer** - Таймер для відображення.
+* **use\_days** - Показує дні, коли значення часу перевищує 24 години, якщо увімкнено.
 
-Displays the selected timer with the timer text scaled based on the select widget size and has the following configuration options:
+### **TxGPStest**
 
-* **TextColor** - Opens the color picker to choose the color for the text.
-* **Timer** - Timer to display.
-* **use\_days** - Shows days when the time value is over 24 hours when enabled.
+<figure><img src="../../.gitbook/assets/wid_gpstest.png" alt=""><figcaption><p>TxGPSTest Віджет</p></figcaption></figure>
 
-### **TxGPStest**&#x20;
-
-<figure><img src="../../.gitbook/assets/wid_gpstest.png" alt=""><figcaption><p>TxGPSTest Widget</p></figcaption></figure>
-
-Displays GPS Information in text format. There are no configurable options.
+Відображає інформацію GPS у текстовому форматі. Немає налаштувань.
 
 ### **Value**
 
-<figure><img src="../../.gitbook/assets/wid_value.png" alt=""><figcaption><p>Value Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_value.png" alt=""><figcaption><p>Value Віджет</p></figcaption></figure>
 
-Displays a numeric value of the defined source as text. The configurable options are:
+Відображає числове значення визначеного джерела як текст. Налаштування включають:
 
-* **Source** - source for the text to be displayed
-* **Color** - Opens the color picker to choose the color for the text. User can choose between RGB and HSV color model to choose the color. You can also select one of the configured theme system colors.
-* **Shadow** - When enabled, adds a shadow to the text.
-* **Align Label** - Aligns the label text.  Options include: **Left**, **Center**, **Right**
-* **Align Value** - Aligns the value text. Options include: **Left**, **Center**, **Right**
+* **Source** - джерело для відображуваного тексту
+* **Color** - відкриває вибір кольору для тексту. Користувач може вибрати між RGB та HSV колірними моделями або один з налаштованих системних кольорів теми.
+* **Shadow** - при увімкненні додає тінь до тексту.
+* **Align Label** - вирівнює текст мітки. Доступні варіанти: **Left** (Ліворуч), **Center** (По центру), **Right** (Праворуч).
+* **Align Value** - вирівнює текст значення. Доступні варіанти: **Left** (Ліворуч), **Center** (По центру), **Right** (Праворуч).
 
 ### Value2
 
-<figure><img src="../../.gitbook/assets/wid_value2.png" alt=""><figcaption><p>Value2 Widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wid_value2.png" alt=""><figcaption><p>Value2 Віджет</p></figcaption></figure>
 
-Displays a numeric value of the defined telemetry source as text. The text will scale based on the size of the widget grid that is selected. The widget will detect the end of the flight (by no longer receiving telemtry) and will then display the min and max values of the configured telemetry sensor.
+Відображає числове значення визначеного телеметричного джерела як текст. Текст масштабуватиметься залежно від вибраного розміру сітки віджета. Віджет автоматично визначить кінець польоту (коли більше не надходить телеметрія) і відобразить мінімальні та максимальні значення налаштованого телеметричного сенсора.
 
-The configurable options are:
+Налаштування включають:
 
-* **Source** - Telemetry source for the text to be displayed
-* **Color** - Opens the color picker to choose the color for the text. User can choose between RGB and HSV color model to choose the color. You can also select one of the configured theme system colors.
-* **PostFix** - Appends a text label after the configured telemetry name label.
+* **Source** - телеметричне джерело для відображуваного тексту
+* **Color** - відкриває вибір кольору для тексту. Користувач може вибрати між RGB та HSV колірними моделями або один з налаштованих системних кольорів теми.
+* **PostFix** - додає текстову мітку після налаштованої назви телеметричного сенсора.

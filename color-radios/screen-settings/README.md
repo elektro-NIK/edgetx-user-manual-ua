@@ -1,38 +1,30 @@
-# Screen Settings
+# Налаштування екрана
 
-The **Screen settings** section of EdgeTX is where you can customize your main views and add additional views (up to 10 in total). When selecting **Screen Settings** from the main navigation menu it will open **Main view 1**. If other main views have been added, you may select them from the number tab at the top of the screen to adjust their settings. All main view tabs have the following configuration options and are configured individually:
+Розділ налаштувань екрана в EdgeTX дозволяє налаштовувати головні екрани та додавати додаткові (до 10 усього). Під час вибору **Screen Settings** (Налаштувань екрана) з головного меню навігації відкриється **Main view 1** (Головний екран 1). Якщо були додані інші головні екрани, їх можна вибрати за допомогою нумерованих вкладок у верхній частині екрана для налаштування їх параметрів. Усі вкладки головного екрана мають такі параметри конфігурації, які налаштовуються індивідуально:
 
-<figure><img src="../../.gitbook/assets/screenssettings.jpg" alt=""><figcaption><p>Main view 1 screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenssettings.jpg" alt=""><figcaption><p>Екран Main view 1</p></figcaption></figure>
 
-* **Layout** - Selects the screen layout for the widgets. It is possible to divide the screen in up to two columns and up to 4 rows, with a widget in each cell.
-* **Setup Widgets** - see [Setting up widgets](./#setting-up-widgets) below.
-* **Top bar** - Toggles whether the top widget bar will be visible on the selected main view.
-* **Flight mode** - Toggles whether the flight mode name (if configured) will be visible on the selected main view.
-* **Sliders** - Toggles whether the slider bars will be visible on the selected main view.
-* **Trims** - Toggles whether the trim bars will be visible on the selected main view.
-* **Mirror** - Toggles whether to mirror the selected widget layout.
+* **Layout** - Вибір макета екрана для віджетів. Можна розділити екран на до двох колонок і до чотирьох рядків, розміщуючи віджет у кожній клітинці.
+* **Setup Widgets** - Див. [**Налаштування віджетів**](./#nalashtuvannya-vidzhetiv) нижче.
+* **Top bar** - Увімкнення або вимкнення відображення верхньої панелі віджетів на вибраному головному екрані.
+* **Flight mode** - Увімкнення або вимкнення відображення назви режиму польоту (якщо налаштовано) на вибраному головному екрані.
+* **Sliders** - Увімкнення або вимкнення відображення панелей слайдерів на вибраному головному екрані.
+* **Trims** - Увімкнення або вимкнення відображення панелей тримерів на вибраному головному екрані.
+* **Mirror** - Увімкнення або вимкнення дзеркального відображення вибраного макета віджетів.
 
-<figure><img src="../../.gitbook/assets/screenssettings2.jpg" alt=""><figcaption><p>User Interface screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenssettings2.jpg" alt=""><figcaption><p>Екран Інтерфейс користувача</p></figcaption></figure>
 
-Selecting the user Interface button to the left of the Main view 1 tab will open the user interface configuration screen.  It contains the following options:
+Вибір кнопки інтерфейсу користувача ліворуч від вкладки Головний екран 1 відкриє екран налаштувань інтерфейсу користувача. Він містить такі опції:
 
-* **Top bar Setup Widgets button** - Sets up the widgets that will be displayed on the top bar. See [**Setting up widgets**](./#setting-up-widgets) below for information on how to setup widgets.
-* **Theme** - Applies the selected theme to EdgeTX. A preview of the theme is below the dropdown. EdgeTX comes with several themes installed. Additional themes to download as well as instructions for creating your own themes can be found here: [https://github.com/EdgeTX/themes](https://github.com/EdgeTX/themes)
+* **Кнопка Setup Widgets верхньої панелі** — Налаштовує віджети, які будуть відображатися на верхній панелі. Див. [**Налаштування віджетів**](./#nalashtuvannya-vidzhetiv) нижче для інформації про те, як налаштувати віджети.
+* **Theme** - Застосовує вибрану тему до EdgeTX. Попередній перегляд теми розташований нижче спадного списку. EdgeTX постачається з кількома встановленими темами. Додаткові теми для завантаження, а також інструкції зі створення власних тем можна знайти тут: [https://github.com/EdgeTX/themes](https://github.com/EdgeTX/themes)
 
-<div>
+<div><figure><img src="../../.gitbook/assets/screenssettings3.jpg" alt=""><figcaption><p>Налаштування віджета верхньої панелі</p></figcaption></figure> <figure><img src="../../.gitbook/assets/screenssettings4.jpg" alt=""><figcaption><p>Налаштування віджета Main View</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/screenssettings3.jpg" alt=""><figcaption><p>Top Bar Widget Setup</p></figcaption></figure>
+### **Налаштування віджетів**
 
- 
-
-<figure><img src="../../.gitbook/assets/screenssettings4.jpg" alt=""><figcaption><p>Main View Widget Setup</p></figcaption></figure>
-
-</div>
-
-### Setting up widgets
-
-Selecting the setup widgets button will display the main view or top bar with the widget cells outlined in a hashed line.  You can assign a widget to a cell by selecting the cell and then the widget you want to assign to it from the drop-down menu. After selecting the widget, it will then open the configuration options for the widget for further configuration. Widget descriptions and configuration options for widgets included with EdgeTX are below.
+Вибір кнопки налаштування віджетів відображатиме головний екран або верхню панель з клітинками віджетів, обведеними пунктирною лінією. Ви можете призначити віджет клітинці, вибравши клітинку, а потім віджет, який хочете призначити, зі спадного меню. Після вибору віджета відкриються його параметри конфігурації для подальшого налаштування. Опис віджетів і параметри конфігурації віджетів, що входять до складу EdgeTX, наведені нижче.
 
 {% hint style="info" %}
-For the top bar widgets, the radio info, date/time and internal GPS widgets will be automatically loaded if the right two slots are empty when a model is loaded. If those widgets are manually removed, they will not get reloaded.
+Для віджетів верхньої панелі віджети радіоінформації, дати/часу та внутрішнього GPS будуть автоматично завантажені, якщо праві два слоти порожні під час завантаження моделі. Якщо ці віджети будуть видалені вручну, вони не будуть завантажені знову.
 {% endhint %}
