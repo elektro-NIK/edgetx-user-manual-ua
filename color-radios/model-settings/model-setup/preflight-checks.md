@@ -1,23 +1,23 @@
-# Pre-start Checks
+# Попередня перевірка
 
-<figure><img src="../../../.gitbook/assets/prestart checks.png" alt=""><figcaption><p>Pre-start Checks page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prestart checks.png" alt=""><figcaption><p>Сторінка передпольотних перевірок</p></figcaption></figure>
 
-Whenever a new model is loaded, EdgeTX will conduct pre-flight checks based on the checks that are configured on this page. If any of the checks are failed, EdgeTX will give the user an audio and visual warning that must be acknowledged before using the model. The following preflight checks are configurable:
+Кожного разу, коли завантажується нова модель, EdgeTX виконує попередню перевірку на основі налаштувань, заданих на цій сторінці. Якщо будь-яка перевірка не пройдена, EdgeTX видасть звукове та візуальне попередження, яке необхідно підтвердити перед використанням моделі. Перед польотом можна налаштувати наступні перевірки:
 
-**Display checklist** - When this option is selected, the model notes file will be displayed when the model is loaded. A valid model notes file must be in the **Models** folder on the SD card. The model notes file must be a .txt file and must have the EXACT same name as the model it is for, for example: Mobula6.txt. The text in the file is up to the user.
+**Відображення чекліста -** Коли вибрано цю опцію, файл нотаток моделі буде відображатися під час завантаження моделі. Файл нотаток моделі має бути у папці Models на SD-карті, мати формат .txt та точно відповідати назві моделі, наприклад: Mobula6.txt. Вміст файлу визначається користувачем.
 
-**Interactive checklist** - This option is used with the **Display checklist** option. When this option is selected, any line of text in the checklist file that begins with = will display as a check box when the checklist is displayed. All displayed checkboxes must be **checked** by selecting them in order to close the checklist.
+**Інтерактивний чекліст -** Ця опція використовується разом з опцією "Відображення чекліста". Якщо вона активована, будь-який рядок тексту у файлі чекліста, який починається зі знака "=", відображатиметься як чекбокс під час показу чекліста. Усі відображені чекбокси мають бути відмічені, щоб закрити чекліст.
 
-**Throttle state** - When selected, the radio will check that the throttle is at the minimum range value for the configured throttle source in the [Throttle](throttle.md) menu.
+**Стан газу (Throttle state) -** Якщо вибрано, апаратура перевірятиме, чи газ встановлений у мінімальне значення для джерела газу, налаштованого у меню [Газ (Throttle)](throttle.md)&#x20;
 
-**Custom Position?** - When this option is selected, a number box will be shown that can be configured with a user-defined value for the throttle state check. &#x20;
+**Користувацька позиція (Custom Position) -** Якщо активовано цю опцію, з'явиться поле введення числа, яке можна налаштувати для перевірки стану газу.
 
-**Switches** - The section displays all the switches that are configured on the radio and allows you to select which position is the correct position for the switch state check. Selecting the switch will cycle through the available switch positions or turn the check off for the switch completely. Yellow switches have the switch position check activated. White switches e de-activated.
+**Перемикачі -** Цей розділ відображає всі перемикачі, налаштовані на апаратурі, і дозволяє вибрати правильне положення для перевірки стану перемикача. Натискання на перемикач змінює його положення або повністю вимикає перевірку для цього перемикача. Жовті перемикачі мають активовану перевірку положення, білі — деактивовану.
 
-**Pots & Sliders**- When activated, this option checks the position of the pots & sliders. There are three options - OFF, ON and AUTO. When ON or AUTO is selected from the drop-down menu, buttons for the available pots and sliders will appear.&#x20;
+**Потенціометри та слайдери (Pots & Sliders) -** При активації ця опція перевіряє положення потенціометрів і слайдерів. Є три режими: OFF, ON та AUTO.
 
-* **OFF** - Pot and slider positions are not checked.
-* **ON** - Positions are checked against manually configured pot and slider positions that are set to active (yellow). To manually set the check position, select ON from the drop-down menu, put the pots and sliders into the desired position, and activate them by selecting them (yellow).
-* **AUTO** - Positions are checked for activated pots and sliders and compared to the last automatically saved position before the radio was turned off or the model was changed.
+* **OFF** - Положення потенціометрів і слайдерів не перевіряються.
+* **ON** - Положення перевіряються відповідно до вручну заданих активних позицій (жовтий колір). Щоб вручну налаштувати положення, виберіть ON, встановіть потенціометри та слайдери у потрібну позицію та активуйте їх (жовтий).
+* **AUTO** - Положення перевіряються для активованих потенціометрів і слайдерів та порівнюються з останньою автоматично збереженою позицією перед вимкненням апаратури або зміною моделі.
 
-**Center Beep** - Allows you to turn on / off the center beep function for the individual sticks, pots, and sliders by selecting them (yellow).&#x20;
+**Центральний сигнал (Center Beep) -** Дозволяє увімкнути або вимкнути функцію звукового сигналу для центра кожного потенціометра та слайдера, активуючи їх (жовтий).

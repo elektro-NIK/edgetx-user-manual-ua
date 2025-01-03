@@ -6,17 +6,19 @@
 Наведені нижче посібники надано спільнотою та не перевірено на точність командою EdgeTX. Хоча ми впевнені, що автори зробили все можливе, щоб забезпечити їх точність, ви використовуєте їх на власний ризик.
 {% endhint %}
 
+### Chinese / 中国人
+
+Credit: zkl2333
+
+[https://zkl2333.gitbook.io/edgetx-user-manual](https://zkl2333.gitbook.io/edgetx-user-manual)
+
 ### German / Deutsch
 
 Авторство: Heiner#1063
 
-{% file src=".gitbook/assets/EdgeTx v2.9 Benutzerhandbuch Farbe (1).pdf" %}
-User Manual for Color Radios in German
-{% endfile %}
+{% file src=".gitbook/assets/EdgeTx v2.10 Benutzerhandbuch Farbe.pdf" %}
 
-{% file src=".gitbook/assets/EdgeTx v2.9 Benutzerhandbuch Schwarz Weiß.pdf" %}
-User Manual for Monochrome Radios in German
-{% endfile %}
+{% file src=".gitbook/assets/EdgeTx v2.10 Benutzerhandbuch Schwarz Weiß.pdf" %}
 
 ### Russian / Русский
 
@@ -33,3 +35,11 @@ User Manual for Monochrome Radios in Russian
 _Work in progress!_
 
 [https://robertomirax.gitbook.io/untitled/](https://robertomirax.gitbook.io/untitled/)
+
+### Ukrainian / Українська
+
+Credit: guys from https://fpvua.org
+
+_Work in progress!_
+
+[https://elektronik.gitbook.io/edgetx-ua](https://elektronik.gitbook.io/edgetx-ua)
