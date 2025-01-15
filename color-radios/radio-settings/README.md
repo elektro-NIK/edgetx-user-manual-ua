@@ -1,14 +1,14 @@
-# Radio Settings
+# Налаштування системи
 
-The Radio **Settings** section contains all the options to configure your radio. Across the top of the page you will see icons that will take you to different pages of radio settings when selected. The default screen for the radio settings is the [Tools ](tools.md)screen.&#x20;
+Розділ **Налаштування системи** містить усі параметри налаштування вашої радіоапаратури. У верхній частині сторінки ви побачите піктограми, які переведуть вас на різні сторінки налаштувань апаратури, якщо їх вибрати. Стандартним екраном для Налаштувань системи є екран [Інструменти](tools.md).
 
-Icons at the top of the radio settings screen include (in order from left to right):
+Значки у верхній частині меню Налаштувань системи включають (в порядку зліва направо):
 
-* [Tools](tools.md)
-* [SD Card](sd-card.md)
-* [Radio Setup](radio-setup/)
-* [Themes](themes.md)
-* [Global Functions](global-functions.md)
-* [Trainer](../model-settings/model-setup/trainer.md)
-* [Hardware](hardware.md)
-* [Version](version.md)
+* [Інструменти](tools.md)
+* [SD картка](sd-card.md)
+* [Налаштування апаратури](radio-setup/)
+* [Теми](themes.md)
+* [Глобальні функції](global-functions.md)
+* [Інструктор](../model-settings/model-setup/trainer.md)
+* [Апаратне забезпечення](hardware.md)
+* [Версія](version.md)
