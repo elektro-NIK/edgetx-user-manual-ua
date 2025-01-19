@@ -1,50 +1,49 @@
-# Radio Setup
+# Налаштування апаратури
 
-<figure><img src="../../../.gitbook/assets/color_radio_radio-setup.png" alt=""><figcaption><p>Radio Setup Screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/color_radio_radio-setup.png" alt=""><figcaption><p>Екран налаштування апаратури</p></figcaption></figure>
 
-The **Radio Setup** screen is where you configure basic settings for your radio. It contains the following options:
+На екрані **Налаштування апаратури (Radio Setup)** ви можете налаштувати основні параметри своєї радіоапаратури. Він містить такі параметри:
 
-**Date** - The current date. This date is used for the SD card log files.
+**Дата (Date)** - поточна дата. Ця дата використовується для файлів журналу SD картки.
 
-**Time** - The current time. This time is used for the SD card log files.
+**Час (Time)** - поточний час. Цей час використовується для файлів журналу SD картки.
 
-**Additional Settings Buttons** - Additional configuration options for the named areas are available when selecting these buttons.  More information about these configuration settings is on the next page - [Additional Radio Settings](additional-radio-settings.md)
+**Кнопки додаткових налаштувань (Additional Settings Buttons)** - додаткові параметри конфігурації для названих областей доступні при виборі цих кнопок. Додаткову інформацію про ці параметри конфігурації можна знайти на наступній сторінці - [Додаткові налаштування апаратури](additional-radio-settings.md).
 
-**Splash Screen** - Duration that the splash screen will be displayed.
+**Заставка (Splash screen)** – тривалість, протягом якої буде відображатися заставка.
 
-**Startup Sound** - Toggles whether to enable/disable startup sound.
+**Звук при запуску (Startup Sound)** - вмикає чи вимикає звук при запуску.
 
-**Pwr Off delay** - The delay between when the power button is pushed and when the radio shuts off. The options are: **0s, 0.5s, 1s, 2s, 3s, 4**s. _It is recommended to set at least a 1s delay in order to prevent the radio from being shut off in the case of an accidental button press._
+**Затримка вимкнення (Pwr Off delay)** - затримка між натисканням кнопки живлення та моментом вимкнення радіоапаратури. Можливі варіанти: **0s, 0.5s, 1s, 2s, 3s, 4s**. _Рекомендується встановити затримку не менше 1 секунди, щоб запобігти вимкненню апаратури в разі випадкового натискання кнопки._
 
-**Power Auto Off** - If enabled, the radio with automatically power off after the configured amount of inactivity, if there is no RF module with active telemetry, or an active trainer connection.&#x20;
+**Power Auto Off** - If enabled, the radio with automatically power off after the configured amount of inactivity, if there is no RF module with active telemetry, or an active trainer connection.
 
-**Power ON/OFF Haptic** - When enabled, the radio with use the vibration motor to give a haptic pulse when powering the radio on (indicating when the power button can be released) and when the transmitter is powering off.&#x20;
+**Power ON/OFF Haptic** - When enabled, the radio with use the vibration motor to give a haptic pulse when powering the radio on (indicating when the power button can be released) and when the transmitter is powering off.
 
-**Owner ID** - Custom registration ID used only for users with FrSky ISRM/ACCESS modules.
+**Ідентифікатор власника (Owner ID)** - спеціальний ідентифікатор реєстрації, який використовується лише для користувачів із модулями FrSky ISRM/ACCESS.
 
-**Country code** - Used by some RF modules to ensure adherence to local regulatory RF requirements. Options are **America, Japan, Europe.**
+**Код країни (Country code)** - використовується деякими радіочастотними модулями для забезпечення дотримання місцевих нормативних радіочастотних вимог. Варіанти - **America, Japan, Europe**.
 
-**Voice language** - Language for the voice pack. This setting and the voice pack folder on the SD card must match for the sounds to be played.
+**Мова голосу (Voice language)** - мова голосового пакета. Цей параметр і папка голосового пакета на SD картці мають збігатися для відтворення звуків.
 
-**Units** - Units of measure. Options are **metric** or **imperial**.
+**Одиниці (Units)** - одиниці вимірювання. Варіанти: **метрична (metric)** або **британська (imperial)**.
 
-**PPM Units** - Level of accuracy for PPM values are displyed. Options are **0.-, 0.0 or us** **(μs/microseconds).**
+**Одиниці PPM (PPM Units)** - відображається рівень точності значень PPM. Варіанти: **0.-**, **0.0** або **us** **(μs/мікросекунди).**
 
-**Play delay** (sw. mid pos) - The minimum time in milliseconds a switch must be in the middle position before a special function will get activated. This is used to prevent the middle position from being activated on a three-position switch when switching from low position to high position.
+**Затримка відтворення (Play delay)** (перемикач у середній позиції) - мінімальний час у мілісекундах, протягом якого перемикач має бути в середньому положенні, перш ніж активується спеціальна функція. Це використовується для запобігання активації середнього положення на трипозиційному перемикачі під час перемикання з нижнього положення на верхнє.
 
-**USB Mode** - Sets the default action when a USB cable is plugged into the USB data port and the radio is powered on. Options are: **Ask**, **Joystick**, **Storage**, and **Serial**.
+**Режим USB (USB Mode)** - встановлює дію за замовчуванням, коли USB-кабель під'єднано до порту USB і радіоапаратура увімкнена. Варіанти: **Запитати (Ask)**, **Джойстик (Joystick)**, **Накопичувач (Storage)** та **Послідовний (Serial)**.
 
-**Hats Mode:** how the hat switches will function (_**NV14, EL18 and PL18/PL18EV  only**_).
+**Режим тримерів (Hats Mode)**: як працюватимуть перемикачі капелюхів (**тільки для NV14, EL18 та PL18/PL18EV**).
 
-* **Trims** **only**: The Trim hat switches will be used to adjust the trim values only.
-* **Keys only**: The Trim hat switches will be used to navigate the menu options (as described below)
-* **Switchable**: Trim hat switch functionality can be changed between **Trims** and **Keys** on-the-fly.
+* **Лише тримери (Trims only)**: перемикачі тримерів використовуватимуться лише для налаштування значень тримування.
+* **Лише клавіші (Keys only)**: перемикачі тримерів використовуватимуться для навігації параметрами меню.
+* **Перемикання (Switchable)**: функції тримерів можна миттєво змінювати між **Тримерами** та **Клавішами**.
 
-**Rotary Encoder Mode** - Set to **Normal** by default. The **Inverted** option reverses the direction of the roller.
+**Режим поворотного енкодера (Rotary Encoder Mode)** - за замовчуванням встановлено значення **Нормальний (Normal)**. Параметр **Інвертований (Inverted)** змінює напрямок ролика.
 
-**Default Channel Order** - The default channel order for new models and the trainer screen. The letters stand for: **A** = Aileron (Roll), **E** = Elevator (Pitch), **T** = Throttle, **R** = Rudder (Yaw). Changing this setting does not affect existing models.
+**Стандартний порядок каналів (Default Channel Order)** - порядок каналів за замовчуванням для нових моделей і екрана тренера. Букви означають: **A** = Елерон (Крен), **E** = Кермо висоти (Тангаж), **T** = Тяга, **R** = Кермо напряму (Рискання). Зміна цього параметра не впливає на наявні моделі.
 
-**Mode** - The stick mode that will be used for the transmitter. Defined by what actions the left stick takes. The options are:
+**Режим (Mode)** - режим стіку, який буде використовуватися для передавача. Визначається тим, які дії виконує лівий джойстик. Варіанти:
 
-<table><thead><tr><th width="181">Option</th><th width="148">Left stick  H</th><th width="149">Left stick  V</th><th width="133">Right stick H</th><th>Right stick V</th></tr></thead><tbody><tr><td>1: Left = Rud+Ele </td><td>Rudder (Yaw)</td><td>Elevator (Pitch)</td><td>Aileron (Roll)</td><td>Throttle</td></tr><tr><td>2: Left = Rud+Thr</td><td>Rudder (Yaw)</td><td>Throttle</td><td>Aileron (Roll)</td><td>Elevator (Pitch)</td></tr><tr><td>3: Left = Ail+Ele</td><td>Aileron (Roll)</td><td>Elevator (Pitch)</td><td>Rudder (Yaw)</td><td>Throttle</td></tr><tr><td>4: Left = Ail+Thr</td><td>Aileron (Roll)</td><td>Throttle</td><td>Rudder (Yaw)</td><td>Elevator (Pitch)</td></tr></tbody></table>
-
+<table><thead><tr><th width="181">Варіант</th><th width="148">Лівий стік гориз.</th><th width="149">Лівий стік верт.</th><th width="133">Правий стік гориз.</th><th>Правий стік верт.</th></tr></thead><tbody><tr><td>1: Лівий = Rud+Ele</td><td>Кермо напрямку (Рискання)</td><td>Кермо висоти (Тангаж)</td><td>Елерон (Крен)</td><td>Тяга</td></tr><tr><td>2: Лівий = Rud+Thr</td><td>Кермо напрямку (Рискання)</td><td>Тяга</td><td>Елерон (Крен)</td><td>Кермо висоти (Тангаж)</td></tr><tr><td>3: Лівий = Ail+Ele</td><td>Елерон (Крен)</td><td>Кермо висоти (Тангаж)</td><td>Кермо напрямку (Рискання)</td><td>Тяга</td></tr><tr><td>4: Лівий = Ail+Thr</td><td>Елерон (Крен)</td><td>Тяга</td><td>Кермо напрямку (Рискання)</td><td>Кермо висоти (Тангаж)</td></tr></tbody></table>
