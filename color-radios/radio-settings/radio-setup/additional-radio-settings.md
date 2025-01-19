@@ -1,130 +1,128 @@
-# Additional Radio settings
+# Додаткові налаштування апаратури
 
-Selecting one of the 6 buttons on the **Radio Setup** screen will take you to one of the additional setting screens below.
+Вибір однієї з 6 кнопок на екрані **Налаштування апаратури (Radio Setup)** перенесе вас на один з додаткових екранів налаштувань нижче.
 
-Many of the additional settings here are self-explanatory. Only those settings needing clarification will be mentioned below.
+Багато з додаткових налаштувань є зрозумілими самі по собі. Тільки ті налаштування, які потребують пояснення, будуть згадані нижче.
 
-### Sound
+### Звук (Sound)
 
-<figure><img src="../../../.gitbook/assets/Sound.png" alt=""><figcaption><p>Sound Options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Sound.png" alt=""><figcaption><p>Опції звуку</p></figcaption></figure>
 
-**Mode** - configures when to play sounds.
+**Режим (Mode)** - налаштовує, коли відтворювати звуки.
 
-* **All -** Beeps when the buttons are pressed and sounds are played when there are alerts or warnings.
-* **No Key -** No beeps when buttons are pressed or the scroll wheel is turned but does play sounds when there are alerts or warnings. Also plays sounds triggered by special functions.
-* **Alarm -** Only plays alarm or warning sounds. Also plays sounds triggered by special functions.
-* **Quiet -** No Beeps or sounds are played.&#x20;
+* **Усе (All) -** звук при натисканні кнопок та звуки при сповіщеннях або попередженнях.
+* **Без кнопок (No Key) -** без звуків при натисканні кнопок або повороті колеса прокрутки, але звуки відтворюються при сповіщеннях або попередженнях, а також звуки, активовані спеціальними функціями.
+* **Попередження (Alarm) -** відтворюються лише звуки тривоги або попереджень, а також звуки, активовані спеціальними функціями.
+* **Тиша (Quiet) -** без жодних звуків.
 
-**Volume**
+**Гучність (Volume)**
 
-The master volume for the radio.
+Основна гучність апаратури.
 
-**Wav volume**
+**Гучність Wav (Wav volume)**
 
-The volume for alerts and warnings and sounds that are played with the **Play track** special function
+Гучність для сповіщень, попереджень і звуків, які відтворюються за допомогою спеціальної функції Play track.
 
-**Background volume**
+**Фонова гучність (Background volume)**
 
-The volume for background .wav files (music) that are played with the **BGMusic** special function&#x20;
+Гучність для фонових .wav файлів (музики), які відтворюються за допомогою спеціальної функції BGMusic.
 
-### Variometer
+### Варіометр (Variometer)
 
-<figure><img src="../../../.gitbook/assets/variometer.png" alt=""><figcaption><p>Variometer options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/variometer.png" alt=""><figcaption><p>Налаштування варіометра</p></figcaption></figure>
 
-**Repeat Zero**
+**Повтор нуля (Repeat Zero)**
 
-The time before the tone repeats in milliseconds.
+Час, через який звук повторюється, вимірюється в мілісекундах.
 
 {% hint style="info" %}
-Note: In order for the variometer to function, it must be turned on via the **Vario** special or global function. See [Special Functions](../../model-settings/special-functions.md) for more information on how to configure this.
+**Примітка:** Для того щоб варіометр працював, його потрібно увімкнути через спеціальну функцію Vario або глобальну функцію. Докладніше про налаштування можна знайти в розділі [Спеціальні функції](../../model-settings/special-functions.md)
 {% endhint %}
 
-### Haptic
+### Вібрація (Haptic)
 
-<figure><img src="../../../.gitbook/assets/haptic.png" alt=""><figcaption><p>Haptic (vibration) options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/haptic.png" alt=""><figcaption><p>Екран налаштування вібрації</p></figcaption></figure>
 
-**Mode** - configures when the radio vibrates.
+**Режим (Mode)** - режими відтворення вібрацій.
 
-* **All -** Vibrates when the buttons are pressed and when there are alerts or warnings.
-* **No Key -** No vibrations when buttons are the pressed or scroll wheel is turned but does vibrate when there are alerts or warnings.&#x20;
-* **Alarm -** Only vibrates for alarms or warning sounds.
-* **Quiet -** No vibrations are made.
+* **Усе (All) -** вібрує при натисканні кнопок і коли є сповіщення або попередження.
+* **Без кнопок (No Key) -** не вібрує при натисканні кнопок або обертанні колеса прокрутки, але вібрує при сповіщеннях або попередженнях.
+* **Попередження (Alarm) -** вібрує лише для звуків тривоги або попереджень.
+* **Тиша (Quiet) -** вібрації не відтворюються.
 
-### Alarms
+### Тривоги (Alarms)
 
-<figure><img src="../../../.gitbook/assets/alarms.png" alt=""><figcaption><p>Alarm options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/alarms.png" alt=""><figcaption><p>Екран налаштувань тривог</p></figcaption></figure>
 
-#### Sound Off
+#### Звук вимкнено (Sound Off)
 
-An "alarms disabled" visual warning is displayed when the transmitter is turned on if the sound mode is set to quiet.
+При включенні передавача відображається візуальне попередження "звуки вимкнені", якщо режим звуку встановлено на тихий.
 
-#### Check RSSI on Shutdown
+#### Перевірка RSSI при вимкненні (Check RSSI on Shutdown)
 
-Checks if a receiver is still connected to the radio on attempted shutdown. Makes a audio and visual alert if one is detected.&#x20;
+Перевіряє, чи підключений приймач до апаратури при спробі вимкнення. Виводиться аудіо та візуальне попередження, якщо приймач виявлений.
 
-### Backlight
+### Підсвітка (Backlight)
 
-<figure><img src="../../../.gitbook/assets/backlight.png" alt=""><figcaption><p>Backlight options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/backlight.png" alt=""><figcaption><p>Налаштування підсвітки</p></figcaption></figure>
 
-**Mode**
+**Режим (Mode)**
 
-* **Off** – Always off.
-* **Keys** – Turns on when buttons are pressed.
-* **Ctrl** – Turns on when sticks, switches, and knobs are used.
-* **Both** – Turns on when buttons, sticks, switches, and knobs are used.
-* **ON** – Always on.
+* **Вимк. (Off)** – завжди вимкнено.
+* **Кнопки (Keys)** – вмикається, коли натискаються кнопки.
+* **Управл. (Ctrl)** – вмикається, коли використовуються стіки, перемикачі та потенціометри.
+* **Обидва (Both)** – вмикається, коли натискаються кнопки, використовуються стіки, перемикачі та потенціометри.
+* **Увімк. (ON)** – завжди увімкнено.
 
-#### Time&#x20;
+#### Час (Time)
 
-The length in seconds that the backlight is on. The minimum value is 5 seconds. The maximum value is 600 seconds.
+Тривалість у секундах, протягом якої підсвітка буде включена. Мінімальне значення – 5 секунд. Максимальне значення – 600 секунд.
 
-#### Alarm
+#### Тривога (Alarm)
 
-The backlight turns on when there are alarms or warnings.
+Підсвітка вмикається, коли є тривоги або попередження.
 
 ### GPS
 
-<figure><img src="../../../.gitbook/assets/gps.png" alt=""><figcaption><p>GPS options</p></figcaption></figure>
-
 {% hint style="info" %}
-The GPS configuration settings are only for when a GPS has been installed on the radio, not the model's GPS.
+Налаштування конфігурації GPS застосовуються лише тоді, коли GPS встановлений на апаратурі, а не моделі.
 {% endhint %}
 
-#### Time Zone:
+#### Часовий пояс (Time Zone):
 
-The time offset from UTC where the radio is being used. Can be configured in 15 minute increments.
+Зміщення часу від UTC, де використовується апаратура. Можна налаштувати з кроком 15 хвилин.
 
-#### Adjust RTC
+#### Корекція RTC (Adjust RTC)
 
-Adjust the transmitter's real-time clock to match the time determined by the GPS.
+Коригує годинник реального часу апаратури відповідно до часу, визначеного за допомогою GPS.
 
-#### Coordinate Format
+#### Формат координат (Coordinate Format)
 
-The GPS coordinate format that will be displayed.
+Формат координат GPS, який буде відображатися.
 
-### Enabled Features
+**Увімкнення розширених функцій**
 
-<figure><img src="../../../.gitbook/assets/EnabledFeatures.png" alt=""><figcaption><p>Enabled Reatures</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/EnabledFeatures.png" alt=""><figcaption><p>Увімкнення розширених функцій</p></figcaption></figure>
 
-The **Enabled Features** section of Radio Setup allows you to configure the _**Global**_ _**settings**_ for which tabs are visible in the Radio Setup and Model Settings area of EdgeTX. The configuration setting for the active model will show to the right of the toggle switch. The model configuration will override the global configuration.
+Розділ **Увімкнення розширених функцій** в налаштуваннях апаратури дозволяє налаштувати глобальні параметри видимості вкладок в налаштуваннях апаратури та моделей в EdgeTX. Налаштування для активної моделі буде відображатися праворуч від перемикача. Налаштування моделі перекривають глобальні налаштування.
 
 {% hint style="info" %}
-_**Note:**_ Turning off a tab only hides the tab and does not change the items already configured in that tab.
+**Примітка:** Вимкнення вкладки лише приховує її, але не змінює вже налаштовані параметри в цій вкладці.
 
-**EXCEPTION:** Turning off the Global / Special Functions tab will disable configured global / special functions for that model.
+**ВИКЛЮЧЕННЯ:** Вимкнення вкладки Global / Special Functions вимикає налаштовані глобальні / спеціальні функції для цієї моделі.
 {% endhint %}
 
-### Manage Models
+### Управління моделями (Manage Models)
 
-<figure><img src="../../../.gitbook/assets/RSManageModels.png" alt=""><figcaption><p>Manage Models settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/RSManageModels.png" alt=""><figcaption><p>Екран Управління моделями</p></figcaption></figure>
 
-**Model quick select** - Affects Manage Model screen. Both options require you first to select the desired model using the scroll wheel or short tap.
+**Швидкий вибір моделі (Model quick select)** - впливає на екран управління моделями. Обидва варіанти вимагають попереднього вибору бажаної моделі за допомогою коліщатка або короткого натискання.
 
-* When OFF: short/long tap (short/long ENTER) on the selected model will show the menu, where you can "Select model" to set it to active.
-* When ON: short tap (short ENTER) on the selected model will set it active immediately. To activate the menu, make a long tap or long ENTER.
+* **Коли ВИМКНЕНО**: коротке/довге натискання (короткий/довгий ENTER) на вибраній моделі відкриває меню, де можна "Вибрати модель", щоб зробити її активною.
+* **Коли УВІМКНЕНО**: коротке натискання (короткий ENTER) зробить модель активною відразу. Для активації меню необхідно зробити довге натискання або довгий ENTER.
 
-**Label select** - '**Multi select**' or '**Single select**' (Multi select is the default). If Single select is chosen then only a single label can be selected.
+**Вибір мітки (Label select)** - **Множинний вибір (Multi select)** або **Одиничний вибір (Single select)** (за замовчуванням - множинний вибір). Якщо обрано одиничний вибір, то можна вибрати лише одну мітку.
 
-**Label matching** - '**Match all**' or '**Match any**' (Match all is the default). Match all is the current logic - only models having all selected labels are shown. Match any will show models with any of the selected labels.
+**Збіг міток (Label matching)** - **Збіг усіх (Match all)** або **Збіг будь-якої (Match any)** (за замовчуванням - Збіг усіх). Збіг усіх є поточною логікою - показуються лише моделі з усіма вибраними мітками. Збіг будь-якої показуватиме моделі хоча б однією із міток.
 
-**Favorites matching** - Only available when '**Match any'** is selected for Label matching. Options are '**Must match**' and '**Optional match**' (Must match is the default). Only applies when 'Favorites' is in one of the selected labels. If 'Must match' is selected then only shows models that have Favorites AND the other selections. If 'Optional match' is selected then models that match Favorites OR any of the other labels are shown.
+**Збіг обраних (Favorites matching)** - доступне лише, коли вибрано **Збіг будь-якої (Match any)** для збігу ярликів. Варіанти: **Повинно збігатися (Must match)** та **Додатковий збіг (Optional match)** (за замовчуванням - Повинно збігатися). Застосовується лише тоді, коли **Обрані (Favorites)** є одним із вибраних ярликів. Якщо вибрано **Повинно збігатися (Must match)**, то показуються тільки ті моделі, які мають **Обрані (Favorites)** і всі інші вибрані ярлики. Якщо вибрано **Додатковий збіг (Optional match)**, то показуються моделі, які мають **Обрані (Favorites)** АБО будь-яку з інших міток.
