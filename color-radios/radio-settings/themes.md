@@ -1,28 +1,27 @@
-# Themes
+# Теми
 
-<figure><img src="../../.gitbook/assets/themes.png" alt=""><figcaption><p>Themes Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/themes.png" alt=""><figcaption><p><strong>Екран Теми</strong></p></figcaption></figure>
 
-The **Theme** screen allows you to apply different colored themes to your radio. By default, the EdgeTX SD card comes with the themes shown above. Long pressing on a selected theme will give you the following options:
+Екран **Теми** дозволяє застосовувати різні кольорові теми до вашої радіоапаратури. За замовчуванням SD картка EdgeTX постачається з темами, наведеними вище. Довге натискання на обрану тему надасть наступні опції:
 
-* **Set Active** - Sets the selected theme as the active theme.
-* **Edit** - Opens the theme editor to edit the selected theme.
-* **Duplicate** - Makes a copy of the selected theme.
-* **Delete** - Deletes the selected theme.
+* **Активувати (Set Active)** - встановлює обрану тему як активну.
+* **Редагувати (Edit)** - відкриває редактор тем для редагування обраної теми.
+* **Створити копію (Duplicate)** - створює копію обраної теми.
+* **Видалити (Delete)** - видаляє обрану тему.
 
-<figure><img src="../../.gitbook/assets/themes2.png" alt=""><figcaption><p>Edit Theme Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/themes2.png" alt=""><figcaption><p>Екран Редагування теми</p></figcaption></figure>
 
-Selecting the **Details** button will open the Edit Theme Details screen. Here you can edit the name, author and description of the them.
+Вибір кнопки **Деталі (Details)** відкриє екран **Редагування деталей теми (Edit Theme Details)**. Тут ви можете редагувати назву, автора та опис теми.
 
-<figure><img src="../../.gitbook/assets/themes4.png" alt=""><figcaption><p>Edit Theme Details Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/themes4.png" alt=""><figcaption><p>Екран Редагування деталей теми</p></figcaption></figure>
 
-To edit a theme in the **Theme Editor**, select the color variable from the list on the left side of the screen. Once you do, the **Edit Color** screen will be shown.&#x20;
+Щоб редагувати тему в **Редакторі тем**, виберіть колірну змінну зі списку зліва на екрані. Після цього відкриється екран **Редагування кольору (Edit Color)**.
 
-<figure><img src="../../.gitbook/assets/themes3 (1).jpg" alt=""><figcaption><p>Edit Color Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/themes3 (1).jpg" alt=""><figcaption><p>Екран Редагування кольору</p></figcaption></figure>
 
-Select the color using either the color scales on the left side of the screen. You can choose between the RGB and HSV color scales with the buttons at the upper right side of the screen.&#x20;
-
-Once you have your desired color, press the theme logo in the upper left corner to go back to the **Edit Theme** screen to select another color variable to edit. Once you are finished, press the theme logo to exit the Theme Editor and save your changes.
+Виберіть колір, використовуючи шкали кольорів зліва на екрані. Ви можете вибирати між шкалами кольорів **RGB** та **HSV**, використовуючи кнопки у верхньому правому куті екрана.\
+Після того, як ви вибрали бажаний колір, натисніть на логотип теми в верхньому лівому куті, щоб повернутися до екрана **Редагування теми** та вибрати іншу колірну змінну для редагування. Коли завершите, натисніть на логотип теми, щоб вийти з **Редактора тем** та зберегти ваші зміни.
 
 {% hint style="info" %}
-You can find more user-created themes and additional theme creation resources here: [https://github.com/EdgeTX/themes](https://github.com/EdgeTX/themes)
+Більше тем, створених користувачами, та додаткові ресурси для створення тем можна знайти тут: [https://github.com/EdgeTX/themes](https://github.com/EdgeTX/themes)
 {% endhint %}
