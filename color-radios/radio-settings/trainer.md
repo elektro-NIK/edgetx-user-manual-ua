@@ -1,28 +1,28 @@
-# Trainer
+# Інструктор
 
-The **Trainer** screen in Radio Settings is used to configure how the radio in Master mode will handle the signals from the radio in Slave mode.
+Екран **Інструктора** в налаштуваннях радіо використовується для конфігурації того, як радіоапаратура в режимі **Майстра** оброблятиме сигнали від радіоапаратури в режимі **Учня**.
 
-<figure><img src="../../.gitbook/assets/trainer2.png" alt=""><figcaption><p>Trainer Screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trainer2.png" alt=""><figcaption><p>Екран тренера</p></figcaption></figure>
 
-For each of the four main control inputs (Ail, Ele, Thr, Rud), the following options can be configured (for each row, from left to right).
+Для кожного з чотирьох основних контрольних входів (Ail, Ele, Thr, Rud) можна налаштувати такі опції (для кожного рядка, зліва направо):
 
-* **Mode -** How the radio in Master mode will handle the signals from the radio in Slave mode.&#x20;
-  * **OFF** - Stick values from the radio in Master mode will be used - no input from the radio in Slave mode.
-  * **Add -** Adds the stick values from both the radios in Master and Slave modes.
-  * **Replace -** Replaces the stick values from the radio in Master mode with the stick values from the radio in Slave mode. (Default)
-* **Source channel** - The channel from the radio in Slave mode that is mapped the control input.
-* **Weight** - Percentage of stick travel to use of the radio in Slave mode. Use negative values to change the stick direction.
-* **Cal (calibrate)**- Sets the center stick value of the radio in Slave mode.
-* **Multiplier** - This value changes the weight of all the sticks together.&#x20;
+* **Режим (Mode) -** як апаратура в режимі **Майстра (Master)** оброблятиме сигнали від апаратури в режимі **Підлеглого (Slave)**.
+  * **ВИМК. (OFF)** - будуть використовуватися значення стіків з радіо в режимі **Майстра (Master)** - без введення від радіоапаратури в режимі **Підлеглого (Slave)**.
+  * **Додати (Add) -** додає значення стіків з обох радіоапаратурах в режимах **Майстра (Master)** та **Підлеглий (Slave)**.
+  * **Замінити (Replace) -** заміщує значення стіків з радіоапаратури в режимі **Майстра (Master)** значеннями стіків з радіоапаратури в режимі **Підлеглого (Slave)**. (За замовчуванням)
+* **Канал джерела (Source channel)** - канал з радіо в режимі **Підлеглого (Slave)**, який прив'язаний до контрольного входу.
+* **Вага (Weight)** - відсоток ходу стіку, що використовується з радіо в режимі **Підлеглого (Slave)**. Використовуйте від'ємні значення для зміни напрямку стіку.
+* **Калібрувати (Cal (calibrate))** - встановлює значення центрального стіку для радіо в режимі **Підлеглого (Slave)**.
+* **Множник (Multiplier)** - це значення змінює вагу всіх стіків разом.
 
 {% hint style="info" %}
-The trim from the radio in Master mode is usually used. Set the trims on the radio in Slave mode to their center.
+Зазвичай використовується тример з радіоапаратури в режимі **Майстра (Master)**. Встановіть тримери на радіоапаратурі в режимі **Підлеглого (Slave)** в їхнє центральне положення.
 {% endhint %}
 
 {% hint style="info" %}
-The radio in Master mode is the one that gets bound to the model receiver.
+Радіоапаратура в режимі **Майстра (Master)** - це те, яким чином прив'язується до приймача моделі.
 {% endhint %}
 
 {% hint style="info" %}
-A virtual trainer switch (**Tnr**) can be selected as switch to activate a special function or curve. The switch is ON when the trainer link is active.
+Віртуальний перемикач **Тренера** **(Tnr)** можна вибрати як перемикач для активації спеціальної функції або кривої. Перемикач увімкнений, коли зв'язок з інструктором активний.
 {% endhint %}
