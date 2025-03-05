@@ -12,7 +12,7 @@
 
  
 
-<figure><img src="../../.gitbook/assets/BWScreen6 (1).png" alt=""><figcaption><p>Екран 2 (Surafce Radios)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BWScreen6 (1).png" alt=""><figcaption><p>Екран 2 (апаратура для авто)</p></figcaption></figure>
 
 </div>
 
