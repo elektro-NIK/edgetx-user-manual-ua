@@ -104,7 +104,7 @@
 
 **Звук запуску** - вмикає/вимикає звук запуску.
 
-**Pwr On затримка** - The delay between when the power button is pushed and when the radio turns on. The options are: **0s, 1s, 2s, 3s**
+**Pwr On затримка** - затримка між натисканням кнопки живлення і моментом увімкнення апаратури. Варіанти: **0s, 1s, 2s, 3s**
 
 **Pwr Off затримка** - The delay between when the power button is pushed and when the radio shuts off. The options are: **0s, 1s, 2s, 3s, 4**s. _It is recommended to set at least a 1s delay in order to prevent the radio from being shut off in the case of an accidental button press._
 
