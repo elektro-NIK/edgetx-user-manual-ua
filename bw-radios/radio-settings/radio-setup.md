@@ -109,43 +109,45 @@
 
 **Pwr On затримка** - затримка між натисканням кнопки живлення і моментом увімкнення апаратури. Варіанти: **0s, 1s, 2s, 3s**
 
-**Pwr Off затримка** - The delay between when the power button is pushed and when the radio shuts off. The options are: **0s, 1s, 2s, 3s, 4**s. _It is recommended to set at least a 1s delay in order to prevent the radio from being shut off in the case of an accidental button press._
+**Pwr Off затримка** - затримка між натисканням кнопки живлення і моментом вимкнення апаратури. Варіанти: **0s, 1s, 2s, 3s, 4**s. _Рекомендується встановити щонайменше затримку 1s, щоб запобігти відключенню радіоапаратури при випадковому натисканні кнопки._
 
 **Power Auto Off** - If enabled (not enabled by default), if the handset is left inactive, with no trainer or telemetry link active, it will automatically turn off after the configured duration. You can select from **0** (disabled) up to **255** (minutes).
 
 **Power ON/OFF Haptic** - If enabled (enabled by default), after the power on and power off delays have been served, there will be a haptic vibration to indicate the radio is powering on or off.&#x20;
 
-**ID користувача** (select transmitters) -  Custom registration ID used only for users with ISRM internal RF modules, or on transmitters that support FrSky ACCESS external modules. If not configured manually, a random value will be used.
+**ID користувача** - спеціальний реєстраційний ідентифікатор, що використовується лише для користувачів з модулями ISRM or on transmitters that support FrSky ACCESS external modules. If not configured manually, a random value will be used.
 
 <figure><img src="../../.gitbook/assets/bw128_radio_setup_gps.png" alt=""><figcaption><p>GPS Settings</p></figcaption></figure>
 
 ### **GPS**
 
-**Часовий пояс** - The time offset from UTC where the radio is being used. Can be configured in 15 minute increments.
+**Часовий пояс** - зсув часу відносно UTC. Може бути налаштований з кроком 15 хвилин.
 
-**Підлашт. RTC** - Adjust the transmitter's real-time clock to match the time determined by the GPS.
+<figure><img src="../../.gitbook/assets/bwRadioSetup8.png" alt=""><figcaption></figcaption></figure>
 
-**GPS формат** - The GPS coordinate format that will be displayed.
+**Підлашт. RTC** - підлаштовувати годинник реального часу, щоб відповідати часу, визначеному за допомогою GPS.
+
+**GPS формат** - формат, в якому будуть відображатися координати GPS.
 
 <figure><img src="../../.gitbook/assets/bw128_radio_setup_misc2.png" alt=""><figcaption></figcaption></figure>
 
 **Misc Settings**
 
-**Код країни** - Used by some RF modules to ensure adherence to local regulatory RF requirements. Options are **America, Japan, Europe.**
+**Код країни** - використовується деякими радіочастотними модулями для забезпечення дотримання місцевих нормативних радіочастотних вимог. Варіанти - **America, Japan, Europe.**
 
-**Мова голосу** - Language for the voice pack. This setting and the voice pack folder on the SD card must match for the sounds to be played.
+**Мова голосу** - мова голосового пакета. Цей параметр і папка голосового пакета на SD картці мають збігатися для відтворення звуків.
 
-**Одиниці** - Units of measure. Options are **metric** or **imperial**.
+**Одиниці** - одиниці вимірювання. Варіанти: **метрична (metric)** або **британська (imperial)**.
 
-**PPM одиниці** - Level of accuracy for PPM values are displayed. Options are **0.-** , **0.0** or **us** (microseconds).
+**PPM одиниці** - рівень точності відображення значень PPM. Варіанти: **0.-** (цілі), **0.0** (десяткові) або **us** (мікросекунди).
 
-**Затримка відтвор.** (switch middle position) - The minimum time in milliseconds a switch must be in the middle position before a special function will get activated. This is used to prevent the middle position from being activated on a three-position switch when switching from low position to high position.
+**Затримка відтвор.** (switch middle position) - мінімальний час у мілісекундах, протягом якого перемикач має бути в середньому положенні, перш ніж активується спеціальна функція. Це використовується для запобігання активації середнього положення на трипозиційному перемикачі під час перемикання з нижнього положення на верхнє.
 
 <figure><img src="../../.gitbook/assets/bwRadioSetup9.png" alt=""><figcaption></figcaption></figure>
 
-**Режим USB** - Sets the default action when a USB cable is plugged into the USB data port and the radio is powered on. Options are: **Ask** (ask on connect, the default), **Joyst** (Joystick) , **SDCard** (Storage), and **Serial**.
+**Режим USB** - встановлює дію за замовчуванням, коли USB-кабель під'єднано до порту USB і радіоапаратура увімкнена. Варіанти: **Запитати (Ask) (ask on connect, the default)**, **Джойстик (Joystick)**, **Накопичувач (Storage)** та **Послідовний (Serial)**.
 
-**Порядок каналів** - The default channel order for new models and the trainer screen. The letters stand for: **A** = Aileron, **E** = Elevator, **T** = Throttle, **R** = Rudder. Changing this setting does not affect existing models. On Surface Radios, the letters stand for **S**=Steering, **T**=Throttle.
+**Порядок каналів** - порядок каналів за замовчуванням для нових моделей і екрана тренера. Букви означають: **A** = Елерон (Крен), **E** = Кермо висоти (Тангаж), **T** = Тяга, **R** = Кермо напряму (Рискання). Зміна цього параметра не впливає на наявні моделі. На автомобільних апаратурах літери відповідають за **S** = Кермо, **T** = Газ.
 
 **ОбКодРеж** (Режим обертального енкодера) (select radios)- Sets the direction of the rotary encode for the Roller. The options are:
 
