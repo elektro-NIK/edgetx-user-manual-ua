@@ -149,28 +149,30 @@
 
 **Порядок каналів** - порядок каналів за замовчуванням для нових моделей і екрана тренера. Букви означають: **A** = Елерон (Крен), **E** = Кермо висоти (Тангаж), **T** = Тяга, **R** = Кермо напряму (Рискання). Зміна цього параметра не впливає на наявні моделі. На автомобільних апаратурах літери відповідають за **S** = Кермо, **T** = Газ.
 
-**ОбКодРеж** (Режим обертального енкодера) (select radios)- Sets the direction of the rotary encode for the Roller. The options are:
+**ОбКодРеж** (Режим обертального енкодера) (select radios) - встановлює напрямок обертального енкодера для Ролера. Варіанти:
 
-* **Normal** (default)
-* **Inverted** = Reverses the direction of the roller
-* **V-I H-N** = Vertical Inverted, Horizontal Normal
-* **V-I H-A** = Vertical Inverted, Horizontal Alternate (Inverted)
-* **V-N E-I** = Vertical Normal, Edit Inverted (inverted when editing text)
+* **Нормальний (Normal)** = за замовчуванням
+* **Інвертовано (Inverted)** = змінює напрямок на протилежний
+* **V-I H-N** = інвертовано по-вертикалі, нормально по-горизонталі
+* **V-I H-A** = інвертовано по-вертикалі, інвертовано по-горизонталі (Alternate)
+* **V-N E-I** = нормально по-вертикалі, інвертовано під час редагування тексту
 
-**Режим** - The stick mode that will be used for the transmitter. Defined by what actions the left stick takes. The options are:
+**Режим** - режим стіків, який буде використовуватися для передавача. Визначається тим, які дії на лівому стікові. Варіанти:
 
-<table><thead><tr><th width="181">Option</th><th width="168">Left stick H</th><th width="149">Left stick V</th><th width="133">Right stick H</th><th>Right stick V</th></tr></thead><tbody><tr><td>1: Left = Rud+Ele</td><td>Rudder (Yaw)</td><td>Elevator (Pitch)</td><td>Aileron (Roll)</td><td>Throttle</td></tr><tr><td>2: Left = Rud+Thr</td><td>Rudder (Yaw)</td><td>Throttle</td><td>Aileron (Roll)</td><td>Elevator (Pitch)</td></tr><tr><td>3: Left = Ail+Ele</td><td>Aileron (Roll)</td><td>Elevator (Pitch)</td><td>Rudder (Yaw)</td><td>Throttle</td></tr><tr><td>4: Left = Ail+Thr</td><td>Aileron (Roll)</td><td>Throttle</td><td>Rudder (Yaw)</td><td>Elevator (Pitch)</td></tr></tbody></table>
+<table><thead><tr><th width="181">Варіант</th><th width="168">Лівий стік гориз.</th><th width="149">Лівий стік верт.</th><th width="133">Правий стік гориз.</th><th>Правий стік верт.</th></tr></thead><tbody><tr><td>1: Лівий = Rud+Ele</td><td>Кермо напрямку (Рискання)</td><td>Кермо висоти (Тангаж)</td><td>Елерон (Крен)</td><td>Тяга</td></tr><tr><td>2: Лівий = Rud+Thr</td><td>Кермо напрямку (Рискання)</td><td>Тяга</td><td>Елерон (Крен)</td><td>Кермо висоти (Тангаж)</td></tr><tr><td>3: Лівий = Ail+Ele</td><td>Елерон (Крен)</td><td>Кермо висоти (Тангаж)</td><td>Кермо напрямку (Рискання)</td><td>Тяга</td></tr><tr><td>4: Лівий = Ail+Thr</td><td>Елерон (Крен)</td><td>Тяга</td><td>Кермо напрямку (Рискання)</td><td>Кермо висоти (Тангаж)</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/bw128_radio_setup_enabled_features.png" alt=""><figcaption><p>Enabled Features</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bw128_radio_setup_enabled_features.png" alt=""><figcaption><p>Увімкнені функції</p></figcaption></figure>
 
-### Enabled Features
+### Увімкнені функції
 
 The **Enabled Features** section of Radio Setup allows you to configure the _**Global**_ _**settings**_ for which tabs are visible in the Radio Setup and Model Settings area of EdgeTX. The configuration setting for the active model will show to the right of the checkbox. The model configuration will override the global configuration (which will be indicated by the "Off" and "On" shown next to any model level overrides).&#x20;
 
-{% hint style="info" %}
-_**Note:**_ Turning off a tab only hides the tab and does not change the items already configured in that tab.
+У пункті **Увімкнені функцій** розділу **Налаштування апаратури** ви можете налаштувати _**Глобальні параметри**_, для яких видно вкладки в області **Налаштувань апаратури** та **Параметрах моделі** EdgeTX. Налаштування конфігурації для активної моделі відображатиметься праворуч від прапорця. Конфігурація моделі замінить глобальну конфігурацію.
 
-**EXCEPTION:** Turning off the Global / Special Functions tab will disable configured global / special functions for that model.
+{% hint style="info" %}
+_**Примітка:**_ вимкнення вкладки приховує лише вкладку і не змінює елементи, які вже налаштовані на цій вкладці.
+
+**ВИНЯТОК**: вимкнення вкладки Глобальних / Спеціальних функції вимкне налаштовані глобальні / спеціальні функції для цієї моделі.
 {% endhint %}
 
-Pressing the **\[PAGE>]** button will take you to the **Global Functions** screen.
+Натискання кнопки **\[PAGE>]** переведе вас на екран **Глобальних функцій**.
