@@ -90,7 +90,7 @@ SD-картка EdgeTX буде змонтована як USB-накопичув
 
 <figure><img src="../.gitbook/assets/update11.png" alt=""><figcaption></figcaption></figure>
 
-Ви побачите всі ваші моделі з OpenTX в EdgeTX Companion. Натисніть кнопку **Write models and Settings to Radio**. Вам буде повідомлено, що це перезапише всі моделі на вашій апаратурі. Натисніть **Yes**.**&#x20;
+Ви побачите всі ваші моделі з OpenTX в EdgeTX Companion. Натисніть кнопку **Write models and Settings to Radio**. Вам буде повідомлено, що це перезапише всі моделі на вашій апаратурі. Натисніть **Yes**.
 
 <figure><img src="../.gitbook/assets/update12.png" alt=""><figcaption></figcaption></figure>
 
