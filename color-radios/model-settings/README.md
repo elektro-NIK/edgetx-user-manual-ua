@@ -16,5 +16,5 @@
 * [Глобальні змінні](global-variables.md)
 * [Логічні перемикачі](logical-switches.md)
 * [Спеціальні функції](special-functions.md)
-* Custom Scripts
+* Користувацькі скрипти
 * [Телеметрія](telemetry/)
