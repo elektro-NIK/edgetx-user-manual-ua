@@ -20,5 +20,5 @@
 * **Master / Multi** - Режим Master за допомогою додаткового зовнішнього модуля Multi-протоколу для з'єднання. Для додаткової інформації про це налаштування зверніться до інструкції [set-up-wireless-trainer-with-mpm.md](../../../edgetx-how-to/set-up-wireless-trainer-with-mpm.md "mention")
 
 {% hint style="info" %}
-Додаткові налаштування для режиму інструктора можна знайти в налаштуваннях апаратури[trainer.md](../../radio-settings/trainer.md "mention")
+Додаткові налаштування для режиму інструктора можна знайти в налаштуваннях апаратури [trainer.md](../../radio-settings/trainer.md "mention")
 {% endhint %}
