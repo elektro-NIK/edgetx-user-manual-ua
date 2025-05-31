@@ -35,7 +35,6 @@
 * **Особистий (Personal)** – цей параметр дозволить вам вибрати один зі збережених шаблонів моделі, а потім створити його копію як нову модель.
 * **SoarETX** - This will display pre-configured model templates for radio-controlled model sailplanes.
 * **SoarETX\_v2** - This will display the more updated v2 of the pre-configured model templates for radio-controlled model sailplanes.
-* Тут також відображатимуться будь-які додаткові папки, які ви створили в **TEMPLATES** на SD-карті. Якщо будь-яка з наведених вище кнопок не відображається, пакет SD-карт не встановлено або оновлено неправильно.
 
 ### Мітки моделі
 
