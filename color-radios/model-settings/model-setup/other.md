@@ -1,14 +1,13 @@
-# Other
+# Інше
 
-### ADC Filter
+### Фільтр АЦП (ADC Filter)
 
-Enables/disables the ADC filter for this model. The _**global**_ option will take the value designated in the radio settings, which is on by default.\
-
+Вмикає/вимикає фільтр АЦП для цієї моделі. **Глобальний** параметр прийматиме значення, вказане в налаштуваннях радіоапаратури, які ввімкнено за замовчуванням.
 
 {% hint style="info" %}
-The ADC filter is a filter for the proportional channels (sticks, pots, sliders), smoothing out smaller fast movements that occur due to noise in the system electronics. Normally, this filter **should be disabled** for models with flight controllers.
+Фільтр АЦП – це фільтр для пропорційних каналів (стіки, потенціометри, слайдери), який згладжує невеликі швидкі коливання, що виникають через шуми у електроніці. Зазвичай цей фільтр **слід вимкнути** для моделей з контролерами польоту.
 {% endhint %}
 
-### **Beep when centered**
+### **Сигнал в центрі (Beep when centered)**
 
-Allows you to turn on / off the center beep function for the individual sticks, pots, and sliders by selecting them (yellow).&#x20;
+Дозволяє вмикати/вимикати функцію центрального звукового сигналу для окремих стіків, потенціометрів та слайдерів шляхом їх вибору (жовтий).

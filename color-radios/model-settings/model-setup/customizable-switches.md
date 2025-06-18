@@ -1,4 +1,4 @@
-# Customizable Switches
+# Користувацькі перемикачі
 
 A traditional 6 position switch/control is either a group of 6 switches that work together (where only one can be active at one time) or a single rotary switch that has six physical positions (detents).  Some newer generation radios provide the "Customizable Switch" capability, which allows you to define type, grouping and startup state of the switches. Physically, they look like a regular 6 position switch which you will see on older handset designs, but they are much, _**much**_, more flexible.
 
