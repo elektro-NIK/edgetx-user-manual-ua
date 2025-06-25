@@ -33,7 +33,7 @@
 
 **Фонова гучн. (Bg volume)** - гучність фонових файлів .wav (музика), які відтворюються за допомогою спеціальної функції **Фон.Муз. (BGMusic)**.
 
-**Startup sound -** When enabled (default setting), plays the "Welcome to EdgeTX" sound on radio startup. The relevant file is located in `/SOUNDS/??/SYSTEM/hello.wav` (where \`??\` represents the two letter directory for your sound pack).&#x20;
+**Startup sound -** When enabled (default setting), plays the "Welcome to EdgeTX" sound on radio startup. The relevant file is located in `/SOUNDS/??/SYSTEM/hello.wav` (where \`??\` represents the two letter directory for your sound pack).
 
 <figure><img src="../../.gitbook/assets/bwRadioSetup3 (1).png" alt=""><figcaption><p>Налаштування варіометра</p></figcaption></figure>
 
@@ -70,12 +70,7 @@
 
 ### Тривоги (Alarms)
 
-**Batt розрядж. (Battery Low)** - напруга, щоб викликати сигнал про низький рівень батареї.
-**Бездіяльність (Inactivity)** - час для активації попередження про неактивність.
-**Пам'ять закінч. (Memory low)** - увімкнути/вимкнути попередження про брак пам’яті.
-**Звук вимк. (Sound Off)** - візуальне попередження "сигнали вимкнені" відображається, коли передавач увімкнено, якщо режим звуку встановлено на беззвучний.
-**RSSI вимк. (RSSI Shutdown)** - перевіряє, чи приймач все ще підключений до апаратури під час спроби вимкнення. У разі виявлення видає звукове та візуальне сповіщення.
-**Trainer Shutdown** - Checks if there is a trainer signal still active on attempted shutdown. Makes an audio and visual alert if one is detected.&#x20;
+**Batt розрядж. (Battery Low)** - напруга, щоб викликати сигнал про низький рівень батареї.**Бездіяльність (Inactivity)** - час для активації попередження про неактивність.**Пам'ять закінч. (Memory low)** - увімкнути/вимкнути попередження про брак пам’яті.**Звук вимк. (Sound Off)** - візуальне попередження "сигнали вимкнені" відображається, коли передавач увімкнено, якщо режим звуку встановлено на беззвучний.**RSSI вимк. (RSSI Shutdown)** - перевіряє, чи приймач все ще підключений до апаратури під час спроби вимкнення. У разі виявлення видає звукове та візуальне сповіщення.**Trainer Shutdown** - Checks if there is a trainer signal still active on attempted shutdown. Makes an audio and visual alert if one is detected.
 
 <figure><img src="../../.gitbook/assets/bw128_backlight.png" alt=""><figcaption><p>Налаштування підсвічування</p></figcaption></figure>
 
@@ -113,7 +108,7 @@
 
 **Power Auto Off** - If enabled (not enabled by default), if the handset is left inactive, with no trainer or telemetry link active, it will automatically turn off after the configured duration. You can select from **0** (disabled) up to **255** (minutes).
 
-**Power ON/OFF Haptic** - If enabled (enabled by default), after the power on and power off delays have been served, there will be a haptic vibration to indicate the radio is powering on or off.&#x20;
+**Power ON/OFF Haptic** - If enabled (enabled by default), after the power on and power off delays have been served, there will be a haptic vibration to indicate the radio is powering on or off.
 
 **ID користув. (Owner ID)** - спеціальний реєстраційний ідентифікатор, що використовується лише для користувачів з модулями ISRM or on transmitters that support FrSky ACCESS external modules. If not configured manually, a random value will be used.
 
