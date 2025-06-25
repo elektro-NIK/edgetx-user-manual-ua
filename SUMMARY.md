@@ -36,7 +36,7 @@
     * [Глобальні змінні](color-radios/model-settings/global-variables.md)
     * [Логічні перемикачі](color-radios/model-settings/logical-switches.md)
     * [Спеціальні функції](color-radios/model-settings/special-functions.md)
-    * [Custom Scripts](color-radios/model-settings/custom-scripts.md)
+    * [Користувацькі скрипти](color-radios/model-settings/custom-scripts.md)
     * [Телеметрія](color-radios/model-settings/telemetry/README.md)
       * [Опції налаштування сенсорів](color-radios/model-settings/telemetry/sensor-configuration-options.md)
       * [Звичайні телеметричні сенсори](color-radios/model-settings/telemetry/common-telemetry-sensors.md)

@@ -1,19 +1,19 @@
-# Custom Scripts
+# Користувацькі скрипти
 
-<figure><img src="../../.gitbook/assets/color_model_custom-lua.png" alt=""><figcaption><p>Custom Mixer Scripts</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_model_custom-lua.png" alt=""><figcaption><p>Користувацькі скрипти мікшера</p></figcaption></figure>
 
-Custom (Mixes) Scripts take one or more values as inputs, do some processing in Lua code, and output one or more values. Each model can have several Mixes Scripts associated with it, and these scripts are run periodically. They behave similarly to standard EdgeTX mixers, but at the same time they provide a much more flexible and powerful tool.
+Користувацькі (мікшерні) скрипти приймають одне або декілька значень як вхідні дані, виконують певну обробку в коді Lua та виводять одне або декілька значень. Кожна модель може мати кілька пов'язаних з нею скриптів мікшерів, і ці скрипти запускаються періодично. Вони поводяться подібно до стандартних мікшерів EdgeTX, але водночас вони надають набагато гнучкіший та потужніший інструмент.
 
-Typical use cases:
+Типові випадки використання:
 
-* replacement for complex mixes that are _not critical_ to model function
-* complex processing of inputs and reaction to their current state and/or their history
-* filtering of telemetry values
+* заміна складних мікшерів, які _не є критично важливими_ для функціонування моделі
+* складна обробка вхідних даних та реакція на їх поточний стан та/або їхню історію
+* фільтрація значень телеметрії
 
 {% hint style="warning" %}
-If the script output is used as a `mixer source` , and the **script is killed** for whatever reason, then _the_ **whole mixer line is disabled**! Exercise caution when using them for primary controls. It is advisable to have a fallback mixer line, that will be used if for whatever reason the Mixer Script is terminated.
+Якщо вивід скрипта використовується як джерело мікшера, і скрипт з якоїсь причини завершується, то вся лінія мікшера вимикається! Будьте обережні, використовуючи їх для основних елементів керування. Бажано мати резервну лінію мікшера, яка буде використана, якщо з якоїсь причини робота скрипта мікшера завершиться.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/color_model_custom-lua_edit.png" alt=""><figcaption><p>Inputs and Outputs for Mixer Scripts</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/color_model_custom-lua_edit.png" alt=""><figcaption><p>Входи та Виходи для Скриптів мікшера</p></figcaption></figure>
 
-Here is an example of mixer script that accepts a source and constant value, and has two outputs that will be selectable in the mixer as sources.&#x20;
+Ось приклад скрипта мікшера, який приймає джерело та константу, і має два виходи, які можна буде вибрати в мікшері як джерела.
