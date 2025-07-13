@@ -17,13 +17,13 @@
 
 Після вибору редагування логічного перемикача, вам будуть доступні наступні параметри:
 
-* **Func** — Логічна функція, яку ви хочете використовувати. Див. [Логічні функції перемикачів](logical-switches.md#logical\_switches\_judgment\_conditions\_and\_logical\_expressions) нижче для опису можливих функцій.
+* **Func** — Логічна функція, яку ви хочете використовувати. Див. [Логічні функції перемикачів](logical-switches.md#logical_switches_judgment_conditions_and_logical_expressions) нижче для опису можливих функцій.
 * **V1** — Перша змінна у виразі для оцінки.
 * **V2** — Друга змінна у виразі для оцінки.
 * **AND перемикач** — Перемикач, який має бути активним, щоб дозволити оцінку та активацію логічного перемикача.
 * **Duration** — Тривалість, протягом якої логічний перемикач залишатиметься активним (істинним) після досягнення умов активації.
 * **Delay** — Затримка між моментом досягнення умов активації та моментом, коли логічний перемикач змінює стан на активний (істинний).
-* **Persist.** **(Sticky Switch only)** - Preserves the value of the sticky switch when turning the radio off, or changing models, and restores the saved value on power on or selecting the model again.&#x20;
+* **Persist (Тільки для залипаючого перемикача)** — Зберігає значення залипаючого перемикача під час вимкнення апаратури або зміни моделі, а також відновлює збережене значення під час увімкнення або повторного вибору моделі.
 
 ### Функції логічних перемикачів <a href="#logical_switches_judgment_conditions_and_logical_expressions" id="logical_switches_judgment_conditions_and_logical_expressions"></a>
 
