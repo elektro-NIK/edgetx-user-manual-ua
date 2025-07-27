@@ -8,7 +8,7 @@
 4. Після зміни конфігурації джойстика, ймовірно, вам потрібно буде відключити, а потім знову під'єднати USB-кабель. Інакше системи можуть все ще використовувати старий опис джойстика для зчитування нових даних.
 
 {% hint style="info" %}
-The advanced joystick mode is not available for black-and-white display radios with less than 1 MB of flash memory due to this feature not fitting in the available memory footprint.
+Розширений режим джойстика недоступний для апаратур з чорно-білим дисплеєм та об'ємом флеш-пам'яті менше 1 МБ, оскільки ця функція не вміщується в доступний обсяг пам'яті.
 {% endhint %}
 
 ### Аналогові осі
