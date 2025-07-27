@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
----
-
 # Посібник користувача для апаратури з кольоровим екраном
 
 <figure><img src="../.gitbook/assets/colorradios.png" alt=""><figcaption><p>Контролери з кольоровим екраном, що підтримуються EdgeTX</p></figcaption></figure>

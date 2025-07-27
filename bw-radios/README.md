@@ -1,18 +1,4 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
----
-
-# Посібник користувача для апаратур з монохромним екраном
+# Посібник користувача для апаратури з монохромним екраном
 
 <figure><img src="../.gitbook/assets/monoradios (1).png" alt=""><figcaption><p>Контролери з монохромним екраном, що підтримуються EdgeTX</p></figcaption></figure>
 

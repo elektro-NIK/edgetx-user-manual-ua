@@ -26,3 +26,6 @@
 Щоб переглянути інформацію про активовані модулі RX для поточної вибраної моделі, виділіть опцію **\[Модулі / Версія RX]** і натисніть кнопку **\[Enter]**.
 
 <figure><img src="../../.gitbook/assets/bw128_radio_setup_version_module_internal.png" alt=""><figcaption><p>Екран Модулі / Версія RX - Внутрішній ELRS</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/bw128_radio_setup_version_module_external.jpg" alt=""><figcaption><p>Екран Модулі / Версія RX - Зовнішній FrSky R9 ACCESS</p></figcaption></figure>
+
