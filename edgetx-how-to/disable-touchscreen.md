@@ -19,3 +19,5 @@
 <figure><img src="../.gitbook/assets/list-customizable-switches-mo-touch.png" alt=""><figcaption><p>Налаштування користувацьких перемикачів</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/create-no-touch-special-function.png" alt=""><figcaption><p>Створення спеціальної функції для вимкнення сенсорного екрана за допомогою SW1</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/show-no-touch-special-function.jpg" alt=""><figcaption><p>Список спеціальних функцій</p></figcaption></figure>
