@@ -2,7 +2,7 @@
 
 Підтримка Bluetooth в EdgeTX обмежується:
 
-* Bluetooth режим тренера&#x20;
+* Bluetooth режим тренера
 * Bluetooth потокова передача телеметрії
 
 Наступні опції Bluetooth не підтримуються:
@@ -13,7 +13,7 @@
 
 ### Прошивка
 
-To use Bluetooth, if your radio does not come as standard with a Bluetooth module fitted (thus meaning the Bluetooth option should already be enabled in the firmware) you will need a custom compiled version of EdgeTX that needs to be built with the **BLUETOOTH=YES** CMake flag. You can create customized versions of EdgeTX using the CloudBuild tab on the[ EdgeTX Buddy website](https://buddy.edgetx.org/).
+Щоб використовувати Bluetooth, якщо ваша радіоапаратура не постачається зі стандартним модулем Bluetooth (тобто опція Bluetooth вже має бути ввімкнена в прошивці), вам знадобиться спеціально скомпільована версія EdgeTX, яку потрібно зібрати з прапорцем CMake **BLUETOOTH=YES**. Ви можете створювати власні версії EdgeTX за допомогою вкладки CloudBuild на [вебсайті EdgeTX Buddy](https://buddy.edgetx.org/).
 
 Після встановлення правильної версії прошивки EdgeTX у вашій радіоапаратурі опції конфігурації Bluetooth будуть доступні на сторінці **Апаратне забезпечення** (**Hardware)** в **Налаштуваннях апаратури**.
 
