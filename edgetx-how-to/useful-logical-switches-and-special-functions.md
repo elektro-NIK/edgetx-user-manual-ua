@@ -1,32 +1,32 @@
-# Configure a low battery alert
+# Налаштування сповіщення про низький заряд батареї
 
-This How-To shows the configuration of a low voltage battery alert. Let's assume we have a model that is using a 2S Lipo RX battery. We want to configure an alerts when the battery voltage drops below 7.4V.
+У цій інструкції показано налаштування сповіщення про низьку напругу акумулятора. Припустимо, що у нас є модель, яка використовує акумулятор 2S LiPo. Ми хочемо налаштувати сповіщення, коли напруга акумулятора падає нижче 7,4 В.
 
-Ensure that telemetry data is being received by the radio and the sensors have been discovered within EdgeTX before proceeding.
+Перш ніж продовжити, переконайтеся, що радіоапаратура приймає телеметричні дані, а датчики виявлено в EdgeTX.
 
-**Step 1:** Create a logical switch that activates when the battery voltage drops below a defined value.
+**Крок 1:** Створіть логічний перемикач, який активується, коли напруга акумулятора падає нижче визначеного значення.
 
-Press the \[MDL] button to open the Model Setup screen and navigate to the [Logical Switches](../color-radios/model-settings/logical-switches.md) tab. Create a new logical switch with the following configuration:
+Натисніть кнопку **\[MDL]**, щоб відкрити екран Налаштування моделі та перейти на вкладку [Логічні перемикачі](../color-radios/model-settings/logical-switches.md). Створіть новий логічний перемикач із такою конфігурацією:
 
-<figure><img src="../.gitbook/assets/howto-batt-alert-screen1.png" alt=""><figcaption><p>Create Logical Switch LS1 for a low voltage alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/howto-batt-alert-screen1.png" alt=""><figcaption><p>Створення логічного перемикача LS1 для сповіщення про низьку напругу</p></figcaption></figure>
 
-* **Function** use **a\<x**
-* **V1** is the telemetry sensor that you want to use for this alert. In this example we are using the RxBt telemetry sensor
-* **V2** is the voltage where you want the alarm to trigger
-* **Delay** is recommended to configure a delay so that battery sags will not will not cause the alarm to trigger
+* Оберіть **Функцію (Function)** **a\<x**
+* **V1** – це телеметричний датчик, який потрібно використовувати для цього сповіщення. У цьому прикладі ми використовуємо телеметричний датчик **RxBt**.
+* **V2** – це напруга, при якій має спрацювати сповіщення.
+* **Затримка (Delay)** – рекомендована до налаштування, щоб миттєва просадка напруги не призводила до спрацьовування сповіщення.
 
-This logical switch will activate when the TX battery is below 7.4V for the duration of 10 seconds.
+Цей логічний перемикач активується, коли напруга акумулятора передавача буде нижче 7,4 В протягом 10 секунд.
 
-<figure><img src="../.gitbook/assets/howto-batt-alert-screen2.png" alt=""><figcaption><p>Logical Switch for the low voltage alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/howto-batt-alert-screen2.png" alt=""><figcaption><p>Логічний перемикач для сповіщення про низьку напругу</p></figcaption></figure>
 
-**Step 2:** Create a [Special Function](../color-radios/model-settings/special-functions.md) that announces the battery value once the logical switch is activated.
+**Крок 2:** Створіть [Спеціальну функцію](../color-radios/model-settings/special-functions.md), яка озвучує значення заряду акумулятора як тільки логічний перемикач активується.
 
-Press the \[MDL] button to open the Model Setup screen and navigate to [Special Functions](../color-radios/model-settings/special-functions.md) Tab and create a new Special function with the following configuration.
+Натисніть кнопку **\[MDL]**, щоб відкрити екран Налаштування моделі, перейдіть на вкладку [Спеціальні функції](../color-radios/model-settings/special-functions.md) та створіть нову Спеціальну функцію з наступною конфігурацією.
 
-* **Switch**: This is the logical switch that you configured in the previous step. In this example L01
-* **Func**: select the Play Value function from the drop-down so that it will announce the battery voltage when triggered
-* **Value**: Select the telemetry sensor that you configured in the previous step. In this example it is RxBt
-* **Repeat**: Set the value for how often it should repeat the announcement. In this example it is every 10 seconds
-* **Enable**: Enable the Special Function to make it active
+* **Перемикач (Switch)**: Це логічний перемикач, який ви налаштували на попередньому кроці. У цьому прикладі L01
+* **Функція (Func)**: виберіть функцію Відтворити значення (Play Value) із випадаючого списку, щоб вона оголошувала напругу акумулятора під час спрацьовування
+* **Значення (Value)**: Виберіть телеметричний датчик, який ви налаштували на попередньому кроці. У цьому прикладі це RxBt
+* **Повтор (Repeat)**: Встановіть значення частоти повторення сповіщення. У цьому прикладі це кожні 10 секунд.
+* **Увімкнути (Enable)**: Увімкнути спеціальну функцію, щоб зробити її активною
 
-<figure><img src="../.gitbook/assets/howto-batt-alert-screen3.png" alt=""><figcaption><p>Special Function which plays the low voltage value every 10 seconds</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/howto-batt-alert-screen3.png" alt=""><figcaption><p>Спеціальна функція, яка відтворює значення низької напруги кожні 10 секунд</p></figcaption></figure>
