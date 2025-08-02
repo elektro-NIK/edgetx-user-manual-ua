@@ -94,7 +94,7 @@
 * [Вимкнення сенсорного екрану](edgetx-how-to/disable-touchscreen.md)
 * [Використання тримерів для регулювання глобальних змінних](edgetx-how-to/use-trims-as-switches.md)
 * [Налаштування сповіщення про низький заряд батареї](edgetx-how-to/useful-logical-switches-and-special-functions.md)
-* [Advanced Audio Features](edgetx-how-to/advanced-audio-features.md)
+* [Розширені функції аудіо](edgetx-how-to/advanced-audio-features.md)
 
 ## Більше
 
