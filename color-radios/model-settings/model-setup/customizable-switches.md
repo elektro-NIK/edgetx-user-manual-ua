@@ -1,30 +1,29 @@
 # Користувацькі перемикачі
 
-A traditional 6 position switch/control is either a group of 6 switches that work together (where only one can be active at one time) or a single rotary switch that has six physical positions (detents).  Some newer generation radios provide the "Customizable Switch" capability, which allows you to define type, grouping and startup state of the switches. Physically, they look like a regular 6 position switch which you will see on older handset designs, but they are much, _**much**_, more flexible.
+Традиційний 6-позиційний перемикач являє собою або групу з 6 перемикачів, які працюють разом (де лише один може бути активним в один момент часу), або один поворотний перемикач, який має шість фізичних положень. Деякі апаратури нового покоління мають функцію Користувацьких перемикачів (Customizable Switch), яка дозволяє визначити тип, групування та стан запуску перемикачів. Фізично вони виглядають як звичайний 6-позиційний перемикач, який можна побачити на старіших моделях радіоапаратур, але вони **набагато** гнучкіші.
 
 {% hint style="info" %}
-If you do need the customizable switches to behave **exactly** like the traditional 6POS switch, you need to configure six customisable switches to be in a single group, set that group to be "Always On", and Startup for the group set to the first switch. You will then be able to use, for example, GR1 in place of 6POS.&#x20;
+Якщо вам потрібно, щоб налаштовувані перемикачі працювали точно так само, як традиційний 6POS-перемикач, вам потрібно налаштувати шість налаштовуваних перемикачів в одну групу, встановити для цієї групи значення «Завжди ввімкнено» та встановити для групи значення «Запуск» на перший перемикач. Після цього ви зможете використовувати, наприклад, GR1 замість 6POS.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/colorlcd_model_customisable_switches.png" alt=""><figcaption><p>Example of Customizable Switch options on one supported handset.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/colorlcd_model_customisable_switches.png" alt=""><figcaption><p>Приклад параметрів Користувацьких перемикачів на одній підтримуваній апаратурі.</p></figcaption></figure>
 
-**Name:** Whichever three letter name you wish to give each customisable switch.
+**Назва(Name)**: Будь-яка трилітерна назва, яку ви хочете дати кожному користувацькому перемикачу.
 
-**Type:** Can be set to any of the following
+**Тип (Type)**: Можна встановити будь-яке із наведених нижче значень
 
-* **None** : basically disabled
-* **Toggle** : customizable switch is only "active" while being pushed
-* **2POS** : pushing the switch will alternate it's state. i.e. OFF push ON push OFF ....
+* **Немає (None)**: вимкнено
+* **Перемикання (Toggle)**: користувацький перемикач «активний» лише під час натискання
+* **2POS**: натискання перемикача змінюватиме його стан, тобто OFF - натискання - ON - натискання - OFF ...
 
-**Group:** This is where you choose how the individual switches should be grouped. You can choose for them to be in a single group (the default, Group 1), and then they can be used like a traditional 6POS switch. Or, you can define them to be in seperate groups (e.g. as shown for SW1-SW3 and SW4-SW5 above), or even for some switches to not be in a group at all (e.g. SW6 as shown above). \
+**Група (Group)**: Тут ви обираєте, як мають бути згруповані окремі перемикачі. Ви можете вибрати, щоб вони були в одній групі (за замовчуванням, Група 1), і тоді їх можна використовувати як традиційний 6-позиційний перемикач. Або ви можете визначити їх в окремих групах (наприклад, як показано для SW1-SW3 та SW4-SW5 вище), або навіть щоб деякі перемикачі взагалі не були в групі (наприклад, SW6, як показано вище).\
 \
-You can use the various groups as a source for inputs or mixes via the GR# option, where the # represents the number of the group (e.g. GR1, GR2).&#x20;
+Ви можете використовувати різні групи як джерело для вхідних сигналів або мікшерів за допомогою опції GR#, де # позначає номер групи (наприклад, GR1, GR2).
 
-When switches are grouped, only one switch in the group can be active at a time. Additionally, you can specify that one switch in the group must always be on **"Always on"**.&#x20;
+Коли перемикачі згруповані, одночасно може бути активним лише один перемикач у групі. Крім того, можна вказати, що один перемикач у групі має завжди бути в режимі **Завжди ввімкнено (Always on)**.
 
-**Startup:** Here is where you specify the startup state for either a 2POS customizable switch not in a group, or for a group of customizable switches. You can specify it to be "Last" (remember the last state when the transmitter was powered off or model changed) or in the up (released) or down (pressed) state.&#x20;
+**Запуск (Startup)**: Тут ви вказуєте стан запуску для налаштовуваного 2POS-перемикача, який не входить до групи, або для групи налаштовуваних перемикачів. Ви можете вказати його як **Останній (Last)** (запам’ятовувати останній стан, коли передавач вимкнувся або модель змінилася), або у верхньому (відпущеному) чи нижньому (натиснутому) стані.
 
-**OFF / ON Colors (on compatible handsets):** Some handsets support configuring the color of the customizable switches. If so, the OFF and ON color pickers will be shown for each customisable switch (as shown below) and you will be able to pick your preferred colour for each state. Black represents when the customizable switch is not illuminated.  \
+**Кольори OFF/ON** (**OFF/ON Colors)** (на деяких апаратурах): Деякі радіоапаратури підтримують налаштування кольору Користувацьких перемикачів. Для кожного Користувацького перемикача відображатимуться палітри кольорів OFF та ON (як показано нижче), і ви зможете вибрати бажаний колір для кожного стану. Чорний колір позначає стан Користувацького перемикача, коли він не підсвічується.
 
-
-<figure><img src="../../../.gitbook/assets/colorlcd_model_customisable_switches_rgb.png" alt=""><figcaption><p>Customizable Switch options on a handset that also supports configuring the LED colors</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/colorlcd_model_customisable_switches_rgb.png" alt=""><figcaption><p>Параметри користувацьких перемикачів на апаратурі, яка також підтримує налаштування кольорів світлодіодів</p></figcaption></figure>
