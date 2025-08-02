@@ -1,71 +1,68 @@
 ---
-description: Model Independent and Model Dependent audio!
+description: Модельно-незалежне та модельно-залежне аудіо!
 ---
 
-# Advanced Audio Features
+# Розширені функції аудіо
 
-## Model Independent
+## Модельно-незалежне
 
-These are sounds that are not special to any specific model, and are located in `/SOUNDS/language` and `/SOUNDS/language/SYSTEM` on your radio's SD card/on-board storage when correctly configured.&#x20;
+Це звуки, які не є специфічними для якоїсь конкретної моделі та знаходяться у папках `/SOUNDS/language` та `/SOUNDS/language/SYSTEM` на SD-карті/вбудованій пам'яті вашої апаратури (за умови правильного налаштування).
 
-The files in `/SOUNDS/language/SYSTEM` are automatically played by the radio in response to specific events, such as turning the radio on, telemetry being lost, switches being in the wrong position, etc.&#x20;
+Файли в `/SOUNDS/language/SYSTEM` автоматично відтворюються радіоапаратурою у відповідь на певні події, такі як увімкнення апаратури, втрата телеметрії, неправильне положення перемикачів тощо.
 
-You can also add `Play Track` Global Functions that will play in response to whatever trigger condition you wish.&#x20;
+Ви також можете додати Глобальну функцію `Play Track`, щоб відтворювати аудіо у відповідь на будь-яку бажану умову спрацьовування.
 
-## Model Dependent
+## Модельно-залежне
 
-These are sounds that are specific to a  given model, and are located in `/SOUNDS/language` and `/SOUNDS/language/model_name` on your radio's SD card/on-board storage when correctly configured.\
+Це звуки, специфічні для певної моделі, які знаходяться у папках `/SOUNDS/language` and `/SOUNDS/language/model_name` на SD-карті/вбудованій пам'яті вашої радіоапаратури (за умови правильного налаштування).\
 \
-The files in `/SOUNDS/language` are available for use with Play Track Special Functions, and will play in response to whatever trigger condition you configure.
+Файли у `/SOUNDS/language` доступні для використання зі Спеціальними функціями Play Track та відтворюватимуться у відповідь на будь-яку налаштовану вами умову запуску.
 
-In addition to the `Play Track` Special Function, there is also the ability to configure audio be played by simply placing audio files into a directory with the same name as the model.&#x20;
+Окрім Спеціальної функції `Play Track`, також є можливість налаштувати відтворення аудіо, просто помістивши аудіофайли в каталог з такою ж назвою, як і модель.
 
-For example, for English, with a model named `Ruxus 5`, you would create a folder named `/SOUNDS/en/Ruxus_5/` (note the need to replace spaces with underscores).&#x20;
+Наприклад, для англійської мови, з моделлю під назвою `Ruxus 5`, вам слід створити папку з назвою `/SOUNDS/en/Ruxus_5/` (зверніть увагу на необхідність заміни пробілів на символи підкреслення).
 
-Then, just create/copy audio files (of the correct format!) for any of the following trigger events into that folder.&#x20;
+Потім просто створіть/скопіюйте аудіофайли (правильного формату!) для будь-якої з наступних подій-тригерів у цю папку.
 
-### Model Load
+### Завантаження моделі (Model Load)
 
-Will be played after the startup switch checks are completed when turning the radio on or when switching to the configured model.&#x20;
+Відтворюватиметься після завершення перевірок перемикачів на старті під час увімкнення апаратури або перемикання на налаштовану модель.
 
-Filename: `name.wav`&#x20;
+Ім'я файлу (Filename): `name.wav`&#x20;
 
-### Switches
+### Перемикачі (Switches)
 
-Played on change of switch position.
+Відтворюється при зміні положення перемикача.
 
-Filename structure: `switchID-position.wav`
+Структура імені файлу: `switchID-position.wav`&#x20;
 
-* `SA-up.wav`
-* `SA-mid.wav` (if position present)
-* `SA-down.wav`
+* `SA-up.wav`&#x20;
+* `SA-mid.wav` (якщо позиція присутня)
+* `SA-down.wav`&#x20;
 
-### Multi-position / Stepped Switches
+### Багатопозиційні (Multi-position) / Ступінчаті перемикачі (Stepped Switches)
 
-Played on change of switch position.
+Відтворюється при зміні положення перемикача.
 
-Filename structure (hyphens added for clarity): `P-switchNumber-position.wav`
+Структура назви файлу (дефіси додано для ясності): `P-switchNumber-position.wav`&#x20;
 
-* `P11.wav`  (Pot 1, position 1)
-* `P16.wav`  (Pot 1, position 6)
+* `P11.wav` (Потенціометр 1, позиція 1)
+* `P16.wav` (Потенціометр 1, позиція 6)
 
-### Logical Switches
+### Логічні перемикачі (Logical Switches)
 
-Played when the logical switch changes state.
+Відтворюється, коли логічний перемикач змінює стан.
 
-Filename structure: `switchID-condition.wav`
+Структура імені файлу: `switchID-condition.wav`&#x20;
 
 * `L1-up.wav` (true)
 * `L1-down.wav` (false)
 
-### Flight Modes
+### Режими польоту (Flight Modes)
 
-Played on entering or exiting flight mode.&#x20;
+Відтворюється під час входу в режим польоту або виходу з нього.
 
-Filename structure: `modeName-condition.wav` (Note: No spaces in the flight mode name)
+Структура назви файлу: `modeName-condition.wav` (Примітка: пробіли в назві режиму польоту не допускаються)
 
-* `ABC–off.wav`
-* `ABC–on.wav`
-
-
-
+* `ABC–off.wav`&#x20;
+* `ABC–on.wav`&#x20;
